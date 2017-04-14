@@ -164,6 +164,4 @@
     <string name="up_down_plank_title">Up and Down Plank</string>
     <string name="up_down_plank_detail">Start plank on your palms. Drop down so that you are resting
         on your elbows one arm at a time and then return to resting on your palms.</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

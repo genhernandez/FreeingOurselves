@@ -8,12 +8,11 @@
 
     <string-array name="titles">
         <item>Set Goals</item>
-        <item>Common Challenges to Health</item>
         <item>Testosterone and You</item>
         <item>Finding Healthcare Allies</item>
-        <item>Herbal Remedies</item>
         <item>Resources</item>
         <item>Workouts</item>
+        <item>Nearby Resources</item>
     </string-array>
 
     <string name="title_top">Top Fragment</string>

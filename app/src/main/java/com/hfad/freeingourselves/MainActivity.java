@@ -95,6 +95,21 @@ public class MainActivity extends Activity  {
             case 1:
                 fragment = new SetGoalsFragment();
                 break;
+            case 2:
+                fragment = new TestosteroneFragment();
+                break;
+            case 3:
+                fragment = new HealthCareProviderFragment();
+                break;
+            case 4:
+                fragment = new ResourcesFragment();
+                break;
+            case 5:
+                fragment = new WorkoutIntroFragment();
+                break;
+            case 6:
+                fragment = new MapFragment();
+                break;
             default:
                 fragment = new TopFragment();
         }

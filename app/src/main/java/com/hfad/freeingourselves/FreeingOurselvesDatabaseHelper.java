@@ -40,13 +40,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "CONTENT TEXT, "
                     + "FAVE INTEGER, "
                     + "LANG TEXT);");
-            ContentValues chapterOneValues = new ContentValues();
-            chapterOneValues.put("CHAPTER_NUM", 1);
-            chapterOneValues.put("TITLE", "Chapter 1");
-            chapterOneValues.put("CONTENT", "hey it's chapter 1");
-            chapterOneValues.put("FAVE", 0);
-            chapterOneValues.put("LANG", "en");
-            db.insert(CHAPTERS, null, chapterOneValues);
+            populateChapters(db);
 
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
@@ -55,6 +49,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "DETAILS TEXT, "
                     + "PICTURE_FILE TEXT"
                     + "COUNT INTEGER);");
+            populateWorkouts(db);
 
             // Create healthcare table.
             db.execSQL("CREATE TABLE HEALTHCARE ("
@@ -62,6 +57,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "STEP_INFO TEXT, "
                     + "NOTES TEXT, "
                     + "COMPLETED INTEGER);");
+            populateHealthcare(db);
 
             // Create challenges table.
             db.execSQL("CREATE TABLE CHALLENGES ("
@@ -70,6 +66,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "SIGNS TEXT, "
                     + "ASK_WHEN TEXT, "
                     + "STRATEGIES TEXT);");
+            populateChallenges(db);
 
             // Create goals table.
             db.execSQL("CREATE TABLE GOALS ("
@@ -77,30 +74,56 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "GOAL_NAME TEXT, "
                     + "INPUTS TEXT, "
                     + "ACTIVITIES TEXT, "
-                    + "ASSUPTIONS TEXT, "
+                    + "ASSUMPTIONS TEXT, "
                     + "SHORT_TERM TEXT, "
                     + "LONG_TERM TEXT, "
                     + "GOAL TEXT, "
                     + "COMPLETED INTEGER);");
+            populateGoals(db);
         }
     }
 
-//    private static void insertDrink(SQLiteDatabase db, String name,
-//                                    String description, int resourceId) {
-//        ContentValues drinkValues = new ContentValues();
-//        drinkValues.put("NAME", name);
-//        drinkValues.put("DESCRIPTION", description);
-//        drinkValues.put("IMAGE_RESOURCE_ID", resourceId);
-//        db.insert("DRINK", null, drinkValues);
-//    }
-//
-//    private static void insertDrink(SQLiteDatabase db, String name,
-//                                    String description, int resourceId, int calories) {
-//        ContentValues drinkValues = new ContentValues();
-//        drinkValues.put("NAME", name);
-//        drinkValues.put("DESCRIPTION", description);
-//        drinkValues.put("IMAGE_RESOURCE_ID", resourceId);
-//        drinkValues.put("CALORIES", calories);
-//        db.insert("DRINK", null, drinkValues);
-//    }
+    private void populateChapters(SQLiteDatabase db) {
+        ContentValues chapterOneValues = new ContentValues();
+        chapterOneValues.put("CHAPTER_NUM", 1);
+        chapterOneValues.put("TITLE", "Chapter 1");
+        chapterOneValues.put("CONTENT", "hey it's chapter 1");
+        chapterOneValues.put("FAVE", 0);
+        chapterOneValues.put("LANG", "en");
+        db.insert(CHAPTERS, null, chapterOneValues);
+    }
+
+    private void populateWorkouts(SQLiteDatabase db) {
+        ContentValues chapterOneValues = new ContentValues();
+        chapterOneValues.put("CHAPTER_NUM", 1);
+        chapterOneValues.put("TITLE", "Chapter 1");
+        chapterOneValues.put("CONTENT", "hey it's chapter 1");
+        chapterOneValues.put("FAVE", 0);
+        chapterOneValues.put("LANG", "en");
+        db.insert(WORKOUTS, null, chapterOneValues);
+    }
+
+    private void populateHealthcare(SQLiteDatabase db) {
+        ContentValues chapterOneValues = new ContentValues();
+        chapterOneValues.put("CHAPTER_NUM", 1);
+        chapterOneValues.put("TITLE", "Chapter 1");
+        chapterOneValues.put("CONTENT", "hey it's chapter 1");
+        chapterOneValues.put("FAVE", 0);
+        chapterOneValues.put("LANG", "en");
+        db.insert(HEALTHCARE, null, chapterOneValues);
+    }
+
+    private void populateChallenges(SQLiteDatabase db) {
+        ContentValues chapterOneValues = new ContentValues();
+        chapterOneValues.put("CHAPTER_NUM", 1);
+        chapterOneValues.put("TITLE", "Chapter 1");
+        chapterOneValues.put("CONTENT", "hey it's chapter 1");
+        chapterOneValues.put("FAVE", 0);
+        chapterOneValues.put("LANG", "en");
+        db.insert(CHAPTERS, null, chapterOneValues);
+    }
+
+    private void populateGoals(SQLiteDatabase db) {
+
+    }
 }

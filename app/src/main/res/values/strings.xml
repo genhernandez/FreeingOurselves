@@ -14,5 +14,14 @@
         <item>Workouts</item>
     </string-array>
 
+    <string name="set_goals">Set Goals</string>
+    <string name="resource_frag">Resources</string>
+
+    <array name="resources">
+        <item>Resource1</item>
+        <item>Resource2</item>
+        <item>Resource3</item>
+    </array>
+
     <string name="title_top">Top Fragment</string>
 </resources>

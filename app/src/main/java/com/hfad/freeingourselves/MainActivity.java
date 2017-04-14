@@ -102,7 +102,7 @@ public class MainActivity extends Activity  {
                 fragment = new HealthCareProviderFragment();
                 break;
             case 4:
-                fragment = new ResourcesFragment();
+                fragment = new ResourceListFragment();
                 break;
             case 5:
                 fragment = new WorkoutIntroFragment();
@@ -151,10 +151,10 @@ public class MainActivity extends Activity  {
     }
 
     //private void setIntent(String text){
-        //Intent intent = new Intent(Intent.ACTION_SEND);
-        //intent.setType("text/plain");
-        //intent.putExtra(Intent.EXTRA_TEXT, text);
-        //shareActionProvider.setShareIntent(intent);
+    //Intent intent = new Intent(Intent.ACTION_SEND);
+    //intent.setType("text/plain");
+    //intent.putExtra(Intent.EXTRA_TEXT, text);
+    //shareActionProvider.setShareIntent(intent);
     //}
 
     @Override

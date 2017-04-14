@@ -1,6 +1,18 @@
 <resources>
-    <string name="app_name">FreeingOurselves</string>
+    <string name="app_name">Freeing Ourselves</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="titles">
+        <item>Set Goals</item>
+        <item>Common Challenges to Health</item>
+        <item>Testosterone and You</item>
+        <item>Finding Healthcare Allies</item>
+        <item>Herbal Remedies</item>
+        <item>Resources</item>
+        <item>Workouts</item>
+    </string-array>
+
+    <string name="title_top">Top Fragment</string>
 </resources>

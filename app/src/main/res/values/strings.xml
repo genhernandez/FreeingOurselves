@@ -18,6 +18,12 @@
 
     <string name="title_top">Top Fragment</string>
 
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
     <string name="workout_intro">If your goal is to lose weight and get fit, you must establish a
         weight training and cardio routine. By adding muscle with weight training, you increase your
         metabolism and your ability to burn fat throughout the day. The following three routines were
@@ -36,5 +42,4 @@
         from one exercise to the next with no rest. Rest a minute after completing one circuit in Set
         1 if repeating the set 2-3 times. Rest 3-5 minutes before starting Set 2.</string>
 
-    <string name="hello_blank_fragment">hello blank fragment</string>
 </resources>

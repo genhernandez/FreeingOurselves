@@ -15,4 +15,151 @@
     </string-array>
 
     <string name="title_top">Top Fragment</string>
+
+    <string name="workout_intro">If your goal is to lose weight and get fit, you must establish a
+        weight training and cardio routine. By adding muscle with weight training, you increase your
+        metabolism and your ability to burn fat throughout the day. The following three routines were
+        designed by Patricia Manuel and serve as a good starting point to developing strength and
+        overall fitness. The workout routines are all circuit style with little rest, so they will
+        raise your heart level and keep you burning fat. Include 30 minutes of cardio on the days you
+        are not weight training to see the best results. These exercises, A-C, are to be performed once
+        per week with a day of rest in-between each workout. The goal is to perform each circuit with
+        as little rest as possible between each exercise in the circuit. For example, in Workout A,
+        Set 1, move from bicep curl to tricep extension to V-Ups. Rest for 30 seconds to a minute and
+        then repeat the exercises in Set 1 a total of 1-3 times depending on your fitness level. Rest
+        1-3 minutes, depending on your fitness level, before moving on to Set 2 and then Set 3. For
+        weighted exercises, pick a weight that allows you to complete the proper number of repetitions
+        (reps) with some difficulty. Workout C differs from A and B. There is not a set number of reps,
+        but there is a time limit. Each exercise is to be performed for one minute. The goal is to move
+        from one exercise to the next with no rest. Rest a minute after completing one circuit in Set
+        1 if repeating the set 2-3 times. Rest 3-5 minutes before starting Set 2.</string>
+
+    <string name="bicep_curl_title">Alternating Bicep Curl: 8-12 reps</string>
+    <string name="bicep_curl_detail">Starting with hands hanging by your sides, slowly curl the weight
+        of one arm up. Hold the contraction for a second and then slowly lower. Repeat with the other
+        arm.</string>
+
+    <string name="tricep_extension_title">Lying-Down Tricep Extension: 8-12 reps</string>
+    <string name="tricep_extension_detail">Lie down on the mat with a weight in each hand. Bring your
+        arms above your head and bend your elbows so that the weights are resting on either side of
+        your head. Extend your arms so they are straight and then slowly return to starting position.</string>
+
+    <string name="v_ups_title">V-Ups: 15-25 reps</string>
+    <string name="v_ups_detail">Lie on your back with arms straight behind head and legs straight.
+        Contract abdominals muscles and pull arms and legs up, forming a V. Lower arms and legs
+        without touching the ground and bring them quickly back to the V position.</string>
+
+    <string name="pushups_title">Push-Ups: 10-25 reps</string>
+    <string name="pushups_detail">Place your hands underneath your shoulders and keep your butt down
+        so that your back is straight. Slowly lower your body down by bending your arms and then push
+        up. If it’s too difficult, drop down to your knees.</string>
+
+    <string name="shrug_title">Shrug: 15-25 rep</string>
+    <string name="shrug_detail">Grasp heavier weights in each hand. In a controlled motion, shrug
+        your shoulders upward and then relax. Do not roll your shoulders.</string>
+
+    <string name="side_bends_title">Side Bends: 15-25 reps (each side)</string>
+    <string name="side_bends_detail">Hold weights in each hand. Shift the weight downwards on one
+        side then pull up. Repeat on other side.</string>
+
+    <string name="shoulder_press_title">Shoulder Press: 8-12 reps</string>
+    <string name="shoulder_press_detail">Bring arms out at a 90o angle with palms facing forward.
+        Press upwards until your arms are straight and then slowly return to starting position.</string>
+
+    <string name="bentover_rows_title">Bent-Over Rows: 8-12 reps (each side)</string>
+    <string name="bentover_rows_detail">Hold weight in one arm and lean forward on the opposite leg.
+        Allow the weight to dangle between your forward and back leg. Using the muscles of the shoulder,
+        pull the weight up and then slowly lower. Switch to other side after completed reps.</string>
+
+    <string name="diamond_pushups_title">Diamond Push-Up: 8-20 reps</string>
+    <string name="diamond_pushups_detail">Assume push up position but bring your opens palms together
+        in a triangle position underneath your chest. Slowly lower as far as possible and then push up
+        to return to starting position.</string>
+
+    <string name="leg_raises_title">Leg Raises: 15-25 reps</string>
+    <string name="leg_raises_detail">Lie on your back, placing hands underneath your butt for support.
+        Keep both legs together and straight, then raise them off the floor 90°. Slowly lower back down
+        without touching the floor and repeat.</string>
+
+    <string name="rdl_title">RDL: 8-12 reps</string>
+    <string name="rdl_detail">With a slight bend in the knees, slowly lower weights while bending
+        downward. Keep back straight and core tight while doing so.</string>
+
+    <string name="sitting_trunk_twist_title">Sitting Trunk Twist: 15-25 reps</string>
+    <string name="sitting_trunk_twist_detail">Sitting down, lean back slightly while engaging core
+        muscles. Holding a medicine ball in your hands, quickly turn and smash it into the ground
+        beside you before turning and repeating the same maneuver on your other side.</string>
+
+    <string name="lunge_title">Lunge: 10-20 reps</string>
+    <string name="lunge_detail">Step one leg out and slowly bend your knees so that your back leg is
+        at a 90 degree angle. Push off the heel and step back to starting position. Complete a set
+        on one leg and then switch to the other.</string>
+
+    <string name="glute_bridge_title">Glute Bridge: 15-25 reps</string>
+    <string name="glute_bridge_detail">Lie on your back with your palms on the floor. Tighten your
+        core, press your palms into the ground and raise your butt off the ground. Tighten your butt
+        and hold for a second before lowering.</string>
+
+    <string name="flutter_kick_title">Flutter Kick: 10-25 reps (each leg)</string>
+    <string name="flutter_kick_detail">Lie on your back and place hands underneath your butt. Bring
+        both legs up off the ground and then alternate bringing each leg up then returning to starting
+        position.</string>
+
+    <string name="split_squat_title">Split Squat: 10-25 reps (each leg)</string>
+    <string name="split_squat_detail">Step forward with one leg and lean forward, keeping back straight.
+        Drop down so your legs are at a 90o angle then push through your heels to return to starting
+        position. Switch to other leg after first set is completed.</string>
+
+    <string name="butt_kickers_title">Butt Kickers: Stationary: 20-30 reps (each leg); Moving: 40
+        meters x 2</string>
+    <string name="butt_kickers_detail">Performed either stationary or moving. Kick your leg backwards
+        so that your foot touches your butt. If moving, swing your arms like you are sprinting.</string>
+
+    <string name="medicine_ball_title">Medicine Ball Slams: 15-30 reps</string>
+    <string name="medicine_ball_detail">Bring the medicine ball behind your head and use your full
+        body to throw the ball into the ground. Catch the ball and quickly repeat.</string>
+
+    <string name="bicycle_title">Bicycle: 10-25 reps (each side)</string>
+    <string name="bicycle_detail">Lying on your back, place hands behind your head and raise feet off
+        the ground. Bend one knee and bring it toward your chest. At the same time, bring the opposite
+        elbow to touch your knee. Repeat on the other side.</string>
+
+    <string name="jump_squat_title">Jump Squat</string>
+    <string name="jump_squat_detail">Lower yourself down into a squatting position and then spring
+        into the air as high as possible. Land softly while returning to squatting position and repeat.</string>
+
+    <string name="spiderman_title">Spiderman</string>
+    <string name="spiderman_detail">Start in a push-up position. Moving forward, reach forward with
+        your right hand and take a step with your right foot, keeping your butt low and bring your
+        knee up toward your chest. Take another step with your left side. Continue forward.</string>
+
+    <string name="plank_title">Plank</string>
+    <string name="plank_detail">Resting on your elbows with your legs straight behind you, hold your
+        core tight and keep your back level.</string>
+
+    <string name="explosive_pushups_title">Explosive Push-Ups</string>
+    <string name="explosive_pushups_detail">Start from a normal push up position. While pushing up,
+        explode upward and, if possible, clap your hands before landing on your palms.</string>
+
+    <string name="side_plank_title">Side Plank</string>
+    <string name="side_plank_detail">Resting on your forearm and keeping your legs straight while on
+        your side, raise your torso off the ground and hold. Hold for 30 seconds, then switch sides.</string>
+
+    <string name="ski_jumps_title">Ski Jumps</string>
+    <string name="ski_jumps_detail">Start from a squatting position with your hands clenched loosely
+        and elbows bent at a 90o angle. Jump laterally and land softly in the starting position. Regain
+        balance and jump to the other side.</string>
+
+    <string name="crab_walks_title">Crab Walks</string>
+    <string name="crab_walks_detail">With your stomach facing upward, hold your body up with your
+        hands and feet. Scuttle backwards as fast as you can.</string>
+
+    <string name="burpee_title">Burpee</string>
+    <string name="burpee_detail">Start from a standing position. Crouch down and thrust your legs out
+        behind you, into a plank or push-up position. Quickly bring your legs back to your chest and
+        jump as high as you can. Land softly and immediately repeat.</string>
+
+    <string name="up_down_plank_title">Up and Down Plank</string>
+    <string name="up_down_plank_detail">Start plank on your palms. Drop down so that you are resting
+        on your elbows one arm at a time and then return to resting on your palms.</string>
 </resources>

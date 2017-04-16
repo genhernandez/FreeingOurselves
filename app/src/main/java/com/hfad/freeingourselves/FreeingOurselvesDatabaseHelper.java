@@ -16,6 +16,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private static final String HEALTHCARE = "HEALTHCARE";
     private static final String CHALLENGES = "CHALLENGES";
     private static final String GOALS = "GOALS";
+    private static final String RESOURCES = "RESOURCES";
 
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -80,6 +81,15 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "GOAL TEXT, "
                     + "COMPLETED INTEGER);");
             populateGoals(db);
+
+            // Create Resources table.
+            db.execSQL("CREATE TABLE RESOURCES ("
+                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + "RESOURCE_NAME TEXT, "
+                    + "RESOURCE_DESCRIPTION TEXT, "
+                    + "LINK TEXT);");
+            populateResources(db);
+
         }
     }
 
@@ -366,5 +376,11 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private void populateGoals(SQLiteDatabase db) {
 
+    }
+
+    private void populateResources(SQLiteDatabase db){
+        /*ContentValues resourceValues = new ContentValues();
+        resourceValues.put("", "");
+        db.insert(RESOURCES, null, resourceValues);*/
     }
 }

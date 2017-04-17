@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "freeing_ourselves";
-    private static final int DB_VERSION = 0;
+    private static final int DB_VERSION = 1;
 
     // Table names
     private static final String CHAPTERS = "CHAPTERS";
@@ -172,7 +172,8 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addGoal(db, "sample goal name", "sample inputs", "sample activities", "sample " +
                     "assumptions", "sample short term", "sample long term", "sample goal");
             //TODO: add the rest of the goals
-
+        }
+        if (oldVersion < 2) {
             // Create Resources table.
             db.execSQL("CREATE TABLE RESOURCES ("
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -180,17 +181,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "RESOURCE_DESCRIPTION TEXT, "
                     + "LINK TEXT);");
             populateResources(db);
-        }
-
-        @Override
-        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-            updateMyDataBase(db, oldVersion, newVersion);
-        }
-
-    private void updateMyDataBase(SQLiteDatabase db, int oldVersion, int newVersion) {
-        if (oldVersion < 1) {
-        }
-    }
         }
     }
 

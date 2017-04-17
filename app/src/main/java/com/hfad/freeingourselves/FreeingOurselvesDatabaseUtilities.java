@@ -1,6 +1,8 @@
 package com.hfad.freeingourselves;
 
 import android.database.sqlite.SQLiteDatabase;
+import java.util.ArrayList;
+import android.database.Cursor;
 
 public class FreeingOurselvesDatabaseUtilities {
 
@@ -29,6 +31,10 @@ public class FreeingOurselvesDatabaseUtilities {
     }
 
     void setGoalData(SQLiteDatabase db, String goalname, String inputs, String activities, String assumptions, String short_term, String long_term, String goal, boolean completed) {}
+
+    String getResources(SQLiteDatabase db, String resource){return "";}
+
+
 }
 
 

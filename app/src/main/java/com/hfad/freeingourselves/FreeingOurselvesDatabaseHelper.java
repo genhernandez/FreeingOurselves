@@ -16,6 +16,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private static final String HEALTHCARE = "HEALTHCARE";
     private static final String CHALLENGES = "CHALLENGES";
     private static final String GOALS = "GOALS";
+    private static final String RESOURCES = "RESOURCES";
 
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -171,6 +172,25 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addGoal(db, "sample goal name", "sample inputs", "sample activities", "sample " +
                     "assumptions", "sample short term", "sample long term", "sample goal");
             //TODO: add the rest of the goals
+
+            // Create Resources table.
+            db.execSQL("CREATE TABLE RESOURCES ("
+                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + "RESOURCE_NAME TEXT, "
+                    + "RESOURCE_DESCRIPTION TEXT, "
+                    + "LINK TEXT);");
+            populateResources(db);
+        }
+
+        @Override
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+            updateMyDataBase(db, oldVersion, newVersion);
+        }
+
+    private void updateMyDataBase(SQLiteDatabase db, int oldVersion, int newVersion) {
+        if (oldVersion < 1) {
+        }
+    }
         }
     }
 
@@ -224,5 +244,19 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         goalValues.put("LONG_TERM", longTerm);
         goalValues.put("GOAL", goal);
         goalValues.put("COMPLETED", 0);
+    }
+
+    private void populateResources(SQLiteDatabase db){
+        ContentValues resourceValues = new ContentValues();
+        resourceValues.put("RESOURCE_NAME", "Therapists of Color");
+        resourceValues.put("RESOURCE_DESCRIPTION", "Bay Area");
+        resourceValues.put("LINK", "http://www.therapistsofcolor.org/directory.html");
+        db.insert(RESOURCES, null, resourceValues);
+
+        ContentValues resourceValues2 = new ContentValues();
+        resourceValues2.put("RESOURCE_NAME", "National Queer & Trans Therapists of Color Network");
+        resourceValues2.put("RESOURCE_DESCRIPTION", "national provider directory of queer and trans therapists of color");
+        resourceValues2.put("LINK", "http://www.nqttcn.com/directory");
+        db.insert(RESOURCES, null, resourceValues2);
     }
 }

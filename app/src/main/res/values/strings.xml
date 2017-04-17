@@ -6,13 +6,15 @@
     <string name="start_workout_button">Start Workout</string>
 
 
+
     <string-array name="titles">
         <item>Set Goals</item>
         <item>Common Challenges to Health</item>
         <item>Testosterone and You</item>
         <item>Finding Healthcare Allies</item>
-        <item>Herbal Remedies</item>
         <item>Resources</item>
+        <item>Workout</item>
+        <item>Maps</item>
         <item>Workouts</item>
     </string-array>
 

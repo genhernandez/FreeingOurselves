@@ -379,8 +379,9 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     }
 
     private void populateResources(SQLiteDatabase db){
-        /*ContentValues resourceValues = new ContentValues();
-        resourceValues.put("", "");
-        db.insert(RESOURCES, null, resourceValues);*/
+        ContentValues resourceValues = new ContentValues();
+        resourceValues.put("RESOURCE_NAME", "My Resource name");
+        resourceValues.put("RESOURCE_DESCRIPTION", "My Resource description");
+        db.insert(RESOURCES, null, resourceValues);
     }
 }

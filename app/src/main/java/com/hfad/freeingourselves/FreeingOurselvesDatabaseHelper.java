@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "freeing_ourselves";
-    private static final int DB_VERSION = 0;
+    private static final int DB_VERSION = 1;
 
     // Table names
     private static final String CHAPTERS = "CHAPTERS";
@@ -24,7 +24,62 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        updateMyDataBase(db, 0, DB_VERSION);
+        //updateMyDataBase(db, 0, DB_VERSION);
+        // Create chapters table.
+        db.execSQL("CREATE TABLE CHAPTERS ("
+                + "CHAPTER_NUM INTEGER, "
+                + "TITLE TEXT, "
+                + "CONTENT TEXT, "
+                + "FAVE INTEGER, "
+                + "LANG TEXT);");
+        populateChapters(db);
+
+        // Create workouts table.
+        db.execSQL("CREATE TABLE WORKOUTS ("
+                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "WORKOUT_NAME TEXT, "
+                + "DETAILS TEXT, "
+                + "PICTURE_FILE TEXT"
+                + "COUNT INTEGER);");
+        populateWorkouts(db);
+
+        // Create healthcare table.
+        db.execSQL("CREATE TABLE HEALTHCARE ("
+                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "STEP_INFO TEXT, "
+                + "NOTES TEXT, "
+                + "COMPLETED INTEGER);");
+        populateHealthcare(db);
+
+        // Create challenges table.
+        db.execSQL("CREATE TABLE CHALLENGES ("
+                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "THREAT TEXT, "
+                + "SIGNS TEXT, "
+                + "ASK_WHEN TEXT, "
+                + "STRATEGIES TEXT);");
+        populateChallenges(db);
+
+        // Create goals table.
+        db.execSQL("CREATE TABLE GOALS ("
+                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "GOAL_NAME TEXT, "
+                + "INPUTS TEXT, "
+                + "ACTIVITIES TEXT, "
+                + "ASSUMPTIONS TEXT, "
+                + "SHORT_TERM TEXT, "
+                + "LONG_TERM TEXT, "
+                + "GOAL TEXT, "
+                + "COMPLETED INTEGER);");
+        populateGoals(db);
+
+        // Create Resources table.
+        db.execSQL("CREATE TABLE RESOURCES ("
+                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "RESOURCE_NAME TEXT, "
+                + "RESOURCE_DESCRIPTION TEXT, "
+                + "LINK TEXT);");
+        populateResources(db);
     }
 
     @Override
@@ -34,62 +89,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private void updateMyDataBase(SQLiteDatabase db, int oldVersion, int newVersion) {
         if (oldVersion < 1) {
-            // Create chapters table.
-            db.execSQL("CREATE TABLE CHAPTERS ("
-                    + "CHAPTER_NUM INTEGER, "
-                    + "TITLE TEXT, "
-                    + "CONTENT TEXT, "
-                    + "FAVE INTEGER, "
-                    + "LANG TEXT);");
-            populateChapters(db);
-
-            // Create workouts table.
-            db.execSQL("CREATE TABLE WORKOUTS ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "WORKOUT_NAME TEXT, "
-                    + "DETAILS TEXT, "
-                    + "PICTURE_FILE TEXT"
-                    + "COUNT INTEGER);");
-            populateWorkouts(db);
-
-            // Create healthcare table.
-            db.execSQL("CREATE TABLE HEALTHCARE ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "STEP_INFO TEXT, "
-                    + "NOTES TEXT, "
-                    + "COMPLETED INTEGER);");
-            populateHealthcare(db);
-
-            // Create challenges table.
-            db.execSQL("CREATE TABLE CHALLENGES ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "THREAT TEXT, "
-                    + "SIGNS TEXT, "
-                    + "ASK_WHEN TEXT, "
-                    + "STRATEGIES TEXT);");
-            populateChallenges(db);
-
-            // Create goals table.
-            db.execSQL("CREATE TABLE GOALS ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "GOAL_NAME TEXT, "
-                    + "INPUTS TEXT, "
-                    + "ACTIVITIES TEXT, "
-                    + "ASSUMPTIONS TEXT, "
-                    + "SHORT_TERM TEXT, "
-                    + "LONG_TERM TEXT, "
-                    + "GOAL TEXT, "
-                    + "COMPLETED INTEGER);");
-            populateGoals(db);
-
-            // Create Resources table.
-            db.execSQL("CREATE TABLE RESOURCES ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "RESOURCE_NAME TEXT, "
-                    + "RESOURCE_DESCRIPTION TEXT, "
-                    + "LINK TEXT);");
-            populateResources(db);
-
         }
     }
 
@@ -380,8 +379,15 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private void populateResources(SQLiteDatabase db){
         ContentValues resourceValues = new ContentValues();
-        resourceValues.put("RESOURCE_NAME", "My Resource name");
-        resourceValues.put("RESOURCE_DESCRIPTION", "My Resource description");
+        resourceValues.put("RESOURCE_NAME", "Therapists of Color");
+        resourceValues.put("RESOURCE_DESCRIPTION", "Bay Area");
+        resourceValues.put("LINK", "http://www.therapistsofcolor.org/directory.html");
         db.insert(RESOURCES, null, resourceValues);
+
+        ContentValues resourceValues2 = new ContentValues();
+        resourceValues2.put("RESOURCE_NAME", "National Queer & Trans Therapists of Color Network");
+        resourceValues2.put("RESOURCE_DESCRIPTION", "national provider directory of queer and trans therapists of color");
+        resourceValues2.put("LINK", "http://www.nqttcn.com/directory");
+        db.insert(RESOURCES, null, resourceValues2);
     }
 }

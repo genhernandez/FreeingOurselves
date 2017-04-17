@@ -1,29 +1,43 @@
 package com.hfad.freeingourselves;
 
 //import android.app.ActionBar;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-//import android.content.Intent;
 import android.content.res.Configuration;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.content.Intent;
+import android.net.Uri;
+import android.widget.Toast;
+import android.util.Log;
+
+
+//import android.content.Intent;
 //import android.widget.ShareActionProvider;
 
-public class MainActivity extends Activity  {
+public class MainActivity extends Activity implements ResourceListFragment.ResourceListListener{
+
+
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
 
     //private ShareActionProvider shareActionProvider;
     private String[] titles;
     private ListView drawerList;
+
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener{
         @Override
@@ -171,4 +185,41 @@ public class MainActivity extends Activity  {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    /*
+    Gets clicked resource's link from database
+     */
+    String getResourceLink(SQLiteDatabase db, int position){
+        String[]columns=new String[]{"LINK"};
+        String[]where = new String[]{""+position+""};
+        String resourceLink = null;
+        Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
+        if(cursor.moveToFirst()){
+            resourceLink = cursor.getString(0);
+            Log.v("MainActivity Resource", resourceLink);
+        }
+        cursor.close();
+        db.close();
+        return resourceLink;
+    }
+
+    /*
+    Gets resource clicked and launches web intent
+     */
+    @Override
+    public void resourceListItemClicked(int position) {
+        String url = null;
+        try{
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            url = getResourceLink(db, position);
+        } catch(SQLiteException e){
+            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
 }

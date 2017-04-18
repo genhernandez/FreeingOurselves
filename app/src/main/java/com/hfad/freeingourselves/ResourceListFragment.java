@@ -1,51 +1,84 @@
 package com.hfad.freeingourselves;
 
-import android.database.DatabaseUtils;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.app.ListFragment;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.app.Activity;
 import android.widget.ListView;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
+import android.database.sqlite.SQLiteException;
+import java.util.ArrayList;
+import android.util.Log;
 
 public class ResourceListFragment extends ListFragment {
 
-    static interface ResourceListListener{
-        void itemClicked(long id);
-    }
-
+    ArrayList<String> resourceList = new ArrayList<>();
     private ResourceListListener listener;
 
-/*
+    public interface ResourceListListener{
+        void resourceListItemClicked(int position);
+    }
+
+    void getResources(SQLiteDatabase db){
+        String[]columns=new String[]{"RESOURCE_NAME","RESOURCE_DESCRIPTION"};
+        Cursor cursor = db.query("RESOURCES", columns, null, null, null, null, null);
+        for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
+            //Add name plus the description to the array list
+            resourceList.add(cursor.getString(0) + " - " + cursor.getString(1));
+        }
+        cursor.close();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        //get Array of String of resources String[] names = new String[];
-        for (int i = 0; i < names.length; i++) {
-            names[i] = Workout.workouts[i].getName();
-        }
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                inflater.getContext(), android.R.layout.simple_list_item_1,
-                names);
-        setListAdapter(adapter);
-
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     @Override
-    public void onAttach(Activity activity){
-        super.onAttach(activity);
-        this.listener = (WorkoutListListener)activity;
+    public void onActivityCreated(Bundle savedInstanceState) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            Log.v("Opened DB", "");
+            getResources(db);
+            db.close();
+        } catch(SQLiteException e){
+            Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+        //super.onActivityCreated(savedInstanceState);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                getActivity(), android.R.layout.simple_list_item_1,
+                resourceList);
+        setListAdapter(adapter);
+        super.onActivityCreated(savedInstanceState);
     }
 
+    /*
+        Called when fragment gets attached to the activity
+         */
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+        this.listener = (ResourceListListener) activity;
+    }
+
+    /*
+   Tells listener that an item in the ListView is clicked
+    */
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         if (listener != null) {
-            listener.itemClicked(id);
+            listener.resourceListItemClicked(position);
         }
-    }*/
+    }
 
 }

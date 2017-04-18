@@ -11,12 +11,12 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
 
     // Table names
-    private static final String CHAPTERS = "CHAPTERS";
-    private static final String WORKOUTS = "WORKOUTS";
-    private static final String HEALTHCARE = "HEALTHCARE";
-    private static final String CHALLENGES = "CHALLENGES";
-    private static final String GOALS = "GOALS";
-    private static final String RESOURCES = "RESOURCES";
+    static final String TOPICS = "TOPICS";
+    static final String WORKOUTS = "WORKOUTS";
+    static final String HEALTHCARE = "HEALTHCARE";
+    static final String CHALLENGES = "CHALLENGES";
+    static final String GOALS = "GOALS";
+    static final String RESOURCES = "RESOURCES";
 
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -34,15 +34,20 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private void updateMyDataBase(SQLiteDatabase db, int oldVersion, int newVersion) {
         if (oldVersion < 1) {
-            // Create chapters table.
-            db.execSQL("CREATE TABLE CHAPTERS ("
-                    + "CHAPTER_NUM INTEGER, "
+            // Create topics table.
+            db.execSQL("CREATE TABLE TOPICS ("
+                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + "TITLE TEXT, "
                     + "CONTENT TEXT, "
                     + "FAVE INTEGER, "
                     + "LANG TEXT);");
-            addChapter(db, 1, "Chapter 1", "hey it's chapter 1");
-            //TODO: add the rest of the chapters
+            addTopic(db, "Home", "home");
+            addTopic(db, "Set Goals", "goals");
+            addTopic(db, "Testosterone and You", "testosterone");
+            addTopic(db, "Finding Healthcare Allies", "healthcare");
+            addTopic(db, "Resources", "resources");
+            addTopic(db, "Workouts", "workouts");
+            addTopic(db, "Nearby Resources", "map");
 
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
@@ -185,14 +190,13 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     }
 
     // Defaults to English and not fave.
-    private void addChapter(SQLiteDatabase db, int chapNum, String title, String content) {
+    private void addTopic(SQLiteDatabase db, String title, String content) {
         ContentValues chapterValues = new ContentValues();
-        chapterValues.put("CHAPTER_NUM", chapNum);
         chapterValues.put("TITLE", title);
         chapterValues.put("CONTENT", content);
         chapterValues.put("FAVE", 0);
         chapterValues.put("LANG", "en");
-        db.insert(CHAPTERS, null, chapterValues);
+        db.insert(TOPICS, null, chapterValues);
     }
 
     //TODO: deal with pictures
@@ -234,6 +238,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         goalValues.put("LONG_TERM", longTerm);
         goalValues.put("GOAL", goal);
         goalValues.put("COMPLETED", 0);
+        db.insert(GOALS, null, goalValues);
     }
 
     private void populateResources(SQLiteDatabase db){

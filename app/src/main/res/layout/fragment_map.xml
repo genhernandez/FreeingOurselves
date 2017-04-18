@@ -4,12 +4,11 @@
     android:layout_height="match_parent"
     tools:context="com.hfad.freeingourselves.MapFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/mapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="" />
+        android:text="Map Fragment" />
 
 
 </FrameLayout>

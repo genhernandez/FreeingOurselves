@@ -8,13 +8,12 @@
 
 
     <string-array name="titles">
+        <item>Home</item>
         <item>Set Goals</item>
         <item>Testosterone and You</item>
         <item>Finding Healthcare Allies</item>
         <item>Resources</item>
         <item>Workout</item>
-        <item>Maps</item>
-        <item>Workouts</item>
         <item>Nearby Resources</item>
     </string-array>
 

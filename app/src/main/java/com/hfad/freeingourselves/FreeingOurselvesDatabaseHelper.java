@@ -52,7 +52,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "WORKOUT_NAME TEXT, "
+                    + "NAME TEXT, "
                     + "DETAILS TEXT, "
                     + "PICTURE_FILE TEXT"
                     + "COUNT INTEGER);");
@@ -202,7 +202,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     //TODO: deal with pictures
     private void addWorkout(SQLiteDatabase db, String name, String details) {
         ContentValues workoutValues = new ContentValues();
-        workoutValues.put("WORKOUT_NAME", name);
+        workoutValues.put("NAME", name);
         workoutValues.put("DETAILS", details);
         workoutValues.put("PICTURE_FILE", "");
         workoutValues.put("COUNT", 0);

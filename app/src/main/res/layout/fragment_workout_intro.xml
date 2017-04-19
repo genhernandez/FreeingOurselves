@@ -2,11 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hfad.freeingourselves.TopFragment">
+    tools:context="com.hfad.freeingourselves.WorkoutIntroFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Genesis was here." />
+        android:text="@string/workout_intro" />
 
 </FrameLayout>

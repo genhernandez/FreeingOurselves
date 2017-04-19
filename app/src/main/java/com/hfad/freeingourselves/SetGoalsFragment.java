@@ -22,4 +22,11 @@ public class SetGoalsFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_set_goals, container, false);
     }
 
+    public void onClickGoalButton(View view) {
+        // Save input to database for user.
+
+        // Advance to next prompt or review/conclusion page
+        // if user has answered all prompts.
+    }
+
 }

@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Freeing Ourselves</string>
+
+    <!-- Navigation -->
     <string name="action_settings">Settings</string>
     <string name="action_share">Share</string>
-    <string name="workout_complete">Workout Completed</string>
-    <string name="start_workout_button">Start Workout</string>
-
-
-
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
     <string-array name="titles">
         <item>Home</item>
         <item>Set Goals</item>
@@ -17,23 +16,15 @@
         <item>Nearby Resources</item>
     </string-array>
 
+    <!-- Goal setting -->
     <string name="set_goals">Set Goals</string>
-    <string name="resource_frag">Resources</string>
+    <string name="goal_prompt">Goal prompt: text to be replaced with info from book.</string>
+    <string name="goal_response">Goal response goes here.</string>
+    <string name="goal_button">Next</string>
 
-    <array name="resources">
-        <item>Resource1</item>
-        <item>Resource2</item>
-        <item>Resource3</item>
-    </array>
-
-    <string name="title_top">Top Fragment</string>
-
-    <string name="open_drawer">Open Drawer</string>
-    <string name="close_drawer">Close Drawer</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
+    <!-- Workout -->
+    <string name="workout_complete">Workout Completed</string>
+    <string name="start_workout_button">Start Workout</string>
     <string name="workout_intro">If your goal is to lose weight and get fit, you must establish a
         weight training and cardio routine. By adding muscle with weight training, you increase your
         metabolism and your ability to burn fat throughout the day. The following three routines were
@@ -51,5 +42,15 @@
         but there is a time limit. Each exercise is to be performed for one minute. The goal is to move
         from one exercise to the next with no rest. Rest a minute after completing one circuit in Set
         1 if repeating the set 2-3 times. Rest 3-5 minutes before starting Set 2.</string>
+
+    <!-- Anyone using these? If not, can be deleted.    -->
+    <string name="resource_frag">Resources</string>
+    <array name="resources">
+        <item>Resource1</item>
+        <item>Resource2</item>
+        <item>Resource3</item>
+    </array>
+    <string name="title_top">Top Fragment</string>
+
 
 </resources>

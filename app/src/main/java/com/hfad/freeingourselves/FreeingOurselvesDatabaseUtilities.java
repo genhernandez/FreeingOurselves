@@ -42,19 +42,17 @@ final public class FreeingOurselvesDatabaseUtilities {
         String[]columns=new String[]{"TITLE"};
         Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.TOPICS, columns, null, null, null, null, null);
         for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-            //Add name plus the description to the array list
             titles.add(cursor.getString(0));
         }
         cursor.close();
         return titles;
     }
 
-    static ArrayList<String> getWorkouts(SQLiteDatabase db) {
+    static ArrayList<String> getWorkoutNames(SQLiteDatabase db) {
         ArrayList<String> workouts = new ArrayList<>();
         String[]columns=new String[]{"NAME"};
         Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS, columns, null, null, null, null, null);
         for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-            //Add name plus the description to the array list
             workouts.add(cursor.getString(0));
         }
         cursor.close();

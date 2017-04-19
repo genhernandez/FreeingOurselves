@@ -24,11 +24,13 @@ import android.net.Uri;
 import android.widget.Toast;
 import android.util.Log;
 
+import java.util.ArrayList;
+
 
 //import android.content.Intent;
 //import android.widget.ShareActionProvider;
 
-public class MainActivity extends Activity implements ResourceListFragment.ResourceListListener{
+public class MainActivity extends Activity implements ResourceListFragment.ResourceListListener {
 
 
     private DrawerLayout drawerLayout;
@@ -38,10 +40,9 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
     private String[] titles;
     private ListView drawerList;
 
-
-    private class DrawerItemClickListener implements ListView.OnItemClickListener{
+    private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             //Code to run when the item gets clicked.
             selectItem(position);
         }
@@ -52,25 +53,44 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        titles = getResources().getStringArray(R.array.titles);
-        drawerList =(ListView)findViewById(R.id.drawer);
-        drawerLayout=(DrawerLayout)findViewById(R.id.drawer_layout);
+        drawerList = (ListView) findViewById(R.id.drawer);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopics(db); //TODO: this needs an asynctask
+            titles = new String[tempList.size()];
+            for (int i = 0; i < tempList.size(); i++) {
+                titles[i] = tempList.get(i);
+            }
+            db.close();
+        } catch (SQLiteException e) {
+            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+        //super.onActivityCreated(savedInstanceState);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                this, android.R.layout.simple_list_item_1,
+                titles);
+        drawerList.setAdapter(adapter);
+
 
         //Populate the ListView.
-        drawerList.setAdapter(new ArrayAdapter<String>(
-                this, android.R.layout.simple_list_item_1, titles));
+
         drawerList.setOnItemClickListener(new DrawerItemClickListener());
-        if(savedInstanceState == null){
+        if (savedInstanceState == null) {
             selectItem(0);
         }
 
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
                 R.string.open_drawer, R.string.close_drawer) {
-            public void onDrawerClosed(View view){
+            public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
                 invalidateOptionsMenu();
             }
-            public void onDrawerOpened(View drawerView){
+
+            public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
                 invalidateOptionsMenu();
             }
@@ -82,13 +102,13 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState){
+    protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         drawerToggle.syncState();
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig){
+    public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         drawerToggle.onConfigurationChanged(newConfig);
     }
@@ -96,7 +116,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
 
     //Called whenever we call invalidateOptionsMenu().
     @Override
-    public boolean onPrepareOptionsMenu(Menu menu){
+    public boolean onPrepareOptionsMenu(Menu menu) {
         //if the drawer is open, hide action items related to the content view.
         boolean drawerOpen = drawerLayout.isDrawerOpen(drawerList);
         menu.findItem(R.id.action_share).setVisible(!drawerOpen);
@@ -105,7 +125,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
 
     private void selectItem(int position) {
         Fragment fragment;
-        switch(position){
+        switch (position) {
             case 1:
                 fragment = new SetGoalsFragment();
                 break;
@@ -140,9 +160,9 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         drawerLayout.closeDrawer(drawerList);
     }
 
-    private void setActionBarTitle(int position){
+    private void setActionBarTitle(int position) {
         String title;
-        if(position == 0){
+        if (position == 0) {
             title = getResources().getString(R.string.app_name);
 
         } else {
@@ -152,9 +172,8 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
     }
 
 
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         //Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         //MenuItem menuItem = menu.findItem(R.id.action_share);
@@ -172,12 +191,12 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
     //}
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if(drawerToggle.onOptionsItemSelected(item)){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (drawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_settings:
                 //Code to run when the settings item is clicked.
                 return true;
@@ -189,12 +208,12 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
     /*
     Gets clicked resource's link from database
      */
-    String getResourceLink(SQLiteDatabase db, int position){
-        String[]columns=new String[]{"LINK"};
-        String[]where = new String[]{""+position+""};
+    String getResourceLink(SQLiteDatabase db, int position) {
+        String[] columns = new String[]{"LINK"};
+        String[] where = new String[]{"" + position + ""};
         String resourceLink = null;
         Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
-        if(cursor.moveToFirst()){
+        if (cursor.moveToFirst()) {
             resourceLink = cursor.getString(0);
             Log.v("MainActivity Resource", resourceLink);
         }
@@ -209,11 +228,11 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
     @Override
     public void resourceListItemClicked(int position) {
         String url = null;
-        try{
+        try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             url = getResourceLink(db, position);
-        } catch(SQLiteException e){
+        } catch (SQLiteException e) {
             Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
             toast.show();
         }

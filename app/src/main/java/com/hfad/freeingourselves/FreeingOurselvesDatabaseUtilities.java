@@ -4,37 +4,62 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import android.database.Cursor;
 
-public class FreeingOurselvesDatabaseUtilities {
+// If you call one of these methods, use an AsyncTask
+final public class FreeingOurselvesDatabaseUtilities {
 
-    boolean isFavorite(SQLiteDatabase db, int chapterNum) {
+    private FreeingOurselvesDatabaseUtilities() {}
+
+    static boolean isFavorite(SQLiteDatabase db, int chapterNum) {
         return false;
     }
 
-    int getWorkoutCount(SQLiteDatabase db, String workout) {
+    static int getWorkoutCount(SQLiteDatabase db, String workout) {
         return 0;
     }
 
-    boolean isCompleted(SQLiteDatabase db, int stepId) {
+    static boolean isCompleted(SQLiteDatabase db, int stepId) {
         return false;
     }
 
-    String getNotes(SQLiteDatabase db, int stepId) {
+    static String getNotes(SQLiteDatabase db, int stepId) {
         return "";
     }
 
-    String getGoalData(SQLiteDatabase db, String goalname) {
+    static String getGoalData(SQLiteDatabase db, String goalname) {
         return "";
     }
 
-    boolean goalCompleted(SQLiteDatabase db, String goalname) {
+    static boolean goalCompleted(SQLiteDatabase db, String goalname) {
         return false;
     }
 
-    void setGoalData(SQLiteDatabase db, String goalname, String inputs, String activities, String assumptions, String short_term, String long_term, String goal, boolean completed) {}
+    static void setGoalData(SQLiteDatabase db, String goalname, String inputs, String activities, String assumptions, String short_term, String long_term, String goal, boolean completed) {}
 
-    String getResources(SQLiteDatabase db, String resource){return "";}
+    static String getResources(SQLiteDatabase db, String resource){return "";}
 
+    static ArrayList<String> getTopics(SQLiteDatabase db){
+        ArrayList<String> titles = new ArrayList<>();
+        String[]columns=new String[]{"TITLE"};
+        Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.TOPICS, columns, null, null, null, null, null);
+        for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
+            //Add name plus the description to the array list
+            titles.add(cursor.getString(0));
+        }
+        cursor.close();
+        return titles;
+    }
 
+    static ArrayList<String> getWorkouts(SQLiteDatabase db) {
+        ArrayList<String> workouts = new ArrayList<>();
+        String[]columns=new String[]{"NAME"};
+        Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS, columns, null, null, null, null, null);
+        for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
+            //Add name plus the description to the array list
+            workouts.add(cursor.getString(0));
+        }
+        cursor.close();
+        return workouts;
+    }
 }
 
 

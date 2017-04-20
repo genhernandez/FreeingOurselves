@@ -151,6 +151,81 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "COMPLETED INTEGER);");
             addHealthcareStep(db, "Step one example");
             addHealthcareStep(db, "Step two example");
+            addHealthcareStep(db, "What services does your office/clinic offer to young people?" +
+                    "What ongoing services do you offer to young people as they transition into adulthood?");
+            addHealthcareStep(db, "Are there specific documents required to get care from your office" +
+                    "(age range, citizenship status, insurance coverage, parental consent, etc.)?");
+            addHealthcareStep(db, "What is the registration/scheduling process and what are your " +
+                    "hours of operation?");
+            addHealthcareStep(db, "Do you call home or mail home with appointment information and " +
+                    "reminders? How do you help maintain client privacy?");
+            addHealthcareStep(db, "What is the cost of _____ service? Can I get free or discounted services? How?");
+            addHealthcareStep(db, "What services do you offer with/without parental consent?");
+            addHealthcareStep(db, "Do you help clients with the cost of medications? How can I get " +
+                    "prescription assistance?(The legal answer to this question varies from state- to-state," +
+                    " and a smart strategy is to know your rights ahead of time because we often " +
+                    "have to advocate for ourselves.)");
+            addHealthcareStep(db, "What are the confidentiality practices in the office? How do " +
+                    "you maintain confidentiality around issues of sexual orientation, gender identity," +
+                    " and HIV status? (Again, this may differ from state to state—know the laws in" +
+                    " your community, especially where HIV is required to be reported to public" +
+                    " health organizations.)");
+            addHealthcareStep(db, "Are the doctors/office staff trained on how to work sensitively " +
+                    "with LGBTQ clients? Does your office/clinic serve LGBTQ people?");
+            addHealthcareStep(db, "Does your office provide specific services (hormones, breast/chest" +
+                    " health, gynecological exams) for transgender-identified individuals?");
+            addHealthcareStep(db, "What experience does your staff have working with shelter/foster " +
+                    "care providers and establishing confidentiality guidelines around guardianship relationships?");
+            addHealthcareStep(db, "The best relationship I have had with a medical provider was" +
+                    " _______ because of _______. How can we best work together?");
+            addHealthcareStep(db, "The worst relationship I have had with a medical provider was" +
+                    " _______ because of _______. How can we best work to make sure that we are both comfortable?");
+            addHealthcareStep(db, "I identify as _______ and want to make the best possible decisions " +
+                    "that make sense for my life. What are some things you think I should consider, " +
+                    "especially when it comes to: substance use, sexual decision making, healthy " +
+                    "relationships, mental health, nutrition and fitness, and disease prevention?");
+            addHealthcareStep(db, "Would you be open to learning more about individuals who identify " +
+                    "as _______? Can I bring you more information so that we can discuss it together?");
+            addHealthcareStep(db, "Do you offer the same services (exams, testing, family planning, " +
+                    "etc.) to all clients regardless of how they identify? Why/why not?");
+            addHealthcareStep(db, "Do you offer sensitive GYN services for transgender-identified " +
+                    "clients (e.g., breast/chest exams and Pap smears for FTMs)?");
+            addHealthcareStep(db, "Are you familiar with hormone therapies for transgender people?");
+            addHealthcareStep(db, "I am interested in taking/I already take _______. What health risks" +
+                    " might this present? What additional measures or precautions should I take to " +
+                    "support my success on this routine? Where else might I go to learn more?");
+            addHealthcareStep(db, "What are the benefits of using hormones provided in a clinical " +
+                    "setting versus those bought online or on the street?");
+            addHealthcareStep(db, "I live in the shelter/foster care system. What information about " +
+                    "my medical care will be shared with shelter administrators or potential " +
+                    "foster/adoptive parents?");
+            addHealthcareStep(db, "I have an STI (_______) – is it mandatory that my partner(s) are notified?" +
+                    " Under what circumstances? Who does the notification? How is my privacy maintained?");
+            addHealthcareStep(db, "What services do you offer for individuals living with HIV?");
+            addHealthcareStep(db, "What is the best way to contact you with questions, ideas, or " +
+                    "concerns? What turnaround time for responses can I expect?");
+            addHealthcareStep(db, "Do you have professional relationships with other providers who might " +
+                    "be sensitive to LGBTQ health issues? Can you provide me with their contact information?");
+            addHealthcareStep(db, "Are you aware of whether the offices you referred me to have similar" +
+                    " confidentiality/billing/registration policies as your practice?");
+            addHealthcareStep(db, "I am interested in obtaining services related to sexual " +
+                    "reassignment surgery and transitioning – can you connect me with the best " +
+                    "places to gain more information?");
+            addHealthcareStep(db, "What other community resources are you aware of that I might want " +
+                    "to look into (community organizations, support groups, youth empowerment, etc.)");
+            addHealthcareStep(db, "Legally, what services am I entitled to without parental consent? " +
+                    "What services require parental consent?");
+            addHealthcareStep(db, "What are my options if I am on my parent’s insurance and don’t " +
+                    "want them to know about the services I receive here?");
+            addHealthcareStep(db, "I am uninsured and would like to get insurance - can I talk to " +
+                    "someone about benefits? How do I schedule that appointment?");
+            addHealthcareStep(db, "I am HIV positive. Are there specific insurance benefits that apply" +
+                    " to me? Who can I talk to about benefits? How do I schedule that appointment?");
+            addHealthcareStep(db, "I am not a U.S. citizen. What options are available to me in terms" +
+                    " of services? Where can I go for more help establishing citizenship or receiving care?");
+            addHealthcareStep(db, "I identify as _______ and am interested in legally changing my name/sex " +
+                    "marker/etc. Can you refer me to a good resource for accomplishing this goal?");
+
             //TODO: add the rest of the healthcare steps
 
             // Create challenges table.

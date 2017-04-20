@@ -29,67 +29,13 @@ public class HealthCareProviderFragment extends Fragment {
         // Required empty public constructor
     }
 
-//    public void getHealthCareQuestions(SQLiteDatabase db) {
-//        try{
-//            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
-//            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-//            Cursor cursor = db.query("HEALTHCARE",
-//                    new String[] {"STEP_INFO", "NOTES", "COMPLETED"},
-//                    "_id=?",
-//                    null, null, null, null);
-//            if(cursor.moveToFirst()) {
-//                String questionText = cursor.getString(1);
-//                String questionNotes = cursor.getString(2);
-//                if(cursor.getInt(3) == 1) {
-//                    isComplete = true;
-//                }
-//
-//                CheckedTextView text = (CheckedTextView) findViewById(R.id.healthcareQuestion);
-//                text.setText(questionText);
-//
-//            }
-//        } catch (SQLiteException e){
-//            Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);
-//            toast.show();
-//        }
-//
-//    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_health_care, container, false);
-
-        try{
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            Cursor cursor = db.query("HEALTHCARE",
-                    new String[] {"STEP_INFO", "NOTES", "COMPLETED"},
-                    "_id=?",
-                    null, null, null, null);
-            if(cursor.moveToFirst()) {
-                String questionText = cursor.getString(1);
-                String questionNotes = cursor.getString(2);
-                if(cursor.getInt(3) == 1) {
-                    isComplete = true;
-                }
-                CheckedTextView text = (CheckedTextView) getView().findViewById(R.id.healthcareQuestion);
-                text.setText(questionText);
-                text.setChecked(isComplete);
-
-                EditText notes = (EditText) getView().findViewById(R.id.healthcareNotes);
-                notes.setText(questionNotes);
-
-            }
-            cursor.close();
-            db.close();
-        } catch (SQLiteException e){
-            Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-
         // Inflate the layout for this fragment
-        return view;
+        return inflater.inflate(R.layout.fragment_health_care, container, false);
     }
 
 }

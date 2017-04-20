@@ -1,13 +1,16 @@
 package com.hfad.freeingourselves;
 
 import android.database.sqlite.SQLiteDatabase;
+
 import java.util.ArrayList;
+
 import android.database.Cursor;
 
 // If you call one of these methods, use an AsyncTask
 final public class FreeingOurselvesDatabaseUtilities {
 
-    private FreeingOurselvesDatabaseUtilities() {}
+    private FreeingOurselvesDatabaseUtilities() {
+    }
 
     static boolean isFavorite(SQLiteDatabase db, int chapterNum) {
         return false;
@@ -33,15 +36,18 @@ final public class FreeingOurselvesDatabaseUtilities {
         return false;
     }
 
-    static void setGoalData(SQLiteDatabase db, String goalname, String inputs, String activities, String assumptions, String short_term, String long_term, String goal, boolean completed) {}
+    static void setGoalData(SQLiteDatabase db, String goalname, String inputs, String activities, String assumptions, String short_term, String long_term, String goal, boolean completed) {
+    }
 
-    static String getResources(SQLiteDatabase db, String resource){return "";}
+    static String getResources(SQLiteDatabase db, String resource) {
+        return "";
+    }
 
-    static ArrayList<String> getTopics(SQLiteDatabase db){
+    static ArrayList<String> getTopics(SQLiteDatabase db) {
         ArrayList<String> titles = new ArrayList<>();
-        String[]columns=new String[]{"TITLE"};
+        String[] columns = new String[]{"TITLE"};
         Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.TOPICS, columns, null, null, null, null, null);
-        for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
+        for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
             titles.add(cursor.getString(0));
         }
         cursor.close();
@@ -50,13 +56,26 @@ final public class FreeingOurselvesDatabaseUtilities {
 
     static ArrayList<String> getWorkoutNames(SQLiteDatabase db) {
         ArrayList<String> workouts = new ArrayList<>();
-        String[]columns=new String[]{"NAME"};
+        String[] columns = new String[]{"NAME"};
         Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS, columns, null, null, null, null, null);
-        for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
+        for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
             workouts.add(cursor.getString(0));
         }
         cursor.close();
         return workouts;
+    }
+
+    static ArrayList<String> getHealthCareQuestions(SQLiteDatabase db) {
+        ArrayList<String> healthQuestions = new ArrayList<>();
+        Cursor cursor = db.query("HEALTHCARE",
+                new String[]{"STEP_INFO", "NOTES", "COMPLETED"},
+                "_id=?",
+                null, null, null, null);
+        for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
+            healthQuestions.add(cursor.getString(0) + " " + cursor.getString(2));
+        }
+        cursor.close();
+        return healthQuestions;
     }
 }
 

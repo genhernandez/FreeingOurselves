@@ -14,7 +14,9 @@ import android.widget.ListView;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 import android.database.sqlite.SQLiteException;
+
 import java.util.ArrayList;
+
 import android.util.Log;
 
 public class ResourceListFragment extends ListFragment {
@@ -22,18 +24,8 @@ public class ResourceListFragment extends ListFragment {
     ArrayList<String> resourceList = new ArrayList<>();
     private ResourceListListener listener;
 
-    public interface ResourceListListener{
+    public interface ResourceListListener {
         void resourceListItemClicked(int position);
-    }
-
-    void getResources(SQLiteDatabase db){
-        String[]columns=new String[]{"RESOURCE_NAME","RESOURCE_DESCRIPTION"};
-        Cursor cursor = db.query("RESOURCES", columns, null, null, null, null, null);
-        for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-            //Add name plus the description to the array list
-            resourceList.add(cursor.getString(0) + " - " + cursor.getString(1));
-        }
-        cursor.close();
     }
 
     @Override
@@ -48,9 +40,9 @@ public class ResourceListFragment extends ListFragment {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             Log.v("Opened DB", "");
-            getResources(db);
+            FreeingOurselvesDatabaseUtilities.getResources(db); //TODO: asynctask, do something if it returns null
             db.close();
-        } catch(SQLiteException e){
+        } catch (SQLiteException e) {
             Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);
             toast.show();
         }
@@ -66,7 +58,7 @@ public class ResourceListFragment extends ListFragment {
         Called when fragment gets attached to the activity
          */
     @Override
-    public void onAttach(Activity activity){
+    public void onAttach(Activity activity) {
         super.onAttach(activity);
         this.listener = (ResourceListListener) activity;
     }

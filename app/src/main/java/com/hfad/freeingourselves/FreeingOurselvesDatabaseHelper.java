@@ -149,8 +149,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "STEP_INFO TEXT, "
                     + "NOTES TEXT, "
                     + "COMPLETED INTEGER);");
-            addHealthcareStep(db, "Step one example");
-            addHealthcareStep(db, "Step two example");
             addHealthcareStep(db, "What services does your office/clinic offer to young people?" +
                     "What ongoing services do you offer to young people as they transition into adulthood?");
             addHealthcareStep(db, "Are there specific documents required to get care from your office" +
@@ -225,6 +223,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     " of services? Where can I go for more help establishing citizenship or receiving care?");
             addHealthcareStep(db, "I identify as _______ and am interested in legally changing my name/sex " +
                     "marker/etc. Can you refer me to a good resource for accomplishing this goal?");
+
 
 
             // Create challenges table.

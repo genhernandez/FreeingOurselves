@@ -7,10 +7,11 @@
     <CheckedTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sample question"
-        android:layout_gravity="center"/>
+        android:id="@+id/healthcareQuestion"
+        android:text="" />
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/healthcareNotes"/>
 
 </FrameLayout>

@@ -224,6 +224,8 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addHealthcareStep(db, "I identify as _______ and am interested in legally changing my name/sex " +
                     "marker/etc. Can you refer me to a good resource for accomplishing this goal?");
 
+
+
             // Create challenges table.
             db.execSQL("CREATE TABLE CHALLENGES ("
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "

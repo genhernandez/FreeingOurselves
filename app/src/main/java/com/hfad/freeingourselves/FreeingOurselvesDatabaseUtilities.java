@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.util.Log;
+import android.widget.CursorAdapter;
+import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 // If you call one of these methods, use an AsyncTask
@@ -17,9 +19,17 @@ final public class FreeingOurselvesDatabaseUtilities {
     private FreeingOurselvesDatabaseUtilities() {
     }
 
+
     // Returns null and logs if it fails, so make sure to deal with the null possibility when you call it
-    static boolean isFavorite(SQLiteDatabase db, int chapterNum) {
-        return false;
+    static Cursor getFaveTopics(SQLiteDatabase db) {
+        try {
+            ArrayList<String> faveTopics = new ArrayList<>();
+            return db.query(FreeingOurselvesDatabaseHelper.TOPICS, new String[]{"_id", "TITLE"}, "FAVE = 1",
+                    null, null, null, null);
+        } catch (SQLiteException e) {
+            Log.d("getFaveTopics", "topics table error");
+            return null;
+        }
     }
 
     // Returns null and logs if it fails, so make sure to deal with the null possibility when you call it
@@ -35,19 +45,6 @@ final public class FreeingOurselvesDatabaseUtilities {
     // Returns null and logs if it fails, so make sure to deal with the null possibility when you call it
     static String getNotes(SQLiteDatabase db, int stepId) {
         return "";
-    }
-
-    // Returns null and logs if it fails, so make sure to deal with the null possibility when you call it
-    static String getGoalData(SQLiteDatabase db, String goalname) {
-        return "";
-    }
-
-    // Returns null and logs if it fails, so make sure to deal with the null possibility when you call it
-    static boolean goalCompleted(SQLiteDatabase db, String goalname) {
-        return false;
-    }
-
-    static void setGoalData(SQLiteDatabase db, String goalname, String inputs, String activities, String assumptions, String short_term, String long_term, String goal, boolean completed) {
     }
 
     // Returns null and logs if it fails, so make sure to deal with the null possibility when you call it
@@ -101,7 +98,6 @@ final public class FreeingOurselvesDatabaseUtilities {
             return null;
         }
     }
-
 
     static ArrayList<String> getHealthCareQuestions(SQLiteDatabase db) {
         try {

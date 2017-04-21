@@ -236,20 +236,20 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addChallenge(db, "Sample threat", "Sample warning sign", "Sample when to ask", "Sample strategy");
             //TODO: add the rest of the challenges
 
-            // Create goals table.
-            db.execSQL("CREATE TABLE GOALS ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "GOAL_NAME TEXT, "
-                    + "INPUTS TEXT, "
-                    + "ACTIVITIES TEXT, "
-                    + "ASSUMPTIONS TEXT, "
-                    + "SHORT_TERM TEXT, "
-                    + "LONG_TERM TEXT, "
-                    + "GOAL TEXT, "
-                    + "COMPLETED INTEGER);");
-            addGoal(db, "sample goal name", "sample inputs", "sample activities", "sample " +
-                    "assumptions", "sample short term", "sample long term", "sample goal");
-            //TODO: add the rest of the goals
+//            // Create goals table.
+//            db.execSQL("CREATE TABLE GOALS ("
+//                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+//                    + "GOAL_NAME TEXT, "
+//                    + "INPUTS TEXT, "
+//                    + "ACTIVITIES TEXT, "
+//                    + "ASSUMPTIONS TEXT, "
+//                    + "SHORT_TERM TEXT, "
+//                    + "LONG_TERM TEXT, "
+//                    + "GOAL TEXT, "
+//                    + "COMPLETED INTEGER);");
+//            addGoal(db, "sample goal name", "sample inputs", "sample activities", "sample " +
+//                    "assumptions", "sample short term", "sample long term", "sample goal");
+//            //TODO: add the rest of the goals
         }
         if (oldVersion < 2) {
             // Create Resources table.
@@ -299,20 +299,20 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         db.insert(CHALLENGES, null, challengeValues);
     }
 
-    // Defaults to not completed.
-    private void addGoal(SQLiteDatabase db, String goalName, String inputs, String activities,
-                         String assumptions, String shortTerm, String longTerm, String goal) {
-        ContentValues goalValues = new ContentValues();
-        goalValues.put("GOAL_NAME", goalName);
-        goalValues.put("INPUTS", inputs);
-        goalValues.put("ACTIVITIES", activities);
-        goalValues.put("ASSUMPTIONS", assumptions);
-        goalValues.put("SHORT_TERM", shortTerm);
-        goalValues.put("LONG_TERM", longTerm);
-        goalValues.put("GOAL", goal);
-        goalValues.put("COMPLETED", 0);
-        db.insert(GOALS, null, goalValues);
-    }
+//    // Defaults to not completed.
+//    private void addGoal(SQLiteDatabase db, String goalName, String inputs, String activities,
+//                         String assumptions, String shortTerm, String longTerm, String goal) {
+//        ContentValues goalValues = new ContentValues();
+//        goalValues.put("GOAL_NAME", goalName);
+//        goalValues.put("INPUTS", inputs);
+//        goalValues.put("ACTIVITIES", activities);
+//        goalValues.put("ASSUMPTIONS", assumptions);
+//        goalValues.put("SHORT_TERM", shortTerm);
+//        goalValues.put("LONG_TERM", longTerm);
+//        goalValues.put("GOAL", goal);
+//        goalValues.put("COMPLETED", 0);
+//        db.insert(GOALS, null, goalValues);
+//    }
 
     private void populateResources(SQLiteDatabase db){
         ContentValues resourceValues = new ContentValues();

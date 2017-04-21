@@ -36,7 +36,7 @@ public class ResourceListFragment extends ListFragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-
+        resourceList.clear();
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();

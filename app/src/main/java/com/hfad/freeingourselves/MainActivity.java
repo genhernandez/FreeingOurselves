@@ -105,6 +105,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
+
     }
 
     @Override

@@ -231,7 +231,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
      */
     String getResourceLink(SQLiteDatabase db, int position) {
         String[] columns = new String[]{"LINK"};
-        String[] where = new String[]{"" + position + ""};
+        String[] where = new String[]{"" + (position+1) + ""};
         String resourceLink = null;
         Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
         if (cursor.moveToFirst()) {

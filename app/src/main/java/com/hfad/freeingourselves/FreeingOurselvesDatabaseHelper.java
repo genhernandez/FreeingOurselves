@@ -15,7 +15,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     static final String WORKOUTS = "WORKOUTS";
     static final String HEALTHCARE = "HEALTHCARE";
     static final String CHALLENGES = "CHALLENGES";
-    static final String GOALS = "GOALS";
     static final String RESOURCES = "RESOURCES";
 
     FreeingOurselvesDatabaseHelper(Context context) {
@@ -54,7 +53,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + "NAME TEXT, "
                     + "DETAILS TEXT, "
-                    + "PICTURE_FILE TEXT"
+                    + "PICTURE_FILE TEXT, "
                     + "COUNT INTEGER);");
             addWorkout(db, "Alternating Bicep Curl: 8-12 reps", "Starting with hands hanging by " +
                     "your sides, slowly curl the weight of one arm up. Hold the contraction for a" +
@@ -236,20 +235,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addChallenge(db, "Sample threat", "Sample warning sign", "Sample when to ask", "Sample strategy");
             //TODO: add the rest of the challenges
 
-//            // Create goals table.
-//            db.execSQL("CREATE TABLE GOALS ("
-//                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-//                    + "GOAL_NAME TEXT, "
-//                    + "INPUTS TEXT, "
-//                    + "ACTIVITIES TEXT, "
-//                    + "ASSUMPTIONS TEXT, "
-//                    + "SHORT_TERM TEXT, "
-//                    + "LONG_TERM TEXT, "
-//                    + "GOAL TEXT, "
-//                    + "COMPLETED INTEGER);");
-//            addGoal(db, "sample goal name", "sample inputs", "sample activities", "sample " +
-//                    "assumptions", "sample short term", "sample long term", "sample goal");
-//            //TODO: add the rest of the goals
         }
         if (oldVersion < 2) {
             // Create Resources table.
@@ -298,22 +283,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         challengeValues.put("STRATEGIES", strategies);
         db.insert(CHALLENGES, null, challengeValues);
     }
-
-//    // Defaults to not completed.
-//    private void addGoal(SQLiteDatabase db, String goalName, String inputs, String activities,
-//                         String assumptions, String shortTerm, String longTerm, String goal) {
-//        ContentValues goalValues = new ContentValues();
-//        goalValues.put("GOAL_NAME", goalName);
-//        goalValues.put("INPUTS", inputs);
-//        goalValues.put("ACTIVITIES", activities);
-//        goalValues.put("ASSUMPTIONS", assumptions);
-//        goalValues.put("SHORT_TERM", shortTerm);
-//        goalValues.put("LONG_TERM", longTerm);
-//        goalValues.put("GOAL", goal);
-//        goalValues.put("COMPLETED", 0);
-//        db.insert(GOALS, null, goalValues);
-//    }
-
+    
     private void populateResources(SQLiteDatabase db){
         ContentValues resourceValues = new ContentValues();
         resourceValues.put("RESOURCE_NAME", "Therapists of Color");

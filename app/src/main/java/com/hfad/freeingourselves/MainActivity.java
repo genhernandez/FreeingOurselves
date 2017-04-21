@@ -151,21 +151,18 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         Fragment fragment;
         switch (position) {
             case 1:
-                fragment = new SetGoalsFragment();
-                break;
-            case 2:
                 fragment = new TestosteroneFragment();
                 break;
-            case 3:
+            case 2:
                 fragment = new HealthCareProviderFragment();
                 break;
-            case 4:
+            case 3:
                 fragment = new ResourceListFragment();
                 break;
-            case 5:
+            case 4:
                 fragment = new WorkoutIntroFragment();
                 break;
-            case 6:
+            case 5:
                 fragment = new MapFragment();
                 break;
             default:

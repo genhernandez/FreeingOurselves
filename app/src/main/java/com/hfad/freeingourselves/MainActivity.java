@@ -106,23 +106,6 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
 
-
-
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ContentValues chapterValues = new ContentValues();
-            chapterValues.put("TITLE", "test");
-            chapterValues.put("CONTENT", "yay");
-            chapterValues.put("FAVE", 1);
-            chapterValues.put("LANG", "en");
-            db.insert(FreeingOurselvesDatabaseHelper.TOPICS, null, chapterValues);
-            db.close();
-        } catch (SQLiteException e) {
-            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-
     }
 
     @Override

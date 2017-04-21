@@ -41,7 +41,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "FAVE INTEGER, "
                     + "LANG TEXT);");
             addTopic(db, "Home", "home");
-            addTopic(db, "Set Goals", "goals");
             addTopic(db, "Testosterone and You", "testosterone");
             addTopic(db, "Finding Healthcare Allies", "healthcare");
             addTopic(db, "Resources", "resources");

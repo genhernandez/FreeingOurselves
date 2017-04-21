@@ -54,7 +54,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + "NAME TEXT, "
                     + "DETAILS TEXT, "
-                    + "PICTURE_FILE TEXT"
+                    + "PICTURE_FILE TEXT, "
                     + "COUNT INTEGER);");
             addWorkout(db, "Alternating Bicep Curl: 8-12 reps", "Starting with hands hanging by " +
                     "your sides, slowly curl the weight of one arm up. Hold the contraction for a" +

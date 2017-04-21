@@ -148,7 +148,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + "STEP_INFO TEXT, "
                     + "NOTES TEXT, "
-                    + "COMPLETED INTEGER);");
+                    + "SAVED INTEGER);");
             addHealthcareStep(db, "What services does your office/clinic offer to young people?" +
                     "What ongoing services do you offer to young people as they transition into adulthood?");
             addHealthcareStep(db, "Are there specific documents required to get care from your office" +
@@ -286,7 +286,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private void addHealthcareStep(SQLiteDatabase db, String step) {
         ContentValues healthcareStepValues = new ContentValues();
         healthcareStepValues.put("STEP_INFO", step);
-        healthcareStepValues.put("COMPLETED", 0);
+        healthcareStepValues.put("SAVED", 0);
         db.insert(HEALTHCARE, null, healthcareStepValues);
     }
 

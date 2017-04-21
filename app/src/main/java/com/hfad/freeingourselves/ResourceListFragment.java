@@ -36,11 +36,16 @@ public class ResourceListFragment extends ListFragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
+
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             Log.v("Opened DB", "");
-            FreeingOurselvesDatabaseUtilities.getResources(db); //TODO: asynctask, do something if it returns null
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(db); //TODO: asynctask, do something if it returns null
+            // TODO: deal with null
+            for (int i = 0; i < tempList.size(); i++) {
+                resourceList.add(tempList.get(i));
+            }
             db.close();
         } catch (SQLiteException e) {
             Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);

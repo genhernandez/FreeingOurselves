@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -34,7 +35,7 @@ import java.util.ArrayList;
 //import android.content.Intent;
 //import android.widget.ShareActionProvider;
 
-public class MainActivity extends Activity implements ResourceListFragment.ResourceListListener {
+public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
 
     private DrawerLayout drawerLayout;
@@ -103,8 +104,8 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         };
         drawerLayout.addDrawerListener(drawerToggle);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
     }
 
@@ -146,7 +147,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
                 fragment = new WorkoutIntroFragment();
                 break;
             case 5:
-                fragment = new MapFragment();
+                fragment = new ResourceListFragment();
                 break;
             default:
                 fragment = new TopFragment();
@@ -172,7 +173,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         } else {
             title = titles[position];
         }
-        getActionBar().setTitle(title);
+        getSupportActionBar().setTitle(title);
     }
 
 
@@ -231,18 +232,26 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
      */
     @Override
     public void resourceListItemClicked(int position) {
+        Log.v("Clicked!", "position is " + position);
         String url = null;
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            url = getResourceLink(db, position);
-        } catch (SQLiteException e) {
-            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
+        if ((position+1) == ResourceListFragment.resourceList.size()){
+            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
         }
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+        else {
+            try {
+                SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
+                SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+                url = getResourceLink(db, position);
+            } catch (SQLiteException e) {
+                Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
     }
+
 
 }

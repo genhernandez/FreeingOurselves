@@ -21,7 +21,7 @@ import android.util.Log;
 
 public class ResourceListFragment extends ListFragment {
 
-    ArrayList<String> resourceList = new ArrayList<>();
+    public static ArrayList<String> resourceList = new ArrayList<>();
     private ResourceListListener listener;
 
     public interface ResourceListListener {
@@ -46,6 +46,7 @@ public class ResourceListFragment extends ListFragment {
             for (int i = 0; i < tempList.size(); i++) {
                 resourceList.add(tempList.get(i));
             }
+            resourceList.add("See nearby on map");
             db.close();
         } catch (SQLiteException e) {
             Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);

@@ -14,7 +14,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     static final String TOPICS = "TOPICS";
     static final String WORKOUTS = "WORKOUTS";
     static final String HEALTHCARE = "HEALTHCARE";
-    static final String CHALLENGES = "CHALLENGES";
+//    static final String CHALLENGES = "CHALLENGES";
     static final String RESOURCES = "RESOURCES";
 
     FreeingOurselvesDatabaseHelper(Context context) {
@@ -224,15 +224,15 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
 
 
-            // Create challenges table.
-            db.execSQL("CREATE TABLE CHALLENGES ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "THREAT TEXT, "
-                    + "SIGNS TEXT, "
-                    + "ASK_WHEN TEXT, "
-                    + "STRATEGIES TEXT);");
-            addChallenge(db, "Sample threat", "Sample warning sign", "Sample when to ask", "Sample strategy");
-            //TODO: add the rest of the challenges
+//            // Create challenges table.
+//            db.execSQL("CREATE TABLE CHALLENGES ("
+//                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+//                    + "THREAT TEXT, "
+//                    + "SIGNS TEXT, "
+//                    + "ASK_WHEN TEXT, "
+//                    + "STRATEGIES TEXT);");
+//            addChallenge(db, "Sample threat", "Sample warning sign", "Sample when to ask", "Sample strategy");
+//            //: add the rest of the challenges
 
         }
         if (oldVersion < 2) {
@@ -242,7 +242,10 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "RESOURCE_NAME TEXT, "
                     + "RESOURCE_DESCRIPTION TEXT, "
                     + "LINK TEXT);");
-            populateResources(db);
+            addResource(db, "Therapists of Color", "Bay Area", "http://www.therapistsofcolor.org/directory.html");
+            addResource(db, "National Queer & Trans Therapists of Color Network",
+                    "national provider directory of queer and trans therapists of color",
+                    "http://www.nqttcn.com/directory");
         }
     }
 
@@ -274,26 +277,20 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         db.insert(HEALTHCARE, null, healthcareStepValues);
     }
 
-    private void addChallenge(SQLiteDatabase db, String threat, String signs, String whenToAsk, String strategies) {
-        ContentValues challengeValues = new ContentValues();
-        challengeValues.put("THREAT", threat);
-        challengeValues.put("SIGNS", signs);
-        challengeValues.put("ASK_WHEN", whenToAsk);
-        challengeValues.put("STRATEGIES", strategies);
-        db.insert(CHALLENGES, null, challengeValues);
-    }
-    
-    private void populateResources(SQLiteDatabase db){
-        ContentValues resourceValues = new ContentValues();
-        resourceValues.put("RESOURCE_NAME", "Therapists of Color");
-        resourceValues.put("RESOURCE_DESCRIPTION", "Bay Area");
-        resourceValues.put("LINK", "http://www.therapistsofcolor.org/directory.html");
-        db.insert(RESOURCES, null, resourceValues);
+//    private void addChallenge(SQLiteDatabase db, String threat, String signs, String whenToAsk, String strategies) {
+//        ContentValues challengeValues = new ContentValues();
+//        challengeValues.put("THREAT", threat);
+//        challengeValues.put("SIGNS", signs);
+//        challengeValues.put("ASK_WHEN", whenToAsk);
+//        challengeValues.put("STRATEGIES", strategies);
+//        db.insert(CHALLENGES, null, challengeValues);
+//    }
 
-        ContentValues resourceValues2 = new ContentValues();
-        resourceValues2.put("RESOURCE_NAME", "National Queer & Trans Therapists of Color Network");
-        resourceValues2.put("RESOURCE_DESCRIPTION", "national provider directory of queer and trans therapists of color");
-        resourceValues2.put("LINK", "http://www.nqttcn.com/directory");
-        db.insert(RESOURCES, null, resourceValues2);
+    private void addResource(SQLiteDatabase db, String name, String description, String link) {
+        ContentValues resourceValues = new ContentValues();
+        resourceValues.put("RESOURCE_NAME", name);
+        resourceValues.put("RESOURCE_DESCRIPTION", description);
+        resourceValues.put("LINK", link);
+        db.insert(RESOURCES, null, resourceValues);
     }
 }

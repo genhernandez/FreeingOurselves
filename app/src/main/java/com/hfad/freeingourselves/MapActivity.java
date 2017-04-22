@@ -10,6 +10,18 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.data.Feature;
+import com.google.maps.android.data.kml.KmlContainer;
+import com.google.maps.android.data.kml.KmlLayer;
+import com.google.maps.android.data.kml.KmlPlacemark;
+import com.google.maps.android.data.kml.KmlPolygon;
+import java.io.*;
+import org.xmlpull.v1.XmlPullParserException;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
+import android.widget.Toast;
+import android.support.v4.app.ActivityCompat;
+
 
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
 
@@ -36,11 +48,47 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        // Add a marker in Sydney, Australia,
+        // Add a marker in Bay Area, California
         // and move the map's camera to the same location.
-        LatLng sydney = new LatLng(-33.852, 151.211);
-        googleMap.addMarker(new MarkerOptions().position(sydney)
-                .title("Marker in Sydney"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng bayArea = new LatLng(37.8271784, -122.29130780000003);
+        googleMap.addMarker(new MarkerOptions().position(bayArea)
+                .title("Marker in Bay Area")
+                .snippet("Here is text about it"));
+
+        //add layers from kml files
+        try {
+            KmlLayer erLayer = new KmlLayer(googleMap, R.raw.ers, getApplicationContext());
+            erLayer.addLayerToMap();
+            KmlLayer lgbtqiaLayer = new KmlLayer(googleMap, R.raw.lgbtqiatransaffirming, getApplicationContext());
+            lgbtqiaLayer.addLayerToMap();
+            KmlLayer transacrossamericaLayer = new KmlLayer(googleMap, R.raw.transacrossamerica, getApplicationContext());
+            transacrossamericaLayer.addLayerToMap();
+            KmlLayer littleblackbookLayer = new KmlLayer(googleMap, R.raw.littleblackbook, getApplicationContext());
+            littleblackbookLayer.addLayerToMap();
+            KmlLayer youthLayer = new KmlLayer(googleMap, R.raw.youthresourcemap, getApplicationContext());
+            youthLayer.addLayerToMap();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+
+        //Setting my location
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED) {
+            googleMap.setMyLocationEnabled(true);
+        } else {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION},
+                    1);
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED){
+                googleMap.setMyLocationEnabled(true);
+            }
+        }
+
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(bayArea));
     }
+
+
 }

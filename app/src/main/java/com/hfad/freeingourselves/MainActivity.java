@@ -149,6 +149,9 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
             case 5:
                 fragment = new ResourceListFragment();
                 break;
+            case 6:
+                fragment = new AboutFragment();
+                break;
             default:
                 fragment = new TopFragment();
         }

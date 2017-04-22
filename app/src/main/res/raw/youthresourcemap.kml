@@ -1,0 +1,2161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>We Are the Youth - Resource Map</name>
+    <description>This map provides information on location-specific groups and organizations for LGBTQ youth. To add to the map, click EDIT then add a pin and input your  location, website, and a short description of your organization. </description>
+    <Style id="icon-22-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-22-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-22">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-22-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-22-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-22-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Callen Lorde Community Health Center</name>
+        <description><![CDATA[356 W 18th St<br>New York, NY 10011<br><br>The Callen Lorde Community Health Center provides healthcare and wellness services to NYC's LGBT community, with special projects devoted to the care of teens and youth.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -74.003005,40.743079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>New York LGBT Community Center</name>
+        <description><![CDATA[208 W. 13th Street<br><br>New York LGBT Community Center is a large organization that provides space for smaller LGBT organizations and also provides a number of educational, health, and recreational services.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -74.001224,40.73825,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Center Lane, White Plains, NY</name>
+        <description><![CDATA[34 S Broadway #214 White Plains, NY 10601<br>Center Lane provides a safe-haven that fosters a positive sense of self, reduces isolation and addresses high-risk behaviors in lesbian, gay, bisexual, transgender and questioning youth and their straight allies ages 13-21.<br>centerlaneny.org (http://www.centerlaneny.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -73.761778,41.031546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Center Lane, Yonkers, NY</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/VSKc1lACX2E7qm07St8K-0v9raQRC-7w1i14WURcfhphDIkcCaM5_ZYOJSTT0Iq3i_kkGP17ZyIjh78bTl6ABm2wWvVgO3p7mmipGzWr8HcGXlFjPHwZDwDYIfNJ6Ya3_5LuUXacwxY" height="200" width="auto" /><br><br>20 South Broadway, Suite 420<br>Yonkers, NY 10701<br>Center Lane provides a safe-haven that fosters a positive sense of self, reduces isolation and addresses high-risk behaviors in lesbian, gay, bisexual, transgender and questioning youth and their straight allies ages 13-21.<br>centerlaneny.org (http://www.centerlaneny.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/VSKc1lACX2E7qm07St8K-0v9raQRC-7w1i14WURcfhphDIkcCaM5_ZYOJSTT0Iq3i_kkGP17ZyIjh78bTl6ABm2wWvVgO3p7mmipGzWr8HcGXlFjPHwZDwDYIfNJ6Ya3_5LuUXacwxY</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.898672,40.931036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FIERCE</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/ioW3LMBozb07SWa0IWjkRBUINW46BevQuN0Pz7w2LOFmP-7OWJB0_0dDzoHQ3nUbCqw_fKKvw-TivzkT2bB5fAhnZ1vcjUrpXsax_Ugg4R6ZkX4zR8aRu9Q3rrMgm38yyrv5pgsf4FI" height="200" width="auto" /><br><br>147 W 24th St. New York, NY 10001<br>FIERCE is a membership-based organization building the leadership and power of lesbian, gay, bisexual, transgender, and queer (LGBTQ) youth of color in New York City.<br>www.fiercenyc.org (http://www.fiercenyc.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/ioW3LMBozb07SWa0IWjkRBUINW46BevQuN0Pz7w2LOFmP-7OWJB0_0dDzoHQ3nUbCqw_fKKvw-TivzkT2bB5fAhnZ1vcjUrpXsax_Ugg4R6ZkX4zR8aRu9Q3rrMgm38yyrv5pgsf4FI</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.994322,40.744398,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Friends of Project 10 Inc.</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/e-oLQdhyMJJYwCzlpNa7Dhf2FCpFTvXqUFP3zhnEk_oe5maXcriBm3a30nXq0zZFOm63FmIh50Mhd80R1IJLVrfjs8WdkDONDDrEQircfDzZXn1n30Gr6IkYWh4xvA6i69X4PN5vHN5u" height="200" width="auto" /><br><br>115 W California Blvd. Pasadena, CA 91105 <br>Friends of Project 10 Inc., a nonprofit organization, was created in 1986 to provide funding for programs and projects to support lesbian, gay, bisexual, transgender and queer and questioning (LGBTQ) youth. <br><br>www.project10.org (http://www.project10.org/contact.html)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/e-oLQdhyMJJYwCzlpNa7Dhf2FCpFTvXqUFP3zhnEk_oe5maXcriBm3a30nXq0zZFOm63FmIh50Mhd80R1IJLVrfjs8WdkDONDDrEQircfDzZXn1n30Gr6IkYWh4xvA6i69X4PN5vHN5u</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.153151,34.13579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long Island Gay/Lesbian Youth</name>
+        <description><![CDATA[Long Island Gay and Lesbian Youth (LIGALY) is a bi-county (Nassau and Suffolk) not-for-profit organization providing education, advocacy, and social support services to Long Island's gay, lesbian, bisexual, and transgender (GLBT) youth and young adults, and all youth, young adults, and their families for whom sexuality, sexual identity, gender identity, and HIV/AIDS are an issue. Our goals are to empower GLBT youth, advocate for their diverse interests, and to educate society about them.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -73.251071,40.721776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Los Angeles Gay & Lesbian Center]]></name>
+        <description><![CDATA[The L.A. Gay & Lesbian Center provides a broad array of services for the lesbian, gay, bisexual, and transgender community, welcoming nearly a quarter-million client visits from ethnically diverse youth and adults each year.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -118.332499,34.100214,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rainbow Health Initiative</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/1cbW5CtUF1y13b7EQMB8-L1oAjyIZdlh9V_1kyI_BXRcjsDcgaABVJgpiMwEbbMWIVz6S9Jl6z4omYhWAJTgvxa-YjsjHex9Pc0p9oRqwzSU-6PaBGCXDfjWaN7_0p3uEWaoUjEVpwE" height="200" width="auto" /><br><br>3249 Hennepin Ave. Minneapolis, MN 55408<br>Rainbow Health Initiative - advancing the health and wellness of the LGBTQ communities through EDUCATION, RESEARCH, and ADVOCACY. <br>rainbowhealth.org (http://www.rainbowhealth.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/1cbW5CtUF1y13b7EQMB8-L1oAjyIZdlh9V_1kyI_BXRcjsDcgaABVJgpiMwEbbMWIVz6S9Jl6z4omYhWAJTgvxa-YjsjHex9Pc0p9oRqwzSU-6PaBGCXDfjWaN7_0p3uEWaoUjEVpwE</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.298316,44.943167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mazzoni Center</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/-klvCFUIMFLdGzcjTB8tBiY4_MnOgc6M6UoTAGJLHbK03Z74NIaKKXD_gSjnRkhTFbPcQ7g9UmDrEHOm-4WldW0gNNuJfFu8ImNCGobv6i7GjDDzv4On75WJ0gsYdW0iDTLA6kleo94" height="200" width="auto" /><br><br>21 S 12th St. Philadelphia, PA 19107<br>Mazzoni Center is the only health care provider in the Philadelphia region specifically targeting the unique health care needs of the lesbian, gay, bisexual, and transgender communities. <br>mazzonicenter.org (http://mazzonicenter.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/-klvCFUIMFLdGzcjTB8tBiY4_MnOgc6M6UoTAGJLHbK03Z74NIaKKXD_gSjnRkhTFbPcQ7g9UmDrEHOm-4WldW0gNNuJfFu8ImNCGobv6i7GjDDzv4On75WJ0gsYdW0iDTLA6kleo94</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -75.16004,39.951069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SMYRC</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/u2Q80BIsFCY5pxfbu0RY9xilz9_0fcPcXuewkJH2FHpPAQ9KE-UJt3ey43vOPrLK47UgKaFoVqQGw-j0_gTSF1POvD0wZspZtsL0GjY4Kb783SMjkM_wGv_ew8Q_jFuS_OjLICBDOFfk" height="200" width="auto" /><br><br>3024 NE Martin Luther King Jr Blvd. Portland, OR 97212<br>SMYRC honors and supports the power of LGBTQ youth to change the world.          <br>www.smyrc.org (http://www.smyrc.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/u2Q80BIsFCY5pxfbu0RY9xilz9_0fcPcXuewkJH2FHpPAQ9KE-UJt3ey43vOPrLK47UgKaFoVqQGw-j0_gTSF1POvD0wZspZtsL0GjY4Kb783SMjkM_wGv_ew8Q_jFuS_OjLICBDOFfk</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -122.661514,45.545014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Ali Forney Center</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/qMgeCfOU4eAxOLiTY3rtNzv36A4XWsFpDTWIhn9mG6toNbRPkpUrPQmh0hkzNHu-RgLQShWz6k-RphYEeyU1aQvOWFI6mxi4JZk4sZIa2uMe7YZRfmMIbbChD6kx6cKsHw2rOx_D9Ik" height="200" width="auto" /><br><br>224 W 35th St. New York, NY 10001<br>The Ali Forney Center protects LGBTQ youth 						from the harm of homelessness, and to support them in 						becoming safe and independent as they move from adolescence to adulthood<br>aliforneycenter.org (http://www.aliforneycenter.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/proxy/qMgeCfOU4eAxOLiTY3rtNzv36A4XWsFpDTWIhn9mG6toNbRPkpUrPQmh0hkzNHu-RgLQShWz6k-RphYEeyU1aQvOWFI6mxi4JZk4sZIa2uMe7YZRfmMIbbChD6kx6cKsHw2rOx_D9Ik</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.99116,40.752072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Billy DeFrank LGBT Community Center</name>
+        <description><![CDATA[The Billy DeFrank LGBT Community Center strives to be the community's premier resource hub and a recognized leader in promoting health, strength, diversity and inclusiveness.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.908172,37.331597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Diversity Center of Santa Cruz</name>
+        <description>Dedicated to building a diverse community, promoting health and well-being, and advancing social justice for lesbian, gay, bisexual, transgender, intersex, and questioning individuals and their allies in Santa Cruz County.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0118,36.979473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Pacific Center</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/525N9deq2NZNY93KZxA6HS-gNitb_2bjISSSgKZdBud4tnft6Lk97qf6KoSmNa235dLMQN_Y7Smf-z3hKGh2KzePHsOfyE4xQ2W13fXsg8hck8WYvg9BrKQJwmMHAX8OAEMI8lzMgFtd" height="200" width="auto" /><br><br>2712 Telegraph Ave. Berkeley, CA 94705<br>The Pacific Center is an award winning, 	            	            lesbian, gay, bisexual, and transgender, questioning, Intersex, two-spirit community 	                        center (LGBTQI2-S) based in Berkeley, CA serving the East Bay and Greater Bay Area. Through professional counseling, groups, community events, and advocacy, Pacific Center works to foster and enhance the well-being                             and self-respect of lesbian, gay, bisexual, and transgender                           individuals.<br>www.pacificcenter.org (http://www.pacificcenter.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/525N9deq2NZNY93KZxA6HS-gNitb_2bjISSSgKZdBud4tnft6Lk97qf6KoSmNa235dLMQN_Y7Smf-z3hKGh2KzePHsOfyE4xQ2W13fXsg8hck8WYvg9BrKQJwmMHAX8OAEMI8lzMgFtd</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -122.259349,37.86101,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Transgender Law Center</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/0u-KwksB5hfoe_1Vi2R8AuSaiUEkUbxnOMvl2VMEAiTNjyPh_YknOUnKaV5uw9PyDq4pHSV34LziNaOuAsVZ7BPj1c_yISx9FqFVEvl46bmMo3HhxBB-5D2LKac2E3zdD6hdDIf3pkhA" height="200" width="auto" /><br><br>870 Market St. San Francisco, CA 94102<br>The Transgender Law Center is a civil rights organization advocating for transgender communities.<br>transgenderlawcenter.org (http://transgenderlawcenter.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/0u-KwksB5hfoe_1Vi2R8AuSaiUEkUbxnOMvl2VMEAiTNjyPh_YknOUnKaV5uw9PyDq4pHSV34LziNaOuAsVZ7BPj1c_yISx9FqFVEvl46bmMo3HhxBB-5D2LKac2E3zdD6hdDIf3pkhA</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -122.407427,37.784987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Association for Lesbian, Gay, Bisexual & Transgender Issues in Counseling of Alabama]]></name>
+        <description><![CDATA[Birmingham, AL 35260<br>The Association for Lesbian, Gay, Bisexual & Transgender Issues in Counseling of Alabama is a state-sponsored organization that works to raise awareness and provide professional counseling in a wide range of topics.<br><br><br><br><br>www.aglbical.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -86.84438,33.413973,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Identity, Inc.</name>
+        <description><![CDATA[336 E 5th Ave. Anchorage, AK 99501<br>Identity, Inc. is a nonprofit organization dedicated to the LGBT youth of<br>Alaska. <br>www.identityinc.org (http://www.identityinc.org/index.shtml)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -149.877686,61.217445,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Lesbian, Gay, Bi, & Trans Community Center - Wingspan]]></name>
+        <description><![CDATA[Wingspan is Southern Arizona's Lesbian, Gay, Bisexual and Transgender Community Center<br>wingspan.org (http://wingspan.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -110.964675,32.226437,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Triangle Community Center</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/aCmj2JGf-pmvEK82ORrn0TEZCjPNrty4MVKBznHgF3UaYosl8L-X8zwF5RuGO5HMrtPdVwNNFhEooNWXv4CGW6-n1ABkpHmPxY6jPHw2RJOvsWQdY7DL6PioNnFbM16AHjt0h2rjAdU" height="200" width="auto" /><br><br>16 River St. Norwalk, CT 06850<br>Triangle Community Center is a non-profit Connecticut corporation that provides services to the gay/lesbian/bisexual/transgender community that help strengthen their sense of pride, identity and visibility as well as to work with the Greater Fairfield County community to foster understanding and awareness of g/l/b/t issues.<br>www.ctgay.org (http://www.ctgay.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/aCmj2JGf-pmvEK82ORrn0TEZCjPNrty4MVKBznHgF3UaYosl8L-X8zwF5RuGO5HMrtPdVwNNFhEooNWXv4CGW6-n1ABkpHmPxY6jPHw2RJOvsWQdY7DL6PioNnFbM16AHjt0h2rjAdU</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.413595,41.118222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLBT Community Center of Colorado</name>
+        <description>The GLBT Community Center of Colorado is the only statewide, nonprofit community center dedicated to providing support and advocacy for Colorado’s gay, lesbian, bisexual and transgender (GLBT) population. We serve as a catalyst for community organizing, support services, social activities, and cultural events.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -104.970575,39.740275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality Florida</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/JRhTMX4-t3OYBzmKSe_lDpW9YaIDr3aeXxqG62TdvNLW2x3fEdvdlLIcKorOjQyetKmYxKA4jG5RN3KQmqCcvT6Rgl1TG3Y8uD4qDulhI9-efrW6-_2ofmC5eTTTjNVYFzjaa-4ZV9E" height="200" width="auto" /><br><br>St Petersburg, FL 33733<br>Equality Florida: Securing Equality & Justice for Florida's LGBT Community.<br>www.eqfl.org (http://www.eqfl.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/JRhTMX4-t3OYBzmKSe_lDpW9YaIDr3aeXxqG62TdvNLW2x3fEdvdlLIcKorOjQyetKmYxKA4jG5RN3KQmqCcvT6Rgl1TG3Y8uD4qDulhI9-efrW6-_2ofmC5eTTTjNVYFzjaa-4ZV9E</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -82.68,27.77,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Georgia Equality</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/Po7wTCMdOQNvIFuANWPS4B-mDTyZnzWBy0As0IRzeSHO_Ew6TzZAEHQRGe-iOWv50uu5llgX8VJkz5SyqmypWXN0SDuPNducWeKtSajoFr-IpKOiixcziZEVE-14mL0hlaIFejk3_Ks" height="200" width="auto" /><br><br>1530 Dekalb Ave. Atlanta, GA 30307<br>Georgia Equality: Advancing Fairness, Safety and Opportunity or Georgia's LGBT Communities.<br>georgiaequality.org (http://www.georgiaequality.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/Po7wTCMdOQNvIFuANWPS4B-mDTyZnzWBy0As0IRzeSHO_Ew6TzZAEHQRGe-iOWv50uu5llgX8VJkz5SyqmypWXN0SDuPNducWeKtSajoFr-IpKOiixcziZEVE-14mL0hlaIFejk3_Ks</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -84.348964,33.760261,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Hawai`i LGBT Legacy Foundation</name>
+        <description><![CDATA[Honolulu, HI 96822<br>The Hawai`i LGBT Legacy Foundation is committed to a legacy of hope and unity. We help our community live happy, healthy and productive lives as an integral part of the larger diverse community that is Hawai`i.<br>hawaiilgbtlegacyfoundation.com (http://hawaiilgbtlegacyfoundation.com)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -157.868042,21.306008,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality Hawaii</name>
+        <description><![CDATA[Equality Hawaii is a diverse collection of individuals and organizations dedicated to securing equality for lesbian, gay, bisexual and transgender people and their families in Hawaii.<br>equalityhawaii.org (http://www.equalityhawaii.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -157.892761,21.307287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Community Center for LGBT People of Idaho</name>
+        <description>The Community Center’s mission is to provide an inviting and safe facility for the use of all LGBT and allied community organizations and individuals.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -116.238547,43.6272,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rainbow Law, Idaho Directory</name>
+        <description><![CDATA[A directory of LGBT-friendly businesses and organizations throughout Idaho.<br><br>www.rainbowlaw.org (http://www.rainbowlaw.org/html/directoryID.htm)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -114.191895,43.484812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PFLAG Council of Northern Illinois</name>
+        <description><![CDATA[PFLAG promotes the well-being of gay, lesbian, bisexual and transgender persons, their families and friends through: support, to cope with an adverse society; education, to enlighten the ill-informed public; and advocacy, to end discrimination and to secure equal civil rights.  PFLAG provides an opportunity for dialogue about sexual orientation and gender identity to create a society that respects human diversity.<br>pflagillinois.org (http://www.pflagillinois.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -89.472656,40.396764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Center on Halsted</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/cH2wZJUnRy_ZgORcYxyUwrXw2RQuoYmCyid2qAzbvtltKbmfehZ0X2LINUx1FgJahkwa-NiraJpj4krvaxjLSxcI7qOksrz2quUko1lVuhfOBWYHs4uIaQuVqWl78MzceHyJOAmY_NI" height="200" width="auto" /><br><br>3656 N Halsted St. Chicago, IL 60613<br>Center on Halsted has become an exciting and highly visible symbol for the LGBT community of Chicago, serving diverse social, recreational, cultural, and social service needs of youth and adults in a safe, inviting and nurturing environment. <br>centeronhalsted.org (http://www.centeronhalsted.org/home.cfm)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/cH2wZJUnRy_ZgORcYxyUwrXw2RQuoYmCyid2qAzbvtltKbmfehZ0X2LINUx1FgJahkwa-NiraJpj4krvaxjLSxcI7qOksrz2quUko1lVuhfOBWYHs4uIaQuVqWl78MzceHyJOAmY_NI</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -87.649448,41.94951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Access Line</name>
+        <description><![CDATA[Access Line, Iowa's LGBT Newspaper<br>accesslineiowa.com/ (http://accesslineiowa.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.504639,41.99216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay Kansas</name>
+        <description><![CDATA[News, Information, and Commentary for the Kansas LGBT Community.<br>gaykansas.blogspot.com (http://gaykansas.blogspot.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -98.305664,38.462192,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Lesbian and Gay Community Center of Kansas</name>
+        <description><![CDATA[The Lesbian and Gay Community Center of Kansas, Kansas City is the center of greater Kansas City's LGBTSA community by evolving to meet the community's needs. We ask for input, please email us and ideas or questions you may have.<br>lgcckc.org (http://www.lgcckc.org/index.php)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -94.581299,39.095963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kentucky Equality Federation</name>
+        <description><![CDATA[Kentucky Equality Federation<br>Every day, LGBTI people are denied many of the freedoms enjoyed by other  Kentuckians. We are committed to secure full equality for the LGBTI  community of the Commonwealth. <br>kyequality.org (http://www.kyequality.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.270018,37.839333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay Portland Maine</name>
+        <description><![CDATA[Gay Portland Maine: A directory of events and resources within Maine.<br>http://www.gayportlandmaine.com/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -71.619873,43.365126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality Maryland Inc</name>
+        <description>Equality Maryland works to secure and protect the rights of LGBT Marylanders by promoting legislative initiatives on the state, county and municipal levels. Our professional lobbyists and legislative team work with our allies in the General Assembly to shape and pass positive legislation in Annapolis and to beat back discriminatory legislation.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -76.619468,39.275749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Gay, Lesbian, Bisexual, and Transgender Community Center of Baltimore and Central Maryland</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/LRoITXGZKP_o6O7M7APk-cyDCtKoBlwESYol_nJqoh5nVdb7726ZPeT186rQBm14Yf5vJjCP-DIUP0wVsdq-kM_KSPU4RVtPG0cDnkM-xZ35mUXa-3rHHA8qab6Es3VxQ8P8dAeD1S0" height="200" width="auto" /><br><br>241 W Chase St. Baltimore, MD 21201<br>The Gay, Lesbian, Bisexual, and Transgender Community Center of Baltimore and Central Maryland (GLCCB, or, the Center) seeks to achieve equality, understanding, and respect for the diversity of the greater Baltimore GLBT community while also providing quality support services, facilities, and professional resources for the development and well-being of individuals and groups.<br>http://glccb241.fatcow.com/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/LRoITXGZKP_o6O7M7APk-cyDCtKoBlwESYol_nJqoh5nVdb7726ZPeT186rQBm14Yf5vJjCP-DIUP0wVsdq-kM_KSPU4RVtPG0cDnkM-xZ35mUXa-3rHHA8qab6Es3VxQ8P8dAeD1S0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -76.619418,39.301478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Coalition of Western MA</name>
+        <description><![CDATA[32 Industrial Dr E. Northampton, MA 01060<br><br>The LGBT Coalition of Western Massachusetts is a 501(C)(3)non-profit <br>organization established to improve and preserve the well-being of LGBT and Queer-identified people of all races and ethnicities through education, advocacy and outreach programs.<br>http://www.lgbtcoalitionwma.org (http://www.lgbtcoalitionwma.org/index.html)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -72.630235,42.335146,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality Michigan</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/yUzPhF7bhdcKZVNBmuIX7lm7W7V4AyUPcd4BF9JCsPPIpwoafAI9EVFaonYWObe5V_WTLG-eEWSDs8r97HXhJ8WlNpSu_JMXTg4tP0LhsGt0Z5_n58Ycz711AmNxVgVUEreGn4BwcCQ" height="200" width="auto" /><br><br>19641 W 7 Mile Rd. Detroit, MI 48219<br><br>Equality Michigan works to achieve full equality and respect for all people in Michigan regardless of sexual orientation, gender identity and gender expression.<br>http://equalitymi.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/yUzPhF7bhdcKZVNBmuIX7lm7W7V4AyUPcd4BF9JCsPPIpwoafAI9EVFaonYWObe5V_WTLG-eEWSDs8r97HXhJ8WlNpSu_JMXTg4tP0LhsGt0Z5_n58Ycz711AmNxVgVUEreGn4BwcCQ</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -83.236308,42.429362,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OutFront Minnesota</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/eDQHKj27w5GcmLBwf_gEz2wjAhp7JczzrrzfLIn-qo-f8u5ltZ7PHpbaM7uEXZvcrAk41LLJSiUNYmMdA56bxrxfi_jyQti0DYj-LxQRmxbM8Tn4ytB62KU5z1nUzpC7TlOCqkFe-wU" height="200" width="auto" /><br><br>310 E 38th St. Minneapolis, MN 55409<br>OutFront Minnesota<br><br>Our slogan is Leading Minnesota Toward GLBT Equality – reflecting the leadership role we provide in moving the state toward the elimination of homophobia and toward full equality for gay, lesbian, bisexual, and transgender people, and bringing allies into the movement.<br>OutFront Minnesota provides this leadership by delivering programs and services to the GLBT and allied community in the area of public policy, anti-violence, education and training, and the law.http://www.outfront.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/eDQHKj27w5GcmLBwf_gEz2wjAhp7JczzrrzfLIn-qo-f8u5ltZ7PHpbaM7uEXZvcrAk41LLJSiUNYmMdA56bxrxfi_jyQti0DYj-LxQRmxbM8Tn4ytB62KU5z1nUzpC7TlOCqkFe-wU</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.272094,44.934324,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>University of Minnesota LGBT Center</name>
+        <description>The Gay, Lesbian, Bisexual, Transgender, Ally (GLBTA) Programs Office is dedicated to improving campus climate for all University of Minnesota students, staff, faculty, alumni, and visitors by developing and supporting more inclusive understandings of gender and sexuality.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.233074,44.975354,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Unity Mississippi</name>
+        <description><![CDATA[Jackson, MS 39296<br>Mississippi's LGBT and Queer Network<br>Unity Mississippi is organized exclusively for charitable, educational, and awareness purposes, more specifically: The purpose of Unity Mississippi is to establish and promote unity among the Gay, Lesbian, Bisexual, Transgender (GLBT) and Heterosexual communities by serving as the catalyst for statewide education, interaction, entertainment, community growth, visibility and awareness.<br>http://unityms.org/<br>601-376-9 (https://www.google.com/voice?gsessionid=QvtL2YH1tOBstvDmlD1KAQ#phones)OUT]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -90.18,32.33,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>University of Southern Mississippi, Gay Straight Alliance</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/OQixUjVa1YdQ9gYefqI5wDg3C9_fSdz_IlT4rIzLnqJOnthTI2zMkwoTDp3syIyAZfwrMuFRtuLUbd0W9wD7yp7LZ8nCocwUMELDZXnKkpFXPH8TbPn4Au7pLknYT3b3wtoCRKPUdyI" height="200" width="auto" /><br><br>118 College St. Hattiesburg, MS 39406<br>University of Southern Mississippi, Gay Straight Alliance: Join us           every Monday at 6pm           in Cochran 227<br>http://www.usm.edu/gsa (http://www.usm.edu/gsa/index.html)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/proxy/OQixUjVa1YdQ9gYefqI5wDg3C9_fSdz_IlT4rIzLnqJOnthTI2zMkwoTDp3syIyAZfwrMuFRtuLUbd0W9wD7yp7LZ8nCocwUMELDZXnKkpFXPH8TbPn4Au7pLknYT3b3wtoCRKPUdyI</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -89.295482,31.329697,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Western Montana Community Center </name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/U9Yiu7cWvpmIjQqN4ZKzqLwSRxJFV-tAmrTOXf-aGQXZh00ej6y_fASK8S1-n5lYJTMxz5TISBKnqeZgygKNFvJn38uS5jBIm2iwkgVRPUc77NMZpUIDuqIXKX3VM7Y9ZQW2y9b26PzH" height="200" width="auto" /><br><br>127 N Higgins Ave. Missoula, Mt 59802<br>The Western Montana Community Center, Serving the LGBT Community Since 1998<br>http://www.gaymontana.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/U9Yiu7cWvpmIjQqN4ZKzqLwSRxJFV-tAmrTOXf-aGQXZh00ej6y_fASK8S1-n5lYJTMxz5TISBKnqeZgygKNFvJn38uS5jBIm2iwkgVRPUc77NMZpUIDuqIXKX3VM7Y9ZQW2y9b26PzH</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -113.995409,46.870509,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Gay and Lesbian Community Center of Southern Nevada</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/y1zXCgODUi2p35J7lL1mnlTi7Dj_rP2511WUMpkz6NJgQdiL1FaH8Oagizq-laQDYM8USntQyjWXizd5ONZn63pG9gnKKPCyzjKrH1VCrBK7DHj7RxiX5l82Xo9nmctWD2DHAsSlYgSs" height="200" width="auto" /><br><br>401 S Maryland Pkwy  Las Vegas, NV 89101 The Gay and Lesbian Community Center of Southern Nevada is a community-based organization which supports and promotes activities directed at furthering the well being, positive image, and human rights of the Gay, Lesbian, Bisexual and Transgender community and its allies in Southern Nevada.<br><br>http://www.thecenterlv.com (http://www.thecenterlv.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/y1zXCgODUi2p35J7lL1mnlTi7Dj_rP2511WUMpkz6NJgQdiL1FaH8Oagizq-laQDYM8USntQyjWXizd5ONZn63pG9gnKKPCyzjKrH1VCrBK7DHj7RxiX5l82Xo9nmctWD2DHAsSlYgSs</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -115.142522,36.143945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wyoming Equality</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/ol-VelIE_iNNs08imAaNHdrTUK_7zcXyUVuvZPZU4m3-2quDr3JuevIrzYMzEBllf52CiOg7ewsGYlDpWFABz6pLjpxAg6_rxAm58A9DBqppw0KZ9IgGtd-ChuG16i1cozsoaQxuNrcc" height="200" width="auto" /><br><br>2614 Pioneer Ave. Cheyenne, WY 82001<br>Wyoming Equality, connecting Wyoming's LGBT Community.<br><br>http://www.wyomingequality.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/ol-VelIE_iNNs08imAaNHdrTUK_7zcXyUVuvZPZU4m3-2quDr3JuevIrzYMzEBllf52CiOg7ewsGYlDpWFABz6pLjpxAg6_rxAm58A9DBqppw0KZ9IgGtd-ChuG16i1cozsoaQxuNrcc</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -104.824016,41.141181,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rainbow Over Wisconsin</name>
+        <description><![CDATA[Rainbow Over Wisconsin, Serving the central, eastern & northeast Wisconsin LGBT community since 1996<br><br>http://www.rainbowoverwisconsin.org (http://www.rainbowoverwisconsin.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -88.787868,43.78444,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Center of Southeast Wisconsin</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/T1GmpySZ-8oGr1DriYAv3-uUryGig74IfXtr22N-XWcIhTM0dXugapKbjIuWJdecNuZBxfUHKpYWvirMcrb-YalLnYiOpsWNBGIZpKcP0xwILWmAU8rBqZ5QCYUzSiIx3sc9x-i16Qc" height="200" width="auto" /><br><br>1456 Junction Ave. Racine, WI 53403<br>The LGBT Center of Southeast Wisconsin <br>http://www.lgbtsewisc.org (http://www.lgbtsewisc.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/T1GmpySZ-8oGr1DriYAv3-uUryGig74IfXtr22N-XWcIhTM0dXugapKbjIuWJdecNuZBxfUHKpYWvirMcrb-YalLnYiOpsWNBGIZpKcP0xwILWmAU8rBqZ5QCYUzSiIx3sc9x-i16Qc</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -87.796547,42.713944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stonewall Society of GLBT Resrouces in West Virginia</name>
+        <description><![CDATA[Website of LGBT resources in West Virginia.<br>http://www.stonewallsociety.com (http://www.stonewallsociety.com/westvirginiaglbtresources.htm)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -81.013184,38.522384,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equal Rights Washington</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/DnjguC0svGANKSCgrcbiiXBSMHdbmuyhEjFg9GtJgpdPSjMkvAsU_VUNVNDWl6dAvvt0evwELk61BNi3rNHSlBbOjOr_7jlsIKN1Fk9hWx8NVAMxoSsoCfJIqXhSWU6j49vvXJHtiOkP" height="200" width="auto" /><br><br>1402 3rd Ave. Seattle, WA 98101<br><br>Equal Rights Washington (ERW) is a statewide political advocacy organization for the lesbian, gay, bisexual, and transgender (LGBT) community of Washington State. <br><br>http://www.equalrightswashington.org (http://www.equalrightswashington.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/DnjguC0svGANKSCgrcbiiXBSMHdbmuyhEjFg9GtJgpdPSjMkvAsU_VUNVNDWl6dAvvt0evwELk61BNi3rNHSlBbOjOr_7jlsIKN1Fk9hWx8NVAMxoSsoCfJIqXhSWU6j49vvXJHtiOkP</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -122.336787,47.609093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay New Hampshire</name>
+        <description><![CDATA[Gay New Hampshire: New Hampshire's Gay and Lesbian Community website.<br><br>http://gaynh.com (http://gaynh.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -71.572395,43.193852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Common Bond, New Mexico</name>
+        <description><![CDATA[GLBT Community in New Mexico<br>http://www.commonbondnm.org (http://www.commonbondnm.org/cms/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -106.21582,34.016242,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality New Mexico</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/N1YkiWBBUcrPq4QArS3MEo6QUz-fH5Z8kiLQOxb_HlJiu1t_uDfxTQQ83RLua6PqzO5DxKZIpC50E94GEzDnmDIgkDuvLF6_c_bArwDFp9iuf4bOq_3L0bEfniADP0enYE6AMMqCAnrs" height="200" width="auto" /><br><br>1410 Coal Ave SW. Albuquerque, NM <br>87104<br><br>Equality New Mexico is a statewide education and advocacy  organization that works for full recognition of lesbian, gay, bisexual, and  transgender civil rights.          <br>EQNM works throughout the state to end discrimination, shape  public opinion and policy, as well as strengthen our alliances with local,  regional, and national partners.http://www.eqnm.org (http://www.eqnm.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/N1YkiWBBUcrPq4QArS3MEo6QUz-fH5Z8kiLQOxb_HlJiu1t_uDfxTQQ83RLua6PqzO5DxKZIpC50E94GEzDnmDIgkDuvLF6_c_bArwDFp9iuf4bOq_3L0bEfniADP0enYE6AMMqCAnrs</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -106.664491,35.081898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dakota OutRight</name>
+        <description><![CDATA[Dakota OutRight: A GLBT resource Central and Western North Dakota<br><br>http://dakotaoutright.org (http://dakotaoutright.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -100.349121,47.309034,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pride Collective and Community Center</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/u4Y8oZ4fQhvNyYKrhuNqGUH8CZq_eWwPoQnQpPyl9kKiEqGcw8_Gp25legD56TsYQChae34H-spg-l5qOSnF5pB57YfPQhffRgQnZ6AJlV4IuixSjjAtg82T6P78J9tjRhNEfwjJjgI" height="200" width="auto" /><br><br>810 4th Ave S. Moorhead, MN 56560<br>Pride Collective and Community Center: Working to support the GLBT community of Fargo-Moorhead and the Red River Valley.<br>http://www.pridecollective.com (http://www.pridecollective.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/proxy/u4Y8oZ4fQhvNyYKrhuNqGUH8CZq_eWwPoQnQpPyl9kKiEqGcw8_Gp25legD56TsYQChae34H-spg-l5qOSnF5pB57YfPQhffRgQnZ6AJlV4IuixSjjAtg82T6P78J9tjRhNEfwjJjgI</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -96.767723,46.870664,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>New Jersey Gay Life</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/te0u3yEyTUg4hcWvDYFSB_H0yFZ5fwmVY-sW1FEVPbIj0D5-e8wDchwpaJFXwyHqE1ISmR8lbu8Ue16FE7s0Ci9PPMtHS1EFghVSywXwVk2fH73Hho8w0LmK0rHcBbbgAlMRHDkWYNY" height="200" width="auto" /><br><br>New Jersey Gay Life<br>Website for the GLBT Community in New Jersey<br><br>http://www.njgaylife.com (http://www.njgaylife.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/te0u3yEyTUg4hcWvDYFSB_H0yFZ5fwmVY-sW1FEVPbIj0D5-e8wDchwpaJFXwyHqE1ISmR8lbu8Ue16FE7s0Ci9PPMtHS1EFghVSywXwVk2fH73Hho8w0LmK0rHcBbbgAlMRHDkWYNY</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.363205,40.54316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Garden State Equality</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/rLL_m4Al91vWB5z5YbHlOMluPxIrdQESFB16GPwt5f13MG6ppXpZ5cq00BTVTW1QI-UPa1bKJGvxoMm_f7FoPE4DxZp4ZHsQm3uEYl5NfTxzTisJzqgPhcGiys8UpruvQudPpR4txMI" height="200" width="auto" /><br><br>500 Bloomfield Ave, 3rd Floor. Montclair, NJ 07042<br>Garden State Equality, works towards equal rights on marriage and other civil rights.<br><br>http://www.gardenstateequality.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/rLL_m4Al91vWB5z5YbHlOMluPxIrdQESFB16GPwt5f13MG6ppXpZ5cq00BTVTW1QI-UPa1bKJGvxoMm_f7FoPE4DxZp4ZHsQm3uEYl5NfTxzTisJzqgPhcGiys8UpruvQudPpR4txMI</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.218552,40.814645,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality North Carolina</name>
+        <description><![CDATA[Equality North Carolina is a general directory of LGBT resources and events<br><br>http://equalitync.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -79.508057,35.701917,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Time Out Youth</name>
+        <description><![CDATA[1900 The Plaza. Charlotte, NC 28205<br>Time Out Youth is dedicated to providing support, advocacy,  and education to lesbian, gay, bisexual, transgender, and questioning (LGBTQ)  youth and their allies, ages 13-23, in Charlotte and the surrounding areas.<br>http://www.timeoutyouth.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -80.808313,35.228133,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Community Center</name>
+        <description>The Lesbian Gay Bisexual Transgender Community Center of Greater Cleveland advances the rights, respect and diversity of the LGBT community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -81.730966,41.484199,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name> Kaleidoscope Youth Center</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/4wgln0H9lAhNoTTNXCQEkLNjzYGZee2TwFUeegFyeS6lFX3u_KQBtKD9S2hqmLpLvyJlndKiFfhpLFX9JIqa8wuATv5EB8mWeeiSUAjJZ3zOCadWxF_so94kPzoGB_xxrq8nQpo0rNc" height="200" width="auto" /><br><br>1904 N. High Street, Columbus, OH 43201 <br>Kaleidoscope Youth Center is the only organization in Ohio solely dedicated to supporting lesbian, gay, bisexual, transgender, and questioning (LGBTQ) youth. <br>http://www.kycohio.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/4wgln0H9lAhNoTTNXCQEkLNjzYGZee2TwFUeegFyeS6lFX3u_KQBtKD9S2hqmLpLvyJlndKiFfhpLFX9JIqa8wuATv5EB8mWeeiSUAjJZ3zOCadWxF_so94kPzoGB_xxrq8nQpo0rNc</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -82.990723,40.010787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oklahomans for Equality (OkEq)</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/BRYQVj_f4hQ57bUN2cay2BUyGTIj-VtUsOha1ZCHGQaAkmxXj32kCwlEJPALcf-uETzoJpbwh3_WHnnsUFsD1rJN0xjGuJbhqpsosJk3CmZCnthkFxcoDAvQgtkKAgA4yRYe5gcixK8" height="200" width="auto" /><br><br>621 E 4th St. Tulsa, OK 74120 Oklahomans for Equality (OkEq) seeks equal rights for Lesbian, Gay, Bisexual, and Transgender (LGBT) individuals and families  through advocacy, education, programs, alliances, and the operation of the Dennis R. Neill Equality Center.<br>http://www.okeq.org (http://www.okeq.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/BRYQVj_f4hQ57bUN2cay2BUyGTIj-VtUsOha1ZCHGQaAkmxXj32kCwlEJPALcf-uETzoJpbwh3_WHnnsUFsD1rJN0xjGuJbhqpsosJk3CmZCnthkFxcoDAvQgtkKAgA4yRYe5gcixK8</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -95.982839,36.155206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Utah Pride Center </name>
+        <description><![CDATA[The Utah Pride Center is a Gay Lesbian Bisexual & Transgender Community Center. It supports and serves the Utah LGBTQ community and its allies to strengthen our collective vision, impact, and collaboration.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -111.900505,40.777348,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality Virginia</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/SQ57S4pDBAo4CACX4JsAMEaMu7Q-bE5kZwo54JtKyDcYE3UPhmpUSsBvGV4RIWcvayke4pPTJDjXb2SGeqYksVlZqDVL92RAmbnt-uZBIXlT9UuXaS6Wurt-zVnnv-7T9Thgk14QqFU" height="200" width="auto" /><br><br>403 N Robinson St. Richmond, VA 23220<br> Equality Virginia is a statewide, non-partisan education, outreach, and advocacy organization seeking equality for gay, lesbian, bisexual and transgender Virginians.<br>http://www.equalityvirginia.org (http://www.equalityvirginia.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/SQ57S4pDBAo4CACX4JsAMEaMu7Q-bE5kZwo54JtKyDcYE3UPhmpUSsBvGV4RIWcvayke4pPTJDjXb2SGeqYksVlZqDVL92RAmbnt-uZBIXlT9UuXaS6Wurt-zVnnv-7T9Thgk14QqFU</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -77.470223,37.556745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Democrats of Virginia</name>
+        <description><![CDATA[LGBT Democrats of Virginia<br>http://lgbtvadem.org (http://lgbtvadem.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -78.409424,37.370157,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vermont Gay Guide</name>
+        <description><![CDATA[Vermont Gay Guide<br>Burlington, VT 05402<br>http://www.vtgayguide.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -73.21,44.48,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Texas GLBT Chamber-Commerce</name>
+        <description><![CDATA[The North Texas Gay Lesbian Bisexual Transgender Chamber of Commerce is a private, not-for-profit, membership driven organization consisting of nearly 300 business entities, community organizations and individuals.<br>http://www.northtexasglbtchamber.org (http://www.northtexasglbtchamber.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -96.809549,32.809968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay OK</name>
+        <description><![CDATA[Gay OK, Oklahoma City, OK. News        and information for Oklahoma City's Gay, Lesbian,        Bisexual and Transgendered Persons.<br>http://www.gayokc.com (http://www.gayokc.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -97.516365,35.471715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Common Roads</name>
+        <description><![CDATA[The Lesbian Gay Bisexual Transgender (LGBT) Community Center Coalition is a volunteer-led effort to create a regionally representative community center that is both a location and a unifying point for central Pennsylvania's large, diverse, and multi-county LGBT population.<br>http://www.centralpalgbtcenter.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -76.885858,40.260907,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Equality Pennsylvania</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/Jbou4irDeKtvPxJ90N5VUAkPLq8xztY8ybvdpoZk60fzZyoM_dneZzAdI9tE8BWFgT_ALKB25BV12haXbn6IHNsUIhUZbZZY5qxkQy-n7VMPzxiM3GwByFMxrd0pCsmwVAov7bvYfjg" height="200" width="auto" /><br><br>221 N Front St. Harrisburg, PA 17101<br>Equality Pennsylvania: Founded 15 years ago as the Center for Lesbian and Gay Civil Rights and later growing into Equality Advocates PA, EP is the only organization in the Commonwealth advocating in Harrisburg and across the state, exclusively for the rights of LGBT Pennsylvanians.<br>http://www.equalitypa.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/Jbou4irDeKtvPxJ90N5VUAkPLq8xztY8ybvdpoZk60fzZyoM_dneZzAdI9tE8BWFgT_ALKB25BV12haXbn6IHNsUIhUZbZZY5qxkQy-n7VMPzxiM3GwByFMxrd0pCsmwVAov7bvYfjg</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -76.885858,40.260907,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ACT UP/New York</name>
+        <description><![CDATA[New York City Chapter of ACT UP. <br>http://www.actupny.org (http://www.actupny.org/)<br>ACT UP is a diverse, non-partisan group of individuals united in anger and committed to direct action to end the AIDS crisis.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -74.014893,40.713956,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trinity Place Shelter</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/VoWUxfRuepxYPFiO8MxwUm1xES46LJtc4sOu3WWNKCBkDhnuWCINKiTygC0mWrwlfnHGbHo3qaBSdisqUIJdXgE3Ata_FNdbZSp_CPw7AvtbU6yqaWAipf0giVT-xdiDfx71r-lzwBE" height="200" width="auto" /><br><br>164 W 100th St. New York, NY 10025<br>Trinity Place Shelter is a non-sectarian, 10-bed transitional shelter that is open all year to provide LGBTQ youth/young adults with a safe place to sleep, eat, store belongings, have access to transportation, individual/group counseling, and additional independent living supportive services.  <br><br>http://www.trinityplaceshelter.org (http://www.trinityplaceshelter.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/proxy/VoWUxfRuepxYPFiO8MxwUm1xES46LJtc4sOu3WWNKCBkDhnuWCINKiTygC0mWrwlfnHGbHo3qaBSdisqUIJdXgE3Ata_FNdbZSp_CPw7AvtbU6yqaWAipf0giVT-xdiDfx71r-lzwBE</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.967975,40.796373,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Anti-Violence Project</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/btZ_2h9SCrPHMbUjkVU0_r4laeNPNiSEaExZHwPzm1gByeDh-RU57r4FUShMm2XTfLd7gm6vUrCl2aEU10vkyif035gIl2_zSjME_PAuAg8Gn-TVx43L9KN633jQqHjn--cX9ddpd2c" height="200" width="auto" /><br><br>240 W 35th St. New York, NY 10001<br>The Anti-Violence Project (AVP) is dedicated to eliminating hate violence, sexual assault, stalking, and domestic violence in lesbian, gay, bisexual, transgender, queer, and HIV-affected communities through counseling, advocacy, organizing, and public education.<br>http://www.avp.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/proxy/btZ_2h9SCrPHMbUjkVU0_r4laeNPNiSEaExZHwPzm1gByeDh-RU57r4FUShMm2XTfLd7gm6vUrCl2aEU10vkyif035gIl2_zSjME_PAuAg8Gn-TVx43L9KN633jQqHjn--cX9ddpd2c</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.991721,40.752308,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Mississippi Safe School's Coalition (MSSC)]]></name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/op3CxREqlWzavySjtwzFTzPb1Sxu7QLWYhEIhAW4GpfTqLkjlBlfG9xH5IOBiG0-nXH3c7lYg5dqYp2vE8NjDNN9ctDwQvtrM1kpV6unc-q5ZLtQp0fOrTUbeiMRqtSfvmYlAZ8J5AU" height="200" width="auto" /><br><br>Jackson, MS 39207<br>Mississippi Safe School's Coalition (MSSC) is a collaboration of people and organizations who believe that no student should ever feel too afraid to go to school. <br><br>http://www.mssafeschools.org (http://www.mssafeschools.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/proxy/op3CxREqlWzavySjtwzFTzPb1Sxu7QLWYhEIhAW4GpfTqLkjlBlfG9xH5IOBiG0-nXH3c7lYg5dqYp2vE8NjDNN9ctDwQvtrM1kpV6unc-q5ZLtQp0fOrTUbeiMRqtSfvmYlAZ8J5AU</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.18,32.3,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay Resource Page, Austin, Texas</name>
+        <description>Gay Resource Page, Austin, Texas (http://www.statesman.com/specialreports/content/specialreports/gaysurvey/3resources.html)</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -97.734375,30.259067,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Out Youth</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/rfZUkPdfHfo4DaspwF0cqibXv2BHIDpGBQ9WvfkkpCl9vI0rvnJbBMkufG4Agapzdk6z-mNSbx-zNcq8afGSRsJdSEzLbWQhbZIxcPffmQCkdSvVLaz8nqazV43Bmj5WYTkD806Jgws" height="200" width="auto" /><br><br>909 E 49th 1/2 St. Austin, TX 78751<br>Out Youth is a non-profitorganization whose mission is to support and provide services to gay,lesbian, bisexual, transgender, and questioning youth ages 12 to 19 inAustin and Central Texas.<br>http://www.outyouth.org (http://www.outyouth.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/rfZUkPdfHfo4DaspwF0cqibXv2BHIDpGBQ9WvfkkpCl9vI0rvnJbBMkufG4Agapzdk6z-mNSbx-zNcq8afGSRsJdSEzLbWQhbZIxcPffmQCkdSvVLaz8nqazV43Bmj5WYTkD806Jgws</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -97.714741,30.309414,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Prescott Pride Center</name>
+        <description><![CDATA[111 Josephine St. Prescott, AZ 86305<br><br>The Prescott Pride Center is dedicated to creating and sustaining strong connections within the gay, lesbian, bisexual, and <br>    transgender  community and to developing positive relationships with the greater community.<br>http://prescottpridecenter.com (http://prescottpridecenter.com/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -112.492077,34.544603,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Outright Vermont</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/nRpSdcNK_IDxR6IN6g6PzhysXkX-PGrsQtb8tHMu4iu5RCJK_pFeL2mY1GAQ1A2ZUF51X5slCUJufn7eM_ivCzMlB41uYRxkceP2O_tXHgyCQ2yNwltOg2wHXvHV_7IOIokFFJFIqiU" height="200" width="auto" /><br><br>241 N Winooski Ave. Burlington, VT 05401<br>Outright Vermont - The Mission of Outright is to build safe, healthy, and supportive environments for gay, lesbian, bisexual, transgender, queer, and questioning youth (ages 13-22).<br>http://outrightvt.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/proxy/nRpSdcNK_IDxR6IN6g6PzhysXkX-PGrsQtb8tHMu4iu5RCJK_pFeL2mY1GAQ1A2ZUF51X5slCUJufn7eM_ivCzMlB41uYRxkceP2O_tXHgyCQ2yNwltOg2wHXvHV_7IOIokFFJFIqiU</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.209431,44.487045,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Western Montana Gay & Lesbian Community Center]]></name>
+        <description>The Western Montana Community Center is an open affirming environment for peoples of all sexual orientations and gender identity expressions. We empower our community through education, advocacy, and collaborative networking. We strive to be Western Montana’s voice for the LGBTIQ community and allies.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -113.995409,46.870509,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Black Hills Center for Equality</name>
+        <description><![CDATA[1102 Rapid St Rapid City, SD 57701<br>The Black Hills Center for Equality <br>Inc. is a community-based organization that envisions equality for all <br>individuals regardless of race, gender, or sexual orientation. Our membership is increasing and our volunteer staff strives to bring you events that are unique and welcoming. We offer friendly familiarity, a <br>genuine haven of support, and advocacy for our rights as individuals and as a community.<br>http://bhcfe.org (http://bhcfe.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -103.236318,44.083288,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Outlinc</name>
+        <description><![CDATA[Lincoln, NE<br>Outlinc, Making Lincoln a better place for the LGBT community. <br>http://outlinc.org (http://outlinc.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -96.681679,40.806862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Prism Youth Initiative</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/lVqL25r78lRWpT30-lJFjiGDjhGE1uG428MM3_6jnKVSN9sx32uh-tGNBKqgliuLPxjTLqOSd67ZEiYTQHz-RJ_PivpCcp8sIc8r-3n7-XLEYNrgbL0XEl905yyZPgTlAMFmkSUyLK8" height="200" width="auto" /><br><br>926 15th St W. Bradenton, FL 34205<br>Prism Youth Initiative is dedicated to supporting, affirming, encouraging, enabling and empowering the lesbian, gay, bisexual, transgender and questioning youth ages 13-23 of Manatee County. <br><br>            http://www.prismyouth.org (http://www.prismyouth.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/proxy/lVqL25r78lRWpT30-lJFjiGDjhGE1uG428MM3_6jnKVSN9sx32uh-tGNBKqgliuLPxjTLqOSd67ZEiYTQHz-RJ_PivpCcp8sIc8r-3n7-XLEYNrgbL0XEl905yyZPgTlAMFmkSUyLK8</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -82.57658,27.490922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SunServe</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/5_URltZUywa0io7dZgsEuCSBVF1qVayxGsNCXQWMHrNbP_fQE1UlZ1UDY0lFzM0ba-O6BW9fLTlzwN4h06lwa6mOMk2X0JzXZT9Unq7hgFXerEWEZzhXRCgT2k6WJnJX1qAO77rd1ps" height="200" width="auto" /><br><br>1480 SW 9th Ave. Fort Lauderdale, FL 33315<br>SunServe is a model 501(c)(3) nonprofit social 							service agency serving the Lesbian, Gay, Bisexual, 							Transgender, and Questioning (LGBTQ) community in 							South Florida. We provide high quality, compassionate, and progressive care for 							all, including those in financial need, minorities, 							youth, seniors, families, and 							those with life-challenging physical or emotional conditions. We also perform 							numerous education 							and outreach projects.<br>http://www.sunserve.org (http://www.sunserve.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/5_URltZUywa0io7dZgsEuCSBVF1qVayxGsNCXQWMHrNbP_fQE1UlZ1UDY0lFzM0ba-O6BW9fLTlzwN4h06lwa6mOMk2X0JzXZT9Unq7hgFXerEWEZzhXRCgT2k6WJnJX1qAO77rd1ps</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.152503,26.103144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The GLBT Center Orlando</name>
+        <description>The Gay, Lesbian, Bisexual, Transgender Community Center of Central Florida--The Center--has been in operation for over 32 years. GLBT individuals, as well as family and friends, in Central Florida have stood up to both institutional and individual injustice and discrimination by volunteering their time, money and talents at The Center. The Center has been an organizing force within the GLBT community serving as a source for information, education, advocacy and support.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -81.364744,28.558169,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Family Tree Community Center, Inc.</name>
+        <description><![CDATA[Tallahassee's GLBT Community Center]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.366462,30.522462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Out Reach Inc</name>
+        <description><![CDATA[Madison and S. Central Wisconsin's LGBT Community Center. <br><br>http://www.lgbtoutreach.org  (http://www.lgbtoutreach.org)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -89.374075,43.076762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Memphis Gay and Lesbian Community Center</name>
+        <description><![CDATA[892 S Cooper St. Memphis, TN 38104<br>Memphis Gay and Lesbian Community Center is a mechanism for change in the lives of lesbian, gay, bisexual and transgender people to facilitate long-term positive growth in themselves and in the community of the Mid-South.<br>http://www.mglcc.org (http://www.mglcc.org/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -89.99064,35.121368,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coalition for Queer Youth</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/LdNwtB8-5pYW3DMV4LLZCpCgUKS9kaaEdySUoHt4RwC1aJmlDGYGzv-dCggKSKEAa3peNf8_iWSYrBDUAQth2tTiQO_LrAvHxl6rSAY5IhBr8IcjHdTfgYOmqxC1VS3gfbx4A7Ru9E4" height="200" width="auto" /><br><br>446 W 36th St<br>New York, NY 10018<br>Coalition for Queer Youth is a partnership between young people, service providers, activists and allies dedicated to using creative forms of education, advocacy and empowerment to increase community support for LGBTQ young people.<br>Coalition for Queer Youth meets every other Monday at 5pm.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/LdNwtB8-5pYW3DMV4LLZCpCgUKS9kaaEdySUoHt4RwC1aJmlDGYGzv-dCggKSKEAa3peNf8_iWSYrBDUAQth2tTiQO_LrAvHxl6rSAY5IhBr8IcjHdTfgYOmqxC1VS3gfbx4A7Ru9E4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.997435,40.755465,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sylvia's Place]]></name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/LdNwtB8-5pYW3DMV4LLZCpCgUKS9kaaEdySUoHt4RwC1aJmlDGYGzv-dCggKSKEAa3peNf8_iWSYrBDUAQth2tTiQO_LrAvHxl6rSAY5IhBr8IcjHdTfgYOmqxC1VS3gfbx4A7Ru9E4" height="200" width="auto" /><br><br>446 W 36th St.<br>New York, NY 10018<br>Sylvia's Place is NYC's only emergency shelter for LGBTQ youth. Volunteers are always needed to help with cooking, laundry, leading groups, organizing activities, tutoring and more. See the Shelter's website at www.sylviasplace.org (http://www.sylviasplace.org/).]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/proxy/LdNwtB8-5pYW3DMV4LLZCpCgUKS9kaaEdySUoHt4RwC1aJmlDGYGzv-dCggKSKEAa3peNf8_iWSYrBDUAQth2tTiQO_LrAvHxl6rSAY5IhBr8IcjHdTfgYOmqxC1VS3gfbx4A7Ru9E4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.997435,40.755465,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Minnesota State University - Mankato</name>
+        <description><![CDATA[LGBT Center, CSU 173, Mankato, MN 56002.It is our mission to provide support, advocacy, referral and sense of community to LGBTQQA students. Through education, programming, and activism, we heighten campus and community awareness of LGBTQQA concerns.<br>http://www.mnsu.edu/lgbtc/about_us.html]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.999534,44.147302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lavender Magazine</name>
+        <description><![CDATA[3715 Chicago Ave. <br>S.Minneapolis, MN 55407<br>Minnesota's lesbian, gay, bisexual, transgender magazine!<br>http://www.lavendermagazine.com/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.262507,44.935677,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pride Institute</name>
+        <description><![CDATA[14400 Martin Drive, Eden Prairie, MN 55344<br>For over 25 years PRIDE Institute has offered hope and healing for lesbian, gay, bisexual and transgender people to fight their addictions in a safe and supportive environment.<br>http://pride-institute.com/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.459771,44.865132,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ruth Ellis Center</name>
+        <description><![CDATA[77 Victor Street, Highland Park, MI 48203.<br>Ruth Ellis Center is the only mission specific agency in the entire Midwest dedicated to LGBTQ, (Lesbian, Gay, Bi-atractional, Transgender and Questioning) youth. The Center provides residential and drop-in programs.<br>http://www.ruthelliscenter.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -83.094878,42.407346,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Transgender Michigan</name>
+        <description><![CDATA[429 Livernois St, Ferndale, MI 48220.<br>Transgender Michigan’s primary mission is to provide advocacy, support and education while serving to create coalitions in the state of Michigan to unify and empower transgender and gender non-conformist communities.<br>http://www.transgendermichigan.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -83.142333,42.448471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ellen Bommarito LGBT Center</name>
+        <description><![CDATA[303 E. Kearsley Street, Flint MI 48502.<br>Our center strives to promote, advocate, and maintain a supportive and accepting campus environment that is inclusive to all students, staff, and faculty. The LGBT Center provides programs, events and services to educate and raise awareness of LGBT issues for all students, staff, and faculty regardless of their sexual orientation, gender identity and gender expression.<br>http://www.umflint.edu/lgbt/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -83.688745,43.018103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kalamazoo Gay and Lesbian Resource Center</name>
+        <description><![CDATA[629 Pioneer St # 102, Kalamazoo, MI 49008<br>To provide support to lesbian, gay, bisexual, and transgender people and to create a bridge of understanding among all people, regardless of sexual orientation or gender identity.<br>http://kglrc.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -85.591629,42.276991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Perceptions</name>
+        <description><![CDATA[P.O. Box 1525 Midland, MI 48641.<br>Perceptions is a non-profit community organization that offers educational, social and networking opportunities for residents of the Tri-Cities (Midland, Bay City and Saginaw) and surrounding areas. Perceptions strives to foster a positive image for the Gay, Lesbian, Bisexual & Transgender community and our allies.<br>http://www.perceptionssv.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.226685,43.623899,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Howard Brown</name>
+        <description><![CDATA[4025 N.Sheridan Road Chicago, IL 60613.<br><br>Howard Brown Health Center (HBHC) fully recognizes that our patients depend on the services we provide and we work every day to ensure they receive the most comprehensive, culturally competent and compassionate care possible.<br><br>For nearly 40 years, HBHC has been a trusted healthcare provider to our community. Our medical teams are among the best and most respected medical professionals in the nation and we currently serve clients from 34 states and Canada. <br><br>http://www.howardbrown.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -87.654446,41.955327,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Illinois University DeKalb: LGBT Resource Center</name>
+        <description><![CDATA[Holmes Student Center, 7th Floor Northern Illinois University DeKalb, IL 60115<br><br>The Lesbian, Gay, Bisexual, Transgender Resource Center serves as a vital link where LGBTQ individuals can find a sense of community and everyone can learn about LGBTQ identity and culture.  We strive to create an inclusive campus community by providing support services, educational programs, advocacy and opportunities for leadership development.<br>http://www.niu.edu/lgbt/resourcecenter/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -88.772621,41.931656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Western Montana Community Center</name>
+        <description><![CDATA[127 N. Higgins Avenue, Suite 202, Missoula, MT 59802.<br><br>The Western Montana Community Center is an open affirming environment for peoples of all sexual orientations and gender identity expressions. We empower our community through education, advocacy, and collaborative networking. We strive to be Western Montana’s voice for the LGBTIQ community and allies. <br>http://www.gaymontana.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -113.995056,46.870783,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>University of Missouri LGBTQ Resource Center</name>
+        <description><![CDATA[G225 MU Student Center Columbia MO 65211<br>The University of Missouri Lesbian, Gay, Bisexual, Transgender, Queer Resource Center seeks to provide a safe environment that is welcoming to all students, staff, faculty, and community members. In this environment, we actively support student learning through programming and leadership opportunities.<br>http://lgbtq.missouri.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -92.326596,38.942521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Indiana Youth Group</name>
+        <description><![CDATA[2943 E. 46th Street, Indianapolis, IN 46205<br>If you are aged 12-20 and identify as lesbian, gay, bisexual, transgender, questioning (LGBTQ), or are a straight ally, IYG is for you!  Everyone is welcome at IYG.<br>http://www.indianayouthgroup.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -86.114194,39.840103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Spencer Pride</name>
+        <description><![CDATA[P.O. Box 585<br>Spencer, IN 47460<br>Spencer Pride, Inc. is a not-for-profit organization that seeks to proudly and honestly represent the values and diversity of the LGBTQI community and it's allies. <br>https://sites.google.com/site/ruralpride/home]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -86.762381,39.286483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lesbian Resource Center</name>
+        <description><![CDATA[227 S. Orcas St.<br>Seattle, WA 98108.<br>We are a community-based organization committed to advancing<br>the status of lesbians by combating oppression and by promoting<br>empowerment, visibility, and social change. Established in Seattle,<br>Washington in 1971, the Lesbian Resource Center is the oldest<br>organization of its kind in the country.<br>http://www.lrc.net/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.331154,47.551637,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lambert House</name>
+        <description><![CDATA[1818 15th Avenue, Seattle, WA<br>Lambert House is a safe place for queer youth ages 22 and under. Our calendar is packed with fun activities, support groups, planning meetings, dances, and other events. We are here to make life better for each other as GLBTQ youth.<br>http://www.lamberthouse.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.312486,47.618213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Rainbow Center</name>
+        <description><![CDATA[741 St Helens Ave Tacoma, WA 98402.<br>The Rainbow Center's mission is to eliminate discrimination based on sexual orientation and gender identity by providing education, resources, information and opportunities for empowerment to individuals and organization with the south Puget Sound area.<br>http://www.rainbowcntr.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.441979,47.256738,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pride Lafayette Community Center</name>
+        <description><![CDATA[658 Main St # 218  Lafayette, IN 47901.<br>The mission of Pride Lafayette, Inc, a 501 (c) 3 registered non-profit organization, is to continually educate and promote awareness of diversity, health, culture and acceptance of individuals based on sexual orientation and gender identity.<br>http://www.pridelafayette.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -86.888855,40.41912,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Basic Rights Oregon</name>
+        <description><![CDATA[310 SouthWest 4th Avenue #730  Portland, Oregon 97204.<br>Basic Rights Oregon will ensure that all lesbian, gay, bisexual and transgender Oregonians experience equality by building a broad and inclusive politically powerful movement, shifting public opinion, and achieving policy victories.<br>http://www.basicrights.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.675119,45.520913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oregon GSA Network</name>
+        <description><![CDATA[2100 SE Belmont<br>  Portland OR<br>Our mission is to connect students and GSAs from all over Oregon so they can support one another, help each other's GSA grow, and to reach out to schools who do not have a GSA.<br>http://www.oregongsa.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.644361,45.516463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Lesbian, Gay, Bisexual, Transgender Education & Support Services Program]]></name>
+        <description><![CDATA[164 Oregon Hall, University of Oregon Campus, Eugene, OR.<br>University of Oregon's LGBTQ Center. <br>http://lgbt.uoregon.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -123.074597,44.044761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lucille Marie Hamilton (LMH) Youth Center for LGBTQ and Ally Youth</name>
+        <description><![CDATA[800 Scott St. inside the First Presbyterian Church, Arkansas.<br><br>The LMH Youth Center is a project of CAR’s and is a drop-in center for LGBTQ and ally youth ages 13-22. This is the first Center of its kind in the state of Arkansas.<br><br>The Center opened July 1, 2011. The drop-in center provides a safe, supportive space where LGBTQ and ally youth can hang out with peers, access mentors, use the art space, play video/board games, read, watch videos, listen to music, or use the cyber center. The Center is also wireless so laptops may be used.<br>http://www.artisticrevolution.org/content/programs/lucille-marie-hamilton-lmh-youth-center]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -92.270572,34.741056,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Damien Center</name>
+        <description><![CDATA[26 North Arsenal Avenue, Indianapolis, IN 46201.<br>Provides services to persons infected with HIV/AIDS. Information on prevention, diagnosis, services and the center.<br>http://www.damien.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -86.133303,39.767757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Montrose Counseling Center</name>
+        <description><![CDATA[401 Branard Street, 2nd Floor<br>Houston, Texas 77006 <br>MCC empowers our community, primarily gay, lesbian, bisexual and transgender individuals and their families, to enjoy healthier and more fulfilling lives by providing culturally affirming and affordable behavioral health and prevention services.<br>http://www.montrosecounselingcenter.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -95.384817,29.736658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLBT Cultural Center</name>
+        <description><![CDATA[401 Branard Street<br>First Floor<br>Houston, Texas 77006<br><br>The mission of the GLBT Cultural Center is to serve as a unifying focal point for Houston’s diverse gay, lesbian, bisexual and transgender communities, and to provide a home for the nurture and celebration of our organizations, institutions and culture.<br><br>Operated by Montrose Counseling Center, the GLBT Cultural Center is the hub of community events and organizing.<br>http://www.glbtcenter.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -95.384817,29.736658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camp Ten Trees</name>
+        <description><![CDATA[1122 E Pike St Pmb 1488<br>Seattle, WA 98122<br>Camp Ten Trees is a nonprofit organization located in Washington State.  Central to the organization's purpose are our yearly summer camp sessions -- one week for lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) youth and their allies and another week for the children of LGBTQ and/or non-traditional families. <br>http://www.camptentrees.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.317035,47.61424,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Q Center</name>
+        <description><![CDATA[4115 North Mississippi Avenue, Portland, OR 97217.<br>Q Center is Portland, Oregon's LGBTQ Community Center.<br>www.pdxqcenter.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.675519,45.553644,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trans Youth Support Network</name>
+        <description><![CDATA[3405 Chicago Avenue South, Minneapolis, MN 55407.<br>TYSN provides support groups, education and social events for Trans youth.<br>http://www.transyouthsupportnetwork.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.262584,44.94123,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PFLAG Aberdeen</name>
+        <description><![CDATA[1410 N Kline St Aberdeen, SD 57401   <br>Aberdeen's PLFAG chapter.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -98.482172,45.480063,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ACLU South Dakota</name>
+        <description><![CDATA[401 E 8th St #203a, Sioux Falls, SD 57103<br>The ACLU is our nation's guardian of liberty, working daily in courts, legislatures and communities to defend and preserve the individual rights and liberties that the Constitution and laws of the United States guarantee everyone in this country.<br>http://www.aclusd.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -96.722286,43.548508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Diego LGBT Community Center</name>
+        <description><![CDATA[3909 Centre Street San Diego, CA 92103.<br>Providing a broad array of services for the San Diego lesbian, gay, bisexual, and transgender community.<br>http://www.thecentersd.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -117.148225,32.74915,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Orange Country Cornerstone Outreach</name>
+        <description><![CDATA[22722 Lambert St #1712 Lake Forest, CA 92630.Providing social services and financial support to the LGBT community, with special focus on youth.<br><br> http://occornerstoneoutreach.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -117.712613,33.632953,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Antonio AIDS Foundation</name>
+        <description><![CDATA[818 East Grayson Street, San Antonio, TX 78208.<br>The San Antonio AIDS Foundation (SAAF) has a dual mission — to provide compassionate medical care and social services to people with Human Immunodeficiency Virus (HIV) and Acquired Immune Deficiency Syndrome (AIDS), and to help prevent the spread of HIV through education, counseling and testing.<br>www.txsaaf.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -98.471016,29.443152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nashville Pride</name>
+        <description><![CDATA[p.o. box 330931 | nashville, tn 37203 | <br>Nashville Pride's mission is to educate and maintain a sense of pride, community, and awareness of, about, and for GLBT people and culture in Middle Tennessee.<br><br>http://nashvillepride.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -86.791902,36.157776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The LGBT Center of St. Louis</name>
+        <description><![CDATA[4337 Manchester Avenue  St. Louis, MO 63110.<br>The goal of The LGBT Center of St. Louis is to to provide a safe and welcoming space, resources and support to the lesbian, gay, bisexual, transgender community.<br>www.lgbtcenterstl.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -90.258206,38.626946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Community Coalition</name>
+        <description><![CDATA[2114 Decatur St, New Orleans, LA 70116.<br>The Community Coalition meets the 3rd Wednesday of every month from 5:30 for a meet and greet with the meeting starting at 6pm. We usually meet at the LGBT Community Center at 2114 Decatur.<br>http://www.tccgno.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -90.057145,29.962329,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>7 Rivers LGBT Resource Center</name>
+        <description><![CDATA[309 Pearl Street, La Crosse, WI 54601.<br>7 Rivers LGBT Resource Center serves a rural area of southwest Minnesota, southeast Wisconsin, and northeast Iowa. They have a youth group, GALAXY, which meets twice a week. Here is their description of GALAXY: <br><br>"GALAXY, which became a program of the Center on March 5, 2009, is now an integral part of our center, and is truly providing a much needed service for the youth in our community.  Group meetings, social events, and political/social justice involvements have all helped to unite the LGBT community in the La Crosse area and throughout our service area in the Tri-state region. "<br><br>http://7riverslgbt.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -91.252612,43.811977,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nebraska AIDS Project</name>
+        <description><![CDATA[11 W. Railroad St. Kearney, NE 68848<br>Nebraska AIDS Project, Inc. was organized in 1984 when medical professionals, Catholic nuns, Health Department officials, concerned citizens, friends, family members and loved ones joined together for one cause – fighting AIDS.  Organized to provide compassionate support to those dying with AIDS and to provide education to prevent the further spread of HIV, the virus that causes AIDS, Nebraska AIDS Project remains true to that original mission: prevention and support.<br>http://www.nap.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -99.081886,40.695254,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Casper, Wyoming GLBT&A News]]></name>
+        <description><![CDATA[P.O. Box 1961, Casper, Wyoming 82602<br>The purpose of Wyoming GLBT&A News is to provide a central clearinghouse for news of interest to the state's gay, lesbian, bisexual and transgender communities, as well as their allies & allied organizations such as PFLAG.<br>https://www.facebook.com/pages/Wyoming-GLBT-News/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -106.36,43.14,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Echo Magazine</name>
+        <description><![CDATA[PO Box 16630, Phoenix, AZ 85011<br>Phoenix's staple local gay publication. Available for pick up at bars, restaurants, and various other businesses. Provides local, national and world gay news, local developments, venues, events, reviews,restaurants, job opportunities, organizations, etc. <br>http://www.echomag.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -112.064399,33.505532,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Reno Gay Pride</name>
+        <description><![CDATA[PO Box 677, Reno, Nevada 89504<br>Reno Gay Pride is a Nevada based Non-Profit Organization. The state of Nevada made history when Governor Bob Miller became the first Governor in the United States to sign a statewide Gay Pride proclamation for Nevada in 1996. Reno Gay Pride is the largest annual gathering of LGBT people in Northern Nevada - giving visibility to the community.<br>http://www.RenoGayPride.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -119.81,39.53,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Reno Gay Page</name>
+        <description><![CDATA[Reno, Nevada.<br>The Reno Gay Page is published monthly as a community service by Peavine Mountain Media.  The publication<br>began in January 2010 and was designed to be but a single page, hence its name.  However, the alive, active<br>gay, lesbian, bisexual, transgendered, inquiring, questioning and ally (GLBTIQA) community created the four <br>pages the paper is today.<br>http://www.therenogaypage.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -119.81,39.53,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[NorCal Pride: Let's Get Real]]></name>
+        <description><![CDATA[Redding, California.<br>Let’s Get Real examines a variety of issues that lead to taunting and bullying, including racial differences, perceived sexual orientation, learning disabilities, religious differences, sexual harassment and others. The film not only gives a voice to targeted kids, but also to kids who do the bullying to find out why they lash out at their peers and how it makes them feel. The most heartening part of Let’s Get Real includes stories of kids who have mustered the courage to stand up for themselves or a classmate.<br>Call 246-4277 or 241-8421 <br>to arrange a presentation in your school, club, youth group, or organization. <br><br>http://www.norcalpride.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.391675,40.58654,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northern Arizona Pride Association</name>
+        <description><![CDATA[P.O. Box 1604  Flagstaff, AZ 86002<br>Northern Arizona Pride Association’s mission is to educate, celebrate and increase acceptance and awareness of the lesbian, gay, bisexual and transgender (LGBTQ) community of Flagstaff and northern Arizona.<br>Through the production of our annual Pride in the Pines festival, we aspire to make a positive difference in the LGBTQ reality while creating a sense of Community. It is our Mission to embrace, promote, and support our cultural diversity, civil, and human rights by fighting discrimination of any kind.<br>http://flagstaffpride.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -111.646426,35.197834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Whitman College GLBTQ Center</name>
+        <description><![CDATA[Whitman College, 345 Boyer Ave, Walla Walla, WA 99362<br>(509) 527-5111<br>“One of the best parts about Whitman for GLTBQ students is the multitude of wonderful open-minded people on campus who see your personality before your sexuality. There are many intelligent and caring people who are willing to engage in thoughtful conversations about sexuality, and both students and faculty make a conscious effort to avoid stereotyping.”<br>http://www.whitman.edu/content/glbtq]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -118.329899,46.071586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PFLAG Eureka-Arcata</name>
+        <description><![CDATA[6197 Rohnerville Rd  Hydesville, CA 95547<br>PFLAG chapter of Eureka-Arcata, California.<br>shap28@gmail.com<br> (707) 768-3287<br>https://www.facebook.com/pflag.eurekaarcata]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -124.103177,40.559383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Street Teens: Las Vegas</name>
+        <description><![CDATA[PO Box 70478, Las Vegas, NV 89170-0478<br>Street Teens is a volunteer based, non-profit organization dedicated to assisting homeless, abandoned, and at risk youth, ages 12-21, in the Las Vegas Valley. Our primary goal is to meet the survival needs of our youth by providing basic necessities in a safe, compassionate environment. We are able to provide access to educational, health care, and employment resource services through our drop-in center and by actively collaborating with community partners. <br>http://www.streetteens.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -115.14,36.11,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ogden OUTReach Resource Center</name>
+        <description><![CDATA[705 23rd St., Ogden, UT 84401<br>OUTreach is located in the lower level of the Unitarian Universalist Church of Ogden. The center is open on Wednesdays from 3:30pm to 8:00pm for open-minded youth,  between the ages of 14 and 23. They are also open on Thursdays from 4:30 to 7:30 pm for adults ages 18 and over, and host the monthly Ogden PFLAG meeting.<br>http://www.ogdenoutreach.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -111.961842,41.224584,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>QUEEROCRACY</name>
+        <description><![CDATA[QUEEROCRACY is a New York City-based grassroots organization working to promote social and economic justice through direct action, community engagement and education. We commit to challenging institutional injustice locally and globally within a queer framework, building a sustainable movement to confront and transform the intersecting issues our communities face.<br>http://www.queerocracy.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -74.000816,40.738185,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St. George PFLAG </name>
+        <description><![CDATA[St. George chapter of the national organization, Parents, Families and Friends of Lesbians and Gays.<br>pflag.saintgeorge@gmail.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -113.575974,37.092978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sacramento  Gay & Lesbian Center]]></name>
+        <description><![CDATA[1927 L Street, Sacramento, CA 95811<br>(916) 442-0185<br>The Sacramento Gay & Lesbian Center is dedicated to serving the lesbian, gay, transgender, and bisexual community of the Greater Sacramento area and surrounding counties and its allies by providing space, diverse programming, advocacy, and cultural competency awareness in an affirming, compassionate and safe environment. <br>http://saccenter.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.481374,38.574639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colorado State University GLBT Resource Center</name>
+        <description><![CDATA[Colorado State University, Fort Collins, Colorado 80523, Room 174, Lory Student Center.<br>970.491.4342<br>The GLBT Resource Center seeks to foster a campus free of prejudice, bigotry, harassment, and violence by providing a space for all members of CSU communities to explore and increase their understanding of aspects related to sexual orientation, gender identity and expression in an open and non-judgmental environment.<br> http://www.glbtrc.colostate.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -105.081323,40.577529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>United Student Pride Club</name>
+        <description><![CDATA[Fresno State University, North Maple Avenue, Fresno, CA.<br>United Student Pride Club<br>c/o Women's Resource Center <br>5240 N. Jackson M/S UC 35 <br>Fresno, CA 93740-8023<br>UnitedStudentPride@gmail.com<br>http://www.fresnostate.edu/studentorgs/usp/uspstuff/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -119.749641,36.811709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay, Lesbian, Bisexual, Transgender, and Questioning Services at Miami University</name>
+        <description><![CDATA[501 East High Street | Oxford, Ohio 45056 <br>205 MacMillan Hall<br>Miami University, Oxford<br>8:00am-5:00pm<br>(7:30 am- 4:30 pm during the summer)<br>Hours also Available by Appointment.<br>We provide education, advocacy, support, and safe spaces for gay, lesbian, bisexual, transgender, questioning, queer, asexual, pansexual, intersex, and straight-allied students (and everyone else!).<br>http://www.units.muohio.edu/saf/glbt/about/glbtq.htm]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.734688,39.510367,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Visitor Center on Miami Beach</name>
+        <description><![CDATA[1130 Washington Ave., Miami Beach, Florida 33139.<br><br>The LGBT Visitor Center on Miami Beach exists as part of an initiative by the Miami-Dade Gay & Lesbian Chamber of Commerce Foundation Inc., which serves to to support the education efforts of the Miami-Dade Gay & Lesbian Chamber of Commerce. It is a resource for members of the LGBT community and allies alike visiting Miami Beach.<br><br>Phone: 1 (305) 397-8914<br>Email: mdglcc@bellsouth.net<br>Website: http://www.gogaymiami.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -80.132772,25.782135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PRISM YOUTH INITIATIVE</name>
+        <description><![CDATA[926 15th Street West, Bradenton, FL 34205.<br>Prism Youth Initiative is dedicated to supporting, affirming, encouraging, enabling and empowering the lesbian, gay, bisexual, transgender and questioning youth ages 13-23 of Manatee County. We are committed to doing this in an environment that is safe, hospitable, warm and welcoming.<br>http://www.prismyouth.org/<br>prismyouth@yahoo.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -82.57658,27.490922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Center of Hampton Roads and ACCESS AIDS</name>
+        <description><![CDATA[247 W. 25th Street Norfolk, VA 23517-1307<br>ACCESS AIDS Care provides programs and services to individuals and families impacted by HIV/AIDS in Hampton Roads. The mission of ACCESS AIDS Care is to promote the dignity and wellness of adults, families, youth and children affected by HIV/AIDS through quality support and prevention services so they may live healthy lives.<br><br>http://accessaids.org/site/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -76.287253,36.87106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Harriet Hancock LGBT Center</name>
+        <description><![CDATA[1108 Woodrow Street Columbia, SC 29205.<br><br>Located in the heart of Columbia, the Harriet Hancock LGBT Center is the hub of lesbian, gay, bisexual, and transgender activity in the Midlands of South Carolina.<br>http://lgbtcentersc.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -81.004972,34.004461,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAMP Rehoboth</name>
+        <description><![CDATA[37 Baltimore Avenue , Rehoboth Beach, DE 19971.<br>CAMP Rehoboth is a 501(c)(3) non-profit, gay and lesbian community service organization, originally developed to “Create A More Positive” relationship among all the people of the Rehoboth Beach area.<br><br>http://www.camprehoboth.com/<br>info@camprehoboth.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -75.079528,38.717194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GAY ALLIANCE OF THE GENESEE VALLEY</name>
+        <description><![CDATA[875 East Main Street, Suite 500<br>Rochester, NY 14605.<br>http://www.gayalliance.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -77.588657,43.161099,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IDENTITY</name>
+        <description><![CDATA[336 West 5th Avenue, Anchorage, AK.<br>Identity is a GLBTA 501(c)(3) non-profit corporation based in Anchorage, Alaska.<br>http://www.identityinc.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -149.888698,61.217569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fairbanks GLSEN</name>
+        <description><![CDATA[Fairbanks, AK.<br>The Gay, Lesbian, and Straight Education Network (GLSEN) is the largest national organization that brings together teachers, parents, students, and concerned citizens to work together for our public schools to end discrimination, harassment and violence that is based on perceived sexual orientation.<br>Hours: second Tuesday of every month at 5:00pm. Meeting are generally held at the NEA/FEA offices.  Phone: (907) 457-2787 Website: http://www.angelfire.com/biz3/glsen/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -147.716389,64.837778,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Juneau PFLAG</name>
+        <description><![CDATA[Parents and Friends of Lesbians and Gays .<br>Parents, Families and Friends of Lesbians and Gays promotes the health and well-being of gay, lesbian, and bisexual persons, their families, and friends through: support, to cope with an adverse society; education, to enlighten an ill-informed public; and advocacy, to end discrimination and to secure equal civil rights.<br>Phone: (907) 463-4203 <br>Website: http://www.seagla.org/pflag.shtml]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -134.419722,58.301944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Safe Zone at Montana State University</name>
+        <description><![CDATA[Safe Zone Program<br>Montana State University<br> P.O. Box 174140<br> Bozeman, MT 59717-4140<br>Safe Zone is a program that appears on campuses across the nation and its mission is to “promote a welcoming, inclusive, and emotionally as well as physically safe environment for LGBTQIQ (lesbian, gay, bisexual, transgender, queer, intersex, questioning) students, faculty, and staff through developing a network of allies who have been trained in LGBTQIQ issues.” <br>http://www.montana.edu/safezone/about.html]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -111.041908,45.664446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Syracuse University LGBT Resource Center</name>
+        <description><![CDATA[Syracuse University, 750 Ostrom Avenue, Syracuse, NY.<br>Provides education, advocacy, support, and safe communal space for lesbian, gay, bisexual, transgender, questioning, and straight-allied students, staff, faculty, parents, and alumni of Syracuse University.<br>http://lgbt.syr.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -76.128687,43.037784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Princeton University LGBT Center</name>
+        <description><![CDATA[246 Frist Campus Center, Princeton, NJ 08544.<br>Princeton University's Lesbian, Gay, Bisexual, and Transgender (LGBT) Center is by, for, and about lesbian, gay, bisexual, transgender, questioning, queer, asexual, and ally members of the Princeton University community.<br>http://www.princeton.edu/lgbt/about/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -74.655139,40.346716,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Michigan State University LGBT Resource Center</name>
+        <description><![CDATA[302 Student Services Building, East Lansing, MI 48824-1113.<br>The LBGT Resource Center* leads and collaborates on university-wide initiatives that enhance campus climate and support services for MSU students who identify as lesbian, bisexual, gay, transgender, and their communities, at Michigan State University.<br>http://lbgtrc.msu.edu]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.476243,42.732136,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Office of LGBTQ Student Life at the University of Chicago, IL</name>
+        <description><![CDATA[University of Chicago, 5710 South Woodlawn Avenue, Chicago, IL 60637.<br>The Office of Lesbian, Gay, Bisexual, Transgender and Queer (LGBTQ) Student Life is the hub for all LGBTQ student life at The University of Chicago.<br>http://lgbtq.uchicago.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -87.596439,41.791017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gay and Lesbian Community Center of Pittsburgh</name>
+        <description><![CDATA[4905 Fifth Avenue, Pittsburgh, PA 15213.<br>The Gay & Lesbian Community Center of Pittsburgh (GLCC) provides gay, lesbian, bisexual and transgender (LGBT) individuals, their families and supporters in Western Pennsylvania with resources and opportunities to promote visibility, understanding, and equality within the LGBT communities and the community at large. The GLCC will work toward these goals through education, social support, networking, and advocacy.<br>http://www.glccpgh.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -79.943753,40.44734,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cornell University LGBT Resource Center</name>
+        <description><![CDATA[Cornell University, 3rd Floor, 626 Thurston Avenue, Ithaca, NY.<br>Coordinates the efforts of the entire Cornell University community to ensure the inclusion of all lesbian, gay, bisexual, and transgender people, and to eliminate heterosexism and gender identity oppression.  <br>http://lgbtrc.cornell.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -76.484353,42.453933,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[UT Knoxville OUTreach LGBT & Ally Resource Center]]></name>
+        <description><![CDATA[The University of Tennessee, Knoxville, TN 3799.<br>The LGBT and Ally Resource Center works to provide a safe and welcoming environment for UT's diverse lesbian, gay, bisexual, transgender, queer, questioning, intersex, and ally communities.<br>http://lgbt.utk.edu/center/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -83.941483,35.947395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLSEN, Greater Cincinnati Chapter</name>
+        <description><![CDATA[103 William Howard Taft Road, Cincinnati Ohio, 45219.<br><br>The group meets every Sunday from 3-530pm, at Mt. Auburn Presbyterian.<br><br>http://glsen.org/chapters/cincinnati/youthgroup]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.605713,39.155622,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Institute for International Cooperation and Development</name>
+        <description><![CDATA[1117 Hancock Road, Williamstown, MA.<br>Works to move humanitarian development forward by working towards achieving the objectives outlined in the Declaration of Human Rights.<br>www.iicd-volunteer.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -73.27099,42.643627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGBT at MIT</name>
+        <description><![CDATA[Massachusetts Institute of Technology, 77 Massachusetts Avenue,  Cambridge, MA 02139<br>room W20-549<br>"MIT and its surrounding communities offer a broad spectrum of services, activities, and resources for lesbian, gay, bisexual, transgender (LGBT), questioning, and supportive individuals. In fact, last year, MIT was rated the most gay-friendly school in the country!" <br>http://lbgt.mit.edu/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -71.09355,42.359017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PFLAG Abingdon-Washington County</name>
+        <description><![CDATA[PO Box 262 Glade Spring, VA 24340.<br>1 (276) 415-0213.<br><br>PFLAG Abingdon-Washington County is here to support LGBT people in our area, of any age, and their friends and family, any way can.  We meet once a month, but can do private talks through phone, facebook/website, or in person.  We have people willing to talk one on one, and we often feature a guest speaker at meetings.  We're here to help and we love you the way you are.<br><br>www.pflagwashco.org<br>facebook.com/pflagwashco<br><br>contact person: info@pflagwashco.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -81.862848,36.760349,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pacific Pride Foundation (Location 1/2)</name>
+        <description><![CDATA[819 East Church Street, Santa Maria, CA 93454.<br><br>The Pacific Pride Foundation is located in Santa Barbara County and holds youth support groups in Santa Maria (819 West Church St., 93454) and in the city of Santa Barbara (126 E.Haley St. suite A-11, 93101) on Fridays from 4pm- 5:30pm.<br><br>Contact person: corinne@pacificpridefoundation.org<br>Phone: 805.963.3636 ext. 117 <br><br><br>http://pacificpridefoundation.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -120.424833,34.952042,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pacific Pride Foundation (Location 2/2)</name>
+        <description><![CDATA[126 E.Haley St. suite A-11, Santa Barbara, CA 93101.<br><br>The Pacific Pride Foundation is located in Santa Barbara County and holds youth support groups in Santa Maria (819 West Church St., 93454) and in the city of Santa Barbara (126 E.Haley St. suite A-11, 93101) on Fridays from 4pm- 5:30pm.<br><br>Contact person: corinne@pacificpridefoundation.org<br>Phone: 805.963.3636 ext. 117]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -119.693038,34.418211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shades of Yellow (MN)</name>
+        <description><![CDATA[Shades of Yellow (SOY) is a nonprofit Hmong LGBTQ organization that provides support, education, and advocacy to Hmong LGBTQ and allies.<br><br>995 University Ave. W. #215 St. Paul, MN 55104 (At University Ave W & Chatsworth (Lexington) 2nd Floor in the Sunrise Plaza)<br><br>http://www.shadesofyellow.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.142498,44.956037,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Proud Horizons, Omaha</name>
+        <description><![CDATA[Proud Horizons is a youth group specifically for gay, lesbian, bisexual, transgender and heterosexual youth ages 13 to 23. <br><br>PO Box 390064 · Omaha, NE 68139-0064  <br><br>Email: info@pflag-omaha.org or proudhorizons@yahoo.com. <br><br>Phone: (402) 291-6781<br><br>http://proudhorizons.pflag-omaha.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -96.12,41.22,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nebraska AIDS Project</name>
+        <description><![CDATA[http://www.nap.org , <br><br>Email us: info@nap.org<br><br>Omaha Office (Home Office):<br>250 South 77th Street Suite A<br>Omaha, NE 68114<br>Telephone: (402) 552-9260<br>Fax: (402) 552-9251(main)<br>Fax: (402) 552-9258 (admin)<br>(also serving Southwest Iowa)<br><br>Lincoln Office:<br>1120 K Street, Suite 100<br>Lincoln, NE 68508<br>Telephone: (402) 476-7000<br>Fax: (402) 476-3456<br><br>Kearney Office:<br>Mailing Address:<br>P.O. Box 2378<br>Street Address:<br>11 W. Railroad Street<br>Kearney, NE 68848<br>Telephone: (308) 338-0527<br>Fax: (308) 338-0601<br><br>Norfolk Office:<br>123 N. 4th Street, Ste. 8<br>Norfolk, NE 68701<br>Telephone: (402) 649-3584<br>Fax: (402) 371-3857<br><br>Scottsbluff Office:<br>Mailing Address:<br>PO Box 1500<br>Street Address:<br>4500 Ave I<br>Scottsbluff, NE 69361<br>Telephone: (308) 635-3807<br>Fax: (308) 632-1313<br>(also serving Eastern Wyoming)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -96.032975,41.258404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LaCrosse LGBT Resource Center</name>
+        <description><![CDATA[303 Pearl Street  La Crosse, WI 54601<br>(608) 784-0452<br><br>The LGBT Resource Center provides services to foster understanding and build connections on issues related to sexual orientation and gender identity to the 7 Rivers Region through education, events and programming.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -91.252956,43.811971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MCAD Gay Club</name>
+        <description><![CDATA["Gay Club is a LGBTA club for anyone, even yo grandma! We meet the 1st and 3rd Tuesday of every month from 9-10pm. This w ill be a safe place for us all to discus all things serious and not so serious. We will also be attending various drag shows, watch LGBT films, and go on other Gay adventures in minneapolis. There will also be a possible speed dating event and school drag competition."<br><br>facebook group (https://www.facebook.com/groups/184227628378510/)]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.274655,44.956705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Iowa Safe Schools</name>
+        <description><![CDATA[Iowa Safe Schools was founded to respond to the issues of bullying, harassment, and discrimination faced by Iowa's lesbian, gay, bisexual, transgender, and questioning (LGBTQ) student population.<br><br>Phone: 515-471-8024<br>Address: PO Box 704 Des Moines, IA 50303<br><br>website (http://iowasafeschools.org/content/view/46/26/))]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.609931,41.600008,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>QNYN (Queer Nebraska Youth Network)</name>
+        <description><![CDATA[The QNYNs are the only youth-focused, peer-led groups aimed at providing social activities, connections to resources, and confidential online discussion to lesbian, gay, bi, trans*, and queer youth in Nebraska. By us, for us since 2010!<br><br>email: theqnyn@gmail.com<br><br>https://sites.google.com/site/theqnyn/<br><br>https://www.facebook.com/pages/The-Queer-Nebraska-Youth-Networks/172974379484991]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -101.865234,41.310824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Iowa City - United Action for Youth</name>
+        <description><![CDATA[For over four decades UAY has provided a variety of services to assist youth and family to a healthy future. UAY offers youth development, counseling, and prevention programs that make use of young people’s talents, creativity, and energies.<br><br>Address: 410 Iowa Avenue, Iowa City, IA 52240<br><br>http://www.unitedactionforyouth.org/content/<br><br>Phone: (319) 338-7518]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -91.529587,41.661629,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trans Youth Support Network (TYSN)</name>
+        <description><![CDATA[The Trans Youth Support Network is a partnership of youth and community members working together to support trans youth in Minnesota.<br><br>Through organizing, education, advocacy, and youth leadership development, we seek to address the root cause of injustice and oppression that queer, trans and gender non-conforming youth and youth of color face.<br><br>http://www.transyouthsupportnetwork.org]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -93.266373,44.976942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cincinnati Trans and Queer Teen Space</name>
+        <description><![CDATA[Looking for a place where you can be yourself? Want to meet new friends? Join TeenSpace: a safe space for Trans* and Queer teenagers and their friends.<br><br>We also host a special Parent Meet ‘n Greet during every TeenSpace.<br><br>http://transwellness.org/teenspace]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.353027,39.172659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Diverse City Youth Chorus</name>
+        <description><![CDATA[Diverse City Youth Chorus<br>Young people aged 13- 22 are invited to sing with Cincinnati’s only performing arts organization for LGBTIQ and straight youth. <br>http://diversecityyouthchorus.com]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.79248,39.223743,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PFLAG Cincinnati</name>
+        <description><![CDATA[PFLAG Cincinnati is a non-profit organization of volunteers who offer support for lesbian, gay, bisexual, transgender, and intersex individuals, families and friends in a safe and caring environment.<br>http://www.pflagcinci.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -84.70459,39.155622,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Q Center</name>
+        <description><![CDATA[We are a nonprofit dedicated to providing education, community, and a safe space for youth who are lesbian, gay, bisexual, transgender, queer (LGBTQ), and straight allies. Our mission is to empower youth to make informed choices and live healthy lives.<br>The Q Center, a drop-in center for LGBTQ youth and their allies. The Q Center is open to youth ages 13-20 on Friday nights from 6-10 pm. Activities include educational workshops, games, dances, art, field-trips, support groups, and more! Although we rent space under the same roof as the Family of God Lutheran Church, we are NOT a faith-based organization.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.651367,47.632754,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gender Spectrum</name>
+        <description><![CDATA[www.genderspectrum.org. Gender Spectrum provides education, training and support to help create a gender sensitive and inclusive environment for all children and teens.  We are a national organization that provides education and training, as well as family support services. Contact us at (510) 788-4412, info@genderspectrum.org. <br>https://www.genderspectrum.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -123.486328,39.842286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Camp Aranu'tiq]]></name>
+        <description><![CDATA[Camp Aranu'tiq, a nonprofit program serving trans & gender-variant youth ages 4 - 18 and their families. Camp Aranu'tiq has flagship camps in CA and NH as well as leadership programs for older teens and weekend family camps.<br>http://www.camparanutiq.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -120.849609,38.065392,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Camp Aranu'tiq]]></name>
+        <description><![CDATA[Camp Aranu'tiq, a nonprofit program serving trans & gender-variant youth ages 4 - 18 and their families. Camp Aranu'tiq has flagship camps in CA and NH as well as leadership programs for older teens and weekend family camps.<br>http://www.camparanutiq.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -71.938477,43.068888,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Adolescent Counseling Services</name>
+        <description><![CDATA[1717 Embarcadero Rd. Ste. 4000<br>Palo Alto, CA 94303.<br>650.424.0852<br>www.acs-teens.org (http://www.acs-teens.org) <br><br>Adolescent Counseling Services (ACS) (http://acs-teens.org) empowers youth in our community to find their way through social-emotional support and by building safe, accepting communities. ACS' Outlet Program (http://www.acs-teens.org/what-we-do/outlet/) provides support groups, Spanish bilingual support, leadership development, advocacy, and education for LGBTQQ youth on the San Francisco Peninsula. ACS also offers on-campus counseling, counseling in the afternoons & evenings, and substance abuse treatment for all young people ages 10-25.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.120451,37.450136,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Children's Hospital Los Angeles]]></name>
+        <description><![CDATA[5000 Sunset Blvd, 4th floor, Los Angeles, CA 90027<br>The Division of Adolescent and Young Adult Medicine at Children's Hospital Los Angeles serves youth ages 12-24. We provide LGBT friendly HIV prevention services including HIV/STI testing and health education groups. We also provide HIV care services including medical care, case management, mental health, and support groups. http://tinyurl.com/CHLA-RRP]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -118.298464,34.097982,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Placemark 183</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.877563,35.087327,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Crib</name>
+        <description><![CDATA[The Crib is The Night Ministry's low-threshold overnight shelter for young people ages 18-24 to get a hot meal, sleep, do yoga, dance, do homework and art, rest, and be safe. Located in Lakeview, the Crib space is welcoming to people of all genders and sexual orientations, and is open 7 nights a week, 8:30pm-9am. We recognize that not all street-based youth are prepared to enter a more structured environment, and that many need their basic needs met before they can gather the necessary resources and energy to work towards their longer-term goals. For more information about The Crib and The Night Ministry please visit http://www.thenightministry.org/]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -87.6511359,41.9471068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Night Ministry Youth Outreach Team (YOT)</name>
+        <description>Street Outreach Events take place on Tuesday and Thursday nights. In summer, the event runs from 8:30 -11/11:30 p.m. In winter, the event runs from 8:30 - 10/10:30 p.m. There is usually music and food. Providing services in a youth-friendly atmosphere helps staff and volunteers to connect with youth to build trusting relationships. Positive relationships are the first step in helping youth explore their options based on their strengths. For more information please visit http://www.thenightministry.org/</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -87.6493442,41.9400284,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Detroit REPRESENT!</name>
+        <description>We are a collective of LGBTQ youth of color, who use media to change the problems we face in our community.  www.facebook.com/detroitrepresent</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -83.067192,42.348614,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Y.E.S. (Youth Equality Services)</name>
+        <description>http://www.bethechangeok.org/youth-services.html Youth Equality Services (YES) is a youth-lead, adult-supported group that provides community support to LGBTQ and marginalized youth ages 13 to 20.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -97.5490022,35.5128935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Untitled layer</name>
+    </Folder>
+  </Document>
+</kml>

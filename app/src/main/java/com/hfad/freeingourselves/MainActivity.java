@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopics(db); //TODO: this needs an asynctask
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(db); //TODO: this needs an asynctask
             // TODO: deal with null
             titles = new String[tempList.size()];
             for (int i = 0; i < tempList.size(); i++) {
@@ -145,9 +145,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
                 break;
             case 4:
                 fragment = new WorkoutIntroFragment();
-                break;
-            case 5:
-                fragment = new ResourceListFragment();
                 break;
             default:
                 fragment = new TopFragment();

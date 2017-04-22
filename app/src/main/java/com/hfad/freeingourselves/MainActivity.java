@@ -61,43 +61,43 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
 
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(this); //TODO: this needs an asynctask
-            // TODO: deal with null
-            titles = new String[tempList.size()];
-            for (int i = 0; i < tempList.size(); i++) {
-                titles[i] = tempList.get(i);
+        ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(this); //TODO: this needs an asynctask
+        // TODO: deal with null
+        titles = new String[tempList.size()];
+        for (int i = 0; i < tempList.size(); i++) {
+            titles[i] = tempList.get(i);
 
-                //super.onActivityCreated(savedInstanceState);
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                        this, android.R.layout.simple_list_item_1,
-                        titles);
-                drawerList.setAdapter(adapter);
+            //super.onActivityCreated(savedInstanceState);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                    this, android.R.layout.simple_list_item_1,
+                    titles);
+            drawerList.setAdapter(adapter);
 
 
-                //Populate the ListView.
+            //Populate the ListView.
 
-                drawerList.setOnItemClickListener(new DrawerItemClickListener());
-                if (savedInstanceState == null) {
-                    selectItem(0);
+            drawerList.setOnItemClickListener(new DrawerItemClickListener());
+            if (savedInstanceState == null) {
+                selectItem(0);
+            }
+
+            drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
+                    R.string.open_drawer, R.string.close_drawer) {
+                public void onDrawerClosed(View view) {
+                    super.onDrawerClosed(view);
+                    invalidateOptionsMenu();
                 }
 
-                drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
-                        R.string.open_drawer, R.string.close_drawer) {
-                    public void onDrawerClosed(View view) {
-                        super.onDrawerClosed(view);
-                        invalidateOptionsMenu();
-                    }
+                public void onDrawerOpened(View drawerView) {
+                    super.onDrawerOpened(drawerView);
+                    invalidateOptionsMenu();
+                }
+            };
+            drawerLayout.addDrawerListener(drawerToggle);
 
-                    public void onDrawerOpened(View drawerView) {
-                        super.onDrawerOpened(drawerView);
-                        invalidateOptionsMenu();
-                    }
-                };
-                drawerLayout.addDrawerListener(drawerToggle);
-
-                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-                getSupportActionBar().setHomeButtonEnabled(true);
-            }
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+        }
     }
 
     @Override

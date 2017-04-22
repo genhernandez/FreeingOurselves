@@ -47,7 +47,7 @@ public class HealthCareProviderFragment extends Fragment {
         Log.d("HealthCareProvider", "test 2");
         SQLiteDatabase db = freeingOurselvesDB.getReadableDatabase();
         Log.d("HealthCareProvider", "test 3");
-        ArrayList<String> questionArray =  FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(db);
+        ArrayList<String> questionArray =  FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(view.getContext());
         Log.d("HealthCareProvider", "test 4");
         CheckedTextView checkedTextView;
         int qALength = questionArray.size();

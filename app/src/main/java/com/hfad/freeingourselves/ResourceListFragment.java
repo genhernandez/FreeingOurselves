@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.app.Activity;
 import android.widget.ListView;
+
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 import android.database.sqlite.SQLiteException;
@@ -31,32 +32,27 @@ public class ResourceListFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
         resourceList.clear();
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(getActivity());
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            Log.v("Opened DB", "");
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(db); //TODO: asynctask, do something if it returns null
-            // TODO: deal with null
-            for (int i = 0; i < tempList.size(); i++) {
-                resourceList.add(tempList.get(i));
-            }
-            resourceList.add("See nearby resources on map");
-            db.close();
-        } catch (SQLiteException e) {
-            Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
+        final View view = inflater.inflate(R.layout.fragment_top, container, false);
+
+        ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(view.getContext()); //TODO: asynctask, do something if it returns null
+        // TODO: deal with null
+        for (int i = 0; i < tempList.size(); i++) {
+            resourceList.add(tempList.get(i));
         }
+        resourceList.add("See nearby resources on map");
+
         //super.onActivityCreated(savedInstanceState);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 getActivity(), android.R.layout.simple_list_item_1,
                 resourceList);
         setListAdapter(adapter);
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+
         super.onActivityCreated(savedInstanceState);
     }
 

@@ -60,52 +60,44 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         drawerList = (ListView) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(db); //TODO: this needs an asynctask
+
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(this); //TODO: this needs an asynctask
             // TODO: deal with null
             titles = new String[tempList.size()];
             for (int i = 0; i < tempList.size(); i++) {
                 titles[i] = tempList.get(i);
+
+                //super.onActivityCreated(savedInstanceState);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                        this, android.R.layout.simple_list_item_1,
+                        titles);
+                drawerList.setAdapter(adapter);
+
+
+                //Populate the ListView.
+
+                drawerList.setOnItemClickListener(new DrawerItemClickListener());
+                if (savedInstanceState == null) {
+                    selectItem(0);
+                }
+
+                drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
+                        R.string.open_drawer, R.string.close_drawer) {
+                    public void onDrawerClosed(View view) {
+                        super.onDrawerClosed(view);
+                        invalidateOptionsMenu();
+                    }
+
+                    public void onDrawerOpened(View drawerView) {
+                        super.onDrawerOpened(drawerView);
+                        invalidateOptionsMenu();
+                    }
+                };
+                drawerLayout.addDrawerListener(drawerToggle);
+
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setHomeButtonEnabled(true);
             }
-            db.close();
-        } catch (SQLiteException e) {
-            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        //super.onActivityCreated(savedInstanceState);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                this, android.R.layout.simple_list_item_1,
-                titles);
-        drawerList.setAdapter(adapter);
-
-
-
-        //Populate the ListView.
-
-        drawerList.setOnItemClickListener(new DrawerItemClickListener());
-        if (savedInstanceState == null) {
-            selectItem(0);
-        }
-
-        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
-                R.string.open_drawer, R.string.close_drawer) {
-            public void onDrawerClosed(View view) {
-                super.onDrawerClosed(view);
-                invalidateOptionsMenu();
-            }
-
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-                invalidateOptionsMenu();
-            }
-        };
-        drawerLayout.addDrawerListener(drawerToggle);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
     }
 
     @Override
@@ -235,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
     @Override
     public void resourceListItemClicked(int position) {
         String url = null;
-        try {
+        try { //TODO: this should be in utilities?
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             url = getResourceLink(db, position);

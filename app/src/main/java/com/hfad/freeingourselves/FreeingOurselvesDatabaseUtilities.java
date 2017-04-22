@@ -103,7 +103,7 @@ final public class FreeingOurselvesDatabaseUtilities {
         try {
             ArrayList<String> healthQuestions = new ArrayList<>();
             Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
-                    new String[]{"STEP_INFO", "NOTES", "COMPLETED"},
+                    new String[]{"STEP_INFO", "NOTES", "SAVED"},
                     "_id=?",
                     null, null, null, null);
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {

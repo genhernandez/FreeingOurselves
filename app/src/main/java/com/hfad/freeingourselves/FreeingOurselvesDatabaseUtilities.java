@@ -120,6 +120,11 @@ final public class FreeingOurselvesDatabaseUtilities {
      */
     static Cursor getWorkouts(SQLiteDatabase db) {
         try {
+/* This was in Hannah's commit? Hannah please delete if this isn't in the right place. I'm assuming because it's in a workout method
+            ArrayList<String> healthQuestions = new ArrayList<>();
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
+                    new String[]{"STEP_INFO", "NOTES", "SAVED"},
+                    "_id=?", */
             return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
                     new String[]{"_id", "NAME", "DETAILS", "PICTURE_FILE", "COUNT"},
                     null,

@@ -15,7 +15,7 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     // Topics methods
-    
+
     /**
      * Gets a list of the topic titles. If a database error occurs, null is returned; the caller
      * will need to handle this case.
@@ -120,11 +120,6 @@ final public class FreeingOurselvesDatabaseUtilities {
      */
     static Cursor getWorkouts(SQLiteDatabase db) {
         try {
-/* This was in Hannah's commit? Hannah please delete if this isn't in the right place. I'm assuming because it's in a workout method
-            ArrayList<String> healthQuestions = new ArrayList<>();
-            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
-                    new String[]{"STEP_INFO", "NOTES", "SAVED"},
-                    "_id=?", */
             return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
                     new String[]{"_id", "NAME", "DETAILS", "PICTURE_FILE", "COUNT"},
                     null,
@@ -139,8 +134,8 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Updates the favorite column for a specific workout. If a database error occurs, false is
      * returned; the caller will need to handle this case.
      *
-     * @param db the database to update
-     * @param id the workout ID
+     * @param db         the database to update
+     * @param id         the workout ID
      * @param isFavorite whether the workout is favorited
      * @return true if successful, false otherwise
      */
@@ -205,11 +200,34 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
+     * Gets a list of the healthcare questions. If a database error occurs, null is returned; the
+     * caller will need to handle this case.
+     *
+     * @param db the database to search
+     * @return list of healthcare questions or null if there is an error
+     */
+    static ArrayList<String> getHealthCareQuestions(SQLiteDatabase db) {
+        try {
+            ArrayList<String> questions = new ArrayList<>();
+            String[] columns = new String[]{"STEP_INFO"};
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE, columns, null, null, null, null, null);
+            for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
+                questions.add(cursor.getString(0));
+            }
+            cursor.close();
+            return questions;
+        } catch (SQLiteException e) {
+            Log.d("getHealthCareQuestions", "healthcare table error");
+            return null;
+        }
+    }
+
+    /**
      * Updates the note column for a specific healthcare question. If a database error occurs,
      * false is returned; the caller will need to handle this case.
      *
-     * @param db the database to update
-     * @param id the healthcare question ID
+     * @param db    the database to update
+     * @param id    the healthcare question ID
      * @param notes the notes to add
      * @return true if successful, false otherwise
      */
@@ -231,8 +249,8 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Updates the saved column for a specific healthcare question. If a database error occurs,
      * false is returned; the caller will need to handle this case.
      *
-     * @param db the database to update
-     * @param id the workout ID
+     * @param db      the database to update
+     * @param id      the workout ID
      * @param isSaved whether the workout is favorited
      * @return true if successful, false otherwise
      */

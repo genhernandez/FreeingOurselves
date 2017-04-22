@@ -40,24 +40,13 @@ public class TopFragment extends Fragment {
         // Populate favorites
         View topLayout = LayoutInflater.from(view.getContext()).inflate(R.layout.fragment_top, null);
         ListView favoritesList = (ListView) topLayout.findViewById(R.id.favorites_list);
-        Log.d("MainActivity", "check one");
         //TODO: deal with asynctasks and null
-        try {
-            SQLiteOpenHelper starbuzzDatabaseHelper = new FreeingOurselvesDatabaseHelper(view.getContext());
-            SQLiteDatabase db = starbuzzDatabaseHelper.getReadableDatabase();
-            Log.d("MainActivity", "check two");
-            Cursor cursor = FreeingOurselvesDatabaseUtilities.getFaveTopics(db);
-            Log.d("MainActivity", "check three");
-            CursorAdapter favoriteAdapter = new SimpleCursorAdapter(view.getContext(),
-                    android.R.layout.simple_list_item_1, cursor, new String[]{"TITLE"},
-                    new int[]{android.R.id.text1}, 0);
-            Log.d("MainActivity", "check four");
-            favoritesList.setAdapter(favoriteAdapter);
-            Log.d("MainActivity", "check five");
-        } catch (SQLiteException e) {
-            Toast toast = Toast.makeText(view.getContext(), "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
-        }
+
+        Cursor cursor = FreeingOurselvesDatabaseUtilities.getFaveTopics(view.getContext());
+        CursorAdapter favoriteAdapter = new SimpleCursorAdapter(view.getContext(),
+                android.R.layout.simple_list_item_1, cursor, new String[]{"TITLE"},
+                new int[]{android.R.id.text1}, 0);
+        favoritesList.setAdapter(favoriteAdapter);
 
         //Navigate to favorites when clicked
         favoritesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {

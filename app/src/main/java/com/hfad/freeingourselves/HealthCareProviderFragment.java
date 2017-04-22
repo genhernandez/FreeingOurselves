@@ -55,6 +55,8 @@ public class HealthCareProviderFragment extends Fragment {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(),
                 android.R.layout.simple_list_item_1, questionArray);
         listView.setAdapter(adapter);
+       
+
 
         return view;
     }

@@ -46,9 +46,8 @@ public class HealthCareProviderFragment extends Fragment {
 
         frameLayout.addView(listView);
 
-        SQLiteOpenHelper freeingOurselvesDB = new FreeingOurselvesDatabaseHelper(view.getContext());
-        SQLiteDatabase db = freeingOurselvesDB.getReadableDatabase();
-        ArrayList<String> questionArray =  FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(db);
+        //TODO: asynctask and null
+        ArrayList<String> questionArray =  FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(view.getContext());
 
         Log.d("HealthCareProvider", questionArray.toString());
 

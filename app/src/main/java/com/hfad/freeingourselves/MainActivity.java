@@ -16,7 +16,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -35,7 +34,7 @@ import java.util.ArrayList;
 //import android.content.Intent;
 //import android.widget.ShareActionProvider;
 
-public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
+public class MainActivity extends Activity implements ResourceListFragment.ResourceListListener {
 
 
     private DrawerLayout drawerLayout;
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(db); //TODO: this needs an asynctask
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopics(db); //TODO: this needs an asynctask
             // TODO: deal with null
             titles = new String[tempList.size()];
             for (int i = 0; i < tempList.size(); i++) {
@@ -104,8 +103,8 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         };
         drawerLayout.addDrawerListener(drawerToggle);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
 
     }
 
@@ -176,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         } else {
             title = titles[position];
         }
-        getSupportActionBar().setTitle(title);
+        getActionBar().setTitle(title);
     }
 
 
@@ -235,26 +234,18 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
      */
     @Override
     public void resourceListItemClicked(int position) {
-        Log.v("Clicked!", "position is " + position);
         String url = null;
-        if ((position+1) == ResourceListFragment.resourceList.size()){
-            Intent intent = new Intent(MainActivity.this, MapActivity.class);
-            startActivity(intent);
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            url = getResourceLink(db, position);
+        } catch (SQLiteException e) {
+            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
+            toast.show();
         }
-        else {
-            try {
-                SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
-                SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-                url = getResourceLink(db, position);
-            } catch (SQLiteException e) {
-                Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-                toast.show();
-            }
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(url));
-            startActivity(i);
-        }
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
-
 
 }

@@ -1,7 +1,6 @@
 package com.hfad.freeingourselves;
 
-//import android.app.ActionBar;
-
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -16,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -34,7 +34,7 @@ import java.util.ArrayList;
 //import android.content.Intent;
 //import android.widget.ShareActionProvider;
 
-public class MainActivity extends Activity implements ResourceListFragment.ResourceListListener {
+public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
 
     private DrawerLayout drawerLayout;
@@ -63,7 +63,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopics(db); //TODO: this needs an asynctask
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(db); //TODO: this needs an asynctask
             // TODO: deal with null
             titles = new String[tempList.size()];
             for (int i = 0; i < tempList.size(); i++) {
@@ -103,8 +103,8 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         };
         drawerLayout.addDrawerListener(drawerToggle);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
     }
 
@@ -175,7 +175,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         } else {
             title = titles[position];
         }
-        getActionBar().setTitle(title);
+        getSupportActionBar().setTitle(title);
     }
 
 

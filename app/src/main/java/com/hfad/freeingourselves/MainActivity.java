@@ -63,7 +63,7 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopics(db); //TODO: this needs an asynctask
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(db); //TODO: this needs an asynctask
             // TODO: deal with null
             titles = new String[tempList.size()];
             for (int i = 0; i < tempList.size(); i++) {
@@ -144,9 +144,6 @@ public class MainActivity extends Activity implements ResourceListFragment.Resou
                 break;
             case 4:
                 fragment = new WorkoutIntroFragment();
-                break;
-            case 5:
-                fragment = new MapFragment();
                 break;
             default:
                 fragment = new TopFragment();

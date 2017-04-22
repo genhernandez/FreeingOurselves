@@ -45,7 +45,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addTopic(db, "Finding Healthcare Allies", "healthcare");
             addTopic(db, "Resources", "resources");
             addTopic(db, "Workouts", "workouts");
-            addTopic(db, "Nearby Resources", "map");
 
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
@@ -53,7 +52,8 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "NAME TEXT, "
                     + "DETAILS TEXT, "
                     + "PICTURE_FILE TEXT, "
-                    + "COUNT INTEGER);");
+                    + "COUNT INTEGER, "
+                    + "FAVE INTEGER);");
             addWorkout(db, "Alternating Bicep Curl: 8-12 reps", "Starting with hands hanging by " +
                     "your sides, slowly curl the weight of one arm up. Hold the contraction for a" +
                     " second and then slowly lower. Repeat with the other arm.");
@@ -266,6 +266,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         workoutValues.put("DETAILS", details);
         workoutValues.put("PICTURE_FILE", "");
         workoutValues.put("COUNT", 0);
+        workoutValues.put("FAVE", 0);
         db.insert(WORKOUTS, null, workoutValues);
     }
 

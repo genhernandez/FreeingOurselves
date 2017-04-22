@@ -31,9 +31,6 @@ import java.util.List;
  */
 public class TopFragment extends Fragment {
 
-    final static String FAVE_NUM = "favorite_num";
-
-
     public TopFragment() {
         // Required empty public constructor
     }
@@ -79,14 +76,14 @@ public class TopFragment extends Fragment {
 
         // Navigate to WorkoutActivity if a workout is clicked.
         //TODO: finish this
-//        workoutsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
-//                Intent intent = new Intent(MainActivity.class, WorkoutActivity.class);
-//                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
-//                startActivity(intent);
-//            }
-//        });
+        workoutsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
+                Intent intent = new Intent(view.getContext(), WorkoutActivity.class);
+                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

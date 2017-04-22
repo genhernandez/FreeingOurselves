@@ -1,18 +1,43 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hfad.freeingourselves.TopFragment">
+    tools:context="com.hfad.freeingourselves.TopFragment"
+    android:orientation="vertical"
+    android:id="@+id/fragment_layout"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Genesis was here." />
+        android:layout_height="wrap_content"
+        android:id="@+id/intro"
+        android:text="@string/intro"
+        android:paddingBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite_topics"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/favorites_list">
+        android:id="@+id/favorite_topics_list"
+        android:paddingBottom="30dp">
     </ListView>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite_workouts"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favorite_workouts_list">
+    </ListView>
+
+</LinearLayout>

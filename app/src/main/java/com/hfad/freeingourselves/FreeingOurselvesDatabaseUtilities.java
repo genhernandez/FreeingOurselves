@@ -44,6 +44,34 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
+     * Updates the favorite column for a specific topic. If a database error occurs, false is
+     * returned; the caller will need to handle this case.
+     *
+     * @param id         the topic ID
+     * @param isFavorite whether the topic is favorited
+     * @return true if successful, false otherwise
+     */
+    static boolean updateTopicsFavorite(Context context, int id, boolean isFavorite) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            ContentValues topicValues = new ContentValues();
+            if (isFavorite) {
+                topicValues.put("FAVE", 1);
+            } else {
+                topicValues.put("FAVE", 0);
+            }
+            db.update(FreeingOurselvesDatabaseHelper.TOPICS, topicValues, "_id = ?",
+                    new String[]{Integer.toString(id)});
+            db.close();
+            return true;
+        } catch (SQLiteException e) {
+            Log.d("updateTopicsFavorite", "topics table error");
+            return false;
+        }
+    }
+
+    /**
      * Gets a cursor with only the favorited topics. The cursor contains, in this order, values for
      * int id and String title. If a database error occurs, null is returned; the caller will need
      * to handle this case.

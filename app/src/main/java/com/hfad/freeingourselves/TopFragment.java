@@ -1,6 +1,7 @@
 package com.hfad.freeingourselves;
 
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -14,9 +15,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
+
+import java.util.List;
 
 
 /**
@@ -24,7 +31,7 @@ import android.widget.Toast;
  */
 public class TopFragment extends Fragment {
 
-    final static String TOPIC_NUM = "topic_num";
+    final static String FAVE_NUM = "favorite_num";
 
 
     public TopFragment() {
@@ -37,27 +44,88 @@ public class TopFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_top, container, false);
-        // Populate favorites
-        View topLayout = LayoutInflater.from(view.getContext()).inflate(R.layout.fragment_top, null);
-        ListView favoritesList = (ListView) topLayout.findViewById(R.id.favorites_list);
-        //TODO: deal with asynctasks and null
 
-        Cursor cursor = FreeingOurselvesDatabaseUtilities.getFaveTopics(view.getContext());
-        CursorAdapter favoriteAdapter = new SimpleCursorAdapter(view.getContext(),
-                android.R.layout.simple_list_item_1, cursor, new String[]{"TITLE"},
+        ListView topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
+        ListView workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
+
+        //TODO: delete these later
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 2, true);
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 4, true);
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 1, true);
+        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(view.getContext(), 3, true);
+
+        // Show favorite topics
+        Cursor topicsCursor = FreeingOurselvesDatabaseUtilities.getFaveTopics(view.getContext());   //TODO: deal with asynctasks and null
+        CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
+                android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
                 new int[]{android.R.id.text1}, 0);
-        favoritesList.setAdapter(favoriteAdapter);
+        topicsView.setAdapter(topicsAdapter);
 
-        //Navigate to favorites when clicked
-        favoritesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //Navigate to favorite topic when clicked
+        //TODO: broken
+        topicsView.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
-                Intent intent = new Intent(view.getContext(), TopFragment.class);
-                intent.putExtra(TOPIC_NUM, (int) id);
-                startActivity(intent);
+                selectTopicItem(position);
             }
         });
+
+        // Show favorite workouts
+        Cursor workoutsCursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(view.getContext());   //TODO: deal with asynctasks and null
+        CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
+                android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
+                new int[]{android.R.id.text1}, 0);
+        workoutsView.setAdapter(workoutsAdapter);
+
+        // Navigate to WorkoutActivity if a workout is clicked.
+        //TODO: finish this
+//        workoutsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
+//                Intent intent = new Intent(MainActivity.class, WorkoutActivity.class);
+//                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
+//                startActivity(intent);
+//            }
+//        });
+
         return view;
     }
 
+    private void selectWorkoutItem(int position) {
+
+    }
+
+    private void selectTopicItem(int position) {
+        Fragment fragment;
+        switch (position) {
+            case 1:
+                fragment = new TopFragment();
+                break;
+            case 2:
+                fragment = new TestosteroneFragment();
+                break;
+            case 3:
+                fragment = new HealthCareProviderFragment();
+                break;
+            case 4:
+                fragment = new ResourceListFragment();
+                break;
+            case 5:
+                fragment = new WorkoutIntroFragment();
+                break;
+            case 6:
+                fragment = new ResourceListFragment();
+                break;
+            case 7:
+                fragment = new AboutFragment();
+                break;
+            default:
+                fragment = new TopFragment();
+        }
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame, fragment);
+        ft.addToBackStack(null);
+        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        ft.commit();
+    }
 }

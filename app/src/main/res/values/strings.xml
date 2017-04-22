@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Freeing Ourselves</string>
 
+    <!-- Home Page -->
+    <string name="intro">this is an introduction</string>
+    <string name="favorite_topics">Favorite Topics:</string>
+    <string name="favorite_workouts">Favorite Workouts:</string>
+
     <!-- Navigation -->
     <string name="action_settings">Settings</string>
     <string name="action_share">Share</string>

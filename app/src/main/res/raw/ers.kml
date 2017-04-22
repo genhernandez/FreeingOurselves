@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Emergency Departments in the Bay Area</name>
+    <description>A Project of Merritt Mental Health</description>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-labelson">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>San Francisco</name>
+      <Placemark>
+        <name>Chinese Hospital</name>
+        <description><![CDATA[(415) 982-2400 - Main<br>(415) 677-2300 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.408942,37.795496,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CPMC St.Lukes Emergency Department</name>
+        <description><![CDATA[(415) 600-6000 - Main<br>(415) 641-6625 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.420578,37.74766,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>California Pacific Medical Center: Davies Campus</name>
+        <description><![CDATA[(415) 600-6000 - Main<br>(415) 600-0600 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.434361,37.768387,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pediatric Emergency Department: California Pacific Medical Center</name>
+        <description><![CDATA[(415) 600-6000 - Main<br>(415) 600-4444 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.456381,37.786456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Medical Center</name>
+        <description><![CDATA[(415) 833-2000 - Main<br>(415) 833-3300 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.463789,37.780726,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St. Francis Memorial Hospital: Emergency Services</name>
+        <description><![CDATA[(415) 353-6000 - Main<br>(415) 353-6300 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4161934,37.7894163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>California Pacific Medical Center: Pacific Campus</name>
+        <description><![CDATA[(415) 600-6000 - Main<br>(415) 600-3333 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.431507,37.790715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St. Mary's Medical Center]]></name>
+        <description><![CDATA[(415) 750-5700 - Emergency<br>(415) 750-5705 - Billing]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.453848,37.774114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Francisco General Hospital</name>
+        <description><![CDATA[(415) 206-8000 - Main<br>(415) 206-8125 - Psych. Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.404625,37.755405,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UCSF</name>
+        <description><![CDATA[(415) 479-9000 - Main<br>(415) 353-1037 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.458899,37.762985,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Francisco VA Medical Center</name>
+        <description><![CDATA[(415) 221-4810 - Main<br>(415) 221-4810 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.504268,37.78225,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[South Bay & Peninsula]]></name>
+      <Placemark>
+        <name>El Camino Hospital Los Gatos</name>
+        <description><![CDATA[(408) 378-6131 - Main<br>(408) 866-4040 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.96718,37.262992,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Camino Hospital Mountain View</name>
+        <description><![CDATA[(650) 940-7000 - Main<br>(650) 940-7055 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.080472,37.369339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Good Samaritan Hospital</name>
+        <description><![CDATA[(408) 559-2011 - Main<br>(408) 559-2552 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.946461,37.251946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Redwood City Medical Center</name>
+        <description><![CDATA[(650) 299-2000 - Main<br>(650) 299-2200 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2251548,37.4891185,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente San Jose Medical Center</name>
+        <description><![CDATA[(408) 972-3000 - Main<br>(408) 972-6140 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.800347,37.239461,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Santa Clara Medical Center</name>
+        <description><![CDATA[(408) 851-1000 - Main<br>(408) 851-5300 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.997783,37.336277,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Hospital South San Francisco</name>
+        <description><![CDATA[(650) 742-2000 - Main<br>(650) 742-2511 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.438991,37.659262,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mills Health Center</name>
+        <description><![CDATA[(650) 696-5400 - Main<br>(650) 696-5915 - Psych. Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.506874,37.527582,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[O'Connor Hospital]]></name>
+        <description><![CDATA[(408) 947-2500 - Main<br>(408) 947-3999 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.938214,37.327955,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Regional Medical Center of San Jose</name>
+        <description><![CDATA[(408) 259-5000 - Main<br>(408) 259-5000 x2267 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.849745,37.362567,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Louise Regional Hospital</name>
+        <description><![CDATA[(408) 848-2000 - Main<br>(408) 848 8680 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.571802,37.036546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Mateo Medical Center</name>
+        <description><![CDATA[(650) 573-2222 - Main<br>(650) 573-2662 - Psych. Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.300121,37.531125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Clara Valley Medical Center</name>
+        <description><![CDATA[(408) 885-5000 - Main<br>(408) 885-6100 - Psych. Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.933259,37.313762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sequoia Hospital</name>
+        <description><![CDATA[(650) 369-5811 - Main<br>(650) 367-5542 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.254405,37.480004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seton Medical Center</name>
+        <description><![CDATA[(650) 992-4000 - Main<br>(650) 991-6456 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.474045,37.679497,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seton Coastside Hospital</name>
+        <description><![CDATA[(650) 563-7100 - Main<br>(650) 563-7107 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.507855,37.526806,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stanford Hospital Emergency Room</name>
+        <description><![CDATA[(650) 723-4000 - Main<br>(650) 723-5111 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.175556,37.433226,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Health Services: Mills-Peninsula Medical Center: Sutter Health Affiliate</name>
+        <description><![CDATA[(650) 696-5400 - Main<br>(650) 696-5915 - Psych. Emergency]]></description>
+        <styleUrl>#icon-503-DB4436-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.38244,37.591998,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>East Bay</name>
+      <Placemark>
+        <name>Alameda County Medical Center’s Highland Hospital</name>
+        <description><![CDATA[(510) 437-4800 - Main<br>(510) 437-4559 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.232063,37.797928,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alameda Hospital</name>
+        <description><![CDATA[(510) 522-3700 - Main<br>(510) 523-4357 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.254138,37.762737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Contra Costa Regional Medical Center</name>
+        <description><![CDATA[(925) 370-5000 - Main<br>(925) 646-2800 - Psych. Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.13312,38.006546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Doctors Medical Center</name>
+        <description><![CDATA[(510) 970-5000 - Main<br>(510) 970-5385 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.336845,37.953447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>John Muir Medical Center, Concord</name>
+        <description><![CDATA[(925) 682-8200 - Main<br>(925) 674-2333 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.032906,37.983623,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>John Muir Medical Center, Walnut Creek</name>
+        <description><![CDATA[(925) 939-3000 - Main<br>(925) 939-5800 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.041304,37.913461,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Antioch Medical Center</name>
+        <description><![CDATA[(925) 813-6500 - Main<br>(925) 813-6880 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.774728,37.950632,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Fremont Medical Center</name>
+        <description><![CDATA[(510) 248-3000 - Main<br>(510) 248-7206 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.9747289,37.5524286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Oakland Medical Center</name>
+        <description><![CDATA[(510) 752-1000 - Main<br>(510) 752-7667 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2562845,37.8238079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Medical Center-Richmond</name>
+        <description><![CDATA[(510) 307-1500 - Main<br>(510) 307-1566 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.360536,37.937241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente San Leandro Medical Center</name>
+        <description><![CDATA[2500 Merced Street<br>San Leandro, CA 94577<br><br>(510) 454-1000 - Main<br>(510) 454-4348 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.164981,37.706298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Walnut Creek Medical Center</name>
+        <description><![CDATA[(510) 454-1000 - Main<br>(510) 454-4348 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.059413,37.891793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Rose Hospital</name>
+        <description><![CDATA[(510) 264-4000 - Main<br>(510) 264-4026 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.088137,37.633643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Ramon Regional Medical Center</name>
+        <description><![CDATA[(925) 275-9200 - Main<br>(925) 275-8280 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.958237,37.775768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sutter Alta Bates Summit Medical Center: Sutter Alta Bates Campus</name>
+        <description><![CDATA[(510) 204-4444 - Main<br>(510) 204-1303 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.257303,37.855928,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sutter Health Alta Bates Summit Medical Center Alta Bates Campus
+</name>
+        <description><![CDATA[(510) 655-4000 -Main<br>(510) 869-6600 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2626805,37.8218005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sutter Health Eden Medical Center</name>
+        <description><![CDATA[(510) 727-2703 - Main<br>(510) 727-3015 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.090158,37.698267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[UCSF Benioff Children's Hospital Oakland]]></name>
+        <description><![CDATA[(510) 428-3000 - Main<br>(510) 428-3240 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.267059,37.836859,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ValleyCare Medical Center</name>
+        <description><![CDATA[(925) 373-4023 - Main<br>(925) 416-3418 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.880221,37.693736,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Washington Hospital Healthcare System Emergency room</name>
+        <description><![CDATA[(510) 797-1111 - Main<br>(510) 791-3430 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.979743,37.557067,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>North Bay</name>
+      <Placemark>
+        <name>Healdsburg District Hospital</name>
+        <description><![CDATA[(707) 431-6500 - Main<br>(707) 431-6300 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.864739,38.62702,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente San Rafael Medical Center</name>
+        <description><![CDATA[(415) 444-2000 - Main<br>(415) 444-2400 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.554597,38.00409,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Vacaville</name>
+        <description><![CDATA[(707) 624-4000 - Main<br>(707) 624-1160 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.938487,38.388064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaiser Permanente Vallejo Medical Center</name>
+        <description><![CDATA[(707) 651-1000 - Main<br>(707) 651 4910 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.249182,38.128102,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marin General Hospital</name>
+        <description><![CDATA[(415) 925-7000 - Main<br>(415) 499-6666 - Psych. Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.536796,37.947881,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NorthBay Medical Center</name>
+        <description><![CDATA[(707) 646-5000 - Main<br>(707) 646-5800 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.047876,38.261699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NorthBay VacaValley Hospital</name>
+        <description><![CDATA[(707) 624-7800 - Emergency<br>(707) 646-3400 - Billing ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -121.95196,38.355856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Novato Community Hospital</name>
+        <description><![CDATA[(415) 209-1300 - Main<br>(415) 209 1350 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.560113,38.099062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petaluma Valley Hospital</name>
+        <description><![CDATA[(707) 778-1111 - Main<br>(707) 778-2634 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.631631,38.254817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Queen of the Valley Medical Center Emergency Room</name>
+        <description><![CDATA[(707) 252-4411 - Main<br>(707) 257-4014 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.297537,38.32442,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Helena Hospital</name>
+        <description><![CDATA[(707) 963-3611 - Main<br>(707) 963-6425 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.474675,38.542462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Rosa Memorial Hospital</name>
+        <description><![CDATA[(707) 546-3210 - Main<br>(707) 525-5207 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.701406,38.443702,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sonoma Valley Hospital</name>
+        <description><![CDATA[(707) 935-5000 - Main<br>(707) 935-5105 - Emergency ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4653,38.287975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sutter Solano Medical Center (Vallejo)</name>
+        <description><![CDATA[(707) 554-4444 - Main<br>(707) 554-5210 - Emergency]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -122.237323,38.131184,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

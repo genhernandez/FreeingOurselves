@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>LGBQIA and Trans Affirming  Resource Map</name>
+    <description><![CDATA[This map is for those in the LGBQIA and Trans FB Group.<br><br>You can use this map to find resources for working with individuals who identify as LGBQIA and Trans. <br><br>Please do not use this map to solicit and/or market to the people on this map.<br><br>Please do not add anyone to your mailing list (postal mail or email) without their permission.<br><br>Please only contact those on this map for professional purposes and/or for support/resources for your LGBQIA and Trans identified clients.<br><br>If you wish to be added to this map, please contact Dr. Traci Lowenthal at drlowenthal@mac.com.]]></description>
+    <Style id="icon-1097-labelson">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1097-biz-social.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1097-labelson-nodesc">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1097-biz-social.png</href>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Folder>
+      <name>LGBTQIA and Trans Group</name>
+      <Placemark>
+        <name>Creative Insights Counseling</name>
+        <description><![CDATA[Traci W. Lowenthal, Psy.D., Patricia Gonzalez, MFT Intern - Additional Location in Claremont CA. Consulting, Media, Trainings & Workshops]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -117.181866,34.056169,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jennie Steinberg, LMFT, LPCC</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.2594055,34.0493807,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ken Howard, LCSW - Counseling Psychotherapy Coaching - GayTherapyLA.com</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.373332,34.0670919,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>A Peaceful Life Counseling SVC</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -105.1093112,39.7281173,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Los Angeles Gender Center</name>
+        <description><![CDATA[Therapists at this location:<br>Alo Johnston, MFTI<br>Aydin Olson-Kennedy, ACSW<br>Cayden Cathers, Psy.D.<br>Theodore Burns, Ph. D.]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.4352357,34.0475525,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guy Albert, Ph.D.</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2564411,37.8542064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Donna M. Chapman, LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.132827,32.7697796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Align Counseling of Colorado</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -104.847321,39.5923267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Heather Brewer, MFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.453909,34.020455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Owls Nest North Collaborative Therapy Space</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6608039,45.5491011,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lisa Maurel, MFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.8865432,33.676394,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Talking Possibilities</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.2894853,34.1011902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr. Erin Findley, PsyD - Diablo Valley Relationship Center</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0937645,37.8961719,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Therese N. Allen, LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.414499,37.771079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Janet E. Akyol</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.9879884,37.2896796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ali Joy Sideroff, MA, MFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4312562,37.7516592,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Live Grow Transform</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.7072432,45.4665334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Mind Embodied</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -104.9995918,39.7523568,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dawn M. Campagnola, MFTI</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2266272,37.4878737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Narrative. Contemporary Therapy Collective</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1719301,32.7509765,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mindful Art Center</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -83.3715943,42.3779827,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Live Well Counseling LLC</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -85.5953592,44.7494932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Conquest Counseling</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -91.1349431,30.4202466,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Darren Goldstein, LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.1431362,34.1415116,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rachel Rabinor, LCSW</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.163385,32.740599,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Julie Bjelland</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.768179,37.681267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Frank Baird, MFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.833061,34.17062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Karen Smillie, MFT * Couples Counseling in Hayes Valley</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4252912,37.776665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr. Jessica Furie Frankel</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.445705,34.0612098,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cathy Hanville, LCSW</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3002822,37.897781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Los Angeles Gender Center</name>
+        <description>Cadyn Cathers, MA (Supervised by Ken Scott PsyD PSY 18087)</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.4352357,34.0475525,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stace Parlen</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6464515,45.463785,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sunset Psychotherapy</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4682316,37.7641487,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LaunchPad Counseling</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -77.504814,37.589846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 35</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.4551048,34.0417074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Life Counseling Center</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.840109,32.948191,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Live Out Loud Counseling, Corey Fisher, MA</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6069525,45.5230832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Margaret A. Donohue, PhD, Psychologist, A Professional Corporation</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.598774,34.4430298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jennifer Creson Counseling</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.31652,47.618232,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LINKtherapy</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6571705,45.4946201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Molly Merson, MFT, Berkeley Psychotherapist</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2663071,37.8558705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shannon Solie, LMCHA</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.324935,47.620531,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rikki Rothenberg Therapy</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.1460579,34.1383597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Advanced Awareness Counseling, LLC.</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -111.8914076,40.5854196,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>John Sovec, Therapy and Counseling in Pasadena</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.1493786,34.1439389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Molly Jenkins Counseling</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -105.0261979,39.753894,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mary Key LCSW LCAS</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -78.783002,35.767199,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Riegler • Shienvold & Associates]]></name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -76.8632452,40.3281218,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr. Abi Weismann</name>
+        <description>http://www.doctorabi.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -117.0765786,33.0211775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jesse Kahn, LMSW</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9617255,40.762192,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Julie Kyker Mft</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.0059702,32.771426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Amy Rosenblatt, Psy. D.</name>
+        <description>www.dramyrosenblatt.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.3992889,34.157335,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Athena Counseling</name>
+        <description><![CDATA[Tara D'Orazio, LMFT<br>www.athenacounseling.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.7173751,38.4463336,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Central Counseling Services</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.3923264,33.9422163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chandler RxP</name>
+        <description><![CDATA[Dr. Jen Chandler<br>http://drjchandler.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -90.1113041,29.9201794,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>230 N Maryland Ave #303</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.2534189,34.14936,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stonewall Alliance Counseling Program</name>
+        <description>http://stonewallchico.org</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.8352947,39.7291608,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Angi Harding, LCSW</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -105.2705456,40.0149856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East Bay Healing Collective</name>
+        <description><![CDATA[Niralli D'Costa, MFT]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2731208,37.848524,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Neil Schierholz PsyD</name>
+        <description>Katherine W Smith, MFTI</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.4638408,34.047545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[TransThriving Youth & Families]]></name>
+        <description>Kristine Medea 	LPC, BCETS http://TransThriving.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -84.2911,33.915617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cynthia LeBlanc, LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -104.7748004,38.9448556,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr Laura Thor DMin, LCSW</name>
+        <description>TransGenderSpiritCounseling http://Www.TransGenderSpiritCounseling.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -105.008831,39.614542,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Darlene A Tando </name>
+        <description>www.DarleneTandoGenderBlog.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1641057,32.7452639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr. Lily Zehner, LLC</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -105.0442734,39.7703651,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phoenix Song Expressive Arts Therapy</name>
+        <description>Phoenix Song, MFTI http://www.phoenixsongtherapy.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.271503,37.803013,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Heather Stambaugh	LMHC NCC CAP</name>
+        <description>Greater Good Life Services, LLC http://www.lakelandfltherapy.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -81.9215357,28.012846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Erin Pollard, LMFT, LPCC, Counseling Services</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.8647655,33.6586478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Michelle Shires	LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -119.2487504,34.2732039,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Joe Peleman, MA</name>
+        <description>Vision Quest LGBT Counseling Center http://www.visionquestLB.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.1895286,33.8283692,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thomas S. Rue, LMHC</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.6861515,41.6546424,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Katherine Warner, MFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.161169,37.448761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NW Creative Counseling, LLC</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6404617,45.4434344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Infinity Counseling</name>
+        <description><![CDATA[Breanna Crowley,  Registered Mental Health Counselor Intern <br>Ami Crowley	EdD, NCC, ICADC, MCAP, LPC, LMHC]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -82.3608468,28.1899899,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guy Albert, Ph.D.</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2564411,37.8542064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jake H. Jacobsen, ART, LCSW</name>
+        <description>http://jakehjacobsen.wix.com/therapyinportland </description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6491641,45.4782091,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jocie Sweeney, PhD</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -80.8452162,35.215055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lani Chin, Psy.D.</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.4421058,34.0565601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Holly Savoy, PhD</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -80.8405115,35.1501463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Samantha Green, LCSW</name>
+        <description><![CDATA[Greener Pastures Wellness<br>www.greenerpastureswellness.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -96.7128123,33.0269858,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kristy A Fiore, MS CRC LPC
+</name>
+        <description><![CDATA[Counseling & Wellness Center of Scranton<br>www.scrantontherapy.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -75.6505968,41.3974709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Adriana Joyner, LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.260393,38.621873,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Amber Young, LMHC</name>
+        <description><![CDATA[Amber Young, LLC<br>www.amberyoungllc.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -86.0059949,39.9910917,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marlene Klarborg Larsen, M.S. - Therapy 4 LGBT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.857463,33.667507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Elizabeth Clark	Psy.D.</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9715747,40.7981572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Counseling Center of Cherry Creek</name>
+        <description>Jennifer Glick	 MA, MSC, LMFT</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -104.954908,39.721742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Adolescent Counseling Services</name>
+        <description>Alyss Swanson	MFT-Trainee</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2251628,37.4969033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lutheran Community Services Northwest</name>
+        <description><![CDATA[Jes Dimas	MSW, CSWA<br>Dr. Anthony Terndrup	Ph.D., LPC, LMFT]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.1958029,45.2124703,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Emergent Pathways Psychotherapy</name>
+        <description><![CDATA[Kaden J. Stanley, Psy.D.	Licensed Psychologist <br>www.emergepsych.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -95.3800542,29.7421366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Karen M. Foley, LMFT</name>
+        <description>www.foleycounseling.com</description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -75.650485,41.397532,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mindful Therapy Group at Northgate</name>
+        <description><![CDATA[B. Bartja Wachtel	MSW, LICSW, MHP, CMHS<br>EMFM@Mindful Therapy Group<br>www.emfm.net]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3246641,47.6994267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bethprana Novi Counseling</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6422184,45.5262877,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stace Parlen	LMFT Intern, QMHP</name>
+        <description><![CDATA[Postscript Therapy<br>www.postscripttherapy.com]]></description>
+        <styleUrl>#icon-1097-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6464516,45.463785,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marnee Reiley, M.A., LMFT</name>
+        <styleUrl>#icon-1097-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.858768,33.692938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

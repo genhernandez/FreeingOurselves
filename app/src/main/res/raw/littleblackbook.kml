@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Little Black Book 2</name>
+    <description>The Little Black Book 2 is a resource guide for queer youth in the SF Bay Area.  Here is the online version!</description>
+    <Style id="icon-22-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-22-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-22">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name><![CDATA[1 - 3rd Street Youth Center & Clinic]]></name>
+        <description>3rd Street Youth Center and Clinic is a safe place in Bayview Hunters Point where youth from anywhere in San Francisco can come, see a doctor, talk to a counselor, join a group or just use the computer, have a snack and sit in our garden.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.39233,37.730963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>2 - A Safe Place</name>
+        <description>Our mission at A Safe Place is to break the cycle of domestic and family violence by providing battered women and their children with safe shelter and resources and to prevent violence through outreach and education to at-risk populations.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2699,37.8046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>3 - ACLU, LGBT Project - Northern California Chapter</name>
+        <description>The LGBT Project brings impact lawsuits in state and federal courts throughout the country— cases designed to have a significant effect on the lives of LGBT people.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.396606,37.794276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>4 - Adolescent Health Working Group</name>
+        <description>The Adolescent Health Working Group is a coalition of committed youth, adults, and representatives of public and private agencies whose mission is to significantly advance the health and well being of San Francisco’s youth.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.41723,37.777143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>5 - AGUILAS</name>
+        <description>AGUILAS is dedicated to creating a supportive, culturally sensitive environment for gay/bisexual Latinos. We strive to foster knowledge and pride of the diversity of our language, culture, history and spirituality. AGUILAS is committed to developing programs that promote health, well being and community building that foster positive self-identities, healthy relationships and leadership skills.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.41288,37.763015,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>6 - AIDS Emergency Fund</name>
+        <description>AIDS Emergency Fund responds compassionately to the AIDS crisis by providing immediate, short-term financial assistance to help people disabled by HIV/AIDS to cover their basic human needs and stabilize their living situations.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407827,37.781643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>7 - AIDS Legal Referral Panel - San Francisco</name>
+        <description>ALRP is the only institution in the San Francisco Bay Area whose entire mission is dedicated to providing free and low-cost legal assistance and education on virtually any civil matter to persons living with HIV/AIDS.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419198,37.771147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>8 - AIDS Project East Bay/APEB</name>
+        <description>AIDS Project East Bay (APEB) is a community based organization, dedicated to preventing the spread of HIV and supporting individuals infected with the virus through programs targeted at some of the most vulnerable and marginalized individuals in Alameda County.  APEB programs focus on prevention education, counseling, primary medical care, research collaborations, and advocacy.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.26912,37.802857,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9 - AIDS Support Group (@ Most Holy Redeemer Church)</name>
+        <description>The AIDS Support Group serves clients and draws volunteers from all over San Francisco. Our mission is to provide direct care and assistance to persons with HIV disease and those who love and care for them.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.437369,37.760554,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[10 - AIDS, Medicine & Miracles]]></name>
+        <description><![CDATA[AIDS, Medicine & Miracles (AM&M) provides life-changing empowerment programs for all people living with HIV/AIDS including their loved ones and service providers. These programs educate, impart life-skills and build community to support people in living healthy responsible lives filled with hope.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.422024,37.754994,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[11 - Al-Anon & AlaTeen Information]]></name>
+        <description><![CDATA[Al-Anon is an anonymous fellowship of friends and family of alcoholics.  If you feel that your life has been affected by someone else's drinking, Al-Anon may be helpful for you. AlaTeen is a fellowship of young people whose lives have been affected by alcoholism in a family member or close friend.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407379,37.78507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>12 - Alcoholics Anonymous</name>
+        <description>Alcoholics Anonymous is a fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others to recover from alcoholism.  The only requirement for membership is a desire to stop drinking.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.422917,37.791223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[13 - Allen Temple Health & Social Services Ministries]]></name>
+        <description>The mission of Allen Temple Health and Social Services Ministries is to strengthen and stabilize families by assisting them to create and maintain healthy environments.  The ministries are dedicated to supporting the economically disadvantaged with education, spiritual support, and exposure to positive approaches to life.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.176048,37.751571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>14 - Ally Action</name>
+        <description>Ally Action strives to assure that schools are safe, inclusive and effective for all, regardless of sexual orientation or gender identity/expression. We are committed to realizing this vision by working toward social justice and engaging individual and organizational capacities, one classroom at a time.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.032762,37.977566,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[15 - AMASSI, Inc. - African American Advocacy, Support Services & Survival Institute]]></name>
+        <description>AmASSI is a non-profit, community based health, wellness and cultural affirmation center. We provide preventive health for HIV/AIDS, STDs, cancer, diabetes, etc., psychological and therapeutic assistance and math and literacy tutoring, skills building opportunities and empowerment. All services are free and low cost.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.265933,37.802299,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>16 - And Castro for All</name>
+        <description>And Castro for All (AC4A) is a fiscally sponsored project of the San Francisco LGBT Community Center dedicated to fostering a genuinely inclusive and equitable Bay Area LGBT community devoid of division and discrimination that unflinchingly respect, celebrate, and benefit from all of our histories, cultures, experiences, and talents.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.423873,37.771571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[17 - AQU25A (@ A&PI Wellness Center)]]></name>
+        <description><![CDATA[AQU25A (Asians & Pacific Islanders, Queer & Questioning, 25 and Under, All Together) is a group for and run by queer, trans, & questioning Asians, Pacific Islanders, and hapas 25 and under! We hold drop-ins, gatherings, picnics, groups, workshops, scholarships, individual counseling, a peer leadership program, parties, dances, trips, retreats, and other rad activities throughout the year.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419302,37.783796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>18 - Ark of Refuge, Inc. (@ City of Refuge UCC)</name>
+        <description>The mission of the Ark of Refuge is to challenge and overcome the individual and institutional barriers which discourage or prevent underserved populations from accessing vital services. This agency is dedicated to creating culturally sensitive programs which address holistically the complex life circumstances of persons in need of basic health, educational, and psychosocial services.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407524,37.778948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[19 - Asian & Pacific Islander Wellness Center]]></name>
+        <description><![CDATA[Our mission is to educate, support, empower and advocate for Asian and Pacific Islander communities – particularly A&PIs living with, or at-risk for, HIV/AIDS.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419302,37.783796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>20 - Asian Health Services - Youth Program</name>
+        <description>Asian Health Services (AHS) Youth Program provides comprehensive reproductive health education, advocacy, and family planning clinical access for youth ages 12-19 primarily living in the Oakland metropolitan area. Program components work to provide a continuum of services, from prevention education to no-cost, confidential family planning counseling and clinical access.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270942,37.799426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>21 - Asian Youth Prevention Services</name>
+        <description>The goal of the Asian Youth Prevention Services (AYPS) Program is to prevent, delay and reduce the use and abuse of alcohol, tobacco and other drugs (ATOD) among Asian youth in San Francisco.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.421805,37.78726,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>22 - At The Crossroads</name>
+        <description>The mission of At The Crossroads is to reach out to homeless youth and young adults at their point of need, and work with them to build healthy and fulfilling lives.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.422122,37.767503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>23 - Balboa Teen Health Center (@ Balboa High School)</name>
+        <description>Balboa Teen Center serves Balboa High School students and San Francisco youth 12-18 years old.  Services are confidential and don’t require parent/guardian permission unless noted.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.439809,37.722057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>24 - Bay Area Legal Aid - East Bay</name>
+        <description><![CDATA[BayLegal is committed to providing meaningful access to the civil justice system through quality legal assistance regardless of a client's location, language or disability. Access to legal advocacy is critical to ensuring that Bay Area residents living in poverty understand and assert their rights to create stability for themselves and their families.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270082,37.80388,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>25 - Bay Area Legal Aid - North Bay</name>
+        <description><![CDATA[BayLegal is committed to providing meaningful access to the civil justice system through quality legal assistance regardless of a client's location, language or disability. Access to legal advocacy is critical to ensuring that Bay Area residents living in poverty understand and assert their rights to create stability for themselves and their families.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.534226,37.99352,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>26 - Bay Area Legal Aid - Peninsula</name>
+        <description><![CDATA[BayLegal is committed to providing meaningful access to the civil justice system through quality legal assistance regardless of a client's location, language or disability. Access to legal advocacy is critical to ensuring that Bay Area residents living in poverty understand and assert their rights to create stability for themselves and their families.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.306672,37.545759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>27 - Bay Area Legal Aid - San Francisco</name>
+        <description><![CDATA[BayLegal is committed to providing meaningful access to the civil justice system through quality legal assistance regardless of a client's location, language or disability. Access to legal advocacy is critical to ensuring that Bay Area residents living in poverty understand and assert their rights to create stability for themselves and their families.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418811,37.776719,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>28 - Bay Area Legal Aid - South Bay</name>
+        <description><![CDATA[BayLegal is committed to providing meaningful access to the civil justice system through quality legal assistance regardless of a client's location, language or disability. Access to legal advocacy is critical to ensuring that Bay Area residents living in poverty understand and assert their rights to create stability for themselves and their families.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.890618,37.336131,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>29 - Bay Area Young Positives</name>
+        <description>The mission of Bay Area Young Positives (BAY Positives) is to help young people (26 and under) with HIV/AIDS to live longer, happier, healthier, more productive, and quality-filled lives.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.430848,37.773952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>30 - Bayview Hunters Point Foundation Youth Services</name>
+        <description>The mission of Bayview Hunters Point Foundation for Community Improvement, Inc. is to build a community that is empowered, clean, safe, and healthy. We offer drug treatment counseling and home supervision for juvenile probationers.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.391073,37.732779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>31 - Berkeley Free Clinic</name>
+        <description>We are one of the only clinics in California, offering primary health care free of charge. We maintain that health care should be available at a level and quality sufficient to meet the basic needs of everyone regardless of race, gender, age, immigration status, income level, or any other characteristic. Our philosophy is that health care is a right, not a privilege. We are strongly opposed to health care delivery as a profit-making industry.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.261958,37.86747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>32 - Berkeley High School Health Center</name>
+        <description>Berkeley High School Health Center knows that students have the ability to make their own health care decisions, and supports their right to take responsibility for themselves and their physical, emotional and sexual health. We create a safe space for students free from judgment and work together as a team with our youth, school, families, and communities to increase access to, and provide, quality health services and education, and to be a resource to our students.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.271031,37.868988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>33 - Berkeley Youth Alternatives</name>
+        <description>Berkeley Youth Alternatives is a community based organization. Our vision is to provide a secure and nurturing environment for all the children, youth, and families of our community. Our mission is to help children, youth, and their families address issues and problems via Prevention by reaching youth before their problems become crisis, and via Intervention through the provision of support services to youth entangled in the juvenile justice system.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.286924,37.866969,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>34 - Beyond Emancipation Teen Health Center</name>
+        <description>The goal of the Beyond Emancipation Teen Health Center is to identify and stabilize the medical and mental health needs of foster, probation, and emancipated youth ages 15 1/2 to 21.  The Teen Health Center is a MediCal Provider, and services are available to all teens enrolled in MediCal in Alameda County, whether or not they are current or former foster youth.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.232134,37.780439,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>35 - Billy DeFrank LGBT Community Center</name>
+        <description>The Billy DeFrank LGBT Community Center will provide Community, Leadership, Advocacy, Support, and Services to Silicon Valley’s LGBT people and allies. The Billy DeFrank LGBT Community Center accomplishes its mission by developing diverse resources that empower and support the LGBT community and their allies.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.908028,37.331606,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>36 - Black Brothers Esteem Project (@SF AIDS Foundation)</name>
+        <description>Facilitated by AIDS Foundation staff, Black Brothers Esteem core group members design activities and events to provide a place for African American gay, bisexual, and same gender-loving men to gather and gain support from one another. The goal of the program is to provide education, skills building, and enhanced social connection in order to diminish sexual risk-taking.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.409998,37.782246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>37 - Black Coalition On AIDS</name>
+        <description>The mission of the Black Coalition on AIDS is to stop the spread of HIV/AIDS and eliminate health disparities in the Black community.  BCA strives to achieve its mission by providing health and wellness services including, but not limited to, Housing/Emergency Shelter, education, advocacy, health case management, and other health-promoting activities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.388359,37.753718,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[38 - Boys & Girls Club - San Francisco]]></name>
+        <description><![CDATA[Arts Program, Education, Social Activities, Substance Abuse, Tutoring, Youth Development<br>About: Boys & Girls Clubs of San Francisco (BGCSF) serves over 1,200 youth and teens per day at nine neighborhood Clubhouses. Our mission is to inspire and enable all young people, especially those from disadvantaged circumstances, to realize their full potential as productive, responsible and caring citizens.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.424416,37.763562,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>39 - California Prevention Education Project / CAL-PEP</name>
+        <description>CAL-PEP’s mission is to prevent the spread of HIV/AIDS in Alameda and San Francisco Counties. CAL-PEP does a variety of street outreach in the Bay Area. Outreach is integrated into many of our programs and services.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.269233,37.807481,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>40 - Castro Country Club</name>
+        <description>The Castro Country Club is a clean and sober social space, serving coffee, pastries, and recovery meetings. Since 1983, it has been a place where people meet, hang out, and socialize in an alternative atmosphere to the bar scene.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.434246,37.76112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41 - Castro-Mission Health Center</name>
+        <description>The Castro-Mission Health Center is part of the Department of Public Health. CMHC offers comprehensive, primary care services.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.43186,37.762947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[42 - Center for Young Women's Development]]></name>
+        <description><![CDATA[The Center for Young Women's Development (CYWD) is one of the first non-profits in the United States run and led entirely by young women. From the beginning, we have organized young women who were the most marginalized in San Francisco — those in the street economies and the juvenile justice system — to design and deliver peer-to-peer education and support. Our mission is to empower and inspire young women who have been involved with the juvenile justice system and/or the underground street economy to create positive change in their lives and communities.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.402318,37.781581,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>43 - CHALK - Communities in Harmony Advocating for Learning and Kids</name>
+        <description><![CDATA[CHALK, is a San Francisco project providing a range of youth services with a specific focus on transformative youth development and employment. The purpose of all of CHALK's programs is to provide information, resources and support to youth and their allies. CHALK is unique because the providers are youth.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407949,37.781547,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>44 - COLAGE - Children of Lesbians and Gays Everywhere</name>
+        <description>COLAGE is a national movement of children, youth, and adults with one or more lesbian, gay, bisexual, transgender and/or queer (LGBTQ) parents. We build community and work toward social justice through youth empowerment, leadership development, education, and advocacy.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411157,37.767575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>45 - Cole Street Youth Clinic</name>
+        <description><![CDATA[Huckleberry's Cole Street Clinic has become recognized as a national model of adolescent health services, because it effectively addresses the primary health care issues of at-risk adolescents, while simultaneously attending to their complex psychosocial and health promotion needs. Cole Street Clinic provides free/low cost primary health care and sensitive services (birth control options, pregnancy testing, STI testing and treatment).]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.450338,37.770025,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>46 - Coleman Advocates</name>
+        <description>Coleman Advocates for Children and Youth has worked to improve the lives of San Francisco’s children, youth, and families for over 30 years. Our mission is to make San Francisco a city of hope, justice and opportunity for all children and their families.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.429912,37.721094,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>47 - Connect To Protect Bay Area - UCSF Division of Adolescent Medicine</name>
+        <description>Our mission is to reduce HIV/AIDS rates among young men who have sex with men in the Bay Area who congregate in San Francisco. Connect to Protect will improve the health of these youth through collaborative, community-led structural change efforts supported by local health researchers.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.449579,37.786886,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>48 - Court Appointed Special Advocates / CASA</name>
+        <description>The Alameda County CASA Program is an organization that provides one-on-one court advocacy to abused, neglected, or abandoned children who are dependents of the juvenile court.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.162586,37.725831,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>49 - Covenant House</name>
+        <description>Covenant House California (CHC) is a multi-service agency, with locations in the heart of Hollywood and Oakland, dedicated to assisting homeless and at-risk youth in resolving their crisis situations, attaining stable Housing/Emergency Shelter environments, employment, and preventing adult homelessness.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.272337,37.794691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>50 - CUAV - Community United Against Violence</name>
+        <description>CUAV is the nation’s first LGBTQQ (lesbian, gay, bisexual, transgender, queer, and questioning) anti-violence organization. Our mission is to prevent and respond to violence against and within our diverse LGBTQQ communities through peer-based counseling, direct assistance, education and outreach, grassroots organizing, and policy advocacy.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418592,37.763856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>51 - Daly City Youth Health Center</name>
+        <description>DCYHC is one of kind, since it is the only health care provider in Northern San Mateo County that is just for teens. If you have questions about private issues such as pregnancy, birth control, abortion, or sexually transmitted infections (reproductive health services), the DCYHC has got you covered.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.471032,37.690579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>52 - DeFrank Youth (@ Billy DeFrank LGBT Center)</name>
+        <description>Billy DeFrank Youth Programs support Lesbian, Gay, Bisexual, Transgender Services, Queer and Questioning youth in Santa Clara County. We watch movies, have discussions, go on field trips, plan events and help shape our community as activists.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.908028,37.331606,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>53 - Dimensions Clinic, Health Services for Queer and Questioning Youth (@ Castro-Mission Health Center)</name>
+        <description>Dimensions is an open and friendly place to get support in being healthy. We offer low-cost health services for queer, transgender and questioning youth ages 12 to 25.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.43186,37.762947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>54 - Diversity Center, Santa Cruz</name>
+        <description>The Diversity Center is a community center dedicated to advancing the causes and priorities of lesbian, gay, bisexual, transgender, intersex and questioning (LGBTIQ) individuals and their allies in Santa Cruz County. Offers access to informational, educational, and social resources and activities designed to empower individuals to achieve their fullest potential.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0118,36.979473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>55 - Downtown Youth Clinic</name>
+        <description>The Downtown Youth Clinic is a safe place for teenagers and young adults (13-24) in the San Francisco East Bay to receive free testing and treatment for sexually transmitted infections (STIs) and HIV. Our mission is to provide you with the real information and support you need to make good decisions about your health.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.26439,37.819964,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[56 - DreamCatcher Emergency Youth Shelter & Support Center]]></name>
+        <description>The DreamCatcher Support Center is for homeless, runaway and at-risk youth ages 13-19. Youth may stay in the shelter if between the ages of 13-17 (or 18 if Enrolled in school). All services are free.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.23883,37.770395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>57 - East Bay Agency For Children</name>
+        <description>EBAC is dedicated to assuring the health and educational well being of children and families through specialized therapeutic, educational and peer support.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.256346,37.810902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>58 - East Bay AIDS Center</name>
+        <description>People living with HIV and AIDS can find hands-on support, medical treatments, complementary therapies, and educational services at the Alta Bates Summit East Bay AIDS Center (EBAC).</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.26439,37.819964,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>59 - East Bay Community Recovery Project</name>
+        <description>EBCRP has provided substance abuse, mental health, and other health related services since 1989. With locations in Oakland and Hayward, California, we offer a full range of services from residential treatment for women and children to intensive outpatient counseling.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.275575,37.816601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>60 - East Oakland Youth Development Center</name>
+        <description><![CDATA[The East Oakland Youth Development Center (EOYDC) is a community-based 501(c)(3) nonprofit agency dedicated to developing our children and youth into healthy, self-supporting and aware citizens and adults. The Center's free comprehensive programs have been coordinated to meet our clients' emotional, physical, intellectual, and economic needs.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.179436,37.755662,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>61 - Edison Clinic - San Mateo Medical Center</name>
+        <description>The Edison Clinic is part of the San Mateo County Health Department and is located at the hospital. The Edison Clinic offers outpatient medical care for people with HIV/AIDS in San Mateo County.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.300251,37.530889,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>62 - EL-LA Program Translatinas</name>
+        <description>EL-LA Program is based in beautiful San Francisco and was developed to reach out to the trans-Latina community in and around the Mission neighborhood. We provide services for HIV prevention, counseling and referrals for all services available to transgender girls and those in transition as well.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418239,37.765372,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[63 - Eureka Valley Recreation Center (SF Department of Parks & Recreation)]]></name>
+        <description>Located in the heart of the Castro (formerly known as Eureka Valley), EVRC has meeting spaces, and auditorium, a children’s play area, and teen center.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.436141,37.76081,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>64 - Eviction Defense Collaborative</name>
+        <description>The Eviction Defense Collaborative strives to prevent homelessness, preserve affordable Housing/Emergency Shelter, and protect the diversity of San Francisco. We work toward these goals by providing emergency rental assistance and by helping low-income tenants gain equal access to the law in order to assert their rights at court.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.409747,37.782085,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>65 - Face To Face Sonoma AIDS County Network</name>
+        <description>Our mission is to provide compassionate care to people living with HIV/AIDS and their loved ones, and prevention education to the entire community. The goal of our Care Services program is to encourage well-being, healing and independence for everyone we serve.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.707645,38.441686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>66 - First Place Fund</name>
+        <description>First Place works to ensure that all foster youth have the opportunity to experience a safe, supported transition from foster care.  Through a Housing/Emergency Shelter program, an academic enrichment program, counseling, youth community center, collaboration with other Bay Area agencies, and community education, we help youth to gain the skills to live independently and succeed on their own.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270962,37.806771,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>67 - Gay Straight Alliance Network</name>
+        <description>Gay-Straight Alliance Network is a youth leadership organization that connects school-based Gay-Straight Alliances (GSAs) to each other and community resources. Through peer support, leadership development, and training, GSA Network supports young people in starting, strengthening, and sustaining GSAs.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411157,37.767575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>68 - Girls 2000 (@ Hunters Point Family)</name>
+        <description>Girls 2000 is a holistic program designed specifically to meet the needs of girls ages 10 through 18 and their families living in the Hunters Point public Housing/Emergency Shelter developments.  Every service and activity is designed to provide young women with exposure and experiences that will give them strength to overcome obstacles, hope to dream about the future, and confidence to achieve those dreams.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.373834,37.729682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>69 - Girls Inc. of Alameda County</name>
+        <description>Girls Inc. of Alameda County is a local affiliate of the national nonprofit organization Girls Inc., dedicated to inspiring all girls to be strong, smart, and bold, providing vital educational programs to millions of American girls, particularly those in high-risk, underserved areas.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.143153,37.716627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>70 - GLBT Studies Department / Queer Resource Center (@ City College of San Francisco)</name>
+        <description>CCSF is proud to offer the nation’s first GLBT Department.  The intention of the Queer Resource Center is to provide a safe, open and confidential atmosphere where lesbian, gay, bisexual, transgender, queer, and questioning students and their allies can gather openly and discuss relevant issues.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.452362,37.72571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>71 - Glide Memorial United Methodist Church/Glide Health Services</name>
+        <description>Glide is a diverse, cutting-edge church and nonprofit offering innovative programs to poor and marginalized people. Glide serves three meals daily, amounting to over 750,000 free meals a year.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411697,37.785292,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>72 - Haight Ashbury Free Clinics, Inc. / Youth Outreach Team</name>
+        <description>The mission of the Haight Ashbury Free Clinics, Inc. is to increase access to healthcare for all and improve the health and well being of our clients. Haight Ashbury Free Clinics provides free, high quality, demystified and comprehensive health care that is culturally sensitive, non-judgmental and accessible to all in need.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.450154,37.769604,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>73 - Hawkins Village Teen Health Clinic</name>
+        <description>The Hawkins clinic is a satellite to the Silver Avenue Health Center. They serve families of the Visitacion Valley neighborhood.  The Teen Clinic operates on Wednesdays, 2pm–6pm.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.412292,37.710846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>74 - HIFY - Health Initiatives For Youth</name>
+        <description>HIFY creates publications and resource materials and facilitates workshops and trainings for youth and the providers that work with them on a variety of youth and health topics, such as body image, sexuality, STDs and HIV, substance use, self-esteem and mental health, relationships, and violence.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.402859,37.791391,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>75 - Hip Hop To Health Clinic</name>
+        <description><![CDATA[Hip Hop to Health Clinic focuses on youth in the OMI neighborhood, ages 12-24.  Services are confidential & don’t require parent/guardian permission unless noted.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.466907,37.714522,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>76 - HIV InSite @ UCSF Center for HIV Information</name>
+        <description><![CDATA[HIV InSite's mission is to be a source for comprehensive, up-to-date, in-depth HIV/AIDS information and knowledge.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.502069,37.78123,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>77 - HIV/STD Education Department (@ City College of San Francisco)</name>
+        <description>Our goal is to provide quality education and career training in addition to HIV/STI prevention programming and activities using a peer education model dedicated to linking learning with action. Harm Reduction and social justice education form the foundation for our classes, programs and activities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.452361,37.726762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>78 - Horizons, Inc.</name>
+        <description><![CDATA[Horizons is a youth development and empowerment organization rooted in community service and advocacy. Horizons' primary goal is to engage, educate, and inspire youth.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407402,37.76396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>79 - Huckleberry Youth Programs</name>
+        <description>Our mission is to educate, inspire, and support underserved youth to develop healthy life choices, to maximize their potential, and to realize their dreams. We seek to empower young people to develop and maintain healthy relationships as well as promote their talents, ideas, leadership and health.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.454493,37.781637,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>80 - Immune Enhancement Project</name>
+        <description>The mission of the Immune Enhancement Project is to promote healing and wellness by providing high quality, accessible, and affordable Traditional Chinese Medicine and other healing arts to the community. Our goal is to address the needs of racial, ethnic, linguistic and other cultural populations that experience unequal access to health care service.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.429951,37.764691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>81 - Instituto Familiar De La Raza</name>
+        <description>The mission of Instituto Familiar de la Raza, Inc. (IFR) is to promote and enhance the health and well-being of Chicanos/Latinos and multicultural/multiracial youth.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418226,37.750222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>82 - The Iris Center</name>
+        <description>The IRIS Center is the only women’s community-based organization in San Francisco that offers free and low-cost mental health, substance abuse, and HIV prevention services to high-risk women of color, focusing on low-income single mothers, homeless women, sex workers, and drug abusers.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.422122,37.767503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>83 - La Casa De Las Madres</name>
+        <description>La Casa de Las Madres opened San Francisco’s first domestic violence shelter for women and their children.  Through a broad service continuum, we also provide expert intervention and prevention services to more than 10,000 community members annually. All services are free of charge and confidential.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419198,37.771147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>84 - La Clinica De La Raza</name>
+        <description>La Clínica de La Raza is a community health clinic that provides health care to the uninsured and underserved. We provide care that is culturally and linguistically sensitive to our diverse patient population. Our goal is to reduce ethnic and racial health disparities within the communities we serve.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.225377,37.779188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>85 - Lambda Youth Project</name>
+        <description><![CDATA[The Lambda Youth Project, Hayward was founded in 1992. Lambda is committed to serving the needs of Lesbian, Gay, Transgender, & Questioning youth as well as their friends and families.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.078722,37.67453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>86 - Larkin Street Youth Clinic</name>
+        <description>At Larkin Street Youth Clinic, we provide comprehensive health services to help them transition toward stability with healthy minds and bodies.  Our medical clinic is staffed by caring health care professionals and provides medical care, HIV testing, referrals and educational materials.  Mental health and substance abuse assessments and treatment services are available for all youth participating in Larkin Street’s programs to help them overcome challenges that might prevent them from moving beyond the street.  Our HIV prevention program helps educate young people about making healthy choices for their future.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419174,37.787895,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>87 - Larkin Street Youth Services</name>
+        <description>Larkin Street Youth Services (LSYS) is the only organization providing the full spectrum of services needed to help San Francisco’s most vulnerable youth move beyond life on the street. The mission of LSYS is to creative a continuum of services that inspires youth to move beyond the street.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419174,37.787895,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>88 - Larkin Street Youth Services / Haight Street Referral Center</name>
+        <description>The Haight Street Referral Center is a hub for outreach activities in the Haight Ashbury neighborhood, an important resource for kids who need basic assistance and a safe place to hang out with peers, attend groups focused on substance abuse and HIV prevention, and begin to develop relationships with caring adults.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.443859,37.770374,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>89 - Legal Services For Children</name>
+        <description>Legal Services for Children (LSC) provides free legal and social work services to children and youth in order to stabilize their lives and help them realize their full potential.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.415668,37.778027,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>90 - LIFT Bay Area</name>
+        <description>LIFT Bay Area provides social networking and educational opportunities to youth aged 12-24 by hosting events and workshops designed to build skills and enhance self-confidence, while allowing youth to develop friendships and relationships based on shared experiences and trust.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.400398,37.793253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>91 - The Lighthouse Community Center</name>
+        <description>The Lighthouse Community Center serves the lesbian, gay, bisexual, transgender community of southern Alameda County.  Our goal is to provide a safe and substance-free meeting place with social, informational and community awareness programs for the entire LGBT community regardless of age, race, or religion.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.080054,37.676555,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>92 - Lighthouse Youth Program (@ The Lighthouse Community Center) </name>
+        <description>We are the Lighthouse Youth Program! We exist for gay, lesbian, bisexual, transgender, questioning, queer, gender non-conforming and gender-variant, and straight allies ages 16-24 (younger than 16? okay with us)! Our program uses youth empowerment, anti-oppression, youth development, and youth-adult partnership models to create a fun and exciting program for queer youth in Southern Alameda County.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.080054,37.676555,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>93 - Love and Justice Program at CUAV (Community United Against Violence)</name>
+        <description><![CDATA[L&J works to empower LGBTQQ young people, ages 25 and under, to challenge dating and intimate violence, and build healthy, safe relationships. L&J uses arts-based education and creative projects to create opportunities for LGBTQQ young people to imagine a thriving, resilient world free from abuse and isolation.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418592,37.763856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>94 - Lyon Martin Health Services</name>
+        <description>Lyon-martin provides personalized healthcare and support services to women and transgender people who lack access to quality care because of their sexual or gender identity, regardless of their ability to pay.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.423195,37.772178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[95 - LYRIC - Lavender Youth Recreation & Information Center]]></name>
+        <description>LYRIC’s mission is to build community and inspire positive social change through education enhancement, career trainings, health promotion, and leadership development with lesbian, gay, bisexual, transgender, queer, and questioning youth, their families, and allies of all races, classes, genders, and abilities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.436061,37.760283,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>96 - Magic Johnson Clinic by AIDS Health Foundation</name>
+        <description>The Magic Johnson Clinic offers quick and efficient service, providing state-of-the-art healthcare for those living with HIV and AIDS. The clinic is open to all patients reaching out to disadvantaged populations including African Americans, women, the indigent, the gay, lesbian and transgender communities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.264955,37.819018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>97 - Magnet Health Clinic</name>
+        <description>Magnet, a program of the San Francisco AIDS Foundation, holds a vision to promote the physical, mental and social well-being of gay men. Magnet is a place where gay men can access resources and each other to promote individual and community health.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.435621,37.761021,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>98 - Marin AIDS Project</name>
+        <description>Our mission is to help the people of Marin County obtain the best quality HIV/AIDS and Hepatitis C services, information, education and support possible.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.52089,37.971337,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>99 - Metropolitan Community Church</name>
+        <description>Metropolitan Community Church of San Francisco is a beloved community joining together from diverse spiritual backgrounds and ministering primarily within the Lesbian/Gay/Bisexual/Transgender Community as a house of prayer of all people and a home for queer spirituality.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.424048,37.77175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>100 - Mission Hiring Hall</name>
+        <description>Mission Hiring Hall’s purpose is to meet the immediate and long-term employment needs of San Francisco’s employers and its low- to moderate- income, unemployed and underemployed residents. MHH serves low- to moderate-income San Francisco job seekers, ages 18 and up.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.420687,37.765002,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>101 - Mission Neighborhood Health Center (Clinica Esperanza) </name>
+        <description>Mission Neighborhood Health Center is committed to compassionate, culturally competent and comprehensive health care services. We strive to provide services for the medically underserved with a focus on the Latino/Hispanic Spanish speaking community and its neighbors.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.416581,37.764723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>102 - National Center for Lesbian Rights</name>
+        <description>The National Center for Lesbian Rights is a national legal organization committed to advancing the civil and human rights of lesbian, gay, bisexual, and transgender people and their families through litigation, public policy advocacy, and public education.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407379,37.78507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>103 - Native American AIDS Project</name>
+        <description>NAAP utilizes traditional healers to meet the needs of clients who have been ostracized from communities or families of origin because of HIV status, substance abuse, sexual orientation, or gender identity.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419966,37.775028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>104 - Native American Health Center / Circle of Healing</name>
+        <description>Native American Health Center assists American Indians and Alaska Natives to improve and maintain their physical, mental, emotional, social and spiritual well-being with respect for cultural traditions and to advocate for the needs of all Indian people, especially the most vulnerable members of our community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418604,37.763981,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>105 - New Generation Health Center</name>
+        <description>New Generation Heath Center’s mission is to help empower youth to make informed, positive decisions about their health and future, particularly related to their reproductive health and planning their families. We offer accessible, youth-friendly clinical services and educational programs in San Francisco’s highest-risk communities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.406801,37.761324,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>106 - New Leaf Services</name>
+        <description>New Leaf: Services For Our Community exists to help lesbian, gay, bisexual, transgender, queer and questioning individuals and families of all ages lead healthy and connected lives. We provide professional mental health, substance abuse, and social support services to strengthen our diverse community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418104,37.777474,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>107 -  Our Family Coalition - East Bay</name>
+        <description>Our Family Coalition promotes the civil rights and well-being of Bay Area lesbian, gay, bisexual, transgender and queer (LGBTQ) families with children and prospective parents through education, advocacy, social networking and grassroots community organizing.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.257684,37.828066,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>108 - Our Family Coalition - San Francisco</name>
+        <description>Our Family Coalition promotes the civil rights and well-being of Bay Area lesbian, gay, bisexual, transgender and queer (LGBTQ) families with children and prospective parents through education, advocacy, social networking and grassroots community organizing.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407379,37.78507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>109 - Out and Equal Workplace Advocates</name>
+        <description><![CDATA[Out & Equal Workplace Advocates champions safe and equitable workplaces for lesbian, gay, bisexual, and transgender (LGBT) people. We advocate building and strengthening successful organizations that value all employees, customers and communities.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.401241,37.791648,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>110 - OutLoud Radio (@ Lick-Wilmerding High School)</name>
+        <description>Sponsored by LYRIC, OutLoud Radio increases the well-being of lesbian, gay, bisexual, transgender and queer young people by helping them develop the skills and confidence to decide for themselves how they will be represented, advance social justice and make the most of their lives.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.449052,37.72221,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>111 - Pacific Center For Human Growth</name>
+        <description>The Pacific Center is an LGBT community center based in Berkeley, CA serving the East Bay and Greater Bay Area. Through professional counseling, groups, community events, and advocacy, Pacific Center works to foster and enhance the well-being and self-respect of lesbian, gay, bisexual, and transgender individuals.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.259273,37.861049,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>112 - PAWS - Pets Are Wonderful Support</name>
+        <description>Pets Are Wonderful Support (PAWS) provides for the comprehensive needs of companion animals for low-income persons with HIV/AIDS and other disabling illnesses. By providing these essential support services, educating the larger community on the benefits of the human-animal bond, and advocating for the rights of disabled individuals to keep service animals, PAWS improves the health and well-being of disabled individuals and the animals in their lives.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.395977,37.783621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>113 - Planned Parenthood Golden Gate - Oakland Macarthur</name>
+        <description><![CDATA[Planned Parenthood Golden Gate is a non-profit health organization that has been helping women, men and teens make responsible choices, committed to delivering the highest quality reproductive health care, teaching responsible and age-appropriate sexuality education and working diligently to protect a woman's right to choose.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.264264,37.826325,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>114 - Planned Parenthood Golden Gate - San Mateo</name>
+        <description><![CDATA[Planned Parenthood Golden Gate is a non-profit health organization that has been helping women, men and teens make responsible choices, committed to delivering the highest quality reproductive health care, teaching responsible and age-appropriate sexuality education and working diligently to protect a woman's right to choose.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.306131,37.546678,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>115 - Planned Parenthood Golden Gate - San Rafael</name>
+        <description><![CDATA[Planned Parenthood Golden Gate is a non-profit health organization that has been helping women, men and teens make responsible choices, committed to delivering the highest quality reproductive health care, teaching responsible and age-appropriate sexuality education and working diligently to protect a woman's right to choose.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.538604,37.974186,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>116 - Planned Parenthood Golden Gate - San Francisco</name>
+        <description><![CDATA[Planned Parenthood Golden Gate is a non-profit health organization that has been helping women, men and teens make responsible choices, committed to delivering the highest quality reproductive health care, teaching responsible and age-appropriate sexuality education and working diligently to protect a woman's right to choose.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.421037,37.782849,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>117 - Positive Being</name>
+        <description>Positive Being is a non-profit service organization dedicated to improving the quality of life for those living with HIV through healing touch. The organization fosters the integration of the physical, healing, and spiritual nature of our bodies to effect positive change in the health and well-being of men with HIV.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.416824,37.754413,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>118 - Positive Images</name>
+        <description>Positive Images provides support and advocacy to Sonoma County’s gay, lesbian, bisexual, transgender, queer, questioning, and intersex youth and young adults, and educates the greater community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.706794,38.443886,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>119 - Positive Resource Center</name>
+        <description>The mission of the Positive Resource Center is to assist people affected by or at risk for HIV/AIDS through culturally appropriate counseling, education, training and advocacy in making informed choices that maximize available benefits and employment opportunities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.405081,37.785792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>120 - Potrero Hill Health Center</name>
+        <description>Potrero Hill Health Center is part of the Department of Public Health, offering comprehensive primary care.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.398643,37.753914,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>121 - Potrero Hill Neighborhood House</name>
+        <description><![CDATA[The Potrero Hill Neighborhood House (known as the NABE to community members) is a multi-purpose, multi-generational community center in continuous operation for nearly a century. Its mission is to serve those in need from the "cradle to the grave" with an emphasis on youth and education.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.400656,37.758233,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>122 - Precita Eyes Mural Arts Center</name>
+        <description>As an inner city, community-based mural arts organization, Precita Eyes Mural Arts Association seeks to enrich and beautify urban environments and educate communities locally and internationally about the process and the history of public community mural art. We intend to bring art into the daily lives of people through a process which enables them to reflect their particular concerns, joys and triumphs.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411514,37.752424,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>123 - Project Homeless Connect (@ Bill Graham Civic Auditorium)</name>
+        <description>The mission of Project Homeless Connect is to rally the city to support and create lasting solutions for homeless San Franciscans.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.417371,37.778317,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124 - Project Inform Hotline</name>
+        <description>Project Inform represents HIV-positive people in the development of treatments and a cure, supports individuals to make informed choices about their HIV health, advocates for quality health care to respond to HIV and related conditions, and promotes medical strategies that prevent new infections.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.415367,37.775368,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>125 - Project Open Hand</name>
+        <description>Project Open Hand provides food and nourishment to improve the quality of life for the men, women and children it serves. Services are available to eligible clients living in San Francisco and Alameda counties, regardless of their race, color, national origin, age, gender, sexual orientation, religious affiliation, disability or ability to pay.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419302,37.783796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>126 - Project Outlet</name>
+        <description>Outlet supports and empowers lesbian, gay, bisexual, transgender, queer and questioning youth ages 13-20 living on the Peninsula and South Bay. Through our range of support services, leadership training, community education and advocacy, Outlet successfully increases youth confidence, builds personal assets, and creates healthier communities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.081413,37.387856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>127 - Redwood City Domestic Violence Clinic</name>
+        <description>The Redwood City Domestic Violence Clinic provides free assistance to self-represented litigants requesting restraining orders.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.228099,37.488685,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>128 - Roaddawgz</name>
+        <description>The Roaddawgz mission is to empower homeless youth, build community, develop job and life skills through literary and artistic activities. The Roaddawgz drop-in center is a highly unique, activity-driven, safe and supportive sanctuary for homeless youth.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.413756,37.782545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>129 - SAGE - Standing Against Global Exploitation</name>
+        <description>The mission of the SAGE Project is to improve the lives of individuals victimized by, or at risk for sexual exploitation, violence and prostitution through trauma recovery services, substance abuse treatment, vocational training, and Housing/Emergency Shelter assistance.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.415773,37.775438,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[130 - Saint Anthony's Free Clinic]]></name>
+        <description>St. Anthony Free Medical Clinic provides primary and urgent care services to children and adults who have no health insurance or limited access to health care.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.412619,37.782006,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>131 - Saint James Infirmary</name>
+        <description>St. James Infirmary offers free, confidential, nonjudgmental medical and social services for female, transgender, and male sex workers. We are the first occupational safety and health clinic for sex workers run by and for sex workers!</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.415591,37.775558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>132 - Saint Vincent De Paul Ozanam Detox Center</name>
+        <description>The Ozanam Detox Center is a social model drug and alcohol detoxification and recovery center which offers care and hope to more than 40,000 low-income men and women each year. The Oz provides a critical first step to sobriety, offering up to four days of safe shelter, a clean bed, hot meals and special care to help clients stop the brutal downward spiral of addiction.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.410985,37.776698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>133 - San Francisco City Clinic</name>
+        <description><![CDATA[City Clinic is a specialty clinic that provides diagnosis and treatment of sexually transmitted diseases (STDs) to the San Francisco community. The Clinic is the City's only municipal STD Clinic and provides confidential, low cost, convenient drop-in services to all people over the age of 12, regardless of their ability to pay.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.406966,37.776004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134a - Burton High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.40506,37.720658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134b - Downtown High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.40412,37.760909,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name> 134c - Galileo High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.423988,37.803484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134d - Ida B. Wells High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.434478,37.775424,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134e - International Studies Academy High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.401248,37.761588,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134f - June Jordan School of Equity Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.425547,37.720014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134g - Lincoln High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.481042,37.748154,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134h - Lowell High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.483549,37.731079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134i - Marshall High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.401428,37.736512,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134j - Mission High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.427307,37.761367,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134k - Newcomer High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.463582,37.763352,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[134l - O'Connell High School Wellness Center]]></name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.414399,37.759723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134m - School of the Arts High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.450824,37.745302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134n - Wallenberg High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.445757,37.780129,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>134o - Washington High School Wellness Center</name>
+        <description>The San Francisco High School Clinics and Wellness Centers operate out of the high schools in the unified school district. Call before dropping in, as services and schedules vary.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.491917,37.777832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>135 - San Francisco Independent Living Skills Program</name>
+        <description>ILSP is designed to help eligible youth prepare for independent living by providing them with the skills and resources necessary to become self-sufficient. We serve current and former foster youth, and eligible youth from probation and mental health.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.422323,37.769422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>136 -  The San Francisco LGBT Community Center</name>
+        <description>Our mission is to provide space and programs that welcome the LGBT community and its allies; unite the San Francisco LGBT community across lines of age, race, gender and economics; give visibility to the history, culture, and diversity of our LGBT community; organize and plan the political and cultural future for our LGBT community; and nurture new organizations and programs to meet emerging community needs.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.424048,37.77175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>137 - San Francisco Sex Information</name>
+        <description>San Francisco Sex Information (SFSI) trains people to become sex educators and operates a free information and referral switchboard. We provide free, confidential, accurate, non-judgmental information about sex and reproductive health.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4186,37.7753,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>138 - San Francisco Women Against Rape - SFWAR</name>
+        <description>San Francisco Women Against Rape provides resources, support, advocacy and education to strengthen the work of all individuals, and communities in San Francisco that are responding to, healing from, and struggling to end sexual violence.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.422663,37.761617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>139 - San Francisco Youth Commission</name>
+        <description>The Youth Commission is a diverse group of 17 youth from all across San Francisco between the ages of 12 and 23. The Youth Commission is charged with gathering youth and community input through information gathering and civic engagement activities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418938,37.779127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>140 - Sequoia Teen Wellness Center</name>
+        <description>Sequoia Teen Wellness Center is a health clinic that specializes in working with youth. Our mission is to serve the youth of South San Mateo County providing care that is private, respectful and supportive.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.234471,37.483405,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>141 - SHANTI / The Life Program</name>
+        <description>Shanti enhances the quality of life, health and well-being of people living with life-threatening illnesses, including Breast Cancer and HIV/AIDS.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.419302,37.783796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>142 - Silver Avenue Family Health Center</name>
+        <description>Silver Avenue Family Health Center is part of the Department of Public Health, offering comprehensive primary care services.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.405654,37.732451,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>143 - SMAAC - Sexual Minority Alliance of Alameda County</name>
+        <description>SMAAC Youth Center is a multi-service non-profit agency targeting Lesbian, Gay, Bisexual, Transgender, Questioning, and Intersex youth and young adults. We are committed to providing a safe space that fosters their transition to a healthy adulthood.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.267335,37.805029,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>144 - South Bay Bisexual Organizers and Activists (SOBOA) (@ Billy DeFrank LGBT Center)</name>
+        <description>SOBOA is the organization behind BiFriendly South Bay, a social group in the south San Francisco Bay Area for bi and bi-friendly people. We hold regular coffee socials, movie nights, and other events where people can socialize and have fun.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.908028,37.331606,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>145 - South Market Health Care</name>
+        <description>SMHC was established on the principle that healthcare is a right of every citizen, regardless of the individual’s cultural, social or economic circumstance. We are committed to providing quality health care services to individuals and families who lack access to mainstream healthcare.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.409233,37.779485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>146 - Spectrum LGBT Center of The North Bay</name>
+        <description>Spectrum provides community leadership to promote acceptance, understanding, and full inclusion for lesbian, gay, bisexual and transgender people.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.567937,37.982046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>147 - The Stonewall Project</name>
+        <description>The Stonewall Project is a harm reduction counseling program for gay men and other men who have sex with men (meaning queer, gay, bisexual, transgender, questioning, or no label) who have questions about speed, want information about speed, want help dealing with speed, and more.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.414683,37.76213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>148 - Stop AIDS San Francisco</name>
+        <description>The STOP AIDS Project conducts many different activities around HIV prevention. This continuum of activities reflects the diversity of our community and mirrors the belief that HIV has to be tackled with different approaches.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.431783,37.766197,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>149 - Strange, Santa Cruz Youth Services</name>
+        <description>Our mission is to serve and empower the multi-racial, intersex, transgender, queer, bisexual, lesbian, gay, and questioning youth of Santa Cruz County and their straight and adult allies.  We strive to create safe spaces, which provide opportunities for support, socializing, and activist work.  Our objective is to end the social isolation often experienced by these youth and to build a strong community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.034189,36.973668,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[150 - Teen Clinic (@ Children's Hospital & Research Center) ]]></name>
+        <description><![CDATA[The Adolescent Medicine/Teen Clinic at Children’s Hospital & Research Center Oakland provides comprehensive medical, psychosocial and psychobiological services for kids ages 11-19. Children’s Hospital & Research Center Oakland is the only independent children’s hospital in Northern California.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.261152,37.839244,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>151 - The Teen Clinic (@ Family Health Center)</name>
+        <description>The Teen Clinic provides easy-to-access health care for young adults and teens in a friendly, confidential, and comfortable environment.  Our focus is on those health issues that are most important for young people from ages 12 to 25, but are also able to address the concerns that people of all ages face.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.40659,37.756237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>152 - The Teen Clinic (@ Kaiser)</name>
+        <description>The Teen Clinic at Kaiser is a private teen health clinic for Kaiser members—teenagers 12 ½ to 18 years old.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.440977,37.782282,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>153 - Teen Clinic (@ UCSF Children’s Hospital)</name>
+        <description><![CDATA[Primary and specialty care for teens and young adults age 11 to 21 is provided by specialized health care teams at UCSF Children's Hospital. Our expertise includes gynecology and reproductive health, eating disorders, obesity, evaluation of behavioral problems, assessment of school-related problems, evaluation of sports injuries and substance use and abuse.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.46004,37.762971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>154 - Tenderloin Health</name>
+        <description>Our mission is to optimize the health of the Tenderloin’s homeless, poor and most vulnerable residents. We serve those living with and at the greatest risk of acquiring HIV/AIDS, who have difficulty obtaining services elsewhere.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.414753,37.781517,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>155 - Thunder Road Adolescent Treatment Centers, Inc.</name>
+        <description><![CDATA[Thunder Road's mission is to assist youth and their families in the challenges to recover from the abuse of alcohol, drugs and nicotine, and to support their growth as healthy, connected, and honorable members within our neighborhoods and communities.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.259133,37.828745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>156 - Tom Waddell Transgender Clinic</name>
+        <description>The Transgender Clinic of Tom Waddell Health Center is committed to providing quality, integrated health care in an atmosphere of trust and respect. Anyone who identifies as transgender can be seen in our clinic: male-to-female, female-to-male, intersex, and those in-between. All are welcome.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.418931,37.777876,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>157 - TRANS:THRIVE</name>
+        <description>TRANS: THRIVE is a drop-in center by and for the trans community. Our mission is to foster a healthy trans community, empowered by the leadership of its peers. T-LISH (Transgender Ladies Initiating Sisterhood) is a trans youth program of TRANS: THRIVE primarily focused on young transgender women of color ages 14-24, but we have events for all trans youth to attend, including transmen and genderqueer youth.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.416894,37.78838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>158 - Transgender Economic Empowerment Initiative (@ The SF LGBT Center)</name>
+        <description>TEEI is a unique collaborative program designed to help transgender individuals find stable jobs that provide a living wage, benefits, and opportunities for advancement.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.424048,37.77175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>159 - Transgender, Gender Variant, Intersex Justice Project</name>
+        <description><![CDATA[The Transgender, Gender Variant and Intersex Justice Project's (TGIJP) mission is to challenge and end the human rights abuses committed against transgender, gender variant, genderqueer and people with intersex conditions in California prisons and beyond.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411039,37.773287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>160 - Transgender Law Center</name>
+        <description><![CDATA[The Transgender Law Center (TLC) is a civil rights organization advocating for transgender communities. We connect transgender people and their families to technically sound and culturally competent legal services, increase acceptance and enforcement of laws and policies that support California's transgender communities, and work to change laws and systems that fail to incorporate the needs and experiences of transgender people.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407379,37.78507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>161 - Tri-City Health Center</name>
+        <description>Tri-City Health Center (TCHC) is committed to delivering excellent health services in a caring, nurturing, and respectful atmosphere; we promote optimal heath, eliminate preventable diseases, and improve the quality of life for every individual and family in our community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -121.977067,37.549135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>162 - Tri-High Project / Encinal High School Clinic</name>
+        <description>The Tri-High Project program offers free primary medical care, including immunizations, mental health care, and health education services.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.290271,37.773675,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>163 - UCSF AIDS Health Project / Client Services</name>
+        <description>The mission of the UCSF AIDS Health Project is to provide culturally sensitive counseling and education to stop the spread of HIV infection, and to help people face the emotional, psychological and social challenges of living with HIV disease.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.42567,37.770489,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>164 - UCSF Positive Health Practice</name>
+        <description>360 is one of the oldest nonprofit HIV clinics in the U.S. We are the only UCSF HIV clinic available to provide high-quality care to HIV positive individuals, whether they are privately insured, uninsured, or marginally insured.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.458369,37.763806,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>165 - United Way Bay Area</name>
+        <description>The power of the United Way Bay Area is to harness creativity, expertise and action to move working families out of poverty. We create long-lasting change ensuring all residents have access to the building blocks to a better life: education, income and health.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.39224,37.790347,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>166 - Valencia Health Services</name>
+        <description>Valencia Health Services (VHS) provides wellness examinations, immunizations, and health education on topics including weight management, nutrition, substance abuse (including tobacco), and sexual health. The majority of providers at VHS speak both English and Spanish.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.420073,37.746842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>167 - Walden House Youth Services (WEBS - Webs of Support)</name>
+        <description>The aim of Walden House (WH)’s project, Webs of Support (WEBS), is to confront a systemic barrier as it implements an intervention to reduce the relapse of substance use disordered (SUD) youth with multiple needs from underserved populations.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.426145,37.77294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>168 - Walden House, Inc.</name>
+        <description>Walden House engages, heals, teaches, trains, houses, clothes, and feeds people with alcohol and other drug addictions in San Francisco and throughout California.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.400482,37.773445,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>169 - West Oakland Health Center</name>
+        <description>The West Oakland Health Council is a non-profit organization providing primary care, mental health, and substance abuse recovery services to residents of North, East and West Oakland, Emeryville and Southwest Berkeley. Its mission is to improve the health and well-being of residents and to reduce morbidity, preventable disability and premature death in the community.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.287407,37.804249,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>170 - Westside Crisis Clinic Teen Core</name>
+        <description>Teen CORE is a comprehensive case management and counseling program that offers cultural enrichment activities, educational guidance, and mental health services to girls ages 12 – 17.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.438166,37.773068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>171 - WORLD - Women Organized To Respond To Life-Threatening Diseases</name>
+        <description>WORLD connects HIV-positive women, their families, allies, and communities to one another through peer-based education, support, advocacy, and leadership development. WORLD is a diverse organization for, by, and about women living with, and at risk for, HIV/AIDS.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270688,37.803569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>172 - YMCA / Urban Services Teen Center</name>
+        <description>Urban Services creates an environment that encourages youth and families to enjoy healthy lifestyle activities together. Urban Services mission is to empower urban youth to be honest, responsible, caring and respectful of themselves, their families and their communities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.211311,37.772862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>173 - Young Women United for Oakland (YWUFO)</name>
+        <description>YWUFO is an organization run by and for young women of color between the ages of 14-20 who are living on the street economy or live in low-income communities of Oakland, California.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270653,37.806425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>174 - Youth Alive!</name>
+        <description>Youth ALIVE! is a non-profit public health agency dedicated to preventing youth violence and generating youth leadership in California communities experiencing high rates of violence.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.265002,37.821439,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>175 - Youth In Focus</name>
+        <description>Our mission is to educate underrepresented youth and adult partners in youth-led action research, evaluation and planning to create the conditions for social justice.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270653,37.806425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>176 - Youth Program (@The SF LGBT Center)</name>
+        <description>The Youth Program at the Center is a great place for youth aged 24 and under to hang out and meet new friends.  Our mission is to engage LGBTQ youth through local leadership, creativity and self-advocacy. We hold weekly meal nights, art activities, and our annual queer prom—we also host youth only events, socials and more!</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.424048,37.77175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>177 - Youth Speaks</name>
+        <description>Youth Speaks empowers the next generation of leaders, self-defined artists, and visionary activists through written and oral literacies. We challenge youth to find, develop, publicly present, and apply their voices as creators of social change.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.408242,37.769541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>178 - Youth TIES (Youth Trans and Intersex Education Services) </name>
+        <description><![CDATA[Youth Trans & Intersex Education Services (Youth TIES) is a youth-led organization advocating for trans, gender-variant, intersex and questioning (TGIQ) youth. We address the challenges facing TGIQ youth in the San Francisco Bay Area by educating the service providers who work with us, and providing TGIQ youth with information and referrals.]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.424048,37.77175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>179 - Youth Together</name>
+        <description>The vision of Youth Together is to reclaim public education.  We seek to create public educational systems that are just, community based, supportive and people centric. We aim to empower, mobilize, and build self-determination among students and their communities.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.270653,37.806425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>180 - YUTHE - Youth United Through Health Education</name>
+        <description>YUTHE is a peer education program designed to help youth and young adults learn how to protect themselves from HIV and other sexually transmitted diseases.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.415622,37.775872,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>181 - Youth Uprising</name>
+        <description>Youth Uprising is dedicated to being a leader in the advancement of youth leadership development as a means of affecting positive community change by ensuring that youth and young adults are supported in actualizing their potential.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.162179,37.757852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>182 - YouthLINE (Run by CHALK) </name>
+        <description>YouthLINE Phone Line is a confidential phone line that is open everyday (including holidays) from 12pm to 10 pm. The phones are answered by youth, between the ages of 14 to 18. This is what makes YouthLINE so unique, youth to youth service, and it’s a free phone line run by youth, for youth.</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            -122.407949,37.781547,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

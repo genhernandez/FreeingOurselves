@@ -43,8 +43,10 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addTopic(db, "Home", "home");
             addTopic(db, "Testosterone and You", "testosterone");
             addTopic(db, "Finding Healthcare Allies", "healthcare");
-            addTopic(db, "Resources", "resources");
+            addTopic(db, "Resources", "ers");
             addTopic(db, "Workouts", "workouts");
+            addTopic(db, "Nearby Resources", "map");
+            addTopic(db, "About us", "about");
 
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
@@ -207,7 +209,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addHealthcareStep(db, "I am interested in obtaining services related to sexual " +
                     "reassignment surgery and transitioning – can you connect me with the best " +
                     "places to gain more information?");
-            addHealthcareStep(db, "What other community resources are you aware of that I might want " +
+            addHealthcareStep(db, "What other community ers are you aware of that I might want " +
                     "to look into (community organizations, support groups, youth empowerment, etc.)");
             addHealthcareStep(db, "Legally, what services am I entitled to without parental consent? " +
                     "What services require parental consent?");
@@ -242,6 +244,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "RESOURCE_NAME TEXT, "
                     + "RESOURCE_DESCRIPTION TEXT, "
                     + "LINK TEXT);");
+            addResource(db, "Brown Boi Project", "Our organization", "http://www.brownboiproject.org/");
             addResource(db, "Therapists of Color", "Bay Area", "http://www.therapistsofcolor.org/directory.html");
             addResource(db, "National Queer & Trans Therapists of Color Network",
                     "national provider directory of queer and trans therapists of color",

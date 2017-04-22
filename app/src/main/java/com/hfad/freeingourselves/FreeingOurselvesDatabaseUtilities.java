@@ -79,7 +79,7 @@ final public class FreeingOurselvesDatabaseUtilities {
             cursor.close();
             return resources;
         } catch (SQLiteException e) {
-            Log.d("getResources", "resources table error");
+            Log.d("getResources", "ers table error");
             return null;
         }
     }

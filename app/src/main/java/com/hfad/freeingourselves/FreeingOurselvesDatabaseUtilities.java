@@ -122,25 +122,22 @@ final public class FreeingOurselvesDatabaseUtilities {
     // Workout methods
 
     /**
-     * Gets a list of the workout names. If a database error occurs, null is returned; the caller
+     * Gets a cursor with the names and IDs of all the workouts. The cursor contains, in this order,
+     * values for int id and String name. If a database error occurs, null is returned; the caller
      * will need to handle this case.
      *
-     * @return list of workout names or null if there is an error
+     * @return cursor or null if there is an error
      */
-    static ArrayList<String> getWorkoutNames(Context context) {
+    static Cursor getWorkoutNames(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ArrayList<String> workouts = new ArrayList<>();
-            String[] columns = new String[]{"NAME"};
-            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS, columns, null, null, null, null, null);
-            for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
-                workouts.add(cursor.getString(0));
-            }
-            cursor.close();
-            return workouts;
+            return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
+                    new String[]{"_id", "NAME"},
+                    null,
+                    null, null, null, null);
         } catch (SQLiteException e) {
-            Log.d("getWorkoutsNames", "workout table error");
+            Log.d("getWorkoutNames", "workout table error");
             return null;
         }
     }

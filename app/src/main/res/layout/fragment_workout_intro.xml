@@ -7,23 +7,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/workout_intro" />
+        android:id="@+id/workout_intro"
+        android:text="@string/workout_intro"/>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        ></ListView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/name"/>
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/startWorkoutButton"/>
+        android:id="@+id/workout_list"/>
+
 
 
 </FrameLayout>

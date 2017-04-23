@@ -55,7 +55,7 @@ public class WorkoutActivity extends Activity {
     }
 
         public void onFavoriteClicked(View view) {
-            workoutNum = (Integer) getIntent().getExtras().get("drinkNo");
+            workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
             CheckBox favorite = (CheckBox) findViewById(R.id.favorite);
             FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(this, workoutNum, favorite.isChecked());
         }

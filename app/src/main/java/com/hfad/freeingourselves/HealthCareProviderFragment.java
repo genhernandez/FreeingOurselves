@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.EditText;
@@ -52,12 +53,26 @@ public class HealthCareProviderFragment extends Fragment {
         Log.d("HealthCareProvider", questionArray.toString());
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(),
-                android.R.layout.simple_list_item_1, questionArray);
+                android.R.layout.simple_list_item_multiple_choice, questionArray);
         listView.setAdapter(adapter);
        
 
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                CheckedTextView checkedTextView = ((CheckedTextView) view);
+                checkedTextView.setChecked(!checkedTextView.isChecked());
+
+                //onSavedClicked(view);
+            }
+        });
+
         return view;
+    }
+
+    public void onSavedClicked(View view) {
+        //FreeingOurselvesDatabaseUtilities.updateSaved(view.getContext(), view.getId(), true);
     }
 
 }

@@ -56,6 +56,8 @@ public class HealthCareProviderFragment extends Fragment {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(),
                 android.R.layout.simple_list_item_multiple_choice, questionArray);
         listView.setAdapter(adapter);
+       
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override

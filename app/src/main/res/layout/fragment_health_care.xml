@@ -1,14 +1,18 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.hfad.freeingourselves.HealthCareProviderFragment"
-    android:id="@+id/healthcareFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width = "fill_parent">
 
-    <ListView
-        android:id="@android:id/list"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/healthcareFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-</ListView>
-
-</FrameLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context="com.hfad.freeingourselves.HealthCareProviderFragment">
+    </LinearLayout>
+    
+</ScrollView>

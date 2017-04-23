@@ -167,6 +167,27 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
+     * Gets a cursor with all of the data for a specific workout. The cursor contains,
+     * in this order, values for String name, String details, String picture file name, int count,
+     * and an int that is either 0 or 1 to represent whether or not the workout is favorited. If a
+     * database error occurs, null is returned; the caller will need to handle this case.
+     *
+     * @return a cursor or null if there is an error
+     */
+    static Cursor getSpecificWorkout(Context context, int id) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
+                    new String[]{"NAME", "DETAILS", "PICTURE_FILE", "COUNT", "FAVE"},
+                    "_id = ?", new String[]{Integer.toString(id)}, null, null, null);
+        } catch (SQLiteException e) {
+            Log.d("getWorkouts", "workout table error");
+            return null;
+        }
+    }
+
+    /**
      * Updates the favorite column for a specific workout. If a database error occurs, false is
      * returned; the caller will need to handle this case.
      *

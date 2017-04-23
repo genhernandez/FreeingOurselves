@@ -227,17 +227,22 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
     @Override
     public void resourceListItemClicked(int position) {
         String url = null;
-        try { //TODO: this should be in utilities?
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            url = getResourceLink(db, position);
-        } catch (SQLiteException e) {
-            Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
+        Log.v("Clicked!", "position is " + position);
+        if ((position + 1) == ResourceListFragment.resourceList.size()){
+            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
+        }else{
+            try { //TODO: this should be in utilities?
+                SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
+                SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+                url = getResourceLink(db, position);
+            } catch (SQLiteException e) {
+                Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         }
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
     }
-
 }

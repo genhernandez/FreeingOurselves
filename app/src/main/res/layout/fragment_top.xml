@@ -17,10 +17,18 @@
         android:text="@string/intro"
         android:paddingBottom="30dp"/>
 
+    <!--Favorite topics-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/favorite_topics"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_fave_topics"
+        android:id="@+id/no_fave_topics_text"
+        android:visibility="invisible"/>
 
     <ListView
         android:layout_width="match_parent"
@@ -29,10 +37,18 @@
         android:paddingBottom="30dp">
     </ListView>
 
+    <!--Favorite workouts-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/favorite_workouts"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_fave_workouts"
+        android:id="@+id/no_fave_workouts_text"
+        android:visibility="invisible"/>
 
     <ListView
         android:layout_width="match_parent"

@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
@@ -44,19 +45,25 @@ public class TopFragment extends Fragment {
 
         ListView topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
         ListView workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
+        TextView noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
+        TextView noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
 
         //TODO: delete these later
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 2, true);
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 4, true);
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 1, true);
-        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(view.getContext(), 3, true);
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 2, false);
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 4, false);
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 1, false);
+        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(view.getContext(), 3, false);
 
         // Show favorite topics
         Cursor topicsCursor = FreeingOurselvesDatabaseUtilities.getFaveTopics(view.getContext());   //TODO: deal with asynctasks and null
-        CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
-                android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
-                new int[]{android.R.id.text1}, 0);
-        topicsView.setAdapter(topicsAdapter);
+        if (topicsCursor.moveToFirst()) {
+            CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
+                    android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
+                    new int[]{android.R.id.text1}, 0);
+            topicsView.setAdapter(topicsAdapter);
+        } else { // If no favorite topics, display text saying so.
+            noFaveTopics.setVisibility(View.VISIBLE);
+        }
 
         //Navigate to favorite topic when clicked
         //TODO: broken
@@ -69,10 +76,14 @@ public class TopFragment extends Fragment {
 
         // Show favorite workouts
         Cursor workoutsCursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(view.getContext());   //TODO: deal with asynctasks and null
-        CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
-                android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
-                new int[]{android.R.id.text1}, 0);
-        workoutsView.setAdapter(workoutsAdapter);
+        if (workoutsCursor.moveToFirst()) {
+            CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
+                    android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
+                    new int[]{android.R.id.text1}, 0);
+            workoutsView.setAdapter(workoutsAdapter);
+        } else { // If no favorite workouts, display text saying so.
+            noFaveWorkouts.setVisibility(View.VISIBLE);
+        }
 
         // Navigate to WorkoutActivity if a workout is clicked.
         //TODO: finish this

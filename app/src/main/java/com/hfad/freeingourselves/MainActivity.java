@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
-    public String publicURL = null;
 
     //private ShareActionProvider shareActionProvider;
     private String[] titles;
@@ -227,18 +226,19 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
         protected String doInBackground(ContentValues... myValues){
                 int myPosition = (int)myValues[0].get("position");
-                String myurl = FreeingOurselvesDatabaseUtilities.getResourceLink(MainActivity.this, myPosition);
-                return myurl;
+                return FreeingOurselvesDatabaseUtilities.getResourceLink(MainActivity.this, myPosition);
         }
 
-        protected void onPostExecute(String myurl){
-                if (myurl == null){
+        protected void onPostExecute(String myUrl){
+                if (myUrl == null){
                     Toast toast = Toast.makeText(MainActivity.this, "Could not get link", Toast.LENGTH_SHORT);
                     toast.show();
                 }
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(myurl));
-                startActivity(i);
+                else {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(myUrl));
+                    startActivity(i);
+                }
         }
     }
 }

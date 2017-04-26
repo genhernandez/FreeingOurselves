@@ -118,6 +118,34 @@ final public class FreeingOurselvesDatabaseUtilities {
         }
     }
 
+    /**
+     * Gets the link of a resource based on its position. If a database error occurs, null is returned; the caller will
+     * need to handle this case.
+     *
+     * @return link of resource or null if there is an error
+     */
+    static String getResourceLink(Context context, int position) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            String[] columns = new String[]{"LINK"};
+            String[] where = new String[]{"" + (position + 1) + ""};
+            String resourceLink = null;
+            Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
+            if (cursor.moveToFirst()) {
+                resourceLink = cursor.getString(0);
+                Log.v("MainActivity Resource", resourceLink);
+            }
+            cursor.close();
+            db.close();
+            return resourceLink;
+        }
+        catch(SQLiteException e){
+            Log.d("getResourceLink", "ers table error");
+            return null;
+        }
+    }
+
 
     // Workout methods
 

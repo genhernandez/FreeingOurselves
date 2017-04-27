@@ -45,8 +45,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
             addTopic(db, "Finding Healthcare Allies", "healthcare");
             addTopic(db, "Resources", "ers");
             addTopic(db, "Workouts", "workouts");
-            //We can remove this second Resources
-            addTopic(db, "Nearby Resources", "map");
             addTopic(db, "About us", "about");
 
             // Create workouts table.

@@ -32,6 +32,7 @@ public class WorkoutIntroFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_workout_intro, container, false);
 
         //TODO: where did the intro paragraph go
+
         // Populate the list_favorites ListView from a cursor.
         ListView listFavorites = (ListView) view.findViewById(R.id.workout_list);
 

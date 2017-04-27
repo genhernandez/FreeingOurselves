@@ -140,9 +140,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
                 fragment = new WorkoutIntroFragment();
                 break;
             case 5:
-                fragment = new ResourceListFragment();
-                break;
-            case 6:
                 fragment = new AboutFragment();
                 break;
             default:

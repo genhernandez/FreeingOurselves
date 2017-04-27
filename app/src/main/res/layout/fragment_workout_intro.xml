@@ -1,20 +1,26 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.hfad.freeingourselves.WorkoutIntroFragment">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/workout_intro"
-        android:text="@string/workout_intro"/>
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/workout_list"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.hfad.freeingourselves.WorkoutIntroFragment">
 
 
+        <TextView
+            android:id="@+id/workout_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/workout_intro" />
 
-</FrameLayout>
+        <ListView
+            android:id="@+id/workout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</ScrollView>

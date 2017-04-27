@@ -1,7 +1,9 @@
 package com.hfad.freeingourselves;
 
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.ListFragment;
 import android.support.annotation.Nullable;
@@ -35,19 +37,30 @@ public class ResourceListFragment extends ListFragment {
         resourceList.clear();
         final View view = inflater.inflate(R.layout.fragment_top, container, false);
 
-        ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(view.getContext()); //TODO: asynctask, do something if it returns null
-        // TODO: deal with null
-        for (int i = 0; i < tempList.size(); i++) {
-            resourceList.add(tempList.get(i));
-        }
-        resourceList.add("See nearby resources on map");
-
-        //super.onActivityCreated(savedInstanceState);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                getActivity(), android.R.layout.simple_list_item_1,
-                resourceList);
-        setListAdapter(adapter);
+        new getResourcesTask().execute();
         return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    private class getResourcesTask extends AsyncTask<Void, Void, ArrayList<String>> {
+
+        protected ArrayList<String> doInBackground(Void... voids) {
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(getContext());
+            return tempList;
+        }
+
+        protected void onPostExecute(ArrayList<String> tempList) {
+            if (tempList != null) {
+                for (int i = 0; i < tempList.size(); i++) {
+                    resourceList.add(tempList.get(i));
+                }
+            }
+            resourceList.add("See nearby resources on map");
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                    getActivity(), android.R.layout.simple_list_item_1,
+                    resourceList);
+            setListAdapter(adapter);
+        }
     }
 
     @Override
@@ -74,5 +87,8 @@ public class ResourceListFragment extends ListFragment {
             listener.resourceListItemClicked(position);
         }
     }
-
 }
+
+
+
+

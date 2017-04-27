@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
@@ -27,6 +28,7 @@ import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
+import android.os.AsyncTask;
 
 import java.util.ArrayList;
 
@@ -205,44 +207,38 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
     }
 
     /*
-    Gets clicked resource's link from database
-     */
-    String getResourceLink(SQLiteDatabase db, int position) {
-        String[] columns = new String[]{"LINK"};
-        String[] where = new String[]{"" + (position+1) + ""};
-        String resourceLink = null;
-        Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
-        if (cursor.moveToFirst()) {
-            resourceLink = cursor.getString(0);
-            Log.v("MainActivity Resource", resourceLink);
-        }
-        cursor.close();
-        db.close();
-        return resourceLink;
-    }
-
-    /*
     Gets resource clicked and launches web intent
      */
     @Override
     public void resourceListItemClicked(int position) {
-        String url = null;
         Log.v("Clicked!", "position is " + position);
         if ((position + 1) == ResourceListFragment.resourceList.size()){
             Intent intent = new Intent(MainActivity.this, MapActivity.class);
             startActivity(intent);
         }else{
-            try { //TODO: this should be in utilities?
-                SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(this);
-                SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-                url = getResourceLink(db, position);
-            } catch (SQLiteException e) {
-                Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-                toast.show();
-            }
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(url));
-            startActivity(i);
+            ContentValues myValues = new ContentValues();
+            myValues.put("position", position);
+            new getResourceLinkTask().execute(myValues);
+        }
+    }
+
+    private class getResourceLinkTask extends AsyncTask<ContentValues, String, String> {
+
+        protected String doInBackground(ContentValues... myValues){
+                int myPosition = (int)myValues[0].get("position");
+                return FreeingOurselvesDatabaseUtilities.getResourceLink(MainActivity.this, myPosition);
+        }
+
+        protected void onPostExecute(String myUrl){
+                if (myUrl == null){
+                    Toast toast = Toast.makeText(MainActivity.this, "Could not get link", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+                else {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(myUrl));
+                    startActivity(i);
+                }
         }
     }
 }

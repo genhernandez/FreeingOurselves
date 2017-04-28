@@ -6,13 +6,9 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.Objects;
 
 public class WorkoutActivity extends Activity {
 
@@ -22,7 +18,7 @@ public class WorkoutActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_workout_activity);
+        setContentView(R.layout.activity_workout);
 
         //Get the workout from the intent
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
@@ -37,6 +33,11 @@ public class WorkoutActivity extends Activity {
         CheckBox favorite = (CheckBox) findViewById(R.id.favorite);
         Object[] workoutFavoriteParams = {workoutNum, favorite.isChecked()};
         new UpdateWorkoutFaveTask().execute(workoutFavoriteParams);
+    }
+
+    public void onWorkoutCountClick(View view) {
+        Object[] workoutCountParams = {workoutNum};
+        new UpdateWorkoutCountTask().execute(workoutCountParams);
     }
 
     private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Cursor> {
@@ -95,8 +96,17 @@ public class WorkoutActivity extends Activity {
         }
     }
 
+    private class UpdateWorkoutCountTask extends AsyncTask<Object, Void, Boolean> {
+
+        protected Boolean doInBackground(Object... params) {
+            return FreeingOurselvesDatabaseUtilities.updateWorkoutCount(WorkoutActivity.this, (int) params[0]);
+        }
+
+        protected void onPostExecute(Boolean success) {
+            if (!success) {
+                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not update workout count", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        }
+    }
 }
-
-
-
-

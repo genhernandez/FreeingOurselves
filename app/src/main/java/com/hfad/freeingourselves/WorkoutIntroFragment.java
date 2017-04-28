@@ -34,15 +34,11 @@ public class WorkoutIntroFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_workout_intro, container, false);
 
-        //TODO: where did the intro paragraph go
-
         // Populate the list_favorites ListView from a cursor.
         listFavorites = (ListView) view.findViewById(R.id.workout_list);
 
         new GetWorkoutNamesTask().execute(view.getContext());
 
-
-        //TODO: this is broken
         // Navigate to WorkoutActivity if a drink is clicked.
         listFavorites.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -52,7 +48,6 @@ public class WorkoutIntroFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
 
         return view;
     }

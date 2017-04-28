@@ -23,8 +23,9 @@ public class HealthNotesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
         // Load questions into TextEdits and answers into EditTexts from db.
+
+
         return inflater.inflate(R.layout.fragment_health_notes, container, false);
     }
 

@@ -1,8 +1,6 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="fill_parent"
-    android:layout_width = "fill_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/healthcareFragment"
         android:layout_width="match_parent"
@@ -13,6 +11,4 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp"
         tools:context="com.hfad.freeingourselves.HealthCareProviderFragment">
-    </LinearLayout>
-    
-</ScrollView>
+    </FrameLayout>

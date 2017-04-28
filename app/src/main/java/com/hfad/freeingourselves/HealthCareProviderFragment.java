@@ -45,12 +45,14 @@ public class HealthCareProviderFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_health_care, null);
         FrameLayout frameLayout = (FrameLayout) view.findViewById(R.id.healthcareFragment);
+
         // LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthcareFragment);
         ListView listView = new ListView(getActivity());
 
 //        Cursor cursor = FreeingOurselvesDatabaseUtilities.getHealthcareInfo(view.getContext());
 //
 //
+
 //            if (cursor.moveToFirst()) {
 //                while (!cursor.isAfterLast()) {
 //                    int questionId = cursor.getInt(0);
@@ -70,7 +72,6 @@ public class HealthCareProviderFragment extends Fragment {
 //                }
 //            }
 
-
         frameLayout.addView(listView);
 
         //TODO: asynctask and null
@@ -87,9 +88,11 @@ public class HealthCareProviderFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 CheckedTextView checkedTextView = ((CheckedTextView) view);
                 checkedTextView.setChecked(!checkedTextView.isChecked());
                 // onSavedClicked(view);
+
             }
         });
 

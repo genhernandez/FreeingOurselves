@@ -95,5 +95,8 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
         }
     }
 
+    public void onHealthNotesClicked() {
+        
+    }
 
 }

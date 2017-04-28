@@ -63,43 +63,32 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
 
-        ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getTopicTitles(this); //TODO: this needs an asynctask
-        // TODO: deal with null
-        titles = new String[tempList.size()];
-        for (int i = 0; i < tempList.size(); i++) {
-            titles[i] = tempList.get(i);
+        //Populate the ListView.
 
-            //super.onActivityCreated(savedInstanceState);
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                    this, android.R.layout.simple_list_item_1,
-                    titles);
-            drawerList.setAdapter(adapter);
+        new GetTopicsTask().execute();
 
+        drawerList.setOnItemClickListener(new DrawerItemClickListener());
+        if (savedInstanceState == null) {
+            selectItem(0);
+        }
 
-            //Populate the ListView.
-
-            drawerList.setOnItemClickListener(new DrawerItemClickListener());
-            if (savedInstanceState == null) {
-                selectItem(0);
+        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
+                R.string.open_drawer, R.string.close_drawer) {
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                invalidateOptionsMenu();
             }
 
-            drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
-                    R.string.open_drawer, R.string.close_drawer) {
-                public void onDrawerClosed(View view) {
-                    super.onDrawerClosed(view);
-                    invalidateOptionsMenu();
-                }
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                invalidateOptionsMenu();
+            }
+        };
+        drawerLayout.addDrawerListener(drawerToggle);
 
-                public void onDrawerOpened(View drawerView) {
-                    super.onDrawerOpened(drawerView);
-                    invalidateOptionsMenu();
-                }
-            };
-            drawerLayout.addDrawerListener(drawerToggle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeButtonEnabled(true);
-        }
     }
 
     @Override
@@ -209,33 +198,57 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
     @Override
     public void resourceListItemClicked(int position) {
         Log.v("Clicked!", "position is " + position);
-        if ((position + 1) == ResourceListFragment.resourceList.size()){
+        if ((position + 1) == ResourceListFragment.resourceList.size()) {
             Intent intent = new Intent(MainActivity.this, MapActivity.class);
             startActivity(intent);
-        }else{
+        } else {
             ContentValues myValues = new ContentValues();
             myValues.put("position", position);
-            new getResourceLinkTask().execute(myValues);
+            new GetResourceLinkTask().execute(myValues);
         }
     }
 
-    private class getResourceLinkTask extends AsyncTask<ContentValues, String, String> {
+    private class GetResourceLinkTask extends AsyncTask<ContentValues, String, String> {
 
-        protected String doInBackground(ContentValues... myValues){
-                int myPosition = (int)myValues[0].get("position");
-                return FreeingOurselvesDatabaseUtilities.getResourceLink(MainActivity.this, myPosition);
+        protected String doInBackground(ContentValues... myValues) {
+            int myPosition = (int) myValues[0].get("position");
+            return FreeingOurselvesDatabaseUtilities.getResourceLink(MainActivity.this, myPosition);
         }
 
-        protected void onPostExecute(String myUrl){
-                if (myUrl == null){
-                    Toast toast = Toast.makeText(MainActivity.this, "Could not get link", Toast.LENGTH_SHORT);
-                    toast.show();
+        protected void onPostExecute(String myUrl) {
+            if (myUrl == null) {
+                Toast toast = Toast.makeText(MainActivity.this, "Could not get link", Toast.LENGTH_SHORT);
+                toast.show();
+            } else {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(myUrl));
+                startActivity(i);
+            }
+        }
+    }
+
+    private class GetTopicsTask extends AsyncTask<Void, ArrayList<String>, ArrayList<String>> {
+
+        protected ArrayList<String> doInBackground(Void... params) {
+            return FreeingOurselvesDatabaseUtilities.getTopicTitles(MainActivity.this);
+        }
+
+        protected void onPostExecute(ArrayList<String> topicsList) {
+            if (topicsList == null) {
+                Toast toast = Toast.makeText(MainActivity.this, "Could not get topics", Toast.LENGTH_SHORT);
+                toast.show();
+            } else {
+                titles = new String[topicsList.size()];
+                for (int i = 0; i < topicsList.size(); i++) {
+                    titles[i] = topicsList.get(i);
+
+                    //super.onActivityCreated(savedInstanceState);
+                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                            MainActivity.this, android.R.layout.simple_list_item_1,
+                            titles);
+                    drawerList.setAdapter(adapter);
                 }
-                else {
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(myUrl));
-                    startActivity(i);
-                }
+            }
         }
     }
 }

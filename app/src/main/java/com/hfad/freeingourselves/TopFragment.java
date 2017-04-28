@@ -2,11 +2,13 @@ package com.hfad.freeingourselves;
 
 
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.util.Log;
@@ -32,38 +34,31 @@ import java.util.List;
  */
 public class TopFragment extends Fragment {
 
-    public TopFragment() {
-        // Required empty public constructor
-    }
-
+    View view;
+    ListView topicsView;
+    ListView workoutsView;
+    TextView noFaveWorkouts;
+    TextView noFaveTopics;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.fragment_top, container, false);
+        view = inflater.inflate(R.layout.fragment_top, container, false);
 
-        ListView topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
-        ListView workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
-        TextView noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
-        TextView noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
+        topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
+        workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
+        noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
+        noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
 
         //TODO: delete these later
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 2, false);
+        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 2, true);
         FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 4, false);
         FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 1, false);
-        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(view.getContext(), 3, false);
+        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(view.getContext(), 3, true);
 
         // Show favorite topics
-        Cursor topicsCursor = FreeingOurselvesDatabaseUtilities.getFaveTopics(view.getContext());   //TODO: deal with asynctasks and null
-        if (topicsCursor.moveToFirst()) {
-            CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
-                    android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
-                    new int[]{android.R.id.text1}, 0);
-            topicsView.setAdapter(topicsAdapter);
-        } else { // If no favorite topics, display text saying so.
-            noFaveTopics.setVisibility(View.VISIBLE);
-        }
+        new GetFaveTopicsTask().execute(view.getContext());
 
         //Navigate to favorite topic when clicked
         //TODO: broken
@@ -75,15 +70,7 @@ public class TopFragment extends Fragment {
         });
 
         // Show favorite workouts
-        Cursor workoutsCursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(view.getContext());   //TODO: deal with asynctasks and null
-        if (workoutsCursor.moveToFirst()) {
-            CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
-                    android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
-                    new int[]{android.R.id.text1}, 0);
-            workoutsView.setAdapter(workoutsAdapter);
-        } else { // If no favorite workouts, display text saying so.
-            noFaveWorkouts.setVisibility(View.VISIBLE);
-        }
+        new GetFaveWorkoutsTask().execute(view.getContext());
 
         // Navigate to WorkoutActivity if a workout is clicked.
         //TODO: finish this
@@ -135,5 +122,51 @@ public class TopFragment extends Fragment {
         ft.addToBackStack(null);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
+    }
+
+    private class GetFaveTopicsTask extends AsyncTask<Context, Void, Cursor> {
+
+        protected Cursor doInBackground(Context... context) {
+            return FreeingOurselvesDatabaseUtilities.getFaveTopics(context[0]);
+        }
+
+        protected void onPostExecute(Cursor topicsCursor) {
+            if (topicsCursor == null) {
+                Toast toast = Toast.makeText(view.getContext(), "Could not get topics", Toast.LENGTH_SHORT);
+                toast.show();
+            } else {
+                if (topicsCursor.moveToFirst()) {
+                    CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
+                            android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
+                            new int[]{android.R.id.text1}, 0);
+                    topicsView.setAdapter(topicsAdapter);
+                } else { // If no favorite topics, display text saying so.
+                    noFaveTopics.setVisibility(View.VISIBLE);
+                }
+            }
+        }
+    }
+
+    private class GetFaveWorkoutsTask extends AsyncTask<Context, Void, Cursor> {
+
+        protected Cursor doInBackground(Context... context) {
+            return FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
+        }
+
+        protected void onPostExecute(Cursor workoutsCursor) {
+            if (workoutsCursor == null) {
+                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
+                toast.show();
+            } else {
+                if (workoutsCursor.moveToFirst()) {
+                    CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
+                            android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
+                            new int[]{android.R.id.text1}, 0);
+                    workoutsView.setAdapter(workoutsAdapter);
+                } else { // If no favorite workouts, display text saying so.
+                    noFaveWorkouts.setVisibility(View.VISIBLE);
+                }
+            }
+        }
     }
 }

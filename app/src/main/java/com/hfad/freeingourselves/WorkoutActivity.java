@@ -2,6 +2,7 @@ package com.hfad.freeingourselves;
 
 
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -23,7 +24,10 @@ public class WorkoutActivity extends Activity {
         //Get the workout from the intent
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
 
-        // Create a cursor and fill everything in.
+        displayWorkout();
+    }
+
+    private void displayWorkout() {
         Object[] specficWorkoutParams = {workoutNum};
         new GetSpecificWorkoutTask().execute(specficWorkoutParams);
     }
@@ -38,6 +42,8 @@ public class WorkoutActivity extends Activity {
     public void onWorkoutCountClick(View view) {
         Object[] workoutCountParams = {workoutNum};
         new UpdateWorkoutCountTask().execute(workoutCountParams);
+
+        displayWorkout();
     }
 
     private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Cursor> {

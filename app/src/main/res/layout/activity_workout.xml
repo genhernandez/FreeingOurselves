@@ -28,8 +28,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="@string/start_workout_button"
-        android:id="@+id/startWorkoutButton"/>
+        android:text="@string/workout_count_button"
+        android:id="@+id/workoutCountButton"
+        android:onClick="onWorkoutCountClick"/>
 
     <CheckBox android:id="@+id/favorite"
         android:layout_width="wrap_content"

@@ -26,7 +26,7 @@
 
     <!-- Workout -->
     <string name="workout_complete">Workout Completed</string>
-    <string name="start_workout_button">Start Workout</string>
+    <string name="workout_count_button">Complete Workout!</string>
     <string name="workout_intro">If your goal is to lose weight and get fit, you must establish a
         weight training and cardio routine. By adding muscle with weight training, you increase your
         metabolism and your ability to burn fat throughout the day. The following three routines were

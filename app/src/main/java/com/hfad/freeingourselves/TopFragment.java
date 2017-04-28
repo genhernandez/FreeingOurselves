@@ -51,12 +51,6 @@ public class TopFragment extends Fragment {
         noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
         noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
 
-        //TODO: delete these later
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 2, true);
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 4, false);
-        FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(view.getContext(), 1, false);
-        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(view.getContext(), 3, true);
-
         // Show favorite topics
         new GetFaveTopicsTask().execute(view.getContext());
 
@@ -72,8 +66,6 @@ public class TopFragment extends Fragment {
         // Show favorite workouts
         new GetFaveWorkoutsTask().execute(view.getContext());
 
-        // Navigate to WorkoutActivity if a workout is clicked.
-        //TODO: finish this
         workoutsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {

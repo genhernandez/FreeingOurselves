@@ -23,6 +23,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Gets a list of the topic titles. If a database error occurs, null is returned; the caller
      * will need to handle this case.
      *
+     * @param context the context
      * @return list of topic titles or null if there is an error
      */
     static ArrayList<String> getTopicTitles(Context context) {
@@ -47,6 +48,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Updates the favorite column for a specific topic. If a database error occurs, false is
      * returned; the caller will need to handle this case.
      *
+     * @param context    the context
      * @param id         the topic ID
      * @param isFavorite whether the topic is favorited
      * @return true if successful, false otherwise
@@ -76,6 +78,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * int id and String title. If a database error occurs, null is returned; the caller will need
      * to handle this case.
      *
+     * @param context the context
      * @return a cursor or null if there is an error
      */
     static Cursor getFaveTopics(Context context) {
@@ -97,6 +100,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * the resource description. If a database error occurs, null is returned; the caller will
      * need to handle this case.
      *
+     * @param context the context
      * @return list of resources or null if there is an error
      */
     static ArrayList<String> getResources(Context context) {
@@ -122,6 +126,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Gets the link of a resource based on its position. If a database error occurs, null is returned; the caller will
      * need to handle this case.
      *
+     * @param context the context
      * @return link of resource or null if there is an error
      */
     static String getResourceLink(Context context, int position) {
@@ -139,8 +144,7 @@ final public class FreeingOurselvesDatabaseUtilities {
             cursor.close();
             db.close();
             return resourceLink;
-        }
-        catch(SQLiteException e){
+        } catch (SQLiteException e) {
             Log.d("getResourceLink", "ers table error");
             return null;
         }
@@ -154,6 +158,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * values for int id and String name. If a database error occurs, null is returned; the caller
      * will need to handle this case.
      *
+     * @param context the context
      * @return cursor or null if there is an error
      */
     static Cursor getWorkoutNames(Context context) {
@@ -175,6 +180,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * in this order, values for int id, String name, String details, String picture file name, and
      * int count. If a database error occurs, null is returned; the caller will need to handle this case.
      *
+     * @param context the context
      * @return a cursor or null if there is an error
      */
     static Cursor getWorkouts(Context context) {
@@ -197,6 +203,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * and an int that is either 0 or 1 to represent whether or not the workout is favorited. If a
      * database error occurs, null is returned; the caller will need to handle this case.
      *
+     * @param context the context
      * @return a cursor or null if there is an error
      */
     static Cursor getSpecificWorkout(Context context, int id) {
@@ -216,6 +223,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Updates the favorite column for a specific workout. If a database error occurs, false is
      * returned; the caller will need to handle this case.
      *
+     * @param context    the context
      * @param id         the workout ID
      * @param isFavorite whether the workout is favorited
      * @return true if successful, false otherwise
@@ -241,10 +249,45 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
+     * Updates the count for a specific workout. If a database error occurs, false is returned; the
+     * caller will need to handle this case.
+     *
+     * @param context the context
+     * @param id      the workout ID
+     * @return true if successful, false otherwise
+     */
+    static boolean updateWorkoutCount(Context context, int id) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            Cursor workoutCursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
+                    new String[]{"COUNT"}, "_id = ?", new String[]{Integer.toString(id)},
+                    null, null, null);
+            if (workoutCursor.moveToFirst()) {
+                int workoutCount = workoutCursor.getInt(0);
+                ContentValues workoutValues = new ContentValues();
+                workoutValues.put("COUNT", ++workoutCount);
+                db.update(FreeingOurselvesDatabaseHelper.WORKOUTS, workoutValues, "_id = ?",
+                        new String[]{Integer.toString(id)});
+                db.close();
+                return true;
+            } else {
+                Log.d("updateWorkoutCount", "nothing in cursor");
+                db.close();
+                return false;
+            }
+        } catch (SQLiteException e) {
+            Log.d("updateWorkoutCount", "workout table error");
+            return false;
+        }
+    }
+
+    /**
      * Gets a cursor with only the favorited workouts. The cursor contains, in this order, values for
      * int id and String name. If a database error occurs, null is returned; the caller will need
      * to handle this case.
      *
+     * @param context the context
      * @return a cursor or null if there is an error
      */
     static Cursor getFaveWorkouts(Context context) {
@@ -268,6 +311,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * either 0 or 1 to represent whether or not the question is marked as saved. If a database
      * error occurs, null is returned; the caller will need to handle this case.
      *
+     * @param context the context
      * @return a cursor or null if there is an error
      */
     static Cursor getHealthcareInfo(Context context) {
@@ -288,6 +332,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Gets a list of the healthcare questions. If a database error occurs, null is returned; the
      * caller will need to handle this case.
      *
+     * @param context the context
      * @return list of healthcare questions or null if there is an error
      */
     static ArrayList<String> getHealthCareQuestions(Context context) {
@@ -312,8 +357,9 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Updates the note column for a specific healthcare question. If a database error occurs,
      * false is returned; the caller will need to handle this case.
      *
-     * @param id    the healthcare question ID
-     * @param notes the notes to add
+     * @param context the context
+     * @param id      the healthcare question ID
+     * @param notes   the notes to add
      * @return true if successful, false otherwise
      */
     static boolean updateNotes(Context context, int id, String notes) {
@@ -336,6 +382,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * Updates the saved column for a specific healthcare question. If a database error occurs,
      * false is returned; the caller will need to handle this case.
      *
+     * @param context the context
      * @param id      the workout ID
      * @param isSaved whether the workout is favorited
      * @return true if successful, false otherwise
@@ -365,6 +412,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * values for int id, String question, and String user notes. If a database error occurs, null
      * is returned; the caller will need to handle this case.
      *
+     * @param context the context
      * @return a cursor or null if there is an error
      */
     static Cursor getSavedHealthcare(Context context) {

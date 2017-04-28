@@ -262,7 +262,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         db.insert(TOPICS, null, chapterValues);
     }
 
-    //TODO: deal with pictures
     private void addWorkout(SQLiteDatabase db, String name, String details) {
         ContentValues workoutValues = new ContentValues();
         workoutValues.put("NAME", name);

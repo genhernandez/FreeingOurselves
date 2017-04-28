@@ -56,8 +56,12 @@
         and introduces new alliances and tools for challenging racism, sexism, homophobia,
         and transphobia across our communities.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="health_notes_button">Click here to go to saved questions</string>
+
+    <string name="health_notes_intro">Take notes on your saved questions!</string>
+
+    <string name="health_notes_save">Save notes</string>
 
 
 </resources>

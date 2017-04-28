@@ -75,6 +75,7 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
 
     class Model {
 
+
         private String question;
         private boolean selected;
 
@@ -89,6 +90,15 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
         public boolean isSelected() {
             return selected;
         }
+
+        public void setSelected(boolean selected) {
+            this.selected = selected;
+        }
+    }
+
+    public void onHealthNotesClicked() {
+        
+    }
 
         public void setSelected(boolean selected) {
             this.selected = selected;

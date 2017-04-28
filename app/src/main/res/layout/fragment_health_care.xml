@@ -9,4 +9,11 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp"
         tools:context="com.hfad.freeingourselves.HealthCareProviderFragment">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saved_question_button"
+            android:text="@string/health_notes_button"
+            android:onClick="onHealthNotesClicked"/>
     </FrameLayout>

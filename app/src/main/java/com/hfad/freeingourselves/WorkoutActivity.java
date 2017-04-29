@@ -14,6 +14,8 @@ public class WorkoutActivity extends Activity {
 
     final static String FAVE_NUM = "favorite_num";
     int workoutNum;
+    int workoutCount;
+    TextView countText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +25,14 @@ public class WorkoutActivity extends Activity {
         //Get the workout from the intent
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
 
-        // Create a cursor and fill everything in.
-        Object[] specficWorkoutParams = {workoutNum};
-        new GetSpecificWorkoutTask().execute(specficWorkoutParams);
+        countText = (TextView) findViewById(R.id.workoutCount);
+
+        displayWorkout();
+    }
+
+    private void displayWorkout() {
+        Object[] specificWorkoutParams = {workoutNum};
+        new GetSpecificWorkoutTask().execute(specificWorkoutParams);
     }
 
     public void onFavoriteClicked(View view) {
@@ -38,6 +45,12 @@ public class WorkoutActivity extends Activity {
     public void onWorkoutCountClick(View view) {
         Object[] workoutCountParams = {workoutNum};
         new UpdateWorkoutCountTask().execute(workoutCountParams);
+        workoutCount++;
+        setTimesCompleted();
+    }
+
+    private void setTimesCompleted() {
+        countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!"));
     }
 
     private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Cursor> {
@@ -53,15 +66,17 @@ public class WorkoutActivity extends Activity {
             } else {
                 if (workoutCursor.moveToFirst()) {
                     // Get the workout details from the cursor.
-                    String nameText = workoutCursor.getString(0);
-                    String descriptionText = workoutCursor.getString(1);
+                    String name = workoutCursor.getString(0);
+                    String description = workoutCursor.getString(1);
                     //String photoId = cursor.getString(2); TODO: change this to int probably
-                    int count = workoutCursor.getInt(3);
+                    workoutCount = workoutCursor.getInt(3);
                     boolean isFavorite = (workoutCursor.getInt(4) == 1);
 
                     // Populate the workout name.
-                    TextView name = (TextView) findViewById(R.id.workoutTitle);
-                    name.setText(nameText + ": " + count);
+                    TextView nameText = (TextView) findViewById(R.id.workoutTitle);
+                    nameText.setText(name);
+
+                    setTimesCompleted();
 
                     // Populate the workout image. TODO: deal with pictures
 //                ImageView photo = (ImageView) findViewById(R.id.photo);
@@ -69,8 +84,8 @@ public class WorkoutActivity extends Activity {
 //                photo.setContentDescription(nameText);
 
                     // Populate the workout description.
-                    TextView description = (TextView) findViewById(R.id.workoutDescription);
-                    description.setText(descriptionText);
+                    TextView descriptionText = (TextView) findViewById(R.id.workoutDescription);
+                    descriptionText.setText(description);
 
                     // Populate the favorite checkbox.
                     CheckBox favorite = (CheckBox) findViewById(R.id.favorite);

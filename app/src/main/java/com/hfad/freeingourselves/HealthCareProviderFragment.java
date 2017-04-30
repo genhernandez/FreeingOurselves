@@ -42,10 +42,11 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_health_care, null);
-        FrameLayout frameLayout = (FrameLayout) view.findViewById(R.id.healthcareFragment);
+       // FrameLayout frameLayout = (FrameLayout) view.findViewById(R.id.healthcareFragment);
+        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthcareFragment);
         ListView listView = new ListView(getActivity());
 
-        frameLayout.addView(listView);
+       linearLayout.addView(listView);
 
         //TODO: asynctask and null
         List<String> questionArray = FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(view.getContext());

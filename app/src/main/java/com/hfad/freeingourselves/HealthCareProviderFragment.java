@@ -84,7 +84,6 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
     public void onItemClick(AdapterView<?> arg0, View v, int position, long arg3) {
         TextView label = (TextView) v.getTag(R.id.label);
         CheckBox checkbox = (CheckBox) v.getTag(R.id.check);
-        // Toast.makeText(v.getContext(), label.getText().toString()+" "+isCheckedOrNot(checkbox), Toast.LENGTH_LONG).show();
     }
 
     class Model {

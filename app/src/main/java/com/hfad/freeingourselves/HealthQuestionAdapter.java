@@ -1,6 +1,8 @@
 package com.hfad.freeingourselves;
 
 import android.app.Activity;
+import android.database.Cursor;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -20,7 +23,7 @@ import java.util.List;
 public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
 
     private final List<HealthCareProviderFragment.Model> list;
-    private final Activity context;
+    protected final Activity context;
     boolean checkAll_flag = false;
     boolean checkItem_flag = false;
 
@@ -49,9 +52,12 @@ public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragme
 
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    int getPosition = (Integer) buttonView.getTag();  // Here we get the position that we have set for the checkbox using setTag.
-                    list.get(getPosition).setSelected(buttonView.isChecked()); // Set the value of checkbox to maintain its state.
-                }
+                    int position = (Integer) buttonView.getTag();  // Here we get the position that we have set for the checkbox using setTag.
+                    list.get(position).setSelected(buttonView.isChecked()); // Set the value of checkbox to maintain its state.
+
+                    //save in database
+                    FreeingOurselvesDatabaseUtilities.updateSaved(context, position + 1, isChecked);
+            }
             });
             convertView.setTag(viewHolder);
             convertView.setTag(R.id.label, viewHolder.text);
@@ -60,9 +66,9 @@ public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragme
             viewHolder = (ViewHolder) convertView.getTag();
         }
         viewHolder.checkbox.setTag(position); // This line is important.
-
         viewHolder.text.setText(list.get(position).getName());
         viewHolder.checkbox.setChecked(list.get(position).isSelected());
+
 
         return convertView;
     }

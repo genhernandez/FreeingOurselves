@@ -11,12 +11,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 import com.hfad.freeingourselves.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +28,8 @@ public class WorkoutFragment extends Fragment {
 
     protected View view;
     protected ListView listFavorites;
+    protected String[] workoutNames;
+
     public WorkoutFragment() {
         // Required empty public constructor
     }
@@ -44,34 +49,37 @@ public class WorkoutFragment extends Fragment {
 
         // Navigate to WorkoutActivity if a drink is clicked.
         listFavorites.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-         @Override
-         public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
-         Intent intent = new Intent(v.getContext(), WorkoutActivity.class);
-         intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
-         startActivity(intent);
-        }
+            @Override
+            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
+                Intent intent = new Intent(v.getContext(), WorkoutActivity.class);
+                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
+                startActivity(intent);
+            }
         });
 
         return view;
     }
 
-    private class GetWorkoutNamesTask extends AsyncTask<Context, Void, Cursor> {
+    private class GetWorkoutNamesTask extends AsyncTask<Context, Void, ArrayList<String>> {
 
-        protected Cursor doInBackground(Context... context) {
+        protected ArrayList<String> doInBackground(Context... context) {
             return FreeingOurselvesDatabaseUtilities.getWorkoutNames(context[0]);
         }
 
-        protected void onPostExecute(Cursor workoutCursor) {
-            if (workoutCursor == null) {
+        protected void onPostExecute(ArrayList<String> workoutList) {
+            if (workoutList == null) {
                 Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
                 toast.show();
             } else {
-                CursorAdapter workoutAdapter = new SimpleCursorAdapter(view.getContext(),
-                        android.R.layout.simple_list_item_1, workoutCursor, new String[]{"NAME"},
-                        new int[]{android.R.id.text1}, 0);
-                listFavorites.setAdapter(workoutAdapter);
+                workoutNames = new String[workoutList.size()];
+                for (int i = 0; i < workoutList.size(); i++) {
+                    workoutNames[i] = workoutList.get(i);
+                }
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),
+                        android.R.layout.simple_list_item_1, workoutNames);
+                listFavorites.setAdapter(adapter);
             }
         }
     }
-
 }

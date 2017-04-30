@@ -39,59 +39,82 @@ final public class FreeingOurselvesDatabaseUtilities {
             cursor.close();
             return titles;
         } catch (SQLiteException e) {
-            Log.d("getWorkoutsNames", "workout table error");
+            Log.d("getTopicTitles", "workout table error");
             return null;
         }
     }
 
     /**
-     * Updates the favorite column for a specific topic. If a database error occurs, false is
+     * Gets a cursor with all of the data for a specific topic. The cursor contains,
+     * in this order, values for String title, String context, and an int that is either 0 or 1 to
+     * represent whether or not the workout is favorited. If a database error occurs, null is
      * returned; the caller will need to handle this case.
      *
-     * @param context    the context
-     * @param id         the topic ID
-     * @param isFavorite whether the topic is favorited
-     * @return true if successful, false otherwise
-     */
-    static boolean updateTopicsFavorite(Context context, int id, boolean isFavorite) {
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            ContentValues topicValues = new ContentValues();
-            if (isFavorite) {
-                topicValues.put("FAVE", 1);
-            } else {
-                topicValues.put("FAVE", 0);
-            }
-            db.update(FreeingOurselvesDatabaseHelper.TOPICS, topicValues, "_id = ?",
-                    new String[]{Integer.toString(id)});
-            db.close();
-            return true;
-        } catch (SQLiteException e) {
-            Log.d("updateTopicsFavorite", "topics table error");
-            return false;
-        }
-    }
-
-    /**
-     * Gets a cursor with only the favorited topics. The cursor contains, in this order, values for
-     * int id and String title. If a database error occurs, null is returned; the caller will need
-     * to handle this case.
-     *
      * @param context the context
+     * @param id      the topic id
      * @return a cursor or null if there is an error
      */
-    static Cursor getFaveTopics(Context context) {
+    static Cursor getSpecificTopic(Context context, int id) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            return db.query(FreeingOurselvesDatabaseHelper.TOPICS, new String[]{"_id", "TITLE"}, "FAVE = 1",
-                    null, null, null, null);
+            return db.query(FreeingOurselvesDatabaseHelper.TOPICS,
+                    new String[]{"TITLE", "CONTENT", "FAVE"},
+                    "_id = ?", new String[]{Integer.toString(id)}, null, null, null);
         } catch (SQLiteException e) {
-            Log.d("getFaveTopics", "topics table error");
+            Log.d("getWorkouts", "workout table error");
             return null;
         }
     }
+
+//    /**
+//     * Updates the favorite column for a specific topic. If a database error occurs, false is
+//     * returned; the caller will need to handle this case.
+//     *
+//     * @param context    the context
+//     * @param id         the topic ID
+//     * @param isFavorite whether the topic is favorited
+//     * @return true if successful, false otherwise
+//     */
+//    static boolean updateTopicsFavorite(Context context, int id, boolean isFavorite) {
+//        try {
+//            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+//            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+//            ContentValues topicValues = new ContentValues();
+//            if (isFavorite) {
+//                topicValues.put("FAVE", 1);
+//            } else {
+//                topicValues.put("FAVE", 0);
+//            }
+//            db.update(FreeingOurselvesDatabaseHelper.TOPICS, topicValues, "_id = ?",
+//                    new String[]{Integer.toString(id)});
+//            db.close();
+//            return true;
+//        } catch (SQLiteException e) {
+//            Log.d("updateTopicsFavorite", "topics table error");
+//            return false;
+//        }
+//    }
+
+//    /**
+//     * Gets a cursor with only the favorited topics. The cursor contains, in this order, values for
+//     * int id and String title. If a database error occurs, null is returned; the caller will need
+//     * to handle this case.
+//     *
+//     * @param context the context
+//     * @return a cursor or null if there is an error
+//     */
+//    static Cursor getFaveTopics(Context context) {
+//        try {
+//            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+//            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+//            return db.query(FreeingOurselvesDatabaseHelper.TOPICS, new String[]{"_id", "TITLE"}, "FAVE = 1",
+//                    null, null, null, null);
+//        } catch (SQLiteException e) {
+//            Log.d("getFaveTopics", "topics table error");
+//            return null;
+//        }
+//    }
 
     // Resources methods
 
@@ -127,14 +150,15 @@ final public class FreeingOurselvesDatabaseUtilities {
      * need to handle this case.
      *
      * @param context the context
-     * @return link of resource or null if there is an error
+     * @param id      the resource id
+     * @return resource link or null if there is an error
      */
-    static String getResourceLink(Context context, int position) {
+    static String getResourceLink(Context context, int id) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             String[] columns = new String[]{"LINK"};
-            String[] where = new String[]{"" + (position + 1) + ""};
+            String[] where = new String[]{"" + (id + 1) + ""};
             String resourceLink = null;
             Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
             if (cursor.moveToFirst()) {
@@ -154,48 +178,51 @@ final public class FreeingOurselvesDatabaseUtilities {
     // Workout methods
 
     /**
-     * Gets a cursor with the names and IDs of all the workouts. The cursor contains, in this order,
-     * values for int id and String name. If a database error occurs, null is returned; the caller
+     * Gets a list of the workout names. If a database error occurs, null is returned; the caller
      * will need to handle this case.
      *
      * @param context the context
-     * @return cursor or null if there is an error
+     * @return list of workout names or null if there is an error
      */
-    static Cursor getWorkoutNames(Context context) {
+    static ArrayList<String> getWorkoutNames(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
-                    new String[]{"_id", "NAME"},
-                    null,
-                    null, null, null, null);
+            ArrayList<String> names = new ArrayList<>();
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
+                    new String[]{"NAME"}, null, null, null, null, null);
+            for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
+                names.add(cursor.getString(0));
+            }
+            cursor.close();
+            return names;
         } catch (SQLiteException e) {
             Log.d("getWorkoutNames", "workout table error");
             return null;
         }
     }
 
-    /**
-     * Gets a cursor with all of the data from the workout database table. The cursor contains,
-     * in this order, values for int id, String name, String details, String picture file name, and
-     * int count. If a database error occurs, null is returned; the caller will need to handle this case.
-     *
-     * @param context the context
-     * @return a cursor or null if there is an error
-     */
-    static Cursor getWorkouts(Context context) {
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
-                    new String[]{"_id", "NAME", "DETAILS", "PICTURE_FILE", "COUNT"},
-                    null,
-                    null, null, null, null);
-        } catch (SQLiteException e) {
-            Log.d("getWorkouts", "workout table error");
-            return null;
-        }
-    }
+//    /**
+//     * Gets a cursor with all of the data from the workout database table. The cursor contains,
+//     * in this order, values for int id, String name, String details, String picture file name, and
+//     * int count. If a database error occurs, null is returned; the caller will need to handle this case.
+//     *
+//     * @param context the context
+//     * @return a cursor or null if there is an error
+//     */
+//    static Cursor getWorkouts(Context context) {
+//        try {
+//            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+//            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+//            return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
+//                    new String[]{"_id", "NAME", "DETAILS", "PICTURE_FILE", "COUNT"},
+//                    null,
+//                    null, null, null, null);
+//        } catch (SQLiteException e) {
+//            Log.d("getWorkouts", "workout table error");
+//            return null;
+//        }
+//    }
 
     /**
      * Gets a cursor with all of the data for a specific workout. The cursor contains,
@@ -204,6 +231,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * database error occurs, null is returned; the caller will need to handle this case.
      *
      * @param context the context
+     * @param id      the workout id
      * @return a cursor or null if there is an error
      */
     static Cursor getSpecificWorkout(Context context, int id) {
@@ -305,28 +333,28 @@ final public class FreeingOurselvesDatabaseUtilities {
 
     // Healthcare methods
 
-    /**
-     * Gets a cursor with all of the data from the healthcare database table. The cursor contains,
-     * in this order, values for int id, String question, String user notes, and an int that is
-     * either 0 or 1 to represent whether or not the question is marked as saved. If a database
-     * error occurs, null is returned; the caller will need to handle this case.
-     *
-     * @param context the context
-     * @return a cursor or null if there is an error
-     */
-    static Cursor getHealthcareInfo(Context context) {
-        try {
-            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            return db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
-                    new String[]{"_id", "STEP_INFO", "NOTES", "SAVED"},
-                    null,
-                    null, null, null, null);
-        } catch (SQLiteException e) {
-            Log.d("getHealthcareInfo", "healthcare table error");
-            return null;
-        }
-    }
+//    /**
+//     * Gets a cursor with all of the data from the healthcare database table. The cursor contains,
+//     * in this order, values for int id, String question, String user notes, and an int that is
+//     * either 0 or 1 to represent whether or not the question is marked as saved. If a database
+//     * error occurs, null is returned; the caller will need to handle this case.
+//     *
+//     * @param context the context
+//     * @return a cursor or null if there is an error
+//     */
+//    static Cursor getHealthcareInfo(Context context) {
+//        try {
+//            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+//            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+//            return db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
+//                    new String[]{"_id", "STEP_INFO", "NOTES", "SAVED"},
+//                    null,
+//                    null, null, null, null);
+//        } catch (SQLiteException e) {
+//            Log.d("getHealthcareInfo", "healthcare table error");
+//            return null;
+//        }
+//    }
 
     /**
      * Gets a list of the healthcare questions. If a database error occurs, null is returned; the

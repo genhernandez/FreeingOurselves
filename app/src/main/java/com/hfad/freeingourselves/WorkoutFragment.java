@@ -52,7 +52,7 @@ public class WorkoutFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
                 Intent intent = new Intent(v.getContext(), WorkoutActivity.class);
-                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
+                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id+1);
                 startActivity(intent);
             }
         });

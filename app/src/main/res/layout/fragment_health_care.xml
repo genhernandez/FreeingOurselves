@@ -1,5 +1,5 @@
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/healthcareFragment"
         android:layout_width="wrap_content"
@@ -14,6 +14,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/saved_question_button"
-            android:text="@string/health_notes_button"
-            android:onClick="onHealthNotesClicked"/>
-    </FrameLayout>
+            android:text="@string/health_notes_button" />
+    </LinearLayout>

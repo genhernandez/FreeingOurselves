@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,10 +29,10 @@ public class HealthNotesFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_health_notes, null);
-        FrameLayout frameLayout = (FrameLayout) view.findViewById(R.id.healthNotesFragment);
+        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthNotesFragment);
         ListView listView = new ListView(getActivity());
 
-        frameLayout.addView(listView);
+        linearLayout.addView(listView);
         Cursor cursor = FreeingOurselvesDatabaseUtilities.getSavedHealthcare(view.getContext());
 
         if (cursor == null) {

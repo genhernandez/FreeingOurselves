@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 import android.widget.CompoundButton;
@@ -62,6 +63,18 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
 
+        Button savedQuestionButton = (Button) view.findViewById(R.id.saved_question_button);
+        savedQuestionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment healthNotesFragment = new HealthNotesFragment();
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, healthNotesFragment);
+                ft.addToBackStack(null);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                ft.commit();
+            }
+        });
 
         return view;
     }

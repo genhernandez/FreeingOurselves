@@ -29,16 +29,14 @@ import org.w3c.dom.Text;
 import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class TopFragment extends Fragment {
 
     View view;
-    ListView topicsView;
+//    ListView topicsView;
     ListView workoutsView;
     TextView noFaveWorkouts;
-    TextView noFaveTopics;
+//    TextView noFaveTopics;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,22 +44,21 @@ public class TopFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_top, container, false);
 
-        topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
+//        topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
         workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
-        noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
+//        noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
         noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
 
-        // Show favorite topics
-        new GetFaveTopicsTask().execute(view.getContext());
-
-        //Navigate to favorite topic when clicked
-        //TODO: broken
-        topicsView.setOnItemClickListener(new ListView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
-                selectTopicItem(position);
-            }
-        });
+//        // Show favorite topics
+//        new GetFaveTopicsTask().execute(view.getContext());
+//
+//        //Navigate to favorite topic when clicked
+//        topicsView.setOnItemClickListener(new ListView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
+//                selectTopicItem(position);
+//            }
+//        });
 
         // Show favorite workouts
         new GetFaveWorkoutsTask().execute(view.getContext());
@@ -82,62 +79,62 @@ public class TopFragment extends Fragment {
 
     }
 
-    private void selectTopicItem(int position) {
-        Fragment fragment;
-        switch (position) {
-            case 1:
-                fragment = new TopFragment();
-                break;
-            case 2:
-                fragment = new TestosteroneFragment();
-                break;
-            case 3:
-                fragment = new HealthCareProviderFragment();
-                break;
-            case 4:
-                fragment = new ResourceListFragment();
-                break;
-            case 5:
-                fragment = new WorkoutIntroFragment();
-                break;
-            case 6:
-                fragment = new ResourceListFragment();
-                break;
-            case 7:
-                fragment = new AboutFragment();
-                break;
-            default:
-                fragment = new TopFragment();
-        }
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame, fragment);
-        ft.addToBackStack(null);
-        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-        ft.commit();
-    }
+//    private void selectTopicItem(int position) {
+//        Fragment fragment;
+//        switch (position) {
+//            case 1:
+//                fragment = new TopFragment();
+//                break;
+//            case 2:
+//                fragment = new TestosteroneFragment();
+//                break;
+//            case 3:
+//                fragment = new HealthCareProviderFragment();
+//                break;
+//            case 4:
+//                fragment = new ResourceListFragment();
+//                break;
+//            case 5:
+//                fragment = new WorkoutIntroFragment();
+//                break;
+//            case 6:
+//                fragment = new ResourceListFragment();
+//                break;
+//            case 7:
+//                fragment = new AboutFragment();
+//                break;
+//            default:
+//                fragment = new TopFragment();
+//        }
+//        FragmentTransaction ft = getFragmentManager().beginTransaction();
+//        ft.replace(R.id.content_frame, fragment);
+//        ft.addToBackStack(null);
+//        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+//        ft.commit();
+//    }
 
-    private class GetFaveTopicsTask extends AsyncTask<Context, Void, Cursor> {
-
-        protected Cursor doInBackground(Context... context) {
-            return FreeingOurselvesDatabaseUtilities.getFaveTopics(context[0]);
-        }
-
-        protected void onPostExecute(Cursor topicsCursor) {
-            if (topicsCursor == null) {
-                Toast toast = Toast.makeText(view.getContext(), "Could not get topics", Toast.LENGTH_SHORT);
-                toast.show();
-            } else {
-                if (topicsCursor.moveToFirst()) {
-                    CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
-                            android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
-                            new int[]{android.R.id.text1}, 0);
-                    topicsView.setAdapter(topicsAdapter);
-                } else { // If no favorite topics, display text saying so.
-                    noFaveTopics.setVisibility(View.VISIBLE);
-                }
-            }
-        }
-    }
+//    private class GetFaveTopicsTask extends AsyncTask<Context, Void, Cursor> {
+//
+//        protected Cursor doInBackground(Context... context) {
+//            return FreeingOurselvesDatabaseUtilities.getFaveTopics(context[0]);
+//        }
+//
+//        protected void onPostExecute(Cursor topicsCursor) {
+//            if (topicsCursor == null) {
+//                Toast toast = Toast.makeText(view.getContext(), "Could not get topics", Toast.LENGTH_SHORT);
+//                toast.show();
+//            } else {
+//                if (topicsCursor.moveToFirst()) {
+//                    CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
+//                            android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
+//                            new int[]{android.R.id.text1}, 0);
+//                    topicsView.setAdapter(topicsAdapter);
+//                } else { // If no favorite topics, display text saying so.
+//                    noFaveTopics.setVisibility(View.VISIBLE);
+//                }
+//            }
+//        }
+//    }
 
     private class GetFaveWorkoutsTask extends AsyncTask<Context, Void, Cursor> {
 

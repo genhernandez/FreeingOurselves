@@ -96,14 +96,14 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
         }
     }
 
-    public void onHealthNotesClicked() {
+   // public void onHealthNotesClicked() {
         
-    }
+    //}
 
-        public void setSelected(boolean selected) {
-            this.selected = selected;
-        }
-    }
+        //public void setSelected(boolean selected) {
+            //this.selected = selected;
+        //}
+    //}
 
 
 }

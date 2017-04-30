@@ -1,10 +1,13 @@
 package com.hfad.freeingourselves;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.Button;
 
 
 /**
@@ -12,12 +15,8 @@ import android.view.ViewGroup;
  */
 
 public class TestosteroneFragment extends Fragment {
-
-    public TestosteroneFragment() {
-        // Required empty public constructor
-    }
-
-
+    protected View view;
+    protected WebView tWebView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,28 @@ public class TestosteroneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_testosterone, container, false);
+        view = inflater.inflate(R.layout.fragment_testosterone, container, false);
+        tWebView = (WebView) view.findViewById(R.id.tWebView);
+        tWebView.loadUrl("file:///android_asset/testosterone_intro_en.html");
+
+        Button startWorkoutButton = (Button) view.findViewById(R.id.learnMoreButton);
+        startWorkoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.learnMoreButton:
+                        Fragment testosteroneFragment = new TestosteroneHealthOverviewFragment();
+                        FragmentTransaction ft = getFragmentManager().beginTransaction();
+                        ft.replace(R.id.content_frame, testosteroneFragment);
+                        ft.addToBackStack(null);
+                        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                        ft.commit();
+                        break;
+                }
+            }
+        });
+
+        return view;
     }
 
 

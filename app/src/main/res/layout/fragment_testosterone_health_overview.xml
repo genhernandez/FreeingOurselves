@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hfad.freeingourselves.TestosteroneFragment">
+    tools:context="com.hfad.freeingourselves.TestosteroneHealthOverviewFragment">
     <Button
-        android:text="@string/learn_more"
-        android:id="@+id/learnMoreButton"
+        android:text="@string/holistic_care"
+        android:id="@+id/holisticCareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -17,5 +17,5 @@
         android:id="@+id/tWebView"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_above="@+id/learnMoreButton"/>
+        android:layout_above="@+id/holisticCareButton"/>
 </RelativeLayout>

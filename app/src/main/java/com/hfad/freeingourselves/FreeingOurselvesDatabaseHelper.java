@@ -148,8 +148,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + "STEP_INFO TEXT, "
                     + "NOTES TEXT, "
                     + "SAVED INTEGER);");
-            addHealthcareStep(db, "What services does your office/clinic offer to young people?" +
-                    " " +
+            addHealthcareStep(db, "What services does your office/clinic offer to young people? " +
                     "What ongoing services do you offer to young people as they transition into adulthood?");
             addHealthcareStep(db, "Are there specific documents required to get care from your office" +
                     " (age range, citizenship status, insurance coverage, parental consent, etc.)?");

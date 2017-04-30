@@ -12,6 +12,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class FreeingOurselvesDatabaseUtilitiesTest {
 
@@ -28,12 +29,16 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
     @Test
     public void getTopicTitles() throws Exception {
         ArrayList<String> topics = FreeingOurselvesDatabaseUtilities.getTopicTitles(context);
-        assertEquals("Home", topics.get(0));
-        assertEquals("Testosterone and You", topics.get(1));
-        assertEquals("Finding Healthcare Allies", topics.get(2));
-        assertEquals("Resources", topics.get(3));
-        assertEquals("Workouts", topics.get(4));
-        assertEquals("About us", topics.get(5));
+        if (topics != null) {
+            assertEquals("Home", topics.get(0));
+            assertEquals("Testosterone and You", topics.get(1));
+            assertEquals("Finding Healthcare Allies", topics.get(2));
+            assertEquals("Resources", topics.get(3));
+            assertEquals("Workouts", topics.get(4));
+            assertEquals("About us", topics.get(5));
+        } else {
+            fail();
+        }
     }
 
     @Test
@@ -45,7 +50,7 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
             assertEquals("about", topicCursor.getString(1));
             assertEquals(0, topicCursor.getInt(2));
         } else {
-            Log.d("getSpecificTopic test", "oh no");
+            fail();
         }
     }
 
@@ -80,8 +85,12 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
     @Test
     public void getResources() throws Exception {
         ArrayList<String> resources = FreeingOurselvesDatabaseUtilities.getResources(context);
-        assertEquals("Brown Boi Project - Our organization", resources.get(0));
-        assertEquals("Therapists of Color - Bay Area", resources.get(1));
+        if (resources != null) {
+            assertEquals("Brown Boi Project - Our organization", resources.get(0));
+            assertEquals("Therapists of Color - Bay Area", resources.get(1));
+        } else {
+            fail();
+        }
     }
 
     @Test
@@ -93,9 +102,13 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
     @Test
     public void getWorkoutNames() throws Exception {
         ArrayList<String> workouts = FreeingOurselvesDatabaseUtilities.getWorkoutNames(context);
-        assertEquals("Alternating Bicep Curl: 8-12 reps", workouts.get(0));
-        assertEquals("Lying-Down Tricep Extension: 8-12 reps", workouts.get(1));
-        assertEquals("V-Ups: 15-25 reps", workouts.get(2));
+        if (workouts != null) {
+            assertEquals("Alternating Bicep Curl: 8-12 reps", workouts.get(0));
+            assertEquals("Lying-Down Tricep Extension: 8-12 reps", workouts.get(1));
+            assertEquals("V-Ups: 15-25 reps", workouts.get(2));
+        } else {
+            fail();
+        }
     }
 
 //    @Test
@@ -112,23 +125,66 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
             assertEquals("Hold weights in each hand. Shift the weight downwards on one side then" +
                     " pull up. Repeat on other side.", workoutCursor.getString(1));
         } else {
-            Log.d("getSpecificWorkout test", "oh no");
+            fail();
         }
     }
 
     @Test
     public void updateWorkoutFavorite() throws Exception {
+        boolean success = FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(context, 1, true);
+        assertEquals(true, success);
+        Cursor workoutCursor = FreeingOurselvesDatabaseUtilities.getSpecificWorkout(context, 1);
+        if (workoutCursor != null) {
+            workoutCursor.moveToFirst();
+            assertEquals(1, workoutCursor.getInt(4));
+        } else {
+            fail();
+        }
 
+        success = FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(context, 1, false);
+        assertEquals(true, success);
+        workoutCursor = FreeingOurselvesDatabaseUtilities.getSpecificWorkout(context, 1);
+        if (workoutCursor != null) {
+            workoutCursor.moveToFirst();
+            assertEquals(0, workoutCursor.getInt(4));
+        } else {
+            fail();
+        }
     }
 
     @Test
     public void updateWorkoutCount() throws Exception {
+        Cursor cursor1 = FreeingOurselvesDatabaseUtilities.getSpecificWorkout(context, 1);
+        if (cursor1 != null) {
+            cursor1.moveToFirst();
+            int initialCount = cursor1.getInt(3);
 
+            boolean success = FreeingOurselvesDatabaseUtilities.updateWorkoutCount(context, 1);
+            assertEquals(true, success);
+
+            Cursor cursor2 = FreeingOurselvesDatabaseUtilities.getSpecificWorkout(context, 1);
+            if (cursor2 != null) {
+                cursor2.moveToFirst();
+                assertEquals(++initialCount, cursor2.getInt(3));
+            } else {
+                fail();
+            }
+        } else {
+            fail();
+        }
     }
 
     @Test
     public void getFaveWorkouts() throws Exception {
-
+        FreeingOurselvesDatabaseUtilities.updateWorkoutFavorite(context, 1, true);
+        Cursor workoutCursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context);
+        if (workoutCursor != null) {
+            workoutCursor.moveToFirst();
+            assertEquals(1, workoutCursor.getInt(0));
+            assertEquals("Alternating Bicep Curl: 8-12 reps", workoutCursor.getString(1));
+        } else {
+            fail();
+        }
     }
 
 //    @Test
@@ -138,22 +194,81 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
 
     @Test
     public void getHealthCareQuestions() throws Exception {
+        ArrayList<String> questions = FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(context);
+        if (questions != null) {
+            assertEquals("What services does your office/clinic offer to young people? What ongoing" +
+                    " services do you offer to young people as they transition into adulthood?", questions.get(0));
+            assertEquals("Are there specific documents required to get care from your office (age" +
+                    " range, citizenship status, insurance coverage, parental consent, etc.)?", questions.get(1));
+        } else {
+            fail();
+        }
+    }
 
+    @Test
+    public void getSpecificHealthcareQuestion() throws Exception {
+        Cursor questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 3);
+        if (questionCursor != null) {
+            questionCursor.moveToFirst();
+            assertEquals("What is the registration/scheduling process and what are your hours" +
+                    " of operation?", questionCursor.getString(0));
+            assertEquals(null, questionCursor.getString(1));
+            assertEquals(0, questionCursor.getInt(1));
+        } else {
+            fail();
+        }
     }
 
     @Test
     public void updateNotes() throws Exception {
-
+        String text = "test notes";
+        boolean success = FreeingOurselvesDatabaseUtilities.updateNotes(context, 1, text);
+        assertEquals(true, success);
+        Cursor questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 1);
+        if (questionCursor != null) {
+            questionCursor.moveToFirst();
+            assertEquals(text, questionCursor.getString(1));
+        } else {
+            fail();
+        }
     }
 
     @Test
     public void updateSaved() throws Exception {
+        boolean success = FreeingOurselvesDatabaseUtilities.updateSaved(context, 1, true);
+        assertEquals(true, success);
+        Cursor questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 1);
+        if (questionCursor != null) {
+            questionCursor.moveToFirst();
+            assertEquals(1, questionCursor.getInt(2));
+        } else {
+            fail();
+        }
 
+        success = FreeingOurselvesDatabaseUtilities.updateSaved(context, 1, false);
+        assertEquals(true, success);
+        questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 1);
+        if (questionCursor != null) {
+            questionCursor.moveToFirst();
+            assertEquals(0, questionCursor.getInt(2));
+        } else {
+            fail();
+        }
     }
 
     @Test
     public void getSavedHealthcare() throws Exception {
-
+        FreeingOurselvesDatabaseUtilities.updateSaved(context, 1, true);
+        Cursor healthcareCursor = FreeingOurselvesDatabaseUtilities.getSavedHealthcare(context);
+        if (healthcareCursor != null) {
+            healthcareCursor.moveToFirst();
+            assertEquals(1, healthcareCursor.getInt(0));
+            assertEquals("What services does your office/clinic offer to young people? What" +
+                    " ongoing services do you offer to young people as they transition into " +
+                    "adulthood?", healthcareCursor.getString(1));
+        } else {
+            fail();
+        }
     }
 
 }

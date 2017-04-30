@@ -382,6 +382,29 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
+     * Gets a cursor with all of the data for a specific healthcare question. The cursor contains,
+     * in this order, values for String question, String notes, and an int that is either 0 or 1
+     * to represent whether or not the question is saved. If a database error occurs, null is
+     * returned; the caller will need to handle this case.
+     *
+     * @param context the context
+     * @param id      the question id
+     * @return a cursor or null if there is an error
+     */
+    static Cursor getSpecificHealthcareQuestion(Context context, int id) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            return db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
+                    new String[]{"STEP_INFO", "NOTES", "SAVED"},
+                    "_id = ?", new String[]{Integer.toString(id)}, null, null, null);
+        } catch (SQLiteException e) {
+            Log.d("SpecificHealthcare", "health table error");
+            return null;
+        }
+    }
+
+    /**
      * Updates the note column for a specific healthcare question. If a database error occurs,
      * false is returned; the caller will need to handle this case.
      *

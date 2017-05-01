@@ -1,12 +1,8 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.ListFragment;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +10,7 @@ import android.widget.ArrayAdapter;
 import android.app.Activity;
 import android.widget.ListView;
 
-import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
-import android.database.sqlite.SQLiteException;
-
 import java.util.ArrayList;
-
-import android.util.Log;
 
 public class ResourceListFragment extends ListFragment {
 

@@ -1,4 +1,4 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;

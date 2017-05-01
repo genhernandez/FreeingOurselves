@@ -1,12 +1,9 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.support.test.InstrumentationRegistry;
-import android.util.Log;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;

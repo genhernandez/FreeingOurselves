@@ -1,4 +1,4 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
 import org.junit.Test;
 

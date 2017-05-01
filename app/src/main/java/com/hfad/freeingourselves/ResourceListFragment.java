@@ -44,7 +44,7 @@ public class ResourceListFragment extends ListFragment {
     private class getResourcesTask extends AsyncTask<Void, Void, ArrayList<String>> {
 
         protected ArrayList<String> doInBackground(Void... voids) {
-            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(getContext());
+            ArrayList<String> tempList = FreeingOurselvesDatabaseUtilities.getResources(getActivity());
             return tempList;
         }
 

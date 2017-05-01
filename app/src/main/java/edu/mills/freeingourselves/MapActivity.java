@@ -1,6 +1,5 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -10,16 +9,12 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.maps.android.data.Feature;
-import com.google.maps.android.data.kml.KmlContainer;
 import com.google.maps.android.data.kml.KmlLayer;
-import com.google.maps.android.data.kml.KmlPlacemark;
-import com.google.maps.android.data.kml.KmlPolygon;
+
 import java.io.*;
 import org.xmlpull.v1.XmlPullParserException;
 import android.content.pm.PackageManager;
 import android.support.v4.content.ContextCompat;
-import android.widget.Toast;
 import android.support.v4.app.ActivityCompat;
 
 

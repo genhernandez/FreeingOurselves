@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         multiDexEnabled true
-        applicationId "com.hfad.freeingourselves"
+        applicationId "edu.mills.freeingourselves"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1

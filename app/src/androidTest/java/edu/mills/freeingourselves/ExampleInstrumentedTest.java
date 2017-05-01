@@ -1,4 +1,4 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

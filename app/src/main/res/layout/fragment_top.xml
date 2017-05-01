@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hfad.freeingourselves.TopFragment"
+    tools:context="edu.mills.freeingourselves.TopFragment"
     android:orientation="vertical"
     android:id="@+id/fragment_layout"
     android:paddingBottom="16dp"

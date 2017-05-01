@@ -1,4 +1,4 @@
-package com.hfad.freeingourselves;
+package edu.mills.freeingourselves;
 
 import android.content.ContentValues;
 import android.content.Context;

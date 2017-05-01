@@ -9,7 +9,7 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp"
         android:orientation="vertical"
-        tools:context="com.hfad.freeingourselves.HealthCareProviderFragment">
+        tools:context="edu.mills.freeingourselves.HealthCareProviderFragment">
 
         <Button
             android:layout_width="wrap_content"

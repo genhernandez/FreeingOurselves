@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hfad.freeingourselves.WorkoutActivity">
+    tools:context="edu.mills.freeingourselves.WorkoutActivity">
 
     <ImageView
         android:id="@+id/workout_photo"

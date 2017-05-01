@@ -3,7 +3,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-tools:context="com.hfad.freeingourselves.WorkoutIntroFragment">
+tools:context="edu.mills.freeingourselves.WorkoutIntroFragment">
     <Button
         android:text="@string/startWorkout"
         android:id="@+id/startWorkoutButton"

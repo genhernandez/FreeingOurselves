@@ -31,8 +31,8 @@ public class TestosteroneFragment extends Fragment {
         tWebView = (WebView) view.findViewById(R.id.tWebView);
         tWebView.loadUrl("file:///android_asset/testosterone_intro_en.html");
 
-        Button startWorkoutButton = (Button) view.findViewById(R.id.learnMoreButton);
-        startWorkoutButton.setOnClickListener(new View.OnClickListener() {
+        Button learnMoreButton = (Button) view.findViewById(R.id.learnMoreButton);
+        learnMoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {

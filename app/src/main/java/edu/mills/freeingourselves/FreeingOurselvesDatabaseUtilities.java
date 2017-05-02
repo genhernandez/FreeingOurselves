@@ -10,7 +10,10 @@ import android.content.Context;
 
 import java.util.ArrayList;
 
-// If you call one of these methods, use an AsyncTask
+/**
+ * Provides a simple interface to the database. Activities should call the methods in this class
+ * rather than accessing the database directly.
+ */
 final public class FreeingOurselvesDatabaseUtilities {
 
     private FreeingOurselvesDatabaseUtilities() {
@@ -44,14 +47,18 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
-     * Gets a cursor with all of the data for a specific topic. The cursor contains,
-     * in this order, values for String title, String context, and an int that is either 0 or 1 to
-     * represent whether or not the workout is favorited. If a database error occurs, null is
-     * returned; the caller will need to handle this case.
+     * Gets all information for a specific topic. The columns of the returned cursor are:
+     * <ol>
+     *   <li>title (String)</li>
+     *   <li>content (String)</li>
+     *   <li>fave (int, 0 or 1)</li>
+     * </ol>
+     * The caller is responsible for closing the returned cursor. If a database error occurs, null
+     * is returned; the caller will need to handle this case.
      *
      * @param context the context
      * @param id      the topic id
-     * @return a cursor or null if there is an error
+     * @return all information for a specific topic or null if there is an error
      */
     static Cursor getSpecificTopic(Context context, int id) {
         try {
@@ -224,14 +231,20 @@ final public class FreeingOurselvesDatabaseUtilities {
 //    }
 
     /**
-     * Gets a cursor with all of the data for a specific workout. The cursor contains,
-     * in this order, values for String name, String details, String picture file name, int count,
-     * and an int that is either 0 or 1 to represent whether or not the workout is favorited. If a
-     * database error occurs, null is returned; the caller will need to handle this case.
+     * Gets all information for a specific workout. The columns of the returned cursor are:
+     * <ol>
+     *   <li>name (String)</li>
+     *   <li>details (String)</li>
+     *   <li>picture_file (String)</li>
+     *   <li>count (int)</li>
+     *   <li>fave (int, 0 or 1)</li>
+     * </ol>
+     * The caller is responsible for closing the returned cursor. If a database error occurs, null
+     * is returned; the caller will need to handle this case.
      *
      * @param context the context
      * @param id      the workout id
-     * @return a cursor or null if there is an error
+     * @return all information for a specific workout or null if there is an error
      */
     static Cursor getSpecificWorkout(Context context, int id) {
         try {
@@ -310,12 +323,16 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
-     * Gets a cursor with only the favorited workouts. The cursor contains, in this order, values for
-     * int id and String name. If a database error occurs, null is returned; the caller will need
-     * to handle this case.
+     * Gets all information for all favorite workouts. The columns of the returned cursor are:
+     * <ol>
+     *   <li>id (int)</li>
+     *   <li>name (String)</li>
+     * </ol>
+     * The caller is responsible for closing the returned cursor. If a database error occurs, null
+     * is returned; the caller will need to handle this case.
      *
      * @param context the context
-     * @return a cursor or null if there is an error
+     * @return all information for all favorite workouts or null if there is an error
      */
     static Cursor getFaveWorkouts(Context context) {
         try {
@@ -381,14 +398,18 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
-     * Gets a cursor with all of the data for a specific healthcare question. The cursor contains,
-     * in this order, values for String question, String notes, and an int that is either 0 or 1
-     * to represent whether or not the question is saved. If a database error occurs, null is
-     * returned; the caller will need to handle this case.
+     * Gets all information for a specific healthcare question. The columns of the returned cursor are:
+     * <ol>
+     *   <li>step_info (String)</li>
+     *   <li>notes (String)</li>
+     *   <li>saved (int, 0 or 1)</li>
+     * </ol>
+     * The caller is responsible for closing the returned cursor. If a database error occurs, null
+     * is returned; the caller will need to handle this case.
      *
      * @param context the context
      * @param id      the question id
-     * @return a cursor or null if there is an error
+     * @return all information for a specific healthcare question or null if there is an error
      */
     static Cursor getSpecificHealthcareQuestion(Context context, int id) {
         try {
@@ -458,12 +479,17 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
-     * Gets a cursor with only the saved healthcare questions. The cursor contains, in this order,
-     * values for int id, String question, and String user notes. If a database error occurs, null
+     * Gets all information for all favorite healthcare questions. The columns of the returned cursor are:
+     * <ol>
+     *   <li>id (int)</li>
+     *   <li>step_info (String)</li>
+     *   <li>notes (String)</li>
+     * </ol>
+     * The caller is responsible for closing the returned cursor. If a database error occurs, null
      * is returned; the caller will need to handle this case.
      *
      * @param context the context
-     * @return a cursor or null if there is an error
+     * @return all information for all favorite healthcare questions or null if there is an error
      */
     static Cursor getSavedHealthcare(Context context) {
         try {

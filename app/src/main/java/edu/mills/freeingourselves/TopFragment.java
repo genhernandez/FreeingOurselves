@@ -18,6 +18,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+/**
+ * The home page for the Freeing Ourselves app. This fragment includes an introduction to the app
+ * and lists the users favorite workouts, if there are any.
+ */
 public class TopFragment extends Fragment {
 
     View view;

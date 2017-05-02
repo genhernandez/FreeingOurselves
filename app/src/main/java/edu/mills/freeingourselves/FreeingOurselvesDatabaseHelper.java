@@ -5,7 +5,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
+/**
+ * Handles creation and opening of the app's database.
+ */
+public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "freeing_ourselves";
     private static final int DB_VERSION = 1;
@@ -16,6 +19,10 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     static final String HEALTHCARE = "HEALTHCARE";
 //    static final String CHALLENGES = "CHALLENGES";
     static final String RESOURCES = "RESOURCES";
+
+    // Column names
+    static final String PROFESSOR_ID_COL = "professor_id";
+
 
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

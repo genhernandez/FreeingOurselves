@@ -17,18 +17,13 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays a list of workouts.
  */
 public class WorkoutFragment extends Fragment {
 
     protected View view;
     protected ListView listFavorites;
     protected String[] workoutNames;
-
-    public WorkoutFragment() {
-        // Required empty public constructor
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

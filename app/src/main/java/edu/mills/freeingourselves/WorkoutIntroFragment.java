@@ -10,7 +10,10 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
 
-//intro to workouts and a list of workouts
+/**
+ * Displays an introduction to the workouts. Users will be able to launch either a list of all
+ * workouts or a list of their favorite workouts.
+ */
 public class WorkoutIntroFragment extends Fragment {
 
     protected View view;

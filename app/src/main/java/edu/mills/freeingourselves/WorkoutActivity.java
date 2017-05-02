@@ -10,6 +10,10 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Displays information for a selected workout. Users can use this fragment to learn about a workout
+ * and keep track of how many times they have completed that workout.
+ */
 public class WorkoutActivity extends Activity {
 
     final static String FAVE_NUM = "favorite_num";

@@ -26,6 +26,7 @@ public class FavoriteWorkoutsFragment extends Fragment {
     protected View view;
     protected ListView listFavorites;
     protected TextView noFaveWorkouts;
+    Cursor cursor;
 
     public FavoriteWorkoutsFragment() {
         // Required empty public constructor
@@ -50,7 +51,7 @@ public class FavoriteWorkoutsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
                 Intent intent = new Intent(v.getContext(), WorkoutActivity.class);
-                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id+1);
+                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id);
                 startActivity(intent);
             }
         });
@@ -58,26 +59,38 @@ public class FavoriteWorkoutsFragment extends Fragment {
         return view;
     }
 
-    private class GetFavoriteWorkoutNamesTask extends AsyncTask<Context, Void, Cursor> {
+    private class GetFavoriteWorkoutNamesTask extends AsyncTask<Context, Void, Boolean> {
 
-        protected Cursor doInBackground(Context... context) {
-            return FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
+        protected Boolean doInBackground(Context... context) {
+            cursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
+            if (cursor == null) {
+                return false;
+            } else {
+                return true;
+            }
         }
 
-        protected void onPostExecute(Cursor workoutsCursor) {
-            if (workoutsCursor == null) {
-                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
-                toast.show();
-            } else {
-                if (workoutsCursor.moveToFirst()) {
+        protected void onPostExecute(Boolean success) {
+            if (success) {
+                if (cursor.moveToFirst()) {
                     CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
-                            android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
+                            android.R.layout.simple_list_item_1, cursor,
+                            new String[]{FreeingOurselvesDatabaseHelper.NAME},
                             new int[]{android.R.id.text1}, 0);
                     listFavorites.setAdapter(workoutsAdapter);
                 } else { // If no favorite workouts, display text saying so.
                     noFaveWorkouts.setVisibility(View.VISIBLE);
                 }
+            } else {
+                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
+                toast.show();
             }
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        cursor.close();
     }
 }

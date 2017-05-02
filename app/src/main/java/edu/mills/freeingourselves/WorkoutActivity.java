@@ -20,6 +20,7 @@ public class WorkoutActivity extends Activity {
     int workoutNum;
     int workoutCount;
     TextView countText;
+    private Cursor cursor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,27 +55,29 @@ public class WorkoutActivity extends Activity {
     }
 
     private void setTimesCompleted() {
-        countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!"));
+        countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!")); //TODO: this should be a constant?
     }
 
-    private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Cursor> {
+    private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Boolean> {
 
-        protected Cursor doInBackground(Object... params) {
-            return FreeingOurselvesDatabaseUtilities.getSpecificWorkout(WorkoutActivity.this, (int) params[0]);
+        protected Boolean doInBackground(Object... params) {
+            cursor = FreeingOurselvesDatabaseUtilities.getSpecificWorkout(WorkoutActivity.this, (int) params[0]);
+            if (cursor == null) {
+                return false;
+            } else {
+                return true;
+            }
         }
 
-        protected void onPostExecute(Cursor workoutCursor) {
-            if (workoutCursor == null) {
-                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not get workout", Toast.LENGTH_SHORT);
-                toast.show();
-            } else {
-                if (workoutCursor.moveToFirst()) {
+        protected void onPostExecute(Boolean success) {
+            if (success) {
+                if (cursor.moveToFirst()) {
                     // Get the workout details from the cursor.
-                    String name = workoutCursor.getString(0);
-                    String description = workoutCursor.getString(1);
+                    String name = cursor.getString(0);
+                    String description = cursor.getString(1);
                     //String photoId = cursor.getString(2); TODO: change this to int probably
-                    workoutCount = workoutCursor.getInt(3);
-                    boolean isFavorite = (workoutCursor.getInt(4) == 1);
+                    workoutCount = cursor.getInt(3);
+                    boolean isFavorite = (cursor.getInt(4) == 1);
 
                     // Populate the workout name.
                     TextView nameText = (TextView) findViewById(R.id.workoutTitle);
@@ -94,9 +97,10 @@ public class WorkoutActivity extends Activity {
                     // Populate the favorite checkbox.
                     CheckBox favorite = (CheckBox) findViewById(R.id.favorite);
                     favorite.setChecked(isFavorite);
-
-                    workoutCursor.close();
                 }
+            } else {
+                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not get workout", Toast.LENGTH_SHORT);
+                toast.show();
             }
         }
     }
@@ -127,5 +131,11 @@ public class WorkoutActivity extends Activity {
                 toast.show();
             }
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        cursor.close();
     }
 }

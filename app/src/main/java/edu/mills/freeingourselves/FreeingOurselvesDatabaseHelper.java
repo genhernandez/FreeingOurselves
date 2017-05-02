@@ -21,8 +21,15 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     static final String RESOURCES = "RESOURCES";
 
     // Column names
-    static final String PROFESSOR_ID_COL = "professor_id";
-
+    static final String ID = "_id";
+    static final String NAME = "NAME";
+    static final String CONTENT = "CONTENT";
+    static final String FAVE = "FAVE";
+    static final String LANG = "LANG";
+    static final String PICTURE = "PICTURE_FILE";
+    static final String COUNT = "COUNT";
+    static final String NOTES = "NOTES";
+    static final String LINK = "LINK";
 
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -42,11 +49,11 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         if (oldVersion < 1) {
             // Create topics table.
             db.execSQL("CREATE TABLE TOPICS ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "TITLE TEXT, "
-                    + "CONTENT TEXT, "
-                    + "FAVE INTEGER, "
-                    + "LANG TEXT);");
+                    + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + NAME + " TEXT, "
+                    + CONTENT + " TEXT, "
+                    + FAVE + " INTEGER, "
+                    + LANG + " TEXT);");
             addTopic(db, "Home", "home");
             addTopic(db, "Testosterone and You", "testosterone");
             addTopic(db, "Finding Healthcare Allies", "healthcare");
@@ -56,12 +63,12 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "NAME TEXT, "
-                    + "DETAILS TEXT, "
-                    + "PICTURE_FILE TEXT, "
-                    + "COUNT INTEGER, "
-                    + "FAVE INTEGER);");
+                    + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + NAME + " TEXT, "
+                    + CONTENT + " TEXT, "
+                    + PICTURE + " TEXT, "
+                    + COUNT + " INTEGER, "
+                    + FAVE + " INTEGER);");
             addWorkout(db, "Alternating Bicep Curl: 8-12 reps", "Starting with hands hanging by " +
                     "your sides, slowly curl the weight of one arm up. Hold the contraction for a" +
                     " second and then slowly lower. Repeat with the other arm.");
@@ -151,10 +158,10 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
             // Create healthcare table.
             db.execSQL("CREATE TABLE HEALTHCARE ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "STEP_INFO TEXT, "
-                    + "NOTES TEXT, "
-                    + "SAVED INTEGER);");
+                    + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + NAME + " TEXT, "
+                    + NOTES + " TEXT, "
+                    + FAVE + " INTEGER);");
             addHealthcareStep(db, "What services does your office/clinic offer to young people? " +
                     "What ongoing services do you offer to young people as they transition into adulthood?");
             addHealthcareStep(db, "Are there specific documents required to get care from your office" +
@@ -246,10 +253,10 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         if (oldVersion < 2) {
             // Create Resources table.
             db.execSQL("CREATE TABLE RESOURCES ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + "RESOURCE_NAME TEXT, "
-                    + "RESOURCE_DESCRIPTION TEXT, "
-                    + "LINK TEXT);");
+                    + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + NAME + " TEXT, "
+                    + CONTENT + " TEXT, "
+                    + LINK + " TEXT);");
             addResource(db, "Brown Boi Project", "Our organization", "http://www.brownboiproject.org/");
             addResource(db, "Therapists of Color", "Bay Area", "http://www.therapistsofcolor.org/directory.html");
             addResource(db, "National Queer & Trans Therapists of Color Network",
@@ -261,28 +268,28 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     // Defaults to English and not fave.
     private void addTopic(SQLiteDatabase db, String title, String content) {
         ContentValues chapterValues = new ContentValues();
-        chapterValues.put("TITLE", title);
-        chapterValues.put("CONTENT", content);
-        chapterValues.put("FAVE", 0);
-        chapterValues.put("LANG", "en");
+        chapterValues.put(NAME, title);
+        chapterValues.put(CONTENT, content);
+        chapterValues.put(FAVE, 0);
+        chapterValues.put(LANG, "en");
         db.insert(TOPICS, null, chapterValues);
     }
 
     private void addWorkout(SQLiteDatabase db, String name, String details) {
         ContentValues workoutValues = new ContentValues();
-        workoutValues.put("NAME", name);
-        workoutValues.put("DETAILS", details);
-        workoutValues.put("PICTURE_FILE", "");
-        workoutValues.put("COUNT", 0);
-        workoutValues.put("FAVE", 0);
+        workoutValues.put(NAME, name);
+        workoutValues.put(CONTENT, details);
+        workoutValues.put(PICTURE, "");
+        workoutValues.put(COUNT, 0);
+        workoutValues.put(FAVE, 0);
         db.insert(WORKOUTS, null, workoutValues);
     }
 
     // Defaults to no notes, not completed.
     private void addHealthcareStep(SQLiteDatabase db, String step) {
         ContentValues healthcareStepValues = new ContentValues();
-        healthcareStepValues.put("STEP_INFO", step);
-        healthcareStepValues.put("SAVED", 0);
+        healthcareStepValues.put(NAME, step);
+        healthcareStepValues.put(FAVE, 0);
         db.insert(HEALTHCARE, null, healthcareStepValues);
     }
 
@@ -297,9 +304,9 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private void addResource(SQLiteDatabase db, String name, String description, String link) {
         ContentValues resourceValues = new ContentValues();
-        resourceValues.put("RESOURCE_NAME", name);
-        resourceValues.put("RESOURCE_DESCRIPTION", description);
-        resourceValues.put("LINK", link);
+        resourceValues.put(NAME, name);
+        resourceValues.put(CONTENT, description);
+        resourceValues.put(LINK, link);
         db.insert(RESOURCES, null, resourceValues);
     }
 }

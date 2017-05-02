@@ -28,6 +28,7 @@
     <string name="workout_complete">Workout Completed</string>
     <string name="workout_count_button">Complete Workout!</string>
     <string name="startWorkout">Start Workout</string>
+    <string name="favoriteWorkout">Favorite Workouts</string>
     <!--Top Fragment -->
     <string name="title_top">Top Fragment</string>
     <string name="about">Launched in 2010, the Brown Boi Project works to build leadership,

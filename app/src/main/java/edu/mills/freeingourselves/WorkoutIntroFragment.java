@@ -39,6 +39,20 @@ public class WorkoutIntroFragment extends Fragment {
             }
         });
 
+        Button favoriteWorkoutButton = (Button) view.findViewById(R.id.favoriteWorkoutButton);
+        favoriteWorkoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment faveWorkoutFragment = new FavoriteWorkoutsFragment();
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, faveWorkoutFragment);
+                ft.addToBackStack(null);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                ft.commit();
+
+            }
+        });
+
         return view;
     }
 

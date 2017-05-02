@@ -453,7 +453,7 @@ final public class FreeingOurselvesDatabaseUtilities {
     static boolean updateNotes(Context context, int id, String notes) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
-            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getWritableDatabase();
             ContentValues healthcareValues = new ContentValues();
             healthcareValues.put(FreeingOurselvesDatabaseHelper.NOTES, notes);
             db.update(FreeingOurselvesDatabaseHelper.HEALTHCARE, healthcareValues,
@@ -471,7 +471,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * false is returned; the caller will need to handle this case.
      *
      * @param context the context
-     * @param id      the workout ID
+     * @param id      the healthcare question ID
      * @param isSaved whether the workout is favorited
      * @return true if successful, false otherwise
      */

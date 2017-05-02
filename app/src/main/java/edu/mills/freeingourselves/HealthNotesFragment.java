@@ -2,6 +2,7 @@ package edu.mills.freeingourselves;
 
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.database.Cursor;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,9 +30,6 @@ public class HealthNotesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_health_notes, null);
         LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthNotesFragment);
-        //ListView listView = new ListView(getActivity());
-
-        //linearLayout.addView(listView);
         Cursor cursor = FreeingOurselvesDatabaseUtilities.getSavedHealthcare(view.getContext());
 
         if (cursor == null) {
@@ -39,7 +38,6 @@ public class HealthNotesFragment extends Fragment {
         } else {
 
                 for(cursor.moveToFirst() ; !cursor.isAfterLast(); cursor.moveToNext()){
-                    Log.d("healthnotesfragment", "checking inside loop");
                     int QuestionId = cursor.getInt(0);              // Get question's id.
                     String question = cursor.getString(1);          // Get question text.
                     String notes = cursor.getString(2);             // Get notes (if any).
@@ -49,15 +47,24 @@ public class HealthNotesFragment extends Fragment {
                     linearLayout.addView(textView);
 
                     EditText editText = new EditText(view.getContext());
-                    // if (notes != null) {
                     editText.setText(notes);
-                    //listView.addView(editText);
-                    Log.d("healthnotesfragment", "checking inside loop2");
+                    linearLayout.addView(editText);
+                    FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), QuestionId, editText.getText().toString());
             }
             cursor.close();
         }
-        return inflater.inflate(R.layout.fragment_health_notes, container, false);
+
+        Button saveNotesButton = (Button)  view.findViewById(R.id.health_notes_save_button);
+        saveNotesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        return view;
     }
+
 
     // TODO: onDestroy() or onDestroyView()?
     @Override

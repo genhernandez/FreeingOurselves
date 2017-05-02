@@ -33,7 +33,7 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ArrayList<String> titles = new ArrayList<>();
-            String[] columns = new String[]{"TITLE"};
+            String[] columns = new String[]{FreeingOurselvesDatabaseHelper.NAME};
             Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.TOPICS, columns, null, null, null, null, null);
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
                 titles.add(cursor.getString(0));
@@ -65,8 +65,11 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             return db.query(FreeingOurselvesDatabaseHelper.TOPICS,
-                    new String[]{"TITLE", "CONTENT", "FAVE"},
-                    "_id = ?", new String[]{Integer.toString(id)}, null, null, null);
+                    new String[]{FreeingOurselvesDatabaseHelper.NAME,
+                            FreeingOurselvesDatabaseHelper.CONTENT,
+                            FreeingOurselvesDatabaseHelper.FAVE},
+                    FreeingOurselvesDatabaseHelper.ID + " = ?", new String[]{Integer.toString(id)},
+                    null, null, null);
         } catch (SQLiteException e) {
             Log.d("getWorkouts", "workout table error");
             return null;
@@ -137,8 +140,10 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ArrayList<String> resources = new ArrayList<>();
-            String[] columns = new String[]{"RESOURCE_NAME", "RESOURCE_DESCRIPTION"};
-            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.RESOURCES, columns, null, null, null, null, null);
+            String[] columns = new String[]{FreeingOurselvesDatabaseHelper.NAME,
+                    FreeingOurselvesDatabaseHelper.CONTENT};
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.RESOURCES, columns,
+                    null, null, null, null, null);
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
                 //Add name plus the description to the array list
                 resources.add(cursor.getString(0) + " - " + cursor.getString(1));
@@ -163,10 +168,11 @@ final public class FreeingOurselvesDatabaseUtilities {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
-            String[] columns = new String[]{"LINK"};
+            String[] columns = new String[]{FreeingOurselvesDatabaseHelper.LINK};
             String[] where = new String[]{"" + (id + 1) + ""};
             String resourceLink = null;
-            Cursor cursor = db.query("RESOURCES", columns, "_id = ?", where, null, null, null);
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.RESOURCES, columns,
+                    FreeingOurselvesDatabaseHelper.ID + " = ?", where, null, null, null);
             if (cursor.moveToFirst()) {
                 resourceLink = cursor.getString(0);
                 Log.v("MainActivity Resource", resourceLink);
@@ -196,7 +202,7 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ArrayList<String> names = new ArrayList<>();
             Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
-                    new String[]{"NAME"}, null, null, null, null, null);
+                    new String[]{FreeingOurselvesDatabaseHelper.NAME}, null, null, null, null, null);
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
                 names.add(cursor.getString(0));
             }
@@ -251,8 +257,13 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
-                    new String[]{"NAME", "DETAILS", "PICTURE_FILE", "COUNT", "FAVE"},
-                    "_id = ?", new String[]{Integer.toString(id)}, null, null, null);
+                    new String[]{FreeingOurselvesDatabaseHelper.NAME,
+                            FreeingOurselvesDatabaseHelper.CONTENT,
+                            FreeingOurselvesDatabaseHelper.PICTURE,
+                            FreeingOurselvesDatabaseHelper.COUNT,
+                            FreeingOurselvesDatabaseHelper.FAVE},
+                    FreeingOurselvesDatabaseHelper.ID + " = ?", new String[]{Integer.toString(id)},
+                    null, null, null);
         } catch (SQLiteException e) {
             Log.d("getWorkouts", "workout table error");
             return null;
@@ -274,11 +285,12 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ContentValues workoutValues = new ContentValues();
             if (isFavorite) {
-                workoutValues.put("FAVE", 1);
+                workoutValues.put(FreeingOurselvesDatabaseHelper.FAVE, 1);
             } else {
-                workoutValues.put("FAVE", 0);
+                workoutValues.put(FreeingOurselvesDatabaseHelper.FAVE, 0);
             }
-            db.update(FreeingOurselvesDatabaseHelper.WORKOUTS, workoutValues, "_id = ?",
+            db.update(FreeingOurselvesDatabaseHelper.WORKOUTS, workoutValues,
+                    FreeingOurselvesDatabaseHelper.ID + " = ?",
                     new String[]{Integer.toString(id)});
             db.close();
             return true;
@@ -301,13 +313,14 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             Cursor workoutCursor = db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
-                    new String[]{"COUNT"}, "_id = ?", new String[]{Integer.toString(id)},
+                    new String[]{FreeingOurselvesDatabaseHelper.COUNT},
+                    FreeingOurselvesDatabaseHelper.ID + " = ?", new String[]{Integer.toString(id)},
                     null, null, null);
             if (workoutCursor.moveToFirst()) {
                 int workoutCount = workoutCursor.getInt(0);
                 ContentValues workoutValues = new ContentValues();
-                workoutValues.put("COUNT", ++workoutCount);
-                db.update(FreeingOurselvesDatabaseHelper.WORKOUTS, workoutValues, "_id = ?",
+                workoutValues.put(FreeingOurselvesDatabaseHelper.COUNT, ++workoutCount);
+                db.update(FreeingOurselvesDatabaseHelper.WORKOUTS, workoutValues, FreeingOurselvesDatabaseHelper.ID + " = ?",
                         new String[]{Integer.toString(id)});
                 db.close();
                 return true;
@@ -339,7 +352,8 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             return db.query(FreeingOurselvesDatabaseHelper.WORKOUTS,
-                    new String[]{"_id", "NAME"}, "FAVE = 1",
+                    new String[]{FreeingOurselvesDatabaseHelper.ID, FreeingOurselvesDatabaseHelper.NAME},
+                    FreeingOurselvesDatabaseHelper.FAVE + " = 1",
                     null, null, null, null);
         } catch (SQLiteException e) {
             Log.d("getFaveWorkouts", "topics table error");
@@ -384,8 +398,9 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ArrayList<String> questions = new ArrayList<>();
-            String[] columns = new String[]{"STEP_INFO"};
-            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE, columns, null, null, null, null, null);
+            String[] columns = new String[]{FreeingOurselvesDatabaseHelper.NAME};
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE, columns,
+                    null, null, null, null, null);
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
                 questions.add(cursor.getString(0));
             }
@@ -416,8 +431,10 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             return db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
-                    new String[]{"STEP_INFO", "NOTES", "SAVED"},
-                    "_id = ?", new String[]{Integer.toString(id)}, null, null, null);
+                    new String[]{FreeingOurselvesDatabaseHelper.NAME, FreeingOurselvesDatabaseHelper.NOTES,
+                            FreeingOurselvesDatabaseHelper.FAVE},
+                    FreeingOurselvesDatabaseHelper.ID + " = ?",
+                    new String[]{Integer.toString(id)}, null, null, null);
         } catch (SQLiteException e) {
             Log.d("SpecificHealthcare", "health table error");
             return null;
@@ -438,9 +455,9 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ContentValues healthcareValues = new ContentValues();
-            healthcareValues.put("NOTES", notes);
-            db.update(FreeingOurselvesDatabaseHelper.HEALTHCARE, healthcareValues, "_id = ?",
-                    new String[]{Integer.toString(id)});
+            healthcareValues.put(FreeingOurselvesDatabaseHelper.NOTES, notes);
+            db.update(FreeingOurselvesDatabaseHelper.HEALTHCARE, healthcareValues,
+                    FreeingOurselvesDatabaseHelper.ID + " = ?", new String[]{Integer.toString(id)});
             db.close();
             return true;
         } catch (SQLiteException e) {
@@ -464,12 +481,12 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             ContentValues healthcareValues = new ContentValues();
             if (isSaved) {
-                healthcareValues.put("SAVED", 1);
+                healthcareValues.put(FreeingOurselvesDatabaseHelper.FAVE, 1);
             } else {
-                healthcareValues.put("SAVED", 0);
+                healthcareValues.put(FreeingOurselvesDatabaseHelper.FAVE, 0);
             }
-            db.update(FreeingOurselvesDatabaseHelper.HEALTHCARE, healthcareValues, "_id = ?",
-                    new String[]{Integer.toString(id)});
+            db.update(FreeingOurselvesDatabaseHelper.HEALTHCARE, healthcareValues,
+                    FreeingOurselvesDatabaseHelper.ID + " = ?", new String[]{Integer.toString(id)});
             db.close();
             return true;
         } catch (SQLiteException e) {
@@ -496,7 +513,9 @@ final public class FreeingOurselvesDatabaseUtilities {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
             return db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
-                    new String[]{"_id", "STEP_INFO", "NOTES"}, "SAVED = 1",
+                    new String[]{FreeingOurselvesDatabaseHelper.ID,
+                            FreeingOurselvesDatabaseHelper.NAME, FreeingOurselvesDatabaseHelper.NOTES},
+                    FreeingOurselvesDatabaseHelper.FAVE + " = 1",
                     null, null, null, null);
         } catch (SQLiteException e) {
             Log.d("getSavedHealthcare", "healthcare table error");

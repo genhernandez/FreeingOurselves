@@ -29,6 +29,7 @@ public class TopFragment extends Fragment {
     ListView workoutsView;
     TextView noFaveWorkouts;
 //    TextView noFaveTopics;
+    Cursor cursor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -128,26 +129,38 @@ public class TopFragment extends Fragment {
 //        }
 //    }
 
-    private class GetFaveWorkoutsTask extends AsyncTask<Context, Void, Cursor> {
+    private class GetFaveWorkoutsTask extends AsyncTask<Context, Void, Boolean> {
 
-        protected Cursor doInBackground(Context... context) {
-            return FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
+        protected Boolean doInBackground(Context... context) {
+            cursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
+            if (cursor == null) {
+                return false;
+            } else {
+                return true;
+            }
         }
 
-        protected void onPostExecute(Cursor workoutsCursor) {
-            if (workoutsCursor == null) {
-                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
-                toast.show();
-            } else {
-                if (workoutsCursor.moveToFirst()) {
+        protected void onPostExecute(Boolean success) {
+            if (success) {
+                if (cursor.moveToFirst()) {
                     CursorAdapter workoutsAdapter = new SimpleCursorAdapter(view.getContext(),
-                            android.R.layout.simple_list_item_1, workoutsCursor, new String[]{"NAME"},
+                            android.R.layout.simple_list_item_1, cursor,
+                            new String[]{FreeingOurselvesDatabaseHelper.NAME},
                             new int[]{android.R.id.text1}, 0);
                     workoutsView.setAdapter(workoutsAdapter);
                 } else { // If no favorite workouts, display text saying so.
                     noFaveWorkouts.setVisibility(View.VISIBLE);
                 }
+            } else {
+                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
+                toast.show();
             }
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        cursor.close();
     }
 }

@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
             startActivity(intent);
         } else {
             ContentValues myValues = new ContentValues();
-            myValues.put("position", position);
+            myValues.put("position", position); //TODO: this should be a constant?
             new GetResourceLinkTask().execute(myValues);
         }
     }

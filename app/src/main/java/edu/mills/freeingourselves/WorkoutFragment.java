@@ -31,7 +31,6 @@ public class WorkoutFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_workout, container, false);
 
-        // Populate the list_favorites ListView from a cursor.
         listFavorites = (ListView) view.findViewById(R.id.workout_list);
 
         new GetWorkoutNamesTask().execute(view.getContext());

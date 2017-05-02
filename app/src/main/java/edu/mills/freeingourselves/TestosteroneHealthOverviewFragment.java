@@ -43,16 +43,12 @@ public class TestosteroneHealthOverviewFragment extends Fragment {
         holisticCareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.holisticCareButton:
-                        Fragment holisticCareFragment = new TestosteroneHolisticCareFragment();
-                        FragmentTransaction ft = getFragmentManager().beginTransaction();
-                        ft.replace(R.id.content_frame, holisticCareFragment);
-                        ft.addToBackStack(null);
-                        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                        ft.commit();
-                        break;
-                }
+                Fragment holisticCareFragment = new TestosteroneHolisticCareFragment();
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, holisticCareFragment);
+                ft.addToBackStack(null);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                ft.commit();
             }
         });
 

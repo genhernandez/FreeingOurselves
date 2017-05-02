@@ -35,17 +35,14 @@ public class TestosteroneFragment extends Fragment {
         learnMoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.learnMoreButton:
                         Fragment testosteroneFragment = new TestosteroneHealthOverviewFragment();
                         FragmentTransaction ft = getFragmentManager().beginTransaction();
                         ft.replace(R.id.content_frame, testosteroneFragment);
                         ft.addToBackStack(null);
                         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                         ft.commit();
-                        break;
+
                 }
-            }
         });
 
         return view;

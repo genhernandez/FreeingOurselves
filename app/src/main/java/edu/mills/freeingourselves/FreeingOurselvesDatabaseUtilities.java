@@ -1,12 +1,13 @@
 package edu.mills.freeingourselves;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.content.Context;
 
 import java.util.ArrayList;
 
@@ -15,6 +16,9 @@ import java.util.ArrayList;
  * rather than accessing the database directly.
  */
 final public class FreeingOurselvesDatabaseUtilities {
+
+    // If getNumRows fails, return this.
+    private static final long MAX_NUM_ROWS = 50;
 
     private FreeingOurselvesDatabaseUtilities() {
     }
@@ -463,6 +467,25 @@ final public class FreeingOurselvesDatabaseUtilities {
         } catch (SQLiteException e) {
             Log.d("updateNotes", "healthcare table error");
             return false;
+        }
+    }
+
+    /**
+     * Gets the number of rows in the given database.
+     *
+     * @param context the context
+     * @return number of rows
+     */
+    static long getNumRows(Context context) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            long count = DatabaseUtils.queryNumEntries(db, FreeingOurselvesDatabaseHelper.HEALTHCARE);
+            db.close();
+            return count;
+        } catch (SQLiteException e) {
+            Log.d("getNumRows", "error counting");
+            return MAX_NUM_ROWS;
         }
     }
 

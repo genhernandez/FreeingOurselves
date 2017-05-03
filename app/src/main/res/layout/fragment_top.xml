@@ -5,17 +5,17 @@
     tools:context="edu.mills.freeingourselves.TopFragment"
     android:orientation="vertical"
     android:id="@+id/fragment_layout"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    android:paddingBottom="@dimen/padding"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingTop="@dimen/padding">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/intro"
         android:text="@string/intro"
-        android:paddingBottom="30dp"/>
+        android:paddingBottom="@dimen/double_padding"/>
 
     <!--Favorite topics
     <TextView

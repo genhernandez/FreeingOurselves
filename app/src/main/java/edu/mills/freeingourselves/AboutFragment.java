@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
+/**
+ * Displays an about page with information.
+ */
 public class AboutFragment extends Fragment {
 
     public AboutFragment() {

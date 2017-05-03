@@ -12,7 +12,7 @@ import android.widget.Button;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays health overview of hormone treatment.
  */
 public class TestosteroneHealthOverviewFragment extends Fragment {
     protected View view;

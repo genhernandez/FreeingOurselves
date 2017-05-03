@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays favorited workouts.
  */
 public class FavoriteWorkoutsFragment extends Fragment {
 

@@ -11,7 +11,7 @@ import android.widget.Button;
 
 
 /**
- *
+ * Displays introductory information regarding testosterone.
  */
 
 public class TestosteroneFragment extends Fragment {

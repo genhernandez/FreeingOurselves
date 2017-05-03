@@ -22,7 +22,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-
 public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
 

@@ -10,7 +10,7 @@ import android.webkit.WebView;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays information regarding gender affirmation surgeries.
  */
 public class TestosteroneSurgeryInfoFragment extends Fragment {
     protected View view;

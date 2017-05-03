@@ -20,8 +20,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
 
@@ -50,8 +48,8 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
 
         //Populate the ListView.
-
-        new GetTopicsTask().execute();
+        titles = getResources().getStringArray(R.array.titles);
+        drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1, titles));
 
         drawerList.setOnItemClickListener(new DrawerItemClickListener());
         if (savedInstanceState == null) {
@@ -209,31 +207,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(myUrl));
                 startActivity(i);
-            }
-        }
-    }
-
-    private class GetTopicsTask extends AsyncTask<Void, ArrayList<String>, ArrayList<String>> {
-
-        protected ArrayList<String> doInBackground(Void... params) {
-            return FreeingOurselvesDatabaseUtilities.getTopicTitles(MainActivity.this);
-        }
-
-        protected void onPostExecute(ArrayList<String> topicsList) {
-            if (topicsList == null) {
-                Toast toast = Toast.makeText(MainActivity.this, "Could not get topics", Toast.LENGTH_SHORT);
-                toast.show();
-            } else {
-                titles = new String[topicsList.size()];
-                for (int i = 0; i < topicsList.size(); i++) {
-                    titles[i] = topicsList.get(i);
-
-                    //super.onActivityCreated(savedInstanceState);
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                            MainActivity.this, android.R.layout.simple_list_item_1,
-                            titles);
-                    drawerList.setAdapter(adapter);
-                }
             }
         }
     }

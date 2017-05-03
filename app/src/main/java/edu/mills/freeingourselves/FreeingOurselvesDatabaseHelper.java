@@ -14,7 +14,6 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
 
     // Table names
-    static final String TOPICS = "TOPICS";
     static final String WORKOUTS = "WORKOUTS";
     static final String HEALTHCARE = "HEALTHCARE";
 //    static final String CHALLENGES = "CHALLENGES";
@@ -25,7 +24,6 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     static final String NAME = "NAME";
     static final String CONTENT = "CONTENT";
     static final String FAVE = "FAVE";
-    static final String LANG = "LANG";
     static final String PICTURE = "PICTURE_FILE";
     static final String COUNT = "COUNT";
     static final String NOTES = "NOTES";
@@ -47,20 +45,6 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
     private void updateMyDataBase(SQLiteDatabase db, int oldVersion, int newVersion) {
         if (oldVersion < 1) {
-            // Create topics table.
-            db.execSQL("CREATE TABLE TOPICS ("
-                    + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + NAME + " TEXT, "
-                    + CONTENT + " TEXT, "
-                    + FAVE + " INTEGER, "
-                    + LANG + " TEXT);");
-            addTopic(db, "Home", "home");
-            addTopic(db, "Testosterone and You", "testosterone");
-            addTopic(db, "Finding Healthcare Allies", "healthcare");
-            addTopic(db, "Resources", "ers");
-            addTopic(db, "Workouts", "workouts");
-            addTopic(db, "About us", "about");
-
             // Create workouts table.
             db.execSQL("CREATE TABLE WORKOUTS ("
                     + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -263,16 +247,6 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     "national provider directory of queer and trans therapists of color",
                     "http://www.nqttcn.com/directory");
         }
-    }
-
-    // Defaults to English and not fave.
-    private void addTopic(SQLiteDatabase db, String title, String content) {
-        ContentValues chapterValues = new ContentValues();
-        chapterValues.put(NAME, title);
-        chapterValues.put(CONTENT, content);
-        chapterValues.put(FAVE, 0);
-        chapterValues.put(LANG, "en");
-        db.insert(TOPICS, null, chapterValues);
     }
 
     private void addWorkout(SQLiteDatabase db, String name, String details) {

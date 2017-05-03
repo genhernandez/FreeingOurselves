@@ -19,10 +19,9 @@
         <item>Testosterone and You</item>
         <item>Finding Healthcare Allies</item>
         <item>Resources</item>
-        <item>Workout</item>
-        <item>Nearby Resources</item>
+        <item>Workouts</item>
+        <item>About Us</item>
     </string-array>
-
 
     <!-- Workout -->
     <string name="workout_complete">Workout Completed</string>

@@ -12,7 +12,7 @@ import android.widget.Button;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays information regarding holistic care when on hormone treatment.
  */
 public class TestosteroneHolisticCareFragment extends Fragment {
     protected View view;

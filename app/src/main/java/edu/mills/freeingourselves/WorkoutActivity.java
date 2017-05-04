@@ -52,6 +52,8 @@ public class WorkoutActivity extends Activity {
         new UpdateWorkoutCountTask().execute(workoutCountParams);
         workoutCount++;
         setTimesCompleted();
+        Toast toast = Toast.makeText(WorkoutActivity.this, "Good job!", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     private void setTimesCompleted() {

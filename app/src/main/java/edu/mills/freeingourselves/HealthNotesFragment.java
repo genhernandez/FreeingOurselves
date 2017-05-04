@@ -4,6 +4,8 @@ package edu.mills.freeingourselves;
 import android.app.Fragment;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,12 +31,12 @@ public class HealthNotesFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_health_notes, null);
-        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthNotesFragment);
+        final LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthNotesFragment);
         Cursor cursor = FreeingOurselvesDatabaseUtilities.getSavedHealthcare(view.getContext());
 
+        // Won't need hashmap if textwatcher works.
         int i = (int) FreeingOurselvesDatabaseUtilities.getNumRows(view.getContext());
         savedNotes = new HashMap(i);
-
 
         Log.d("HealthNotes", "created cursor");
 
@@ -44,55 +46,88 @@ public class HealthNotesFragment extends Fragment {
         } else {
             for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
                 int questionId = cursor.getInt(0);              // Get question's id.
-                    String question = cursor.getString(1);          // Get question text.
-                    String notes = cursor.getString(2);             // Get notes (if any).
+                String question = cursor.getString(1);          // Get question text.
+                String notes = cursor.getString(2);             // Get notes (if any).
                 savedNotes.put(questionId, notes);
 
-                    TextView textView = new TextView(view.getContext());
-                    textView.setText(question);
-                    linearLayout.addView(textView);
+                Log.d("HealthNotes", notes + "null");
 
-                    EditText editText = new EditText(view.getContext());
+                TextView textView = new TextView(view.getContext());
+                textView.setText(question);
+                linearLayout.addView(textView);
+
+                EditText editText = new EditText(view.getContext());
                 editText.setId(questionId);
-                    editText.setText(notes);
-                    linearLayout.addView(editText);
-                // FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), questionId, editText.getText().toString());
+                editText.setText(notes);
+                editText.addTextChangedListener(new MyTextWatcher(view));
+                linearLayout.addView(editText);
             }
 
             Log.d("HealthNotes", "closing cursor" + savedNotes);
             cursor.close();
         }
 
-        Button saveNotesButton = (Button)  view.findViewById(R.id.health_notes_save_button);
+        // TODO: Make this method do something or get rid of it. Maybe a toast?
+        Button saveNotesButton = (Button) view.findViewById(R.id.health_notes_save_button);
         saveNotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("HealthNotes", "save notes clicked");
+                // Log.d("HealthNotes", "save notes clicked");
 
-                // save text in edit text to hashmap
-
-                for (HashMap.Entry<Integer, String> q : savedNotes.entrySet()) {
-                    FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(),
-                            q.getKey(), savedNotes.get(q.getKey()));
-                    Log.d("HealthNotes", "note updated" + q.getKey() + " " + savedNotes.get(q.getKey()));
-                }
+                // save text in edit texts to hashmap
+//                for (int i = 0; i <= linearLayout.getChildCount(); i++) {
+//                    if (view instanceof EditText) {
+//                        savedNotes.put(view.getId(), this.getText());
+//                    }
+//                }
+//
+//                // save notes to database
+//                for (HashMap.Entry<Integer, String> questionId : savedNotes.entrySet()) {
+//
+//                    FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(),
+//                            questionId.getKey(), savedNotes.get(questionId.getKey()));
+//                    Log.d("HealthNotes", "note updated" + questionId.getKey() + " " + savedNotes.get(questionId.getKey()));
+//                }
             }
         });
 
         return view;
     }
 
+    private class MyTextWatcher implements TextWatcher {
+        private View view;
+        private boolean wasEdited = false;
 
-    // TODO: onDestroy() or onDestroyView()?
-    @Override
-    public void onDestroy() {
-        //ProgressDialog saveProgress = ProgressDialog.show(getView().getContext(),
-        //        "Saving Notes", "Saving notes.", true);
+        private MyTextWatcher(View view) {
+            this.view = view;
+        }
 
-        // Save all input from EditTexts to database.
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            //do nothing
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            //do nothing
+        }
 
 
-        //saveProgress.dismiss();
-        super.onDestroy();
+        // TODO: asynctask
+        @Override
+        public void afterTextChanged(Editable s) {
+            if (wasEdited) {
+                wasEdited = false;
+                return;
+            }
+            FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), view.getId(),
+                    s.toString());
+            Log.d("HealthNotes", s.toString());
+            
+            // To prevent infinite loop.
+            wasEdited = true;
+
+        }
     }
-    }
+
+}

@@ -470,6 +470,7 @@ final public class FreeingOurselvesDatabaseUtilities {
         }
     }
 
+    // TODO: delete if not using hashmap in HealthNotes
     /**
      * Gets the number of rows in the given database.
      *

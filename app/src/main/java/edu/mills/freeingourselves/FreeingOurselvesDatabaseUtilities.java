@@ -462,6 +462,13 @@ final public class FreeingOurselvesDatabaseUtilities {
             healthcareValues.put(FreeingOurselvesDatabaseHelper.NOTES, notes);
             db.update(FreeingOurselvesDatabaseHelper.HEALTHCARE, healthcareValues,
                     FreeingOurselvesDatabaseHelper.ID + " = ?", new String[]{Integer.toString(id)});
+            Log.d("db updateNotes", "healthCareValues notes = " +
+                    healthcareValues.get(FreeingOurselvesDatabaseHelper.NOTES));
+            Log.d("db updateNotes", "db notes = " +
+                    db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
+                            new String[]{FreeingOurselvesDatabaseHelper.ID, FreeingOurselvesDatabaseHelper.NAME},
+                            FreeingOurselvesDatabaseHelper.NOTES,
+                            null, null, null, null));
             db.close();
             return true;
         } catch (SQLiteException e) {

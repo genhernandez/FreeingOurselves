@@ -50,7 +50,7 @@ public class HealthNotesFragment extends Fragment {
                 String notes = cursor.getString(2);             // Get notes (if any).
                 savedNotes.put(questionId, notes);
 
-                Log.d("HealthNotes", notes + "null");
+                Log.d("HealthNotes", "notes from cursor = " + notes);
 
                 TextView textView = new TextView(view.getContext());
                 textView.setText(question);
@@ -116,16 +116,16 @@ public class HealthNotesFragment extends Fragment {
         // TODO: asynctask
         @Override
         public void afterTextChanged(Editable s) {
-            if (wasEdited) {
-                wasEdited = false;
-                return;
-            }
+//            if (wasEdited) {
+//                wasEdited = false;
+//                return;
+//            }
             FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), view.getId(),
                     s.toString());
             Log.d("HealthNotes", s.toString());
-            
-            // To prevent infinite loop.
-            wasEdited = true;
+
+            // To prevent infinite loop. But then it only updates every other letter.
+            // wasEdited = true;
 
         }
     }

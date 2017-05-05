@@ -8,7 +8,8 @@
     android:paddingBottom="@dimen/padding"
     android:paddingLeft="@dimen/padding"
     android:paddingRight="@dimen/padding"
-    android:paddingTop="@dimen/padding">
+    android:paddingTop="@dimen/padding"
+    android:background="#ffffff">
 
     <TextView
         android:layout_width="match_parent"

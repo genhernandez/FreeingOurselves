@@ -32,8 +32,6 @@ public class WorkoutActivity extends MainActivity {
         //Get the workout from the intent
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
 
-        countText = (TextView) findViewById(R.id.workoutCount);
-
         View contentView = inflater.inflate(R.layout.activity_workout, null, false);
         drawerLayout.addView(contentView, 0);
 
@@ -56,14 +54,17 @@ public class WorkoutActivity extends MainActivity {
         Object[] workoutCountParams = {workoutNum};
         new UpdateWorkoutCountTask().execute(workoutCountParams);
         workoutCount++;
-        //setTimesCompleted();
+        setTimesCompleted();
         Toast toast = Toast.makeText(WorkoutActivity.this, "Good job!", Toast.LENGTH_SHORT);
         toast.show();
     }
 
-    //private void setTimesCompleted() {
-        //countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!")); //TODO: this should be a constant?
-    //}
+    private void setTimesCompleted() {
+        if (countText == null) {
+            countText = (TextView) findViewById(R.id.workoutCount);
+        }
+        countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!")); //TODO: this should be a constant?
+    }
 
     private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Boolean> {
 
@@ -90,7 +91,7 @@ public class WorkoutActivity extends MainActivity {
                     TextView nameText = (TextView) findViewById(R.id.workoutTitle);
                     nameText.setText(name);
 
-                    //setTimesCompleted();
+                    setTimesCompleted();
 
                     // Populate the workout image. TODO: deal with pictures
 //                ImageView photo = (ImageView) findViewById(R.id.photo);

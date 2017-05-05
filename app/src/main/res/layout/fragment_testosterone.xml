@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="edu.mills.freeingourselves.TestosteroneFragment">
+    tools:context="edu.mills.freeingourselves.TestosteroneFragment"
+    android:background="#ffffff">
     <Button
         android:text="@string/learn_more"
         android:id="@+id/learnMoreButton"

@@ -155,6 +155,8 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         return super.onCreateOptionsMenu(menu);
     }
 
+    //what is this for? Do we need this
+    //
     //private void setIntent(String text){
     //Intent intent = new Intent(Intent.ACTION_SEND);
     //intent.setType("text/plain");
@@ -177,12 +179,16 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         }
     }
 
-    /*
-    Gets resource clicked and launches web intent
+    /**
+     * Responds to a user clicking an item of the resource list with appropriate action.
+     * If the last item in the list is clicked, launches MapActivity.
+     * Otherwise, gets the URL of a resource that is clicked by accessing the database with the position,
+     * and launching an intent with an AsyncTask.
+     *
+     * @param position the position of the item clicked in the list
      */
     @Override
     public void resourceListItemClicked(int position) {
-        Log.v("Clicked!", "position is " + position);
         if ((position + 1) == ResourceListFragment.resourceList.size()) {
             Intent intent = new Intent(MainActivity.this, MapActivity.class);
             startActivity(intent);

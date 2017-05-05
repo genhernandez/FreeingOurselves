@@ -17,18 +17,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
-
-    private DrawerLayout drawerLayout;
+    protected FrameLayout framelayout;
+    protected DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
+    protected static int position;
+    protected String[] listArray = {"Home", "Testosterone and You", "Finding Healthcare Allies", "Resources", "Workouts", "About Us"};
+    private static boolean isLaunch = true;
 
     //private ShareActionProvider shareActionProvider;
-    private String[] titles;
-    private ListView drawerList;
+    //private String[] titles;
+    protected ListView drawerList;
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
@@ -42,20 +46,21 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        framelayout = (FrameLayout)findViewById(R.id.content_frame);
         drawerList = (ListView) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
 
         //Populate the ListView.
-        titles = getResources().getStringArray(R.array.titles);
-        drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1, titles));
+        //titles = getResources().getStringArray(R.array.titles);
+        drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listArray));
 
-        drawerList.setOnItemClickListener(new DrawerItemClickListener());
-        if (savedInstanceState == null) {
-            selectItem(0);
-        }
-
+        drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                selectItem(position);
+            }
+        });
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
                 R.string.open_drawer, R.string.close_drawer) {
             public void onDrawerClosed(View view) {
@@ -73,7 +78,13 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        if(isLaunch){
+            isLaunch = false;
+            selectItem(0);
+        }
+
     }
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -137,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
             title = getResources().getString(R.string.app_name);
 
         } else {
-            title = titles[position];
+            title = listArray[position];
         }
         getSupportActionBar().setTitle(title);
     }

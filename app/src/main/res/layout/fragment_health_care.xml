@@ -9,7 +9,8 @@
         android:paddingRight="@dimen/padding"
         android:paddingTop="@dimen/padding"
         android:orientation="vertical"
-        tools:context="edu.mills.freeingourselves.HealthCareProviderFragment">
+        tools:context="edu.mills.freeingourselves.HealthCareProviderFragment"
+        android:background="#ffffff">
 
         <Button
             android:layout_width="wrap_content"

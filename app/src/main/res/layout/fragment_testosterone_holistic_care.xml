@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="edu.mills.freeingourselves.TestosteroneHolisticCareFragment">
+    tools:context="edu.mills.freeingourselves.TestosteroneHolisticCareFragment"
+    android:background="#ffffff">
 
     <Button
         android:text="@string/surgery_info"

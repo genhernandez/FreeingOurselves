@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.mills.freeingourselves.WorkoutFragment">
+    tools:context="edu.mills.freeingourselves.WorkoutFragment"
+    android:background="#ffffff">
 
     <ListView
         android:id="@+id/workout_list"

@@ -31,33 +31,7 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
             " process and what are your hours of operation?";
     private static final String TEST_NOTES = "test notes";
 
-    @Test
-    public void getTopicTitles() throws Exception {
-        ArrayList<String> topics = FreeingOurselvesDatabaseUtilities.getTopicTitles(context);
-        if (topics != null) {
-            assertEquals(HOME, topics.get(0));
-            assertEquals(TESTOSTERONE, topics.get(1));
-//            assertEquals("Finding Healthcare Allies", topics.get(2));
-//            assertEquals("Resources", topics.get(3));
-//            assertEquals("Workouts", topics.get(4));
-            assertEquals(ABOUT_US, topics.get(5));
-        } else {
-            fail();
-        }
-    }
 
-    @Test
-    public void getSpecificTopic() throws Exception {
-        Cursor topicCursor = FreeingOurselvesDatabaseUtilities.getSpecificTopic(context, 6);
-        if (topicCursor != null) {
-            topicCursor.moveToFirst();
-            assertEquals(ABOUT_US, topicCursor.getString(0));
-            assertEquals(ABOUT, topicCursor.getString(1));
-            assertEquals(0, topicCursor.getInt(2));
-        } else {
-            fail();
-        }
-    }
 
 //    @Test
 //    public void updateTopicsFavorite() throws Exception {

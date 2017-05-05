@@ -1,10 +1,11 @@
 package edu.mills.freeingourselves;
 
 
-import android.app.Activity;
+import android.content.Context;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ import android.widget.Toast;
  * Displays information for a selected workout. Users can use this fragment to learn about a workout
  * and keep track of how many times they have completed that workout.
  */
-public class WorkoutActivity extends Activity {
+public class WorkoutActivity extends MainActivity {
 
     final static String FAVE_NUM = "favorite_num";
     int workoutNum;
@@ -25,12 +26,16 @@ public class WorkoutActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout);
+        //setContentView(R.layout.activity_workout);
+        LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         //Get the workout from the intent
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
 
         countText = (TextView) findViewById(R.id.workoutCount);
+
+        View contentView = inflater.inflate(R.layout.activity_workout, null, false);
+        drawerLayout.addView(contentView, 0);
 
         displayWorkout();
     }
@@ -51,14 +56,14 @@ public class WorkoutActivity extends Activity {
         Object[] workoutCountParams = {workoutNum};
         new UpdateWorkoutCountTask().execute(workoutCountParams);
         workoutCount++;
-        setTimesCompleted();
+        //setTimesCompleted();
         Toast toast = Toast.makeText(WorkoutActivity.this, "Good job!", Toast.LENGTH_SHORT);
         toast.show();
     }
 
-    private void setTimesCompleted() {
-        countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!")); //TODO: this should be a constant?
-    }
+    //private void setTimesCompleted() {
+        //countText.setText("Completed " + workoutCount + ((workoutCount == 1) ? " time!" : " times!")); //TODO: this should be a constant?
+    //}
 
     private class GetSpecificWorkoutTask extends AsyncTask<Object, Void, Boolean> {
 
@@ -85,7 +90,7 @@ public class WorkoutActivity extends Activity {
                     TextView nameText = (TextView) findViewById(R.id.workoutTitle);
                     nameText.setText(name);
 
-                    setTimesCompleted();
+                    //setTimesCompleted();
 
                     // Populate the workout image. TODO: deal with pictures
 //                ImageView photo = (ImageView) findViewById(R.id.photo);

@@ -26,7 +26,7 @@ public class FavoriteWorkoutsFragment extends Fragment {
     protected View view;
     protected ListView listFavorites;
     protected TextView noFaveWorkouts;
-    Cursor cursor;
+    protected Cursor cursor;
 
     public FavoriteWorkoutsFragment() {
         // Required empty public constructor

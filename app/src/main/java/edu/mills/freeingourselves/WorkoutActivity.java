@@ -10,12 +10,18 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Displays information about a selected workout.
+ */
 public class WorkoutActivity extends Activity {
 
+    /**
+     * The string used to get the workout ID from intents.
+     */
     final static String FAVE_NUM = "favorite_num";
-    int workoutNum;
-    int workoutCount;
-    TextView countText;
+    protected int workoutNum;
+    protected int workoutCount;
+    protected TextView countText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

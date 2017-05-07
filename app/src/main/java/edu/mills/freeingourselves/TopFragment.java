@@ -24,12 +24,12 @@ import android.widget.Toast;
  */
 public class TopFragment extends Fragment {
 
-    View view;
+    protected View view;
 //    ListView topicsView;
-    ListView workoutsView;
-    TextView noFaveWorkouts;
+    protected ListView workoutsView;
+    protected TextView noFaveWorkouts;
 //    TextView noFaveTopics;
-    Cursor cursor;
+    protected Cursor cursor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -68,9 +68,9 @@ public class TopFragment extends Fragment {
         return view;
     }
 
-    private void selectWorkoutItem(int position) {
-
-    }
+//    private void selectWorkoutItem(int position) {
+//
+//    }
 
     @Override
     public void onResume() {

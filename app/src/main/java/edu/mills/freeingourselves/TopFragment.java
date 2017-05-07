@@ -72,6 +72,12 @@ public class TopFragment extends Fragment {
 
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        new GetFaveWorkoutsTask().execute(view.getContext());
+    }
+
 //    private void selectTopicItem(int position) {
 //        Fragment fragment;
 //        switch (position) {

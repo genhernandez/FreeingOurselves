@@ -1,7 +1,6 @@
 package edu.mills.freeingourselves;
 
 import android.app.Activity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,25 +14,18 @@ import java.util.List;
 /**
  * An adapter for the HealthCareProviderFragment.
  *
- * http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
+ * Modified from http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
  */
 
-public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
+class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
 
+    private final Activity context;
     private final List<HealthCareProviderFragment.Model> list;
-    protected final Activity context;
-    boolean checkAll_flag = false;
-    boolean checkItem_flag = false;
 
-    public HealthQuestionAdapter(Activity context, List<HealthCareProviderFragment.Model> list) {
+    HealthQuestionAdapter(Activity context, List<HealthCareProviderFragment.Model> list) {
         super(context, R.layout.row, list);
         this.context = context;
         this.list = list;
-    }
-
-    static class ViewHolder {
-        protected TextView text;
-        protected CheckBox checkbox;
     }
 
     @Override
@@ -41,8 +33,8 @@ public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragme
 
         ViewHolder viewHolder = null;
         if (convertView == null) {
-            LayoutInflater inflator = context.getLayoutInflater();
-            convertView = inflator.inflate(R.layout.row, null);
+            LayoutInflater inflater = context.getLayoutInflater();
+            convertView = inflater.inflate(R.layout.row, null);
             viewHolder = new ViewHolder();
             viewHolder.text = (TextView) convertView.findViewById(R.id.label);
             viewHolder.checkbox = (CheckBox) convertView.findViewById(R.id.check);
@@ -65,9 +57,13 @@ public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragme
         }
         viewHolder.checkbox.setTag(position); // This line is important.
         viewHolder.text.setText(list.get(position).getName());
-       // viewHolder.checkbox.setChecked(list.get(position).isSelected());
-        viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1)); //TODO: clean this up
+        viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1));
 
         return convertView;
+    }
+
+    private static class ViewHolder {
+        TextView text;
+        CheckBox checkbox;
     }
 }

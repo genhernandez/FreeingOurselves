@@ -4,7 +4,6 @@
     <dimen name="double_padding">32dp</dimen>
     <dimen name="drawer_width">240dp</dimen>
     <dimen name="zero">0dp</dimen>
-    <dimen name="workout_image">190dp</dimen>
     <dimen name="about_margin">15dip</dimen>
     <dimen name="row_textview_margin">40dip</dimen>
     <dimen name="row_checkbox_margin">4dip</dimen>

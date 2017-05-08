@@ -1,20 +1,31 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/healthNotesFragment"
-    android:orientation="vertical"
-    tools:context="edu.mills.freeingourselves.HealthNotesFragment">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/health_notes_intro"
-        android:text="@string/health_notes_intro" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/health_notes_save_button"
-        android:text="@string/health_notes_save"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/healthNotesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:orientation="vertical"
+        tools:context="edu.mills.freeingourselves.HealthNotesFragment">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/health_notes_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_notes_intro" />
+
+        <Button
+            android:id="@+id/health_notes_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_notes_save" />
+
+    </LinearLayout>
+</ScrollView>

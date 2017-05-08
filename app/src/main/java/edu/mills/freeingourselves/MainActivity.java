@@ -20,7 +20,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
@@ -50,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
 
         //Populate the ListView.
-
-        new GetTopicsTask().execute();
+        titles = getResources().getStringArray(R.array.titles);
+        drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1, titles));
 
         drawerList.setOnItemClickListener(new DrawerItemClickListener());
         if (savedInstanceState == null) {
@@ -156,6 +155,8 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         return super.onCreateOptionsMenu(menu);
     }
 
+    //what is this for? Do we need this
+    //
     //private void setIntent(String text){
     //Intent intent = new Intent(Intent.ACTION_SEND);
     //intent.setType("text/plain");
@@ -178,12 +179,16 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         }
     }
 
-    /*
-    Gets resource clicked and launches web intent
+    /**
+     * Responds to a user clicking an item of the resource list with appropriate action.
+     * If the last item in the list is clicked, launches MapActivity.
+     * Otherwise, gets the URL of a resource that is clicked by accessing the database with the position,
+     * and launching an intent with an AsyncTask.
+     *
+     * @param position the position of the item clicked in the list
      */
     @Override
     public void resourceListItemClicked(int position) {
-        Log.v("Clicked!", "position is " + position);
         if ((position + 1) == ResourceListFragment.resourceList.size()) {
             Intent intent = new Intent(MainActivity.this, MapActivity.class);
             startActivity(intent);
@@ -212,29 +217,4 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
             }
         }
     }
-
-    private class GetTopicsTask extends AsyncTask<Void, ArrayList<String>, ArrayList<String>> {
-
-        protected ArrayList<String> doInBackground(Void... params) {
-            return FreeingOurselvesDatabaseUtilities.getTopicTitles(MainActivity.this);
-        }
-
-        protected void onPostExecute(ArrayList<String> topicsList) {
-            if (topicsList == null) {
-                Toast toast = Toast.makeText(MainActivity.this, "Could not get topics", Toast.LENGTH_SHORT);
-                toast.show();
-            } else {
-                titles = new String[topicsList.size()];
-                for (int i = 0; i < topicsList.size(); i++) {
-                    titles[i] = topicsList.get(i);
-
-                    //super.onActivityCreated(savedInstanceState);
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                            MainActivity.this, android.R.layout.simple_list_item_1,
-                            titles);
-                    drawerList.setAdapter(adapter);
-                }
-            }
-        }
     }
-}

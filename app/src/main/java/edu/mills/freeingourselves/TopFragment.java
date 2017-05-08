@@ -72,6 +72,12 @@ public class TopFragment extends Fragment {
 
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        new GetFaveWorkoutsTask().execute(view.getContext());
+    }
+
 //    private void selectTopicItem(int position) {
 //        Fragment fragment;
 //        switch (position) {
@@ -148,8 +154,10 @@ public class TopFragment extends Fragment {
                             new String[]{FreeingOurselvesDatabaseHelper.NAME},
                             new int[]{android.R.id.text1}, 0);
                     workoutsView.setAdapter(workoutsAdapter);
+                    workoutsView.setVisibility(View.VISIBLE);
                 } else { // If no favorite workouts, display text saying so.
                     noFaveWorkouts.setVisibility(View.VISIBLE);
+                    workoutsView.setVisibility(View.INVISIBLE);
                 }
             } else {
                 Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);

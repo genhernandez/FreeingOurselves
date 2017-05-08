@@ -41,7 +41,7 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
 
         ArrayList<Model> modelArray = new ArrayList();
 
-        for (int i = 0; i < questionArray.size(); i++) {
+        for (int i = 0; i < 10; i++) {
             Model modelQ = new Model(questionArray.get(i));
             modelArray.add(i, modelQ);
         }

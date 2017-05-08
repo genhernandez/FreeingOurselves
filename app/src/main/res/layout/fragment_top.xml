@@ -1,21 +1,25 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/padding"
-    android:paddingLeft="@dimen/padding"
-    android:paddingRight="@dimen/padding"
-    android:paddingTop="@dimen/padding"
-    tools:context="edu.mills.freeingourselves.TopFragment">
-
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.mills.freeingourselves.TopFragment"
+        android:orientation="vertical"
+        android:id="@+id/fragment_layout"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding">
 
 
     <WebView
         android:id="@+id/introWebView"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
+        android:layout_width="wrap_content"
+        />
 
     <TextView
         android:id="@+id/fave_workouts"
@@ -30,13 +34,13 @@
         android:text="@string/no_fave_workouts"
         android:visibility="invisible"/>
 
-    <ListView
-        android:id="@+id/favorite_workouts_list"
+
+        <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
+        android:layout_height="wrap_content"
+        android:id="@+id/favorite_workouts_list">
+        </ListView>
 
 
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

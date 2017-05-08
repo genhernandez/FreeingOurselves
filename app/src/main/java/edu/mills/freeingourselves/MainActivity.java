@@ -20,7 +20,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-
+/**
+ * The top-level activity for Freeing Ourselves. This activity contains a navigation drawer,
+ * which allows the user to launch {@link edu.mills.freeingourselves.TestosteroneFragment},
+ * {@link edu.mills.freeingourselves.HealthCareProviderFragment},
+ * {@link edu.mills.freeingourselves.ResourceListFragment},
+ * {@link edu.mills.freeingourselves.WorkoutIntroFragment}, and
+ * {@link edu.mills.freeingourselves.AboutFragment}.
+ */
 public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
 
@@ -217,4 +224,4 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
             }
         }
     }
-    }
+}

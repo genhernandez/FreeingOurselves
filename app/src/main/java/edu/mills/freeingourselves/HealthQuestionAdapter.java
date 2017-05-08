@@ -13,9 +13,9 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
+ * An adapter for the HealthCareProviderFragment.
  *
- * Created by kdudziak on 4/28/17.
+ * http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
  */
 
 public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
@@ -65,8 +65,8 @@ public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragme
         }
         viewHolder.checkbox.setTag(position); // This line is important.
         viewHolder.text.setText(list.get(position).getName());
-        viewHolder.checkbox.setChecked(list.get(position).isSelected());
-
+       // viewHolder.checkbox.setChecked(list.get(position).isSelected());
+        viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1)); //TODO: clean this up
 
         return convertView;
     }

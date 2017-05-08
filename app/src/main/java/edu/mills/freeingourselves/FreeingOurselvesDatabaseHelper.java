@@ -14,19 +14,61 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
 
     // Table names
+    /**
+     * Name of database table keeping track of workouts.
+     */
     static final String WORKOUTS = "WORKOUTS";
+
+    /**
+     * Name of database table keeping track of healthcare questions.
+     */
     static final String HEALTHCARE = "HEALTHCARE";
 //    static final String CHALLENGES = "CHALLENGES";
+
+    /**
+     * Name of database table keeping track of resources.
+     */
     static final String RESOURCES = "RESOURCES";
 
     // Column names
+    /**
+     * Name of column containing IDs.
+     */
     static final String ID = "_id";
+
+    /**
+     * Name of column containing names.
+     */
     static final String NAME = "NAME";
+
+    /**
+     * Name of column containing content.
+     */
     static final String CONTENT = "CONTENT";
+
+    /**
+     * Name of column containing whether a row is marked as a favorite.
+     */
     static final String FAVE = "FAVE";
+
+    /**
+     * Name of column containing the picture file ID for workouts.
+     */
     static final String PICTURE = "PICTURE_FILE";
+
+    /**
+     * Name of column containing the count for workouts.
+     */
     static final String COUNT = "COUNT";
+
+    /**
+     * Name of column containing the notes for heatlhcare questions.
+     */
     static final String NOTES = "NOTES";
+
+    /**
+     * Name of column containing the url for resource links.
+     */
     static final String LINK = "LINK";
 
     FreeingOurselvesDatabaseHelper(Context context) {

@@ -8,8 +8,8 @@
         android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginRight = "15dip"
-        android:layout_marginLeft = "15dip"
+        android:layout_marginRight = "@dimen/about_margin"
+        android:layout_marginLeft = "@dimen/about_margin"
         android:gravity = "center_horizontal"
         android:padding="@dimen/padding"
         android:text="@string/about" />

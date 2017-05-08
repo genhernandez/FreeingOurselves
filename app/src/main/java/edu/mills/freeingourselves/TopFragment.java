@@ -25,13 +25,16 @@ import android.widget.Toast;
  */
 public class TopFragment extends Fragment {
 
-    View view;
+    protected View view;
 //    ListView topicsView;
-    ListView workoutsView;
-    TextView noFaveWorkouts;
+    protected ListView workoutsView;
+    protected TextView noFaveWorkouts;
 //    TextView noFaveTopics;
-    Cursor cursor;
+
     protected WebView introWebView;
+
+    protected Cursor cursor;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -74,8 +77,14 @@ public class TopFragment extends Fragment {
         return view;
     }
 
-    private void selectWorkoutItem(int position) {
+//    private void selectWorkoutItem(int position) {
+//
+//    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        new GetFaveWorkoutsTask().execute(view.getContext());
     }
 
 //    private void selectTopicItem(int position) {
@@ -154,8 +163,10 @@ public class TopFragment extends Fragment {
                             new String[]{FreeingOurselvesDatabaseHelper.NAME},
                             new int[]{android.R.id.text1}, 0);
                     workoutsView.setAdapter(workoutsAdapter);
+                    workoutsView.setVisibility(View.VISIBLE);
                 } else { // If no favorite workouts, display text saying so.
                     noFaveWorkouts.setVisibility(View.VISIBLE);
+                    workoutsView.setVisibility(View.INVISIBLE);
                 }
             } else {
                 Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);

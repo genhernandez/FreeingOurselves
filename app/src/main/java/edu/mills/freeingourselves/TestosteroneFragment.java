@@ -13,7 +13,6 @@ import android.widget.Button;
 /**
  * Displays introductory information regarding testosterone.
  */
-
 public class TestosteroneFragment extends Fragment {
     protected View view;
     protected WebView tWebView;
@@ -37,19 +36,16 @@ public class TestosteroneFragment extends Fragment {
         learnMoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                        Fragment testosteroneFragment = new TestosteroneHealthOverviewFragment();
-                        FragmentTransaction ft = getFragmentManager().beginTransaction();
-                        ft.replace(R.id.content_frame, testosteroneFragment);
-                        ft.addToBackStack(null);
-                        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                        ft.commit();
+                Fragment testosteroneFragment = new TestosteroneHealthOverviewFragment();
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, testosteroneFragment);
+                ft.addToBackStack(null);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                ft.commit();
 
-                }
+            }
         });
 
         return view;
     }
-
-
-
 }

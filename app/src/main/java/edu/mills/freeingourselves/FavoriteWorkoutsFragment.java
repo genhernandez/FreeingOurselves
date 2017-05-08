@@ -26,7 +26,7 @@ public class FavoriteWorkoutsFragment extends Fragment {
     protected View view;
     protected ListView listFavorites;
     protected TextView noFaveWorkouts;
-    Cursor cursor;
+    protected Cursor cursor;
 
     public FavoriteWorkoutsFragment() {
         // Required empty public constructor
@@ -78,14 +78,22 @@ public class FavoriteWorkoutsFragment extends Fragment {
                             new String[]{FreeingOurselvesDatabaseHelper.NAME},
                             new int[]{android.R.id.text1}, 0);
                     listFavorites.setAdapter(workoutsAdapter);
+                    listFavorites.setVisibility(View.VISIBLE);
                 } else { // If no favorite workouts, display text saying so.
                     noFaveWorkouts.setVisibility(View.VISIBLE);
+                    listFavorites.setVisibility(View.INVISIBLE);
                 }
             } else {
                 Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
                 toast.show();
             }
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        new GetFavoriteWorkoutNamesTask().execute(view.getContext());
     }
 
     @Override

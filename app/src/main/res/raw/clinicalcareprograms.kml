@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Clinical Care Programs for Gender-Expansive Children and Adolescents</name>
+    <description/>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>trans clinic update.csv</name>
+      <Placemark>
+        <name>Susquehanna Family Practice</name>
+        <address>1 FoxCare Drive, Suite 103, Oneonta, NY 13820</address>
+        <description><![CDATA[Healthcare Facility: A.O. Fox Hospital, Bassett Healthcare Network<br>Address:: 1 FoxCare Drive, Suite 103, Oneonta, NY 13820<br>Website:: http://www.bassett.org/ao-fox-hospital/services/family-practices/susquehanna-family-practice/<br>Description:: Practitioners at Susquehanna Family Practice provide primary care for gender-nonconforming children/teens and adult patients. The team can prescribe puberty blockers and cross-sex hormones and offers mental health services including therapy in office. The team can also make referrals to Fox Hospital, the same hospital at which the Susquehanna Family Practice is housed.<br>Contact Name:: Carolyn Wolf-Gould, MD<br>Contact Email:: cawolf-gould@aofmh.org<br>Contact Phone:: 607-431-5757]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>A.O. Fox Hospital, Bassett Healthcare Network</value>
+          </Data>
+          <Data name="Address:">
+            <value>1 FoxCare Drive, Suite 103, Oneonta, NY 13820</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.bassett.org/ao-fox-hospital/services/family-practices/susquehanna-family-practice/</value>
+          </Data>
+          <Data name="Description:">
+            <value>Practitioners at Susquehanna Family Practice provide primary care for gender-nonconforming children/teens and adult patients. The team can prescribe puberty blockers and cross-sex hormones and offers mental health services including therapy in office. The team can also make referrals to Fox Hospital, the same hospital at which the Susquehanna Family Practice is housed.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Carolyn Wolf-Gould, MD</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>cawolf-gould@aofmh.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>607-431-5757</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pediatric Adolescent Transgender Health Clinic</name>
+        <address>1675 Highland Ave. Madison, WI 53792</address>
+        <description><![CDATA[Healthcare Facility: American Family Children's Hospital, UW Health<br>Address:: 1675 Highland Ave. Madison, WI 53792 <br>Website:: http://www.uwhealthkids.org/path<br>Description:: The Pediatric Adolescent Transgender Health Clinic sees adolescents across the gender spectrum (toddlers through young adults, primarily ages 10 years and older). The team provides care in adolescent medicine, endocrinology, reproductive endocrinology, and psychology. This clinic can provide hormones and puberty blockers and can make referrals for surgery. Mental health services include assessments and referrals for individual therapy and local support groups.<br>Contact Name:: Jennifer Rehm, MD, and Betsy Bazur-Leidy, Nurse Coordinator<br>Contact Email:: jrehm@wisc.edu<br>Contact Phone:: 608-263-9059 ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[American Family Children's Hospital, UW Health]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>1675 Highland Ave. Madison, WI 53792 </value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.uwhealthkids.org/path</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Pediatric Adolescent Transgender Health Clinic sees adolescents across the gender spectrum (toddlers through young adults, primarily ages 10 years and older). The team provides care in adolescent medicine, endocrinology, reproductive endocrinology, and psychology. This clinic can provide hormones and puberty blockers and can make referrals for surgery. Mental health services include assessments and referrals for individual therapy and local support groups.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Jennifer Rehm, MD, and Betsy Bazur-Leidy, Nurse Coordinator</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>jrehm@wisc.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>608-263-9059 </value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Gender & Sex Development Program]]></name>
+        <address>225 E. Chicago Ave. Chicago, IL 60611</address>
+        <description><![CDATA[Healthcare Facility: Ann & Robert H. Lurie Children’s Hospital of Chicago<br>Address:: 225 E. Chicago Ave. Chicago, IL 60611<br>Website:: https://www.luriechildrens.org/en-us/care-services/specialties-services/gender-program/Pages/index.aspx<br><br>Description:: The Gender & Sex Development Program at Ann & Robert H. Lurie Children’s Hospital of Chicago serves gender nonconforming, gender-questioning, and transgender children and adolescents of any age through 24 years. The Program offers care in psychology, psychiatry, endocrinology, and adolescent medicine. The team can provide puberty blockers and cross-sex hormones and make surgical referrals. Mental health services include individual therapy, gender?related assessments of gender dysphoria and readiness for gender transition, group therapy (starting in Winter 2014–2015), and support groups (teen social group, teen parent peer?led support group, and child and parent play group).<br><br>Contact Name:: Jennifer Leininger, BA, BS, Program Coordinator<br>Contact Email:: JLeininger@luriechildrens.org<br>Contact Phone:: 773-303-6056 ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Ann & Robert H. Lurie Children’s Hospital of Chicago]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>225 E. Chicago Ave. Chicago, IL 60611</value>
+          </Data>
+          <Data name="Website:">
+            <value>https://www.luriechildrens.org/en-us/care-services/specialties-services/gender-program/Pages/index.aspx
+</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Gender & Sex Development Program at Ann & Robert H. Lurie Children’s Hospital of Chicago serves gender nonconforming, gender-questioning, and transgender children and adolescents of any age through 24 years. The Program offers care in psychology, psychiatry, endocrinology, and adolescent medicine. The team can provide puberty blockers and cross-sex hormones and make surgical referrals. Mental health services include individual therapy, gender?related assessments of gender dysphoria and readiness for gender transition, group therapy (starting in Winter 2014–2015), and support groups (teen social group, teen parent peer?led support group, and child and parent play group).
+]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Jennifer Leininger, BA, BS, Program Coordinator</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>JLeininger@luriechildrens.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>773-303-6056 </value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Teen Health Center</name>
+        <address>92 West Miller Street, Orlando, FL 32806</address>
+        <description><![CDATA[Healthcare Facility: Arnold Palmer Hospital for Children<br>Address:: 92 West Miller Street, Orlando, FL 32806<br>Website:: http://www.orlandohealth.com/arnoldpalmerhospital/OurMedicalSpecialties/AdolescentMedicine.aspx?pid=4936<br>Description:: The Arnold Palmer Hospital for Children Division of Adolescent Medicine provides care for youth and adolescents aged 11 to 21 years in adolescent medicine. The team can provide hormonal therapy, behavioral health referrals, and care coordination.<br>Contact Name:: Dr. Vinny L. Chulani, Director, Division of Adolescent Medicine<br>Contact Email:: veenod.chulani@orlandohealth.com<br>Contact Phone:: 321-841-5366]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Arnold Palmer Hospital for Children</value>
+          </Data>
+          <Data name="Address:">
+            <value>92 West Miller Street, Orlando, FL 32806</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.orlandohealth.com/arnoldpalmerhospital/OurMedicalSpecialties/AdolescentMedicine.aspx?pid=4936</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Arnold Palmer Hospital for Children Division of Adolescent Medicine provides care for youth and adolescents aged 11 to 21 years in adolescent medicine. The team can provide hormonal therapy, behavioral health referrals, and care coordination.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Dr. Vinny L. Chulani, Director, Division of Adolescent Medicine</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>veenod.chulani@orlandohealth.com</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>321-841-5366</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Transgender Clinic (Northampton Office) and Gender Specialty Clinic (Springfield Office)</name>
+        <address>140 High Street, Springfield MA, 01105 and 325B King Street, Northampton, MA 01060.</address>
+        <description><![CDATA[Healthcare Facility: Baystate Health<br>Address:: 140 High Street, Springfield MA, 01105 and 325B King Street, Northampton, MA 01060.<br>Website:: http://baystatehealth.com/Baystate/Main+Nav/About+Us/Locations/Baystate+Medical+Practices/Primary+Care/High+Street+Health+Center+-+Adult+Medicine/Transgender<br>Description:: The Transgender Clinic (Northampton Office) and Gender Specialty Clinic (Springfield Office) serve trans* and gender-nonconforming people ages 18 years and older; the program includes a provider who sees patients 18 years and younger through the provider’s pediatric endocrinology office. The team offers care in pediatric endocrinology and can make referrals for care in psychology and psychiatry. The team can provide hormones, puberty blockers, top surgery, breast augmentation surgery, orchiectomy on a case-<br>by-case referral basis, and management of psychotropic medications on a case-by-case basis. Providers at these clinics can make basic mental health assessments for hormones, and can refer out for individual therapy, group therapy, crisis management, and additional assessments.<br><br>Contact Name:: J. Aleah Nesteby, Nurse Practitioner, Adult Internal Medicine<br>Contact Email:: J.Aleah.Nesteby@baystatehealth.org<br>Contact Phone:: 413-794-1316 (for questions).<br>413-794-2511 (to set up a new patient visit). ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Baystate Health</value>
+          </Data>
+          <Data name="Address:">
+            <value>140 High Street, Springfield MA, 01105 and 325B King Street, Northampton, MA 01060.</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://baystatehealth.com/Baystate/Main+Nav/About+Us/Locations/Baystate+Medical+Practices/Primary+Care/High+Street+Health+Center+-+Adult+Medicine/Transgender</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Transgender Clinic (Northampton Office) and Gender Specialty Clinic (Springfield Office) serve trans* and gender-nonconforming people ages 18 years and older; the program includes a provider who sees patients 18 years and younger through the provider’s pediatric endocrinology office. The team offers care in pediatric endocrinology and can make referrals for care in psychology and psychiatry. The team can provide hormones, puberty blockers, top surgery, breast augmentation surgery, orchiectomy on a case-
+by-case referral basis, and management of psychotropic medications on a case-by-case basis. Providers at these clinics can make basic mental health assessments for hormones, and can refer out for individual therapy, group therapy, crisis management, and additional assessments.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>J. Aleah Nesteby, Nurse Practitioner, Adult Internal Medicine</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>J.Aleah.Nesteby@baystatehealth.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>413-794-1316 (for questions).
+413-794-2511 (to set up a new patient visit). </value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>BC Children’s Hospital</name>
+        <address>4480 Oak Street, Vancouver, British Columbia V6H 3V4</address>
+        <description><![CDATA[Healthcare Facility: BC Transgender Clinical Care Group<br>Address:: 4480 Oak Street, Vancouver, British Columbia V6H 3V4<br>Website:: http://endodiab.bcchildrens.ca/ForFamilies/TransgenderResources.htm<br>Description:: The BC Children’s Hospital (BCCH) serves all youth (from puberty to age 18 years) from British Columbia and the Yukon Territories. The BCCH team — comprising an endocrinologist, nurse clinician, and social worker — in partnership with mental health providers in psychiatry and psychology, can provide puberty blockers and hormones. BCCH is a part of the BC Transgender Clinical Care Group, which coordinates mental health, hormones, surgery, and primary care for all transgender people of all ages in BC. They also assist transgender people in accessing housing, legal advice, online resources, and support groups.<br>Contact Name:: Daniel L. Metzger, MD<br>Contact Email:: dmetzger@cw.bc.c<br>Contact Phone:: 604-875-2117]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>BC Transgender Clinical Care Group</value>
+          </Data>
+          <Data name="Address:">
+            <value>4480 Oak Street, Vancouver, British Columbia V6H 3V4</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://endodiab.bcchildrens.ca/ForFamilies/TransgenderResources.htm</value>
+          </Data>
+          <Data name="Description:">
+            <value>The BC Children’s Hospital (BCCH) serves all youth (from puberty to age 18 years) from British Columbia and the Yukon Territories. The BCCH team — comprising an endocrinologist, nurse clinician, and social worker — in partnership with mental health providers in psychiatry and psychology, can provide puberty blockers and hormones. BCCH is a part of the BC Transgender Clinical Care Group, which coordinates mental health, hormones, surgery, and primary care for all transgender people of all ages in BC. They also assist transgender people in accessing housing, legal advice, online resources, and support groups.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Daniel L. Metzger, MD</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>dmetzger@cw.bc.c</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>604-875-2117</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Disorders of Sexual Development (DSD) and Gender Management Service (GeMS)</name>
+        <address><![CDATA[Boston Children's Hospital 333 Longwood Avenue Second Floor Boston, MA 02115]]></address>
+        <description><![CDATA[Healthcare Facility: Boston Children's Hospital<br>Address:: Boston Children's Hospital 333 Longwood Avenue Second Floor Boston, MA 02115<br>Website:: http://www.childrenshospital.org/centers-and-services/disorders-of-sexual-development-dsd-and-gender-management-service-program<br>Description:: Disorders of Sexual Development (DSD) and Gender Management Service (GeMS) provide care and support to infants, children, adolescents and young adults with gender identity disorder (GID) or disorders of sexual differentiation (DSDs). The multi-disciplinary team includes specialists from: Endocrinology, Urology, Gynecology, Social Work, Psychology & Psychiatry. Together, they provide physical and psychological evaluation and referrals for surgery and ongoing care.<br>Contact Name:: <br>Contact Email:: <br>Contact Phone:: 617-355-4367]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Boston Children's Hospital]]></value>
+          </Data>
+          <Data name="Address:">
+            <value><![CDATA[Boston Children's Hospital 333 Longwood Avenue Second Floor Boston, MA 02115]]></value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.childrenshospital.org/centers-and-services/disorders-of-sexual-development-dsd-and-gender-management-service-program</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[Disorders of Sexual Development (DSD) and Gender Management Service (GeMS) provide care and support to infants, children, adolescents and young adults with gender identity disorder (GID) or disorders of sexual differentiation (DSDs). The multi-disciplinary team includes specialists from: Endocrinology, Urology, Gynecology, Social Work, Psychology & Psychiatry. Together, they provide physical and psychological evaluation and referrals for surgery and ongoing care.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value/>
+          </Data>
+          <Data name="Contact Email:">
+            <value/>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>617-355-4367</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Adolescent Center</name>
+        <address>Boston Medical Center Department of Pediatrics , Adolescent Center, 5th Floor, 850 Harrison Avenue, Boston, MA 02118</address>
+        <description><![CDATA[Healthcare Facility: Boston Medical Center<br>Address:: Boston Medical Center Department of Pediatrics , Adolescent Center, 5th Floor, 850 Harrison Avenue, Boston, MA 02118 <br>Website:: http://www.bmc.org/pediatrics-adolescentcenter.htm<br>Description:: The Adolescent Center at Boston Medical Center serves transgender and gender?nonconforming youth up to age 22 years, primarily from inner-city Boston and many from immigrant communities in the Boston area. The team provides care in adolescent medicine and can provide puberty blockers and hormones. The team offers consultation in endocrinology when needed. Mental health services include individual therapy conducted by an on-site social worker and referrals in psychiatry and psychology.<br><br>Contact Name:: Mandy Coles, MD, MPH<br>Contact Email:: mandy.coles@bmc.org<br>Contact Phone:: 617-414-4086 ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Boston Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>Boston Medical Center Department of Pediatrics , Adolescent Center, 5th Floor, 850 Harrison Avenue, Boston, MA 02118 </value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.bmc.org/pediatrics-adolescentcenter.htm</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Adolescent Center at Boston Medical Center serves transgender and gender?nonconforming youth up to age 22 years, primarily from inner-city Boston and many from immigrant communities in the Boston area. The team provides care in adolescent medicine and can provide puberty blockers and hormones. The team offers consultation in endocrinology when needed. Mental health services include individual therapy conducted by an on-site social worker and referrals in psychiatry and psychology.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Mandy Coles, MD, MPH</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>mandy.coles@bmc.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>617-414-4086 </value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Health Outreach to Teens (HOTT)</name>
+        <address>356 W 18th St New York, NY 10011</address>
+        <description><![CDATA[Healthcare Facility: Callen-Lorde Community Health Center<br>Address:: 356 W 18th St New York, NY 10011<br>Website:: http://callen-lorde.org/<br>Description:: The Callen-Lorde Community Health Center serves lesbian, gay, bisexual, transgender, queer, and questioning youth and youth who are HIV+ ages 13 and up. Callen?Lorde’s team offers care in psychiatry, social work, adolescent medicine, and gynecology. The team can provide hormones and referrals for puberty blockers and surgery. Mental health services include individual and group therapy and assessments. <br>Contact Name:: Manel Silva, MD, MPH, Clinical Director<br>Contact Email:: msilva@callen-lorde.org <br>Contact Phone:: 212-271-7200]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Callen-Lorde Community Health Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>356 W 18th St New York, NY 10011</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://callen-lorde.org/</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Callen-Lorde Community Health Center serves lesbian, gay, bisexual, transgender, queer, and questioning youth and youth who are HIV+ ages 13 and up. Callen?Lorde’s team offers care in psychiatry, social work, adolescent medicine, and gynecology. The team can provide hormones and referrals for puberty blockers and surgery. Mental health services include individual and group therapy and assessments. </value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Manel Silva, MD, MPH, Clinical Director</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>msilva@callen-lorde.org </value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>212-271-7200</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dimensions Clinic</name>
+        <address>3850 17th St., San Francisco, CA 94114</address>
+        <description><![CDATA[Healthcare Facility: Castro-Mission Health Center <br>Address:: 3850 17th St., San Francisco, CA 94114<br>Website:: http://www.dimensionsclinic.org<br>Description:: Dimensions Clinic serves lesbian, gay, bisexual, transgender, queer, and intersex young people and their partners and allies ages 12 to 25 years (with more than 80% of their served population identifying as transgender and/or gender?nonconforming). Dimensions Clinic has a team that provides primary medical care (MDs, NPs, RNs, and health workers) under internal medicine and family medicine, as well as care in psychology and psychiatry. Dimensions Clinic offers access to hormones and puberty blockers and can make surgery referrals. Mental health services include individual and group therapy services and assessments.<br>Contact Name:: Esteban Rodriguez (Health Worker & Outreach Coordinator)<br>Contact Email:: esteban.rodriguez@sfdph.org<br>Contact Phone:: 415-934-7757]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Castro-Mission Health Center </value>
+          </Data>
+          <Data name="Address:">
+            <value>3850 17th St., San Francisco, CA 94114</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.dimensionsclinic.org</value>
+          </Data>
+          <Data name="Description:">
+            <value>Dimensions Clinic serves lesbian, gay, bisexual, transgender, queer, and intersex young people and their partners and allies ages 12 to 25 years (with more than 80% of their served population identifying as transgender and/or gender?nonconforming). Dimensions Clinic has a team that provides primary medical care (MDs, NPs, RNs, and health workers) under internal medicine and family medicine, as well as care in psychology and psychiatry. Dimensions Clinic offers access to hormones and puberty blockers and can make surgery referrals. Mental health services include individual and group therapy services and assessments.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value><![CDATA[Esteban Rodriguez (Health Worker & Outreach Coordinator)]]></value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>esteban.rodriguez@sfdph.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>415-934-7757</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Program in Human Sexuality</name>
+        <address>1300 South 2nd Street, Suite 180, Minneapolis, MN 5545</address>
+        <description><![CDATA[Healthcare Facility: Center for Sexual Health, University of Minnesota Medical School<br>Address:: 1300 South 2nd Street, Suite 180, Minneapolis, MN 5545<br>Website:: http://www.sexualhealth.umn.edu/clinic-center-sexual-health/child-and-adolescent-services<br>Description:: The Center for Sexual Health specializes in treating children and adolescents with gender issues and a range of medical conditions.  The Center provides psychological assessments, has coordination of care with psychiatric services, and provides medical exams that are needed to provide puberty-delaying medication as well as hormones. Individual, group and family therapy are also offered. The clinic collaborates with a pediatric endocrinologist when puberty blockers are indicated and offers hormone therapy. Referrals are given for surgery also when appropriate.  <br>Contact Name:: Ethan Turcotte, Communications Officer<br>Contact Email:: phs@umn.edu<br>Contact Phone:: 612-625-1500]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Center for Sexual Health, University of Minnesota Medical School</value>
+          </Data>
+          <Data name="Address:">
+            <value>1300 South 2nd Street, Suite 180, Minneapolis, MN 5545</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.sexualhealth.umn.edu/clinic-center-sexual-health/child-and-adolescent-services</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Center for Sexual Health specializes in treating children and adolescents with gender issues and a range of medical conditions.  The Center provides psychological assessments, has coordination of care with psychiatric services, and provides medical exams that are needed to provide puberty-delaying medication as well as hormones. Individual, group and family therapy are also offered. The clinic collaborates with a pediatric endocrinologist when puberty blockers are indicated and offers hormone therapy. Referrals are given for surgery also when appropriate.  </value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Ethan Turcotte, Communications Officer</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>phs@umn.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>612-625-1500</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender and Sexual Development Program</name>
+        <address>13123 East 16th Avenue, Aurora, CO 80045</address>
+        <description><![CDATA[Healthcare Facility: Children’s Hospital Colorado<br>Address:: 13123 East 16th Avenue, Aurora, CO 80045<br>Website:: None available<br>Description:: The Children’s Hospital Colorado Gender and Sexual Development Program serves trans*, gender- nonconforming, and questioning children, adolescents, and young adults. The team covers care in endocrinology and adolescent medicine and can refer to a community psychologist for mental health services. The team can provide puberty blockers and hormones.<br>Contact Name:: Daniel Reirden, MD<br>Contact Email:: Daniel.reirden@childrenscolorado.org<br>Contact Phone:: 720-777-6131]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Children’s Hospital Colorado</value>
+          </Data>
+          <Data name="Address:">
+            <value>13123 East 16th Avenue, Aurora, CO 80045</value>
+          </Data>
+          <Data name="Website:">
+            <value>None available</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Children’s Hospital Colorado Gender and Sexual Development Program serves trans*, gender- nonconforming, and questioning children, adolescents, and young adults. The team covers care in endocrinology and adolescent medicine and can refer to a community psychologist for mental health services. The team can provide puberty blockers and hormones.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Daniel Reirden, MD</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>Daniel.reirden@childrenscolorado.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>720-777-6131</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender and Sexual Development Program</name>
+        <address>3420 Fifth Ave. Pittsburgh, PA 15213</address>
+        <description><![CDATA[Healthcare Facility: Children’s Hospital of Pittsburgh of UPMC<br>Address:: 3420 Fifth Ave. Pittsburgh, PA 15213<br>Website:: Adolescent Medicine:  http://www.chp.edu/CHP/am<br>Endocrinology:  http://www.chp.edu/CHP/endocrinology<br><br>Description:: The Gender and Sexual Development Program of Children’s Hospital of Pittsburgh of UPMC serves gay, lesbian, bisexual, transgender, questioning, intersexed, and ally (GLBTQIA) and gender?fluid children and youth up to age 26 years, as well as anyone with questions about or who needs support regarding gender and sexual development. The interdisciplinary team includes specialists in endocrinology, behavioral health, and adolescent medicine who provide individualized care including diagnostics, puberty blockers/hormone treatment, psychiatric evaluation, and transition to adult care. The team offers education related to gender, sexual development, and social aspects of transition. Social work support, counseling, and care coordination through a network of community partners are also available.<br><br>Contact Name:: Joanne Goodall, CRNP (Family Practice), Center for Adolescent and Young Adult Health<br>Contact Email:: <br>Contact Phone:: 412-692-6677 (Ask specifically for “gender care” visit to ensure adequate time and resources can be coordinated)]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Children’s Hospital of Pittsburgh of UPMC</value>
+          </Data>
+          <Data name="Address:">
+            <value>3420 Fifth Ave. Pittsburgh, PA 15213</value>
+          </Data>
+          <Data name="Website:">
+            <value>Adolescent Medicine:  http://www.chp.edu/CHP/am
+Endocrinology:  http://www.chp.edu/CHP/endocrinology
+</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Gender and Sexual Development Program of Children’s Hospital of Pittsburgh of UPMC serves gay, lesbian, bisexual, transgender, questioning, intersexed, and ally (GLBTQIA) and gender?fluid children and youth up to age 26 years, as well as anyone with questions about or who needs support regarding gender and sexual development. The interdisciplinary team includes specialists in endocrinology, behavioral health, and adolescent medicine who provide individualized care including diagnostics, puberty blockers/hormone treatment, psychiatric evaluation, and transition to adult care. The team offers education related to gender, sexual development, and social aspects of transition. Social work support, counseling, and care coordination through a network of community partners are also available.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Joanne Goodall, CRNP (Family Practice), Center for Adolescent and Young Adult Health</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value/>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>412-692-6677 (Ask specifically for “gender care” visit to ensure adequate time and resources can be coordinated)</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender and Sexuality Development Programs</name>
+        <address>111 Michigan Avenue, NW Washington, DC 20010</address>
+        <description><![CDATA[Healthcare Facility: Children’s National Medical Center<br>Address:: 111 Michigan Avenue, NW Washington, DC 20010<br>Website:: http://childrensnational.org/departments/gender-and-sexuality-development-program<br><br>Description:: The Gender and Sexuality Psychosocial Programs team provides care for transgender and gender- nonconforming children and adolescents up to age 21 years. The team offers care in psychology, psychiatry, pediatric gynecology, endocrinology, pediatric urology, and genetics, and includes a disorders of sexual development multidisciplinary team. The team can provide puberty blockers, hormone therapy, and hysterectomies and can make referrals for surgery. Mental health services include group therapy, assessments, and parent support groups.<br>Contact Name:: Martine Solages, MD, Psychiatrist<br>Contact Email:: gender@childrensnational.org<br>Contact Phone:: 202-476-5158]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Children’s National Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>111 Michigan Avenue, NW Washington, DC 20010</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://childrensnational.org/departments/gender-and-sexuality-development-program
+</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Gender and Sexuality Psychosocial Programs team provides care for transgender and gender- nonconforming children and adolescents up to age 21 years. The team offers care in psychology, psychiatry, pediatric gynecology, endocrinology, pediatric urology, and genetics, and includes a disorders of sexual development multidisciplinary team. The team can provide puberty blockers, hormone therapy, and hysterectomies and can make referrals for surgery. Mental health services include group therapy, assessments, and parent support groups.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Martine Solages, MD, Psychiatrist</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>gender@childrensnational.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>202-476-5158</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Center for Transyouth Health and Development</name>
+        <address>5000 Sunset Blvd. 4th Floor, Los Angeles, CA 90027</address>
+        <description><![CDATA[Healthcare Facility: Children's Hospital Los Angeles<br>Address:: 5000 Sunset Blvd. 4th Floor, Los Angeles, CA 90027<br>Website:: http://www.chla.org/site/c.ipINKTOAJsG/b.7501767/#.VMqb82jF98E <br>Description:: The Center's Medical services include a thorough evaluation of transgender patients including: gaining an understanding of the youth’s experience of gender non-conformity, and an assessment of medical readiness for hormones. Physicians determine, in collaboration with the youth, mental health therapists, ancillary support staff and families, the best treatment plan for each individual. Ongoing monitoring of efficacy, safety and side effects is essential for youth, especially in the first year of treatment.<br>Contact Name:: Miguel Martinez, MSW, MPH, Program Manager<br>Contact Email:: mimartinez@chla.usc.edu<br>Contact Phone:: 323-361-5372]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Children's Hospital Los Angeles]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>5000 Sunset Blvd. 4th Floor, Los Angeles, CA 90027</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.chla.org/site/c.ipINKTOAJsG/b.7501767/#.VMqb82jF98E </value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Center's Medical services include a thorough evaluation of transgender patients including: gaining an understanding of the youth’s experience of gender non-conformity, and an assessment of medical readiness for hormones. Physicians determine, in collaboration with the youth, mental health therapists, ancillary support staff and families, the best treatment plan for each individual. Ongoing monitoring of efficacy, safety and side effects is essential for youth, especially in the first year of treatment.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Miguel Martinez, MSW, MPH, Program Manager</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>mimartinez@chla.usc.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>323-361-5372</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender Health Clinic</name>
+        <address>9000 West Wisconsin Avenue, Milwaukee, WI 53226</address>
+        <description><![CDATA[Healthcare Facility: Children's Hospital of Wisconsin<br>Address:: 9000 West Wisconsin Avenue, Milwaukee, WI 53226<br>Website:: http://www.chw.org<br>Description:: The Gender Health Clinic at Children's Hospital of Wisconsin is a multidisciplinary clinic focused on children and youth seeking assistance with gender identity development and transition concerns. Our medical providers prescribe puberty-suppressing hormone therapy and gender-affirming hormone therapy when appropriate. Our psychologist provides consultation to clinic patients and families designed to help support them and to collaborate with other mental health providers. She may meet with patients outside of clinic to provide more comprehensive psychological evaluation of gender concerns. We have a clinic nurse and social worker who support patients with their treatment plans and goals.<br>Contact Name:: Loretta L Bush, APNP<br>Contact Email:: lbush@mcw.edu<br>Contact Phone:: 414-266-6750]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Children's Hospital of Wisconsin]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>9000 West Wisconsin Avenue, Milwaukee, WI 53226</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.chw.org</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Gender Health Clinic at Children's Hospital of Wisconsin is a multidisciplinary clinic focused on children and youth seeking assistance with gender identity development and transition concerns. Our medical providers prescribe puberty-suppressing hormone therapy and gender-affirming hormone therapy when appropriate. Our psychologist provides consultation to clinic patients and families designed to help support them and to collaborate with other mental health providers. She may meet with patients outside of clinic to provide more comprehensive psychological evaluation of gender concerns. We have a clinic nurse and social worker who support patients with their treatment plans and goals.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Loretta L Bush, APNP</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>lbush@mcw.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>414-266-6750</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender Pathway Services Clinic</name>
+        <address>3101 Broadway Blvd. Kansas City, MO 64111 </address>
+        <description><![CDATA[Healthcare Facility: Children's Mercy Hospital<br>Address:: 3101 Broadway Blvd. Kansas City, MO 64111 <br>Website:: https://www.childrensmercy.org/gender-pathway-services/<br>Description:: The Gender Pathway Services clinic at Children's Mercy provides interdisciplinary, family-centered services for transgender, gender-variant, and gender-questioning patients. Our services are aimed at supporting the physical, mental and social health of patients and their families as they navigate the process of gender identity development.<br><br>Our team of pediatric specialists cares for patients with any gender variance. Specialties represented in the clinic include endocrinology, psychology, adolescent medicine, and social work.<br>We accept all children as new patients, up to 18 years old.<br>Contact Name:: Kathryn Bowman, LCSW<br>Contact Email:: <br>Contact Phone:: (816) 960-4134]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Children's Mercy Hospital]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>3101 Broadway Blvd. Kansas City, MO 64111 </value>
+          </Data>
+          <Data name="Website:">
+            <value>https://www.childrensmercy.org/gender-pathway-services/</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Gender Pathway Services clinic at Children's Mercy provides interdisciplinary, family-centered services for transgender, gender-variant, and gender-questioning patients. Our services are aimed at supporting the physical, mental and social health of patients and their families as they navigate the process of gender identity development.
+
+Our team of pediatric specialists cares for patients with any gender variance. Specialties represented in the clinic include endocrinology, psychology, adolescent medicine, and social work.
+We accept all children as new patients, up to 18 years old.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Kathryn Bowman, LCSW</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value/>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>(816) 960-4134</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Transgender Health Clinic</name>
+        <address>3333 Burnet Avenue, Cincinnati, Ohio 45229-302</address>
+        <description><![CDATA[Healthcare Facility: Cincinnati Children’s Hospital Medical Center<br>Address:: 3333 Burnet Avenue, Cincinnati, Ohio 45229-302<br>Website:: https://www.cincinnatichildrens.org/service/a/adolescent-medicine/programs/transgender<br>Description:: The Transgender Clinic at Cincinnati Children’s Hospital Medical Center serves trans* and gender-nonconforming adolescents and young adults aged 5 to 22 years. The team provides care in endocrinology, adolescent medicine, pediatric gynecology, nutrition, and referrals for voice communication (speech pathology), legal services, and care in psychology and psychiatry; the team additionally offers social work services, nursing education, and primary care. The team can provide puberty blockers and gender?affirming hormones. Mental health services include assessments in clinic, individual therapy, and referrals to support groups.<br><br>Contact Name:: Dr. Lee Ann Conard, RPh, DO, MPH, Assistant Professor of Adolescent Medicine, Director of the Transgender Clinic<br>Contact Email:: leeann.conard@cchmc.org<br>Contact Phone:: 513-636-2153]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Cincinnati Children’s Hospital Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>3333 Burnet Avenue, Cincinnati, Ohio 45229-302</value>
+          </Data>
+          <Data name="Website:">
+            <value>https://www.cincinnatichildrens.org/service/a/adolescent-medicine/programs/transgender</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Transgender Clinic at Cincinnati Children’s Hospital Medical Center serves trans* and gender-nonconforming adolescents and young adults aged 5 to 22 years. The team provides care in endocrinology, adolescent medicine, pediatric gynecology, nutrition, and referrals for voice communication (speech pathology), legal services, and care in psychology and psychiatry; the team additionally offers social work services, nursing education, and primary care. The team can provide puberty blockers and gender?affirming hormones. Mental health services include assessments in clinic, individual therapy, and referrals to support groups.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Dr. Lee Ann Conard, RPh, DO, MPH, Assistant Professor of Adolescent Medicine, Director of the Transgender Clinic</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>leeann.conard@cchmc.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>513-636-2153</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender Identity Program</name>
+        <address>282 Washington Street, Hartford, CT 06106</address>
+        <description><![CDATA[Healthcare Facility: Connecticut Children’s Medical Center<br>Address:: 282 Washington Street, Hartford, CT 06106<br>Website:: http://www.connecticutchildrens.org/our-care/diabetes-and-endocrinology/sexual-and-gender-disorders/gender-identity-program/<br>Description:: The Gender Identity Program at Connecticut Children’s Medical Center serves patients with gender dysphoria from the start of puberty until age 21 years. The team provides care in psychology, psychiatry, endocrinology, and urology, and includes a plastic surgeon. The team can provide puberty blockers, hormones, and breast surgery. Mental health services include individual therapy, assessments, family therapy specific to medical transition, general group therapy for LGBTQ youth facilitated by the team’s psychologist, and referrals to support groups for children and adolescents with gender dysphoria, their parents, and their siblings.<br>Contact Name:: Priya Phulwani, MD, Pediatric Endocrinologist, Connecticut Children’s Medical Center<br>Contact Email:: Pphulwa@connecticutchildrens.org<br>Contact Phone:: 860-545-9370]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Connecticut Children’s Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>282 Washington Street, Hartford, CT 06106</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.connecticutchildrens.org/our-care/diabetes-and-endocrinology/sexual-and-gender-disorders/gender-identity-program/</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Gender Identity Program at Connecticut Children’s Medical Center serves patients with gender dysphoria from the start of puberty until age 21 years. The team provides care in psychology, psychiatry, endocrinology, and urology, and includes a plastic surgeon. The team can provide puberty blockers, hormones, and breast surgery. Mental health services include individual therapy, assessments, family therapy specific to medical transition, general group therapy for LGBTQ youth facilitated by the team’s psychologist, and referrals to support groups for children and adolescents with gender dysphoria, their parents, and their siblings.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Priya Phulwani, MD, Pediatric Endocrinologist, Connecticut Children’s Medical Center</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>Pphulwa@connecticutchildrens.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>860-545-9370</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Division of Pediatric Endocrinology</name>
+        <address>700 S.W. Campus Drive, Portland, OR 97239</address>
+        <description><![CDATA[Healthcare Facility: Doernbecher Children’s Hospital<br>Address:: 700 S.W. Campus Drive, Portland, OR 97239<br>Website:: http://www.ohsu.edu/xd/health/services/doernbecher/programs-services/endocrinology.cfm<br>Description:: The Doernbecher Children’s Hospital Division of Pediatric Endocrinology serves trans* and gender-nonconforming youth through age 20 years. The team comprises pediatric endocrinologists and psychiatrists and is currently working to grow into a multidisciplinary team. The team can provide puberty blockers, hormones, and referrals for surgery. Mental health services include assessments, psychotherapy, and referrals to outside support groups.<br><br>Contact Name:: Kara Connelly, MD; Assistant Professor, Pediatric Endocrinology<br>Contact Email:: connellk@ohsu.edu<br>Contact Phone:: 503-494-1926]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Doernbecher Children’s Hospital</value>
+          </Data>
+          <Data name="Address:">
+            <value>700 S.W. Campus Drive, Portland, OR 97239</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.ohsu.edu/xd/health/services/doernbecher/programs-services/endocrinology.cfm</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Doernbecher Children’s Hospital Division of Pediatric Endocrinology serves trans* and gender-nonconforming youth through age 20 years. The team comprises pediatric endocrinologists and psychiatrists and is currently working to grow into a multidisciplinary team. The team can provide puberty blockers, hormones, and referrals for surgery. Mental health services include assessments, psychotherapy, and referrals to outside support groups.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Kara Connelly, MD; Assistant Professor, Pediatric Endocrinology</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>connellk@ohsu.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>503-494-1926</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Duke Child and Adolescent Gender Care</name>
+        <address>2301 Erwin Rd, Durham, NC 27710</address>
+        <description><![CDATA[Healthcare Facility: Duke Children's Hospital<br>Address:: 2301 Erwin Rd, Durham, NC 27710<br>Website:: https://www.dukehealth.org/locations/duke-child-and-adolescent-gender-care<br>Description:: Our clinic is staffed by experts in pediatric endocrinology, pediatric urology, clinical social workers, and counselors in psychology/psychiatry and spiritual care. We also partner with doctors, surgeons and counselors in neonatology, genetics, family and community medicine, adolescent medicine, voice care services, fertility, and nutrition. Our mission is to provide holistic and compassionate care for youth and their families. <br>Contact Name:: Deanna Adkins, MD<br>Contact Email:: Deanna.adkins@duke.edu<br>Contact Phone:: 919-684-8225]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Duke Children's Hospital]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>2301 Erwin Rd, Durham, NC 27710</value>
+          </Data>
+          <Data name="Website:">
+            <value>https://www.dukehealth.org/locations/duke-child-and-adolescent-gender-care</value>
+          </Data>
+          <Data name="Description:">
+            <value>Our clinic is staffed by experts in pediatric endocrinology, pediatric urology, clinical social workers, and counselors in psychology/psychiatry and spiritual care. We also partner with doctors, surgeons and counselors in neonatology, genetics, family and community medicine, adolescent medicine, voice care services, fertility, and nutrition. Our mission is to provide holistic and compassionate care for youth and their families. </value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Deanna Adkins, MD</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>Deanna.adkins@duke.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>919-684-8225</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Health Care for Gender and Sexually Diverse Individuals</name>
+        <address>593 Eddy Street, Providence, RI 02903</address>
+        <description><![CDATA[Healthcare Facility: Hasbro Children's Hospital (Pediatric Division of Rhode Island Hospital)<br>Address:: 593 Eddy Street, Providence, RI 02903<br>Website:: http://www.hasbrochildrenshospital.org<br>Description:: Warren Alpert School of Medicine at Brown University and Hasbro Children’s and Rhode Island Hospitals offer specialty and primary care health services to any and all gender diverse and gender-nonconforming individuals from early childhood through maturity. The program operates out of both adolescent medicine and medicine-pediatrics clinics in the Providence, RI area and serves patients in the New England and east coast community. The team, using a consent-based model of care, provides gender-affirming hormones, puberty blockers, referrals for surgery and general medical follow up. The team can also work with the patient’s local primary care doctor to coordinate care. The team offers other sex positive health services including sexually transmitted infection (STI) testing, family planning, and other sexuality concerns.<br><br>Contact Name:: Michelle Forcier, MD, MPH, Associate Professor Pediatrics <br>Contact Email:: mforcier@lifespan.org<br>Contact Phone:: 401-444-5980 Adolescent young adult medicine at (Jeseca) ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Hasbro Children's Hospital (Pediatric Division of Rhode Island Hospital)]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>593 Eddy Street, Providence, RI 02903</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.hasbrochildrenshospital.org</value>
+          </Data>
+          <Data name="Description:">
+            <value>Warren Alpert School of Medicine at Brown University and Hasbro Children’s and Rhode Island Hospitals offer specialty and primary care health services to any and all gender diverse and gender-nonconforming individuals from early childhood through maturity. The program operates out of both adolescent medicine and medicine-pediatrics clinics in the Providence, RI area and serves patients in the New England and east coast community. The team, using a consent-based model of care, provides gender-affirming hormones, puberty blockers, referrals for surgery and general medical follow up. The team can also work with the patient’s local primary care doctor to coordinate care. The team offers other sex positive health services including sexually transmitted infection (STI) testing, family planning, and other sexuality concerns.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Michelle Forcier, MD, MPH, Associate Professor Pediatrics </value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>mforcier@lifespan.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>401-444-5980 Adolescent young adult medicine at (Jeseca) </value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Center for Adolescent & Young Adult Health]]></name>
+        <address>1800 Orleans St., Baltimore, Maryland 21287</address>
+        <description><![CDATA[Healthcare Facility: Johns Hopkins Children's Center<br>Address:: 1800 Orleans St., Baltimore, Maryland 21287<br>Website:: None available<br>Description:: The Center for Adolescent & Young Adult Health offers a provision of services for adolescents aged 12 to 24 years under adolescent medicine, including hormones and hormone blockers. The center also offers support services, on?site psychology services, and access to endocrinology consultants.<br><br>Contact Name:: Renata Arrington-Sanders, M.D., MPH, ScM, Assistant Professor<br>Contact Email:: rarring3@jhmi.edu<br>Contact Phone:: 410-502-8166]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Johns Hopkins Children's Center]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>1800 Orleans St., Baltimore, Maryland 21287</value>
+          </Data>
+          <Data name="Website:">
+            <value>None available</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Center for Adolescent & Young Adult Health offers a provision of services for adolescents aged 12 to 24 years under adolescent medicine, including hormones and hormone blockers. The center also offers support services, on?site psychology services, and access to endocrinology consultants.
+]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Renata Arrington-Sanders, M.D., MPH, ScM, Assistant Professor</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>rarring3@jhmi.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>410-502-8166</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Teen Health Van—Mobile Clinic Program for Adolescents</name>
+        <address>725 Welch Road, Palo Alto, CA 94304</address>
+        <description><![CDATA[Healthcare Facility: Lucile Packard Children’s Hospital Stanford<br>Address:: 725 Welch Road, Palo Alto, CA 94304<br>Website:: http://www.stanfordchildrens.org/en/service/teen-van<br>Description:: The Teen Health Van — Mobile Clinic Program for Adolescents provides care for uninsured, underinsured, and homeless youth ages 10 to 25 years. The team provides care in adolescent medicine and psychiatry as needed, and includes a social worker, nurse practitioner, and registered dietitian. The team can provide hormones. Mental health services include individual therapy and referrals for assessments and group therapy through community partners.<br>Contact Name:: Seth Ammerman, MD, Medical Director, Teen Health Van<br>Contact Email:: seth.ammerman@stanford.edu<br>Contact Phone:: 650-736-9557]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Lucile Packard Children’s Hospital Stanford</value>
+          </Data>
+          <Data name="Address:">
+            <value>725 Welch Road, Palo Alto, CA 94304</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.stanfordchildrens.org/en/service/teen-van</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Teen Health Van — Mobile Clinic Program for Adolescents provides care for uninsured, underinsured, and homeless youth ages 10 to 25 years. The team provides care in adolescent medicine and psychiatry as needed, and includes a social worker, nurse practitioner, and registered dietitian. The team can provide hormones. Mental health services include individual therapy and referrals for assessments and group therapy through community partners.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Seth Ammerman, MD, Medical Director, Teen Health Van</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>seth.ammerman@stanford.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>650-736-9557</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Pediatric & Adolescent Comprehensive Transgender Services "PACTS"]]></name>
+        <address>809 Locust Street, Philadelphia, PA  19107</address>
+        <description><![CDATA[Healthcare Facility: Mazzoni Center<br>Address:: 809 Locust Street, Philadelphia, PA  19107<br>Website:: http://www.mazzonicenter.org/PACTS<br>Description:: Mazzoni Center's PACTS program is Philadelphia's only community-based and multi-disciplinary program of its kind. Mazzoni Center staff are experts in providing transgender specific care and have years of experience working with transgender identified individuals and their loved ones. The PACTS team consists of affirming and competent medical providers, licensed social workers, therapists, attorneys, and RNs. Collaboration between our care team and the patient and family seeking care involves assessing knowledge, educating the patient and family on treatment options, and offering ongoing support around issues surrounding the social, legal, and medical transition process. Mazzoni is a non-profit agency committed to ensuring that families have access to quality care. We accept most health insurance plans and offer a sliding scale, making often unattainable care possible for many. <br>Contact Name:: L. Elaine Dutton, LSW Trans* Clinical Services Coordinator<br>Contact Email:: edutton@mazzonicenter.org<br>Contact Phone:: 215-563-0658]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Mazzoni Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>809 Locust Street, Philadelphia, PA  19107</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.mazzonicenter.org/PACTS</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[Mazzoni Center's PACTS program is Philadelphia's only community-based and multi-disciplinary program of its kind. Mazzoni Center staff are experts in providing transgender specific care and have years of experience working with transgender identified individuals and their loved ones. The PACTS team consists of affirming and competent medical providers, licensed social workers, therapists, attorneys, and RNs. Collaboration between our care team and the patient and family seeking care involves assessing knowledge, educating the patient and family on treatment options, and offering ongoing support around issues surrounding the social, legal, and medical transition process. Mazzoni is a non-profit agency committed to ensuring that families have access to quality care. We accept most health insurance plans and offer a sliding scale, making often unattainable care possible for many. ]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>L. Elaine Dutton, LSW Trans* Clinical Services Coordinator</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>edutton@mazzonicenter.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>215-563-0658</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The MetroHealth Pride Clinic</name>
+        <address>4242 Lorain Avenue, Cleaveland, OH 44113</address>
+        <description><![CDATA[Healthcare Facility: MetroHealth<br>Address:: 4242 Lorain Avenue, Cleaveland, OH 44113<br>Website:: http://www.metrohealth.org/prideclinic<br>Description:: The MetroHealth Pride Clinic is the first in the region devoted to serving the health needs of the lesbian, gay, bisexual, and transgender (LGBT) community. The clinic provides transgender health services including hormonal medical care, and behavioral health services for LGBT and questioning youth. <br>Contact Name:: Henry Ng, MD, MPH, FAAP, FAC, Clinical Director<br>Contact Email:: hng@metrohealth.org<br>Contact Phone:: 216-957-4905 (to schedule an appointment)]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>MetroHealth</value>
+          </Data>
+          <Data name="Address:">
+            <value>4242 Lorain Avenue, Cleaveland, OH 44113</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.metrohealth.org/prideclinic</value>
+          </Data>
+          <Data name="Description:">
+            <value>The MetroHealth Pride Clinic is the first in the region devoted to serving the health needs of the lesbian, gay, bisexual, and transgender (LGBT) community. The clinic provides transgender health services including hormonal medical care, and behavioral health services for LGBT and questioning youth. </value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Henry Ng, MD, MPH, FAAP, FAC, Clinical Director</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>hng@metrohealth.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>216-957-4905 (to schedule an appointment)</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Child & Adolescent Gender Clinic]]></name>
+        <address>1500 E. Medical Center Drive, Ann Arbor, MI 48109</address>
+        <description><![CDATA[Healthcare Facility: Mott Children's Hospital - University of Michigan<br>Address:: 1500 E. Medical Center Drive, Ann Arbor, MI 48109<br>Website:: http://www.mottchildren.org/conditions-treatments/gender-management<br>Description:: The Child and Adoelscent Gender Clinic at the University of Michigan offers comprehensive gender affirming care for youth and adolescents including gender assessment, hormone blockers, and cross-sex hormones.  The team consists of pediatrics endocrinology, adolescent medicine, child and adolescent psychiatry, social work, and nursing.  It is housed within the Division of Pediatric Endocrinology at Mott Children's Hospital.<br>Contact Name:: Dr. Daniel Shumer<br>Contact Email:: dshumer@med.umich.edu<br>Contact Phone:: 734-764-5175]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Mott Children's Hospital - University of Michigan]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>1500 E. Medical Center Drive, Ann Arbor, MI 48109</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.mottchildren.org/conditions-treatments/gender-management</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Child and Adoelscent Gender Clinic at the University of Michigan offers comprehensive gender affirming care for youth and adolescents including gender assessment, hormone blockers, and cross-sex hormones.  The team consists of pediatrics endocrinology, adolescent medicine, child and adolescent psychiatry, social work, and nursing.  It is housed within the Division of Pediatric Endocrinology at Mott Children's Hospital.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Dr. Daniel Shumer</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>dshumer@med.umich.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>734-764-5175</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Division of Pediatric Endocrinology and Diabetes</name>
+        <address>169 Ashley Avenue, Charleston, SC 29425</address>
+        <description><![CDATA[Healthcare Facility: MUSC Children's Hospital<br>Address:: 169 Ashley Avenue, Charleston, SC 29425<br>Website:: http://www.musckids.org/pediatrics/divisions/endocrinology<br>Description:: The Division of Pediatric Endocrinology and Diabetes provides services to pediatric patients (ages 0 to 17 years) with gender dysphoria. The team includes in-house care in endocrinology and has a dedicated social worker; the team can make referrals to community partners in psychology and psychiatry. The team can provide puberty blockers and hormones, and can make referrals to surgeons. Mental health services include referrals to community partners for assessments and individual therapy.<br><br>Contact Name:: Deborah Bowlby, MD; Division Chief<br>Contact Email:: bowlbyd@musc.edu<br>Contact Phone:: 843-792-6807]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[MUSC Children's Hospital]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>169 Ashley Avenue, Charleston, SC 29425</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.musckids.org/pediatrics/divisions/endocrinology</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Division of Pediatric Endocrinology and Diabetes provides services to pediatric patients (ages 0 to 17 years) with gender dysphoria. The team includes in-house care in endocrinology and has a dedicated social worker; the team can make referrals to community partners in psychology and psychiatry. The team can provide puberty blockers and hormones, and can make referrals to surgeons. Mental health services include referrals to community partners for assessments and individual therapy.
+</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Deborah Bowlby, MD; Division Chief</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>bowlbyd@musc.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>843-792-6807</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>THRIVE Program</name>
+        <address><![CDATA[700 Children's Drive, Columbus, Ohio 43205]]></address>
+        <description><![CDATA[Healthcare Facility: Nationwide Children’s Hospital<br>Address:: 700 Children's Drive, Columbus, Ohio 43205<br>Website:: http://www.nationwidechildrens.org/THRIVE<br>Description:: THRIVE provides care for individuals (of any age) with disorders of sexual development and complex urological conditions, as well as gender concerns for individuals up to 22 years old. The team provides care in urology, endocrinology including hormone suppressants and hormone therapy, genetics, psychiatry, psychology, and social work, with services for adolescent medicine underway. Mental health services include assessments, psychiatry and medication management services, individual therapy, and systems support.<br>Contact Name:: Bethanie Combs, MSW, LISW–Program Coordinator<br>Contact Email:: Bethanie.combs@nationwidechildrens.org <br>Contact Phone:: 614-72215765]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Nationwide Children’s Hospital</value>
+          </Data>
+          <Data name="Address:">
+            <value><![CDATA[700 Children's Drive, Columbus, Ohio 43205]]></value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.nationwidechildrens.org/THRIVE</value>
+          </Data>
+          <Data name="Description:">
+            <value>THRIVE provides care for individuals (of any age) with disorders of sexual development and complex urological conditions, as well as gender concerns for individuals up to 22 years old. The team provides care in urology, endocrinology including hormone suppressants and hormone therapy, genetics, psychiatry, psychology, and social work, with services for adolescent medicine underway. Mental health services include assessments, psychiatry and medication management services, individual therapy, and systems support.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Bethanie Combs, MSW, LISW–Program Coordinator</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>Bethanie.combs@nationwidechildrens.org </value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>614-72215765</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Psychoendocrine Clinic</name>
+        <description><![CDATA[Healthcare Facility: New York-Presbyterian Hospital/Columbia University Medical Center<br>Address:: NYS Psychiatric Institute Room 336 (Rosenfield building)  Unit/Box:15 (Division of Gender, Sexuality, and Health) 1051 Riverside Drive New York, NY   10032<br>Website:: http://wo-pub2.med.cornell.edu/cgi-bin/WebObjects/PublicA.woa/2/wa/viewService?servicesID=794&parent=Child+and+Adolescent+Psychiatry&website=nyp+psych&wosid=SKQK3XXOaY3IJcgEN6gQlM<br>Description:: Columbia University Medical Center’s Psychoendocrine Clinic sees patients with gender concerns linked to somatic disorders of sexual development/intersexuality (from prenatal life through childhood and adolescence, and in some cases through adulthood to midlife) and transgender patients. CUCM endocrinologists can provide hormone blockers, and in some cases, hormone therapy for select adolescents on the transgender spectrum through age 16 years. The team offers support in psychology, including assessments and individual therapy, and can make referrals for other support services. <br>Contact Name:: Heino F.L. Meyer-Bahlburg, Dr. rer. nat. <br>Contact Email:: meyerb@nyspi.columbia.edu<br>Contact Phone:: 646-774-6931]]></description>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>New York-Presbyterian Hospital/Columbia University Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>NYS Psychiatric Institute Room 336 (Rosenfield building)  Unit/Box:15 (Division of Gender, Sexuality, and Health) 1051 Riverside Drive New York, NY   10032</value>
+          </Data>
+          <Data name="Website:">
+            <value><![CDATA[http://wo-pub2.med.cornell.edu/cgi-bin/WebObjects/PublicA.woa/2/wa/viewService?servicesID=794&parent=Child+and+Adolescent+Psychiatry&website=nyp+psych&wosid=SKQK3XXOaY3IJcgEN6gQlM]]></value>
+          </Data>
+          <Data name="Description:">
+            <value>Columbia University Medical Center’s Psychoendocrine Clinic sees patients with gender concerns linked to somatic disorders of sexual development/intersexuality (from prenatal life through childhood and adolescence, and in some cases through adulthood to midlife) and transgender patients. CUCM endocrinologists can provide hormone blockers, and in some cases, hormone therapy for select adolescents on the transgender spectrum through age 16 years. The team offers support in psychology, including assessments and individual therapy, and can make referrals for other support services. </value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Heino F.L. Meyer-Bahlburg, Dr. rer. nat. </value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>meyerb@nyspi.columbia.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>646-774-6931</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender and Sexuality Service</name>
+        <address>NYU Child Study Center, One Park Avenue, 7th Floor, New York, NY 10016</address>
+        <description><![CDATA[Healthcare Facility: NYU Langone Medical Center<br>Address:: NYU Child Study Center, One Park Avenue, 7th Floor, New York, NY 10016<br>Website:: http://www.aboutourkids.org/families/care_at_the_csc/gender_sexuality_service<br>Description:: The New York University Gender and Sexuality Service provides care for trans* and gender-nonconforming people from birth through adulthood across multiple clinical sites. The team offers care in psychology and psychiatry, and refers out of their private clinic for endocrinology and adolescent medicine. The team also offers family therapy and services in social work. The team can provide mental health evaluations for puberty suppression, cross?sex hormones, and surgery, and makes referrals outside their clinic for all three. Mental health services include individual therapy, assessments, family therapy, and inpatient treatment.<br>Contact Name:: Aron Janssen, MD Clinical Director, Gender and Sexuality Service; Assistant Professor of Child and Adolescent Psychiatry<br>Contact Email:: aron.janssen@nyumc.org<br>Contact Phone:: 646-754-4885]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>NYU Langone Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>NYU Child Study Center, One Park Avenue, 7th Floor, New York, NY 10016</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.aboutourkids.org/families/care_at_the_csc/gender_sexuality_service</value>
+          </Data>
+          <Data name="Description:">
+            <value>The New York University Gender and Sexuality Service provides care for trans* and gender-nonconforming people from birth through adulthood across multiple clinical sites. The team offers care in psychology and psychiatry, and refers out of their private clinic for endocrinology and adolescent medicine. The team also offers family therapy and services in social work. The team can provide mental health evaluations for puberty suppression, cross?sex hormones, and surgery, and makes referrals outside their clinic for all three. Mental health services include individual therapy, assessments, family therapy, and inpatient treatment.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Aron Janssen, MD Clinical Director, Gender and Sexuality Service; Assistant Professor of Child and Adolescent Psychiatry</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>aron.janssen@nyumc.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>646-754-4885</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender Management Clinic</name>
+        <address><![CDATA[3020 Children's Way, San Diego, CA 92123]]></address>
+        <description><![CDATA[Healthcare Facility: Rady Children’s Hospital<br>Address:: 3020 Children's Way, San Diego, CA 92123<br>Website:: http://www.rchsd.org/programs-services/gender-management-clinic/<br>Description:: The Gender Management Clinic provides care for children and adolescents under age 21 years with gender dysphoria and related issues. The team comprises two pediatric endocrinologists who provide gonadotropin?releasing hormones (puberty blockers) and hormonal therapy. Mental health services include outpatient individual assessments, therapy (through Department of Psychiatry), and referrals to local therapists and support groups.<br>Contact Name:: Maja Marinkovic, MD (or Claudia Juarez, secretary), Assistant Professor, Department of<br>Pediatric Endocrinology<br><br>Contact Email:: mmarinkovic@rchsd.org<br>Contact Phone:: 858-966-4032]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Rady Children’s Hospital</value>
+          </Data>
+          <Data name="Address:">
+            <value><![CDATA[3020 Children's Way, San Diego, CA 92123]]></value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.rchsd.org/programs-services/gender-management-clinic/</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Gender Management Clinic provides care for children and adolescents under age 21 years with gender dysphoria and related issues. The team comprises two pediatric endocrinologists who provide gonadotropin?releasing hormones (puberty blockers) and hormonal therapy. Mental health services include outpatient individual assessments, therapy (through Department of Psychiatry), and referrals to local therapists and support groups.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Maja Marinkovic, MD (or Claudia Juarez, secretary), Assistant Professor, Department of
+Pediatric Endocrinology
+</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>mmarinkovic@rchsd.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>858-966-4032</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Seattle Children's Gender Clinic]]></name>
+        <address>4800 Sand Point Way NE, Seattle, WA 98105</address>
+        <description><![CDATA[Healthcare Facility: Seattle Children's Hospital<br>Address:: 4800 Sand Point Way NE, Seattle, WA 98105<br>Website:: http://www.seattlechildrens.org/clinics-programs/gender-clinic/<br>Description:: Seattle Children's Gender Clinic is a multidisciplinary clinic that provides care for transgender and gender nonconforming youth up to age 21. Our team members include adolescent medicine specialists, endocrinologists, psychologists and mental health therapists, social workers, nurses and medical assistants.  Services available include mental health support, readiness assessment, puberty blockers, cross-sex hormones, and management of other related issues including menstrual suppression and acne. We base our treatments on the most current research and tailor treatment to each patient and family based on the patient’s age, stage of puberty, desired future treatments, support systems and any health problems.   <br>Contact Name:: Lara Hayden, MSW LICSW, Program Manager and Care Navigator<br>Contact Email:: lara.hayden@seattlechildrens.org<br>Contact Phone:: 206-987-8319]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Seattle Children's Hospital]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>4800 Sand Point Way NE, Seattle, WA 98105</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.seattlechildrens.org/clinics-programs/gender-clinic/</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[Seattle Children's Gender Clinic is a multidisciplinary clinic that provides care for transgender and gender nonconforming youth up to age 21. Our team members include adolescent medicine specialists, endocrinologists, psychologists and mental health therapists, social workers, nurses and medical assistants.  Services available include mental health support, readiness assessment, puberty blockers, cross-sex hormones, and management of other related issues including menstrual suppression and acne. We base our treatments on the most current research and tailor treatment to each patient and family based on the patient’s age, stage of puberty, desired future treatments, support systems and any health problems.   ]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Lara Hayden, MSW LICSW, Program Manager and Care Navigator</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>lara.hayden@seattlechildrens.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>206-987-8319</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Transgender Youth Clinic</name>
+        <address>555 University Avenue, Toronto, Ontario, Canada M5G 1X8</address>
+        <description><![CDATA[Healthcare Facility: SickKids<br>Address:: 555 University Avenue, Toronto, Ontario, Canada M5G 1X8<br>Website:: None available<br>Description:: The Transgender Youth Clinic provides care to Tanner stage 2 populations and youth who would benefit from hormone blockers. The team offers care in adolescent medicine and endocrinology and can provide puberty blockers and cross-sex hormones. Mental health services include individual therapy and assessments.<br>Contact Name:: Dr. Joey Bonifacio, MD, FRCPC<br>Contact Email:: joey.bonifacio@sickkids.ca<br>Contact Phone:: 416-813-5804 ]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>SickKids</value>
+          </Data>
+          <Data name="Address:">
+            <value>555 University Avenue, Toronto, Ontario, Canada M5G 1X8</value>
+          </Data>
+          <Data name="Website:">
+            <value>None available</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Transgender Youth Clinic provides care to Tanner stage 2 populations and youth who would benefit from hormone blockers. The team offers care in adolescent medicine and endocrinology and can provide puberty blockers and cross-sex hormones. Mental health services include individual therapy and assessments.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Dr. Joey Bonifacio, MD, FRCPC</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>joey.bonifacio@sickkids.ca</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>416-813-5804 </value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender Clinic</name>
+        <address>22 Bramhall Street, Portland, ME 04102</address>
+        <description><![CDATA[Healthcare Facility: The Barbara Bush Children’s Hospital at Maine Medical Center<br>Address:: 22 Bramhall Street, Portland, ME 04102<br>Website:: None available<br>Description:: The Gender Clinic at Barbara Bush Children’s Hospital at Maine Medical Center serves trans* and gender- nonconforming children, teens, and young adults in northern New England. The team provides care in the areas of psychiatry, endocrinology, and pediatric gynecology. The endocrine team can provide puberty blockers, hormones, and surgical counseling. Mental health services include individual and/or family therapy, assessments, psychiatric medication management, and connection with support groups.<br>Contact Name:: Heather Shanholtz, RN (Coordinator for the Gender Clinic)<br>Contact Email:: shanhh@mmc.org<br>Contact Phone:: 207-662-5795]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>The Barbara Bush Children’s Hospital at Maine Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>22 Bramhall Street, Portland, ME 04102</value>
+          </Data>
+          <Data name="Website:">
+            <value>None available</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Gender Clinic at Barbara Bush Children’s Hospital at Maine Medical Center serves trans* and gender- nonconforming children, teens, and young adults in northern New England. The team provides care in the areas of psychiatry, endocrinology, and pediatric gynecology. The endocrine team can provide puberty blockers, hormones, and surgical counseling. Mental health services include individual and/or family therapy, assessments, psychiatric medication management, and connection with support groups.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Heather Shanholtz, RN (Coordinator for the Gender Clinic)</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>shanhh@mmc.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>207-662-5795</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Gender & Sexuality Development Clinic]]></name>
+        <address>34th St and Civic Center Blvd, Philadelphia, PA 19104</address>
+        <description><![CDATA[Healthcare Facility: The Children’s Hospital of Philadelphia <br>Address:: 34th St and Civic Center Blvd, Philadelphia, PA 19104<br>Website:: http://www.chop.edu/service/adolescent-medicine/home.html<br>Description:: The Children’s Hospital of Philadelphia (CHOP) Gender & Sexuality Development Clinic serves gender-variant, gender?nonconforming, and/or transgender children and youth through age 21 years. CHOP’s team provides care in psychology, endocrinology, and adolescent medicine, and has connections with and access to psychiatrists in the CHOP and University of Pennsylvania Health Systems. CHOP offers access to hormones and puberty blockers, and provides assessments and short?term in-house individual therapy and referrals to longer?term therapy, and provides parent support and psychoeducation. The multidisciplinary team also offers consultation and training about gender-variant children and adolescents to local pediatric health care providers and other youth-serving professionals.<br>Contact Name:: Linda A. Hawkins, PhD, LPC, Co?Director and Nadia Dowshen, MD, Medical Director<br>Contact Email:: hawkins@email.chop.edu<br>Contact Phone:: 215-280-7128]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>The Children’s Hospital of Philadelphia </value>
+          </Data>
+          <Data name="Address:">
+            <value>34th St and Civic Center Blvd, Philadelphia, PA 19104</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.chop.edu/service/adolescent-medicine/home.html</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Children’s Hospital of Philadelphia (CHOP) Gender & Sexuality Development Clinic serves gender-variant, gender?nonconforming, and/or transgender children and youth through age 21 years. CHOP’s team provides care in psychology, endocrinology, and adolescent medicine, and has connections with and access to psychiatrists in the CHOP and University of Pennsylvania Health Systems. CHOP offers access to hormones and puberty blockers, and provides assessments and short?term in-house individual therapy and referrals to longer?term therapy, and provides parent support and psychoeducation. The multidisciplinary team also offers consultation and training about gender-variant children and adolescents to local pediatric health care providers and other youth-serving professionals.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Linda A. Hawkins, PhD, LPC, Co?Director and Nadia Dowshen, MD, Medical Director</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>hawkins@email.chop.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>215-280-7128</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Child and Adolescent Gender Center Clinic</name>
+        <address>1825 Fourth St., San Francisco, CA 94158</address>
+        <description><![CDATA[Healthcare Facility: UCSF Benioff Children’s Hospital<br>Address:: 1825 Fourth St., San Francisco, CA 94158<br>Website:: http://www.ucsfbenioffchildrens.org/clinics/child_and_adolescent_gender_center <br>Description:: The Child and Adolescent Gender Center (CAGC) serves transgender and gender-nonconforming children and adolescents (ages 2 to 24 years) and their families. The team provides care in psychology, endocrinology, adolescent medicine, and pediatrics, and additionally includes a social worker, attorney, and educational advocate. The team can provide puberty blockers and hormones. Mental health services include screenings, family support, referrals for assessments, individual and group therapy, and psychiatric care through their CAGC mental health consortium.<br>Contact Name:: Stephen Rosenthal, MD, Medical Director and Joel Baum, MS, Director of education and training at Gender<br>Spectrum and Director of Advocacy at CAGC<br><br>Contact Email:: rosenthals@peds.ucsf.edu <br>Contact Phone:: 415-476-2266 (Dr. Rosenthal)]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>UCSF Benioff Children’s Hospital</value>
+          </Data>
+          <Data name="Address:">
+            <value>1825 Fourth St., San Francisco, CA 94158</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.ucsfbenioffchildrens.org/clinics/child_and_adolescent_gender_center </value>
+          </Data>
+          <Data name="Description:">
+            <value>The Child and Adolescent Gender Center (CAGC) serves transgender and gender-nonconforming children and adolescents (ages 2 to 24 years) and their families. The team provides care in psychology, endocrinology, adolescent medicine, and pediatrics, and additionally includes a social worker, attorney, and educational advocate. The team can provide puberty blockers and hormones. Mental health services include screenings, family support, referrals for assessments, individual and group therapy, and psychiatric care through their CAGC mental health consortium.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Stephen Rosenthal, MD, Medical Director and Joel Baum, MS, Director of education and training at Gender
+Spectrum and Director of Advocacy at CAGC
+</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>rosenthals@peds.ucsf.edu </value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>415-476-2266 (Dr. Rosenthal)</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lesbian, Gay, Bisexual, Transgender, Queer, and Questioning Clinic</name>
+        <address>105 East 9th Street, Coralville, Iowa 52241</address>
+        <description><![CDATA[Healthcare Facility: University of Iowa <br>Address:: 105 East 9th Street, Coralville, Iowa 52241<br>Website:: http://www.uihealthcare.org/lgbt<br>Description:: The team at the University of Iowa Lesbian, Gay, Bisexual, Transgender, Queer, and Questioning Clinic serves LGBTQ people of all ages. The team offers care in psychology, psychiatry, pediatric endocrinology, general medicine, and obstetrics and includes a pharmacist on?site. The team provides primary care for LGBTQ populations including hormone therapy, wellness exams, acute care, chronic disease management, STI testing and treatment, and referrals for puberty blockers and surgery (breast augmentation, male chest reconstruction, hysterectomy and oophorectomy, and orchiectomy). Mental health services include individual therapy, family and couple therapy, and assessments.<br>Contact Name:: Katie Imborek, MD, Co-Director<br>Contact Email:: katherine-imborek@uiowa.edu <br>Contact Phone:: 319-384-7444 (option 1)]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>University of Iowa </value>
+          </Data>
+          <Data name="Address:">
+            <value>105 East 9th Street, Coralville, Iowa 52241</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.uihealthcare.org/lgbt</value>
+          </Data>
+          <Data name="Description:">
+            <value>The team at the University of Iowa Lesbian, Gay, Bisexual, Transgender, Queer, and Questioning Clinic serves LGBTQ people of all ages. The team offers care in psychology, psychiatry, pediatric endocrinology, general medicine, and obstetrics and includes a pharmacist on?site. The team provides primary care for LGBTQ populations including hormone therapy, wellness exams, acute care, chronic disease management, STI testing and treatment, and referrals for puberty blockers and surgery (breast augmentation, male chest reconstruction, hysterectomy and oophorectomy, and orchiectomy). Mental health services include individual therapy, family and couple therapy, and assessments.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Katie Imborek, MD, Co-Director</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>katherine-imborek@uiowa.edu </value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>319-384-7444 (option 1)</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pediatric Endocrinology</name>
+        <address>22 S. Greene Street, Baltimore, MD 21201</address>
+        <description><![CDATA[Healthcare Facility: University of Maryland Medical Center<br>Address:: 22 S. Greene Street, Baltimore, MD 21201<br>Website:: https://umm.edu/programs/childrens/services/endocrinology<br>Description:: Pediatric Endocrinology at University of Maryland Medical Center serves children, adolescents, and adults with gender variance through age 21 years. The team offers care in pediatric and adult endocrinology, with adolescent medicine care available at their Adolescent and Young Adult Clinic. A multi-disciplinary program is being developed. The team can provide puberty blockers, hormones, and referrals for surgery. The team can make referrals for services in therapy and psychiatry.<br>Contact Name:: Elyse Pine-Twaddell, MD, Clinical Assistant Professor of Pediatrics, Division of Pediatric Endocrinology<br>Contact Email:: epine@peds.umaryland.edu<br>Contact Phone:: 410?328-3410]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>University of Maryland Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>22 S. Greene Street, Baltimore, MD 21201</value>
+          </Data>
+          <Data name="Website:">
+            <value>https://umm.edu/programs/childrens/services/endocrinology</value>
+          </Data>
+          <Data name="Description:">
+            <value>Pediatric Endocrinology at University of Maryland Medical Center serves children, adolescents, and adults with gender variance through age 21 years. The team offers care in pediatric and adult endocrinology, with adolescent medicine care available at their Adolescent and Young Adult Clinic. A multi-disciplinary program is being developed. The team can provide puberty blockers, hormones, and referrals for surgery. The team can make referrals for services in therapy and psychiatry.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Elyse Pine-Twaddell, MD, Clinical Assistant Professor of Pediatrics, Division of Pediatric Endocrinology</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>epine@peds.umaryland.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>410?328-3410</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>College of Medicine Department of Obstetrics and Gynecology</name>
+        <address>4400 Emile Street, Omaha, NE 68198</address>
+        <description><![CDATA[Healthcare Facility: University of Nebraska Medical Center<br>Address:: 4400 Emile Street, Omaha, NE 68198<br>Website:: http://www.unmc.edu/obgyn/amoura_njean.htm<br>Description:: Dr. Jean Amoura at the University of Nebraska Medical Center sees trans* and gender-nonconforming children and adults of all ages. Dr. Amoura (in General Obstetrics & Gynecology) works with an adolescent specialist and a therapist in private practice to provide primary care to patients and prescribe puberty blockers and hormones for patients seeking these medical interventions. The team can make referrals for care in psychiatry and therapy.<br>Contact Name:: Jean Amoura, MD, MSc, Associate Professor, OB/GYN<br>Contact Email:: jamoura@unmc.edu<br>Contact Phone:: 402?559-4500]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>University of Nebraska Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>4400 Emile Street, Omaha, NE 68198</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.unmc.edu/obgyn/amoura_njean.htm</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[Dr. Jean Amoura at the University of Nebraska Medical Center sees trans* and gender-nonconforming children and adults of all ages. Dr. Amoura (in General Obstetrics & Gynecology) works with an adolescent specialist and a therapist in private practice to provide primary care to patients and prescribe puberty blockers and hormones for patients seeking these medical interventions. The team can make referrals for care in psychiatry and therapy.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Jean Amoura, MD, MSc, Associate Professor, OB/GYN</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>jamoura@unmc.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>402?559-4500</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender Education and Care Interdisciplinary Support (GENECIS) Program</name>
+        <address>1935 Medical District Drive, Dallas, Texas 75235</address>
+        <description><![CDATA[Healthcare Facility: University of Texas Southwestern Medical Center and Children’s Medical Center<br>Address:: 1935 Medical District Drive, Dallas, Texas 75235<br>Website:: https://www.childrens.com/specialties-services/specialty-centers-and-programs/endocrinology/programs-and-services/genecis-program<br>Description:: Gender Education and Care Interdisciplinary Support Program provides care for children and adolescents (ages 4 to 18 years) with symptoms of gender dysphoria. The team offers care in endocrinology, adolescent medicine, psychology, and psychiatry and includes a licensed clinical social worker, licensed professional counselor, and gynecologist. The team can provide puberty blockers and cross-sex hormones. Mental health services include psychiatric therapy and individual psychological therapy/counseling, as well as play therapy for young children.<br>Contact Name:: Ximena Lopez, MD, Pediatric Endocrinologist, Assistant Professor, Pediatrics<br>Contact Email:: Ximena.lopez@utsouthwestern.edu<br>Contact Phone:: 214-648-3501]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>University of Texas Southwestern Medical Center and Children’s Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>1935 Medical District Drive, Dallas, Texas 75235</value>
+          </Data>
+          <Data name="Website:">
+            <value>https://www.childrens.com/specialties-services/specialty-centers-and-programs/endocrinology/programs-and-services/genecis-program</value>
+          </Data>
+          <Data name="Description:">
+            <value>Gender Education and Care Interdisciplinary Support Program provides care for children and adolescents (ages 4 to 18 years) with symptoms of gender dysphoria. The team offers care in endocrinology, adolescent medicine, psychology, and psychiatry and includes a licensed clinical social worker, licensed professional counselor, and gynecologist. The team can provide puberty blockers and cross-sex hormones. Mental health services include psychiatric therapy and individual psychological therapy/counseling, as well as play therapy for young children.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Ximena Lopez, MD, Pediatric Endocrinologist, Assistant Professor, Pediatrics</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>Ximena.lopez@utsouthwestern.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>214-648-3501</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Department of Pediatrics, Divisions of Adolescent Medicine and Endocrinology and Diabetes</name>
+        <address><![CDATA[St. Louis Children's Hospital, 1 Childrens Place, St. Louis, MO 63110]]></address>
+        <description><![CDATA[Healthcare Facility: Washington University School of Medicine <br>Address:: St. Louis Children's Hospital, 1 Childrens Place, St. Louis, MO 63110<br>Website:: None available<br>Description:: The Washington University School of Medicine Department of Pediatrics, Divisions of Adolescent Medicine and Endocrinology and Diabetes, serves children and adolescents with gender dysphoria up to age 18 years in psychology, ages 13 to 21 years in adolescent medicine, and from early puberty to age 21 years in endocrinology. The team offers care in psychology, endocrinology, and adolescent medicine and includes a social worker. The endocrinologist can provide puberty blockers and hormones. Mental health services include individual therapy, assessments, and referrals to parent and peer support groups.<br>Contact Name:: Abby Hollander, MD, pediatric endocrinologist<br>Contact Email:: hollander@kids.wustl.edu<br>Contact Phone:: 314-454?6051]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Washington University School of Medicine </value>
+          </Data>
+          <Data name="Address:">
+            <value><![CDATA[St. Louis Children's Hospital, 1 Childrens Place, St. Louis, MO 63110]]></value>
+          </Data>
+          <Data name="Website:">
+            <value>None available</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Washington University School of Medicine Department of Pediatrics, Divisions of Adolescent Medicine and Endocrinology and Diabetes, serves children and adolescents with gender dysphoria up to age 18 years in psychology, ages 13 to 21 years in adolescent medicine, and from early puberty to age 21 years in endocrinology. The team offers care in psychology, endocrinology, and adolescent medicine and includes a social worker. The endocrinologist can provide puberty blockers and hormones. Mental health services include individual therapy, assessments, and referrals to parent and peer support groups.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Abby Hollander, MD, pediatric endocrinologist</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>hollander@kids.wustl.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>314-454?6051</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>LGBT Center of Excellence</name>
+        <address>777 Bannock St, Denver, CO 80204</address>
+        <description><![CDATA[Healthcare Facility: Denver Health and Hospital Authority<br>Address:: 777 Bannock St, Denver, CO 80204<br>Website:: http://www.denverhealth.org/for-patients-and-visitors/amenities-and-experience/lgbt-health-services/transgender-health-services<br>Description:: Denver Health LGBT Center of Excellence is committed to caring for LGBTQIA patients of any age. Young people have access to open, affirming, providers that will help patients start on cross-sex hormones, provide young people and their families access to LGBT meet up groups in the "child zone", provide mental health services and more. We have identified LGBT champions at all 17 school-based clinics and all 9 of our community health clinics. Denver health also provides gender affirming surgeries. (Bottom surgeries coming in late 2017) Call our Patient navigator today to learn more about how and where you can get the care you need.<br>Contact Name:: Paige Jackson<br>Contact Email:: Paige.Jackson@dhha.org<br>Contact Phone:: 303-602-6736]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Denver Health and Hospital Authority</value>
+          </Data>
+          <Data name="Address:">
+            <value>777 Bannock St, Denver, CO 80204</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.denverhealth.org/for-patients-and-visitors/amenities-and-experience/lgbt-health-services/transgender-health-services</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[Denver Health LGBT Center of Excellence is committed to caring for LGBTQIA patients of any age. Young people have access to open, affirming, providers that will help patients start on cross-sex hormones, provide young people and their families access to LGBT meet up groups in the "child zone", provide mental health services and more. We have identified LGBT champions at all 17 school-based clinics and all 9 of our community health clinics. Denver health also provides gender affirming surgeries. (Bottom surgeries coming in late 2017) Call our Patient navigator today to learn more about how and where you can get the care you need.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Paige Jackson</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>Paige.Jackson@dhha.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>303-602-6736</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Vanderbilt Program for LGBTI Health</name>
+        <address>1301 Medical Center Drive, Nashville, TN 37232</address>
+        <description><![CDATA[Healthcare Facility: Vanderbilt University Medical Center<br>Address:: 1301 Medical Center Drive, Nashville, TN 37232<br>Website:: http://www.vanderbilthealth.com<br>Description:: The Program for LGBTI Health at Vanderbilt University Medical Center serves patients with gender dysphoria of all ages. The team provides care in psychology, psychiatry, endocrinology, urology, and plastic surgery. The team can provide puberty blockers, hormones, and breast surgery. Mental health services include individual therapy, assessments, therapy specific to medical transition, and referrals to support groups for children and adolescents with gender dysphoria, their parents, and their siblings.<br>Contact Name:: Jesse M. Ehrenfeld, MD MPH - Director, Vanderbilt Program for LGBTI Health<br>Contact Email:: lgbti.health@vanderbilt.edu<br>Contact Phone:: 615-936-3879]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Vanderbilt University Medical Center</value>
+          </Data>
+          <Data name="Address:">
+            <value>1301 Medical Center Drive, Nashville, TN 37232</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.vanderbilthealth.com</value>
+          </Data>
+          <Data name="Description:">
+            <value>The Program for LGBTI Health at Vanderbilt University Medical Center serves patients with gender dysphoria of all ages. The team provides care in psychology, psychiatry, endocrinology, urology, and plastic surgery. The team can provide puberty blockers, hormones, and breast surgery. Mental health services include individual therapy, assessments, therapy specific to medical transition, and referrals to support groups for children and adolescents with gender dysphoria, their parents, and their siblings.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Jesse M. Ehrenfeld, MD MPH - Director, Vanderbilt Program for LGBTI Health</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>lgbti.health@vanderbilt.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>615-936-3879</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Transgender Health Program</name>
+        <address>1340 Boylston St, Boston, MA 02215</address>
+        <description><![CDATA[Healthcare Facility: Fenway Health<br>Address:: 1340 Boylston St, Boston, MA 02215<br>Website:: http://www.fenwayhealth.org/transhealth<br>Description:: Fenway Health's Transgender Health Program is a leader in high quality, informed health care. In conjunction with Fenway's Family Medicine department, we serve transgender patients of all ages. Services include:      Medical care, including hormone therapy and referrals to outside providers for gender-affirming medical procedures;          Behavioral Healthcare, including support groups for the parents of transgender and gender non-conforming individuals; Information and counseling on reproductive health issues; Our Peer Listening Line for LGBT young people (800.399.PEER) offers a supportive ear and linkage to care and services for transgender youth.   Other services, like HIV testing and counseling, dental, optometry and pharmacy, are also available totransgender young people.  Transgender patients of all ages are seen at all three Fenway Health clinical locations.<br>Contact Name:: Ruben Hopwood<br>Contact Email:: transhealth@fenwayhealth.org<br>Contact Phone:: 857-313-6589]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Fenway Health</value>
+          </Data>
+          <Data name="Address:">
+            <value>1340 Boylston St, Boston, MA 02215</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.fenwayhealth.org/transhealth</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[Fenway Health's Transgender Health Program is a leader in high quality, informed health care. In conjunction with Fenway's Family Medicine department, we serve transgender patients of all ages. Services include:      Medical care, including hormone therapy and referrals to outside providers for gender-affirming medical procedures;          Behavioral Healthcare, including support groups for the parents of transgender and gender non-conforming individuals; Information and counseling on reproductive health issues; Our Peer Listening Line for LGBT young people (800.399.PEER) offers a supportive ear and linkage to care and services for transgender youth.   Other services, like HIV testing and counseling, dental, optometry and pharmacy, are also available totransgender young people.  Transgender patients of all ages are seen at all three Fenway Health clinical locations.]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Ruben Hopwood</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>transhealth@fenwayhealth.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>857-313-6589</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>T- Clinic Providing Excellence in Multidisciplinary Care to Trangender and Gender Expansive Youth</name>
+        <address>501 N Graham St, Portland, OR 97227</address>
+        <description><![CDATA[Healthcare Facility: Randall Children's Clinic<br>Address:: 501 N Graham St, Portland, OR 97227<br>Website:: http://www.legacyhealth.org/health-services-and-information/health-services/for-children-a-z/diabetes-and-endocrine/transgender-clinic.aspx<br>Description:: The Randall Children's Hospital T Clinic offers medical and mental health care for transgender and gender expansive youth.  We have 2 Pediatric Endocrinologists, Dr. Karin Selva and Dr. Maya Hunter, who provide medical and hormonal treatment. Our mental health services include a gender affirming evaluation by Dr Laura Edwards Leeper, as well as.  ongoing therapy and psychiatric medical management if needed by Valerie Tobin PPNP.  Our Nurse, Connie, is an expert in care coordination, education, and injection education for our patients and families. The T clinic works with several area support networks to facilitate wrap around care in schools, homes and community. We all work as a team together to help our patients and families along their gender journey, in an individualized approach. <br>Contact Name:: Connie Earnest-Ritchey, RN<br>Contact Email:: cearnest@lhs.org<br>Contact Phone:: 503-413-1619]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[Randall Children's Clinic]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>501 N Graham St, Portland, OR 97227</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.legacyhealth.org/health-services-and-information/health-services/for-children-a-z/diabetes-and-endocrine/transgender-clinic.aspx</value>
+          </Data>
+          <Data name="Description:">
+            <value><![CDATA[The Randall Children's Hospital T Clinic offers medical and mental health care for transgender and gender expansive youth.  We have 2 Pediatric Endocrinologists, Dr. Karin Selva and Dr. Maya Hunter, who provide medical and hormonal treatment. Our mental health services include a gender affirming evaluation by Dr Laura Edwards Leeper, as well as.  ongoing therapy and psychiatric medical management if needed by Valerie Tobin PPNP.  Our Nurse, Connie, is an expert in care coordination, education, and injection education for our patients and families. The T clinic works with several area support networks to facilitate wrap around care in schools, homes and community. We all work as a team together to help our patients and families along their gender journey, in an individualized approach. ]]></value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Connie Earnest-Ritchey, RN</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>cearnest@lhs.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>503-413-1619</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gender JOY (Journeys of Youth)</name>
+        <address>1111 N Charles Street, Baltimore, MD 21201</address>
+        <description><![CDATA[Healthcare Facility: Chase Brexton Health Care<br>Address:: 1111 N Charles Street, Baltimore, MD 21201<br>Website:: http://www.chasebrexton.org/our-services/trans-care<br>Description:: Chase Brexton Health Care provides trans-specific health care across the lifespan, including specialized, high-quality care for transgender and gender-diverse children, adolescents, and young adults.   Gender JOY services include routine pediatric medical care, puberty blockers, cross-sex hormone therapy, gynecological care, counseling regarding fertility preservation, behavioral health support including individual, group, and family therapy, case management, pharmacy services, and an on-site laboratory. Additionally, the LGBT Health Resource Center of Chase Brexton Health Care can connect patients and their families to services, programs, and resources to support the full spectrum of optimal health.<br>Contact Name:: The LGBT Health Resource Center of Chase Brexton <br>Contact Email:: lgbt@chasebrexton.org<br>Contact Phone:: 410-837-2050]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>Chase Brexton Health Care</value>
+          </Data>
+          <Data name="Address:">
+            <value>1111 N Charles Street, Baltimore, MD 21201</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://www.chasebrexton.org/our-services/trans-care</value>
+          </Data>
+          <Data name="Description:">
+            <value>Chase Brexton Health Care provides trans-specific health care across the lifespan, including specialized, high-quality care for transgender and gender-diverse children, adolescents, and young adults.   Gender JOY services include routine pediatric medical care, puberty blockers, cross-sex hormone therapy, gynecological care, counseling regarding fertility preservation, behavioral health support including individual, group, and family therapy, case management, pharmacy services, and an on-site laboratory. Additionally, the LGBT Health Resource Center of Chase Brexton Health Care can connect patients and their families to services, programs, and resources to support the full spectrum of optimal health.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>The LGBT Health Resource Center of Chase Brexton </value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>lgbt@chasebrexton.org</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>410-837-2050</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>UF Health Youth Gender Program</name>
+        <address>2000 SW Archer Rd, Gainesville, FL 32608</address>
+        <description><![CDATA[Healthcare Facility: UF Health Shands Children's Hospital<br>Address:: 2000 SW Archer Rd, Gainesville, FL 32608<br>Website:: http://pediatrics.med.ufl.edu/patient-care/hospital-clinics/youth-gender-program/<br>Description:: The UF Health Youth Gender Program provides medical care and psychologic support for transgender and gender noncomforming youth with gender dysphoria. We provide counseling for youth and their families, readiness assessment for pubertal suppression and cross sex hormonal therapy, and gender affirming therapies including pubertal blockers, cross sex hormones, and referrals for gender affirming surgery when appropriate.<br>Contact Name:: Kristin Dayton, MD<br>Contact Email:: kristinjohnson23@peds.ufl.edu<br>Contact Phone:: 352-265-7337]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value><![CDATA[UF Health Shands Children's Hospital]]></value>
+          </Data>
+          <Data name="Address:">
+            <value>2000 SW Archer Rd, Gainesville, FL 32608</value>
+          </Data>
+          <Data name="Website:">
+            <value>http://pediatrics.med.ufl.edu/patient-care/hospital-clinics/youth-gender-program/</value>
+          </Data>
+          <Data name="Description:">
+            <value>The UF Health Youth Gender Program provides medical care and psychologic support for transgender and gender noncomforming youth with gender dysphoria. We provide counseling for youth and their families, readiness assessment for pubertal suppression and cross sex hormonal therapy, and gender affirming therapies including pubertal blockers, cross sex hormones, and referrals for gender affirming surgery when appropriate.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Kristin Dayton, MD</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>kristinjohnson23@peds.ufl.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>352-265-7337</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pediatric Endocrinology</name>
+        <address>1601 Fourth Avenue South, Room M30, Birmingham, AL 35233</address>
+        <description><![CDATA[Healthcare Facility: University of Alabama Birmingham<br>Address:: 1601 Fourth Avenue South, Room M30, Birmingham, AL 35233<br>Website:: None<br>Description:: UAB Pediatrics offers gender health care at our clinic that is under the department of Pediatrics, the division of Pediatric Endocrinology. We offer all patients access to a dedicated pediatric Endocrinologist, a General Pediatrician, and a licensed psychologist. We also have an administrator that is supportive of patients and families and a nurse that is well versed in care of Gender non-conforming children and adolescents. There is also a social worker available to help navigate the challenges for healthcare and access to medications. Our Chaplain office at the Childrens hospital of Alabama is supportive of our effort and are willing to help families that need spiritual and religious support.<br>Contact Name:: Hussein Abdullatif, MD<br>Contact Email:: hlatif@uab.edu<br>Contact Phone:: 205-638-9107]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Healthcare Facility">
+            <value>University of Alabama Birmingham</value>
+          </Data>
+          <Data name="Address:">
+            <value>1601 Fourth Avenue South, Room M30, Birmingham, AL 35233</value>
+          </Data>
+          <Data name="Website:">
+            <value>None</value>
+          </Data>
+          <Data name="Description:">
+            <value>UAB Pediatrics offers gender health care at our clinic that is under the department of Pediatrics, the division of Pediatric Endocrinology. We offer all patients access to a dedicated pediatric Endocrinologist, a General Pediatrician, and a licensed psychologist. We also have an administrator that is supportive of patients and families and a nurse that is well versed in care of Gender non-conforming children and adolescents. There is also a social worker available to help navigate the challenges for healthcare and access to medications. Our Chaplain office at the Childrens hospital of Alabama is supportive of our effort and are willing to help families that need spiritual and religious support.</value>
+          </Data>
+          <Data name="Contact Name:">
+            <value>Hussein Abdullatif, MD</value>
+          </Data>
+          <Data name="Contact Email:">
+            <value>hlatif@uab.edu</value>
+          </Data>
+          <Data name="Contact Phone:">
+            <value>205-638-9107</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

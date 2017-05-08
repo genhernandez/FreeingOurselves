@@ -1,7 +1,6 @@
 package edu.mills.freeingourselves;
 
 import android.app.Activity;
-import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,15 +13,13 @@ import java.util.List;
 
 /**
  * An adapter for the HealthCareProviderFragment.
- *
+ * <p>
  * Modified from http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
  */
-
 class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
 
     private final Activity context;
     private final List<HealthCareProviderFragment.Model> list;
-    ViewHolder viewHolder;
 
     HealthQuestionAdapter(Activity context, List<HealthCareProviderFragment.Model> list) {
         super(context, R.layout.row, list);
@@ -32,8 +29,8 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder viewHolder;
 
-        viewHolder = null;
         if (convertView == null) {
             LayoutInflater inflater = context.getLayoutInflater();
             convertView = inflater.inflate(R.layout.row, null);
@@ -49,7 +46,7 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
 
                     //save in database
                     FreeingOurselvesDatabaseUtilities.updateSaved(context, position + 1, isChecked);
-            }
+                }
             });
             convertView.setTag(viewHolder);
             convertView.setTag(R.id.label, viewHolder.text);
@@ -62,17 +59,6 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
         viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1));
         return convertView;
     }
-
-//    private class SetCheckboxes extends AsyncTask<Object, Void, Boolean> {
-//        protected Boolean doInBackground(Object... objects) {
-//            Activity context = (Activity) objects[0];
-//            int position = (int) objects[1];
-//            return FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position);
-//        }
-//        protected void onPostExecute(Boolean isChecked) {
-//            viewHolder.checkbox.setChecked(isChecked);
-//        }
-//    }
 
     private static class ViewHolder {
         TextView text;

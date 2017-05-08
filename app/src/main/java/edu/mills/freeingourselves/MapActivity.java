@@ -18,6 +18,9 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 
+/**
+ * Displays a map with resource locations marked.
+ */
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override

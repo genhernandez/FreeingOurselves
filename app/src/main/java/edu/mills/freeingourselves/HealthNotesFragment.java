@@ -97,18 +97,20 @@ public class HealthNotesFragment extends Fragment {
             //do nothing
         }
 
-        // TODO: asynctask
         @Override
         public void afterTextChanged(Editable s) {
 
-            FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), id,
-                    s.toString());
+            Object [] params = new Object[] {view.getContext(), id, s.toString()};
+            new UpdatingNotes().execute(params);
         }
 
-//        private class UpdatingNotes extends AsyncTask<Context, Void, Boolean> {
-//            protected Boolean doInBackground(Context... context) {
-//                return FreeingOurselvesDatabaseUtilities.updateNotes(context[0], id, s.toString());
-//            }
-//        }
+        private class UpdatingNotes extends AsyncTask<Object, Void, Boolean> {
+            protected Boolean doInBackground(Object... objects) {
+                Context context = (Context) objects[0];
+                int id = (int) objects[1];
+                String s = (String) objects[2];
+                return FreeingOurselvesDatabaseUtilities.updateNotes(context, id, s);
+            }
+        }
     }
 }

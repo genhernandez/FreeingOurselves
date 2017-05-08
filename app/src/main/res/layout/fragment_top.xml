@@ -10,35 +10,14 @@
     android:paddingRight="@dimen/padding"
     android:paddingTop="@dimen/padding">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/intro"
-        android:text="@string/intro"
-        android:paddingBottom="@dimen/double_padding"/>
 
-    <!--Favorite topics
-    <TextView
-        android:layout_width="match_parent"
+    <WebView
+        android:id="@+id/introWebView"
         android:layout_height="wrap_content"
-        android:text="@string/favorite_topics"/>
+        android:layout_width="wrap_content"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/no_fave_topics"
-        android:id="@+id/no_fave_topics_text"
-        android:visibility="invisible"/>
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/favorite_topics_list"
-        android:paddingBottom="30dp">
-    </ListView> -->
-
-    <!--Favorite workouts-->
-    <TextView
+        android:id="@+id/fave_workouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/favorite_workouts"/>
@@ -55,5 +34,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/favorite_workouts_list">
     </ListView>
+
+
+
 
 </LinearLayout>

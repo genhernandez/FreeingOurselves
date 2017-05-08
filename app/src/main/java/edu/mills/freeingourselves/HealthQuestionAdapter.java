@@ -45,8 +45,9 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
                     list.get(position).setSelected(buttonView.isChecked()); // Set the value of checkbox to maintain its state.
 
                     //save in database
-                    FreeingOurselvesDatabaseUtilities.updateSaved(context, position + 1, isChecked);
-                }
+                    Object[] params = new Object[] {context, position+1, isChecked};
+                    new UpdateSaved().execute(params);
+            }
             });
             convertView.setTag(viewHolder);
             convertView.setTag(R.id.label, viewHolder.text);
@@ -58,6 +59,15 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
         viewHolder.text.setText(list.get(position).getName());
         viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1));
         return convertView;
+    }
+
+    private class UpdateSaved extends AsyncTask<Object, Void, Boolean> {
+        protected Boolean doInBackground(Object... objects) {
+            Activity activity = (Activity) objects[0];
+            int position = (int) objects[1];
+            boolean isChecked = (boolean) objects[2];
+            return FreeingOurselvesDatabaseUtilities.updateSaved(activity, position, isChecked);
+        }
     }
 
     private static class ViewHolder {

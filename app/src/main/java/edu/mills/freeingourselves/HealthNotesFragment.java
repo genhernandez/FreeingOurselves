@@ -53,7 +53,7 @@ public class HealthNotesFragment extends Fragment {
         }
 
         public void onPostExecute(Cursor cursor) {
-            if (cursor.getCount() == 0) {
+            if (cursor == null) {
                 Toast toast = Toast.makeText(view.getContext(), "Could not access saved healthcare questions",
                         Toast.LENGTH_SHORT);
                 toast.show();
@@ -111,7 +111,6 @@ public class HealthNotesFragment extends Fragment {
                 String s = (String) objects[2];
                 return FreeingOurselvesDatabaseUtilities.updateNotes(context, id, s);
             }
-
             protected void onPostExecute(Boolean success) {
                 if (!success) {
                     Toast toast = Toast.makeText(view.getContext(), "Could not update notes.", Toast.LENGTH_SHORT);

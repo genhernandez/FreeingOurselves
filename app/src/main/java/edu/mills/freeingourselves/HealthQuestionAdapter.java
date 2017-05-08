@@ -65,8 +65,8 @@ public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragme
         }
         viewHolder.checkbox.setTag(position); // This line is important.
         viewHolder.text.setText(list.get(position).getName());
-        viewHolder.checkbox.setChecked(list.get(position).isSelected());
-
+       // viewHolder.checkbox.setChecked(list.get(position).isSelected());
+        viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1)); //TODO: clean this up
 
         return convertView;
     }

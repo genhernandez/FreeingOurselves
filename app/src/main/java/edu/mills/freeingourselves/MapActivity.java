@@ -36,10 +36,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
      * Manipulates the map when it's available.
      * The API invokes this callback when the map is ready to be used.
      * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
+     * we add KML layers of resources to the map.
      * If Google Play services is not installed on the device, the user receives a prompt to install
      * Play services inside the SupportMapFragment. The API invokes this method after the user has
      * installed Google Play services and returned to the app.
+     * @param googleMap the created GoogleMap. 
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -54,8 +55,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         try {
             KmlLayer erLayer = new KmlLayer(googleMap, R.raw.ers, getApplicationContext());
             erLayer.addLayerToMap();
-            KmlLayer lgbtqiaLayer = new KmlLayer(googleMap, R.raw.lgbtqiatransaffirming, getApplicationContext());
-            lgbtqiaLayer.addLayerToMap();
+            KmlLayer clinicalCareLayer = new KmlLayer(googleMap, R.raw.clinicalcareprograms, getApplicationContext());
+            clinicalCareLayer.addLayerToMap();
             KmlLayer transacrossamericaLayer = new KmlLayer(googleMap, R.raw.transacrossamerica, getApplicationContext());
             transacrossamericaLayer.addLayerToMap();
             KmlLayer littleblackbookLayer = new KmlLayer(googleMap, R.raw.littleblackbook, getApplicationContext());

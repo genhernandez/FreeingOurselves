@@ -30,15 +30,7 @@
     <string name="favoriteWorkout">Favorite Workouts</string>
     <!--Top Fragment -->
     <string name="title_top">Top Fragment</string>
-    <string name="about">Launched in 2010, the Brown Boi Project works to build leadership,
-        economic self sufficiency, and health of young masculine of center womyn, trans men,
-        and queer/straight men of color - pipelining them into the social justice movement.
-        We are a diverse and broad community, driven by a commitment to racial justice,
-        gender justice, and transforming our privilege of masculinity into a tool for social change.
-        We prioritize support that improves the lives of masculine of center womyn, queer,
-        and trans people of people of color; work that transforms the lives of women and girls;
-        and introduces new alliances and tools for challenging racism, sexism, homophobia,
-        and transphobia across our communities.</string>
+
 
 
     <!--Health Notes Fragment -->
@@ -52,9 +44,4 @@
     <string name="learn_more">Learn More About Testosterone</string>
     <string name="holistic_care">Learn About Holistic Strategies for Self Care</string>
     <string name="surgery_info">Learn About Gender Affirmation Surgery</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
 </resources>

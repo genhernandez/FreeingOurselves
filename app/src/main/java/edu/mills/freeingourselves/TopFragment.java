@@ -77,10 +77,6 @@ public class TopFragment extends Fragment {
         return view;
     }
 
-//    private void selectWorkoutItem(int position) {
-//
-//    }
-
     @Override
     public void onResume() {
         super.onResume();

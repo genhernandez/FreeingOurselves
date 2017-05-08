@@ -71,6 +71,7 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
      */
     static final String LINK = "LINK";
 
+
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
@@ -300,6 +301,7 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         workoutValues.put(FAVE, 0);
         db.insert(WORKOUTS, null, workoutValues);
     }
+
 
     // Defaults to no notes, not completed.
     private void addHealthcareStep(SQLiteDatabase db, String step) {

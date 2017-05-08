@@ -3,6 +3,8 @@ package edu.mills.freeingourselves;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,42 +16,29 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays a list of questions for Health Care providers and a way to save questions.
  */
 public class HealthCareProviderFragment extends Fragment implements AdapterView.OnItemClickListener {
-
+    View view;
+    ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_health_care, null);
-       // FrameLayout frameLayout = (FrameLayout) view.findViewById(R.id.healthcareFragment);
+        view = inflater.inflate(R.layout.fragment_health_care, null);
         LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.healthcareFragment);
-        ListView listView = new ListView(getActivity());
+        listView = new ListView(getActivity());
 
-       linearLayout.addView(listView);
+        linearLayout.addView(listView);
 
-        //TODO: asynctask and null
-        List<String> questionArray = FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(view.getContext());
-
-        ArrayList<Model> modelArray = new ArrayList();
-
-        for (int i = 0; i < 10; i++) {
-            Model modelQ = new Model(questionArray.get(i));
-            modelArray.add(i, modelQ);
-        }
-
-        Log.d("HealthCareProvider", questionArray.toString());
-
-        HealthQuestionAdapter adapter = new HealthQuestionAdapter(this.getActivity(), modelArray);
-        listView.setAdapter(adapter);
+        new GetHealthCareQuestions().execute(view.getContext());
         listView.setOnItemClickListener(this);
 
         Button savedQuestionButton = (Button) view.findViewById(R.id.saved_question_button);
@@ -74,6 +63,31 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
         CheckBox checkbox = (CheckBox) v.getTag(R.id.check);
     }
 
+    public class GetHealthCareQuestions extends AsyncTask<Context, Void, List<String>> {
+        protected List<String> doInBackground(Context... context) {
+            return FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(context[0]);
+        }
+
+        protected void onPostExecute(List<String> questionArray) {
+            if (questionArray == null) {
+                Toast toast = Toast.makeText(view.getContext(), "Could not get healthcare questions", Toast.LENGTH_SHORT);
+                toast.show();
+            } else {
+                ArrayList<Model> modelArray = new ArrayList();
+
+                for (int i = 0; i < questionArray.size(); i++) {
+                    Model modelQ = new Model(questionArray.get(i));
+                    modelArray.add(i, modelQ);
+                }
+
+                Log.d("HealthCareProvider", questionArray.toString());
+
+                HealthQuestionAdapter adapter = new HealthQuestionAdapter(getActivity(), modelArray);
+                listView.setAdapter(adapter);
+            }
+        }
+    }
+
     class Model {
 
 
@@ -96,15 +110,6 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
             this.selected = selected;
         }
     }
-
-   // public void onHealthNotesClicked() {
-        
-    //}
-
-        //public void setSelected(boolean selected) {
-            //this.selected = selected;
-        //}
-    //}
 
 
 }

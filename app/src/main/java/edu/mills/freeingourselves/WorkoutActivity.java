@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Activity;
 import android.database.Cursor;
 import android.os.AsyncTask;
@@ -40,11 +39,6 @@ public class WorkoutActivity extends Activity {
         new GetSpecificWorkoutTask().execute(specificWorkoutParams);
     }
 
-    /**
-     * TODO
-     *
-     * @param view
-     */
     public void onFavoriteClicked(View view) {
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
         CheckBox favorite = (CheckBox) findViewById(R.id.favorite);
@@ -52,11 +46,6 @@ public class WorkoutActivity extends Activity {
         new UpdateWorkoutFaveTask().execute(workoutFavoriteParams);
     }
 
-    /**
-     * TODO
-     *
-     * @param view
-     */
     public void onWorkoutCountClick(View view) {
         Object[] workoutCountParams = {workoutNum};
         new UpdateWorkoutCountTask().execute(workoutCountParams);

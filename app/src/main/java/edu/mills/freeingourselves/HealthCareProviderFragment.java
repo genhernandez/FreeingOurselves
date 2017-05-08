@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
@@ -19,7 +18,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  * Displays a list of questions to ask Health Care providers and a way to save questions.
@@ -52,7 +50,6 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
                 ft.commit();
             }
         });
-
         return view;
     }
 
@@ -104,6 +101,4 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
             this.selected = selected;
         }
     }
-
-
 }

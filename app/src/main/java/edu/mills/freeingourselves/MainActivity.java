@@ -29,7 +29,6 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity implements ResourceListFragment.ResourceListListener {
 
-
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private String[] titles;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
         drawerList = (ListView) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
 
         //Populate the ListView.
         titles = getResources().getStringArray(R.array.titles);
@@ -69,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
     }
 
     @Override

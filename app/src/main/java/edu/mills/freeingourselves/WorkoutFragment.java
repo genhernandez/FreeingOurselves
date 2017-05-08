@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
@@ -33,17 +32,15 @@ public class WorkoutFragment extends Fragment {
 
         new GetWorkoutNamesTask().execute(view.getContext());
 
-
         // Navigate to WorkoutActivity if a workout is clicked.
         listFavorites.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
                 Intent intent = new Intent(v.getContext(), WorkoutActivity.class);
-                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id+1);
+                intent.putExtra(WorkoutActivity.FAVE_NUM, (int) id + 1);
                 startActivity(intent);
             }
         });
-
         return view;
     }
 

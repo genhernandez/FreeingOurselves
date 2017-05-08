@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
-
 
 /**
  * Displays information regarding holistic care when on hormone treatment.
@@ -40,5 +38,4 @@ public class TestosteroneHolisticCareFragment extends Fragment {
         });
         return view;
     }
-
 }

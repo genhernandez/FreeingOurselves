@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
@@ -17,7 +16,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 /**
  * Displays a list of saved health care questions with a space for notes.
@@ -46,7 +44,6 @@ public class HealthNotesFragment extends Fragment {
                 ft.commit();
             }
         });
-
         return view;
     }
 
@@ -85,7 +82,6 @@ public class HealthNotesFragment extends Fragment {
         private View view;
         private int id;
 
-
         private MyTextWatcher(View view, int id) {
             this.view = view;
             this.id = id;
@@ -115,5 +111,4 @@ public class HealthNotesFragment extends Fragment {
 //            }
 //        }
     }
-
 }

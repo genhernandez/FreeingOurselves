@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +15,6 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 /**
  * Displays favorited workouts.
@@ -48,7 +46,6 @@ public class FavoriteWorkoutsFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
         return view;
     }
 

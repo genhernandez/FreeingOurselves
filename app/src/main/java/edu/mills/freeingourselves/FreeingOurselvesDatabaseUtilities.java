@@ -80,7 +80,6 @@ final class FreeingOurselvesDatabaseUtilities {
         }
     }
 
-
     // Workout methods
 
     /**
@@ -108,15 +107,14 @@ final class FreeingOurselvesDatabaseUtilities {
         }
     }
 
-
     /**
      * Gets all information for a specific workout. The columns of the returned cursor are:
      * <ol>
-     *   <li>name (String)</li>
-     *   <li>details (String)</li>
-     *   <li>picture_file (String)</li>
-     *   <li>count (int)</li>
-     *   <li>fave (int, 0 or 1)</li>
+     * <li>name (String)</li>
+     * <li>details (String)</li>
+     * <li>picture_file (String)</li>
+     * <li>count (int)</li>
+     * <li>fave (int, 0 or 1)</li>
      * </ol>
      * The caller is responsible for closing the returned cursor. If a database error occurs, null
      * is returned; the caller will need to handle this case.
@@ -211,8 +209,8 @@ final class FreeingOurselvesDatabaseUtilities {
     /**
      * Gets all information for all favorite workouts. The columns of the returned cursor are:
      * <ol>
-     *   <li>id (int)</li>
-     *   <li>name (String)</li>
+     * <li>id (int)</li>
+     * <li>name (String)</li>
      * </ol>
      * The caller is responsible for closing the returned cursor. If a database error occurs, null
      * is returned; the caller will need to handle this case.
@@ -265,9 +263,9 @@ final class FreeingOurselvesDatabaseUtilities {
     /**
      * Gets all information for a specific healthcare question. The columns of the returned cursor are:
      * <ol>
-     *   <li>step_info (String)</li>
-     *   <li>notes (String)</li>
-     *   <li>saved (int, 0 or 1)</li>
+     * <li>step_info (String)</li>
+     * <li>notes (String)</li>
+     * <li>saved (int, 0 or 1)</li>
      * </ol>
      * The caller is responsible for closing the returned cursor. If a database error occurs, null
      * is returned; the caller will need to handle this case.
@@ -296,7 +294,7 @@ final class FreeingOurselvesDatabaseUtilities {
      * table error" message is logged; the caller will need to handle this case.
      *
      * @param context the context
-     * @param id the healthcare question ID
+     * @param id      the healthcare question ID
      * @return true if saved, false if not
      */
     static boolean healthcareIsSaved(Context context, int id) {
@@ -381,9 +379,9 @@ final class FreeingOurselvesDatabaseUtilities {
     /**
      * Gets all information for all favorite healthcare questions. The columns of the returned cursor are:
      * <ol>
-     *   <li>id (int)</li>
-     *   <li>step_info (String)</li>
-     *   <li>notes (String)</li>
+     * <li>id (int)</li>
+     * <li>step_info (String)</li>
+     * <li>notes (String)</li>
      * </ol>
      * The caller is responsible for closing the returned cursor. If a database error occurs, null
      * is returned; the caller will need to handle this case.

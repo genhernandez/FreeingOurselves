@@ -36,7 +36,6 @@ public class TestosteroneFragment extends Fragment {
 
             }
         });
-
         return view;
     }
 }

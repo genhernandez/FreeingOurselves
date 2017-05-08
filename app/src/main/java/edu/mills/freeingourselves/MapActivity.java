@@ -48,10 +48,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         // Add a marker in Bay Area, California
         // and move the map's camera to the same location.
         LatLng bayArea = new LatLng(37.8271784, -122.29130780000003);
-        googleMap.addMarker(new MarkerOptions().position(bayArea)
-                .title("Marker in Bay Area")
-                .snippet("Here is text about it"));
-
         // Add layers from kml files.
         try {
             KmlLayer erLayer = new KmlLayer(googleMap, R.raw.ers, getApplicationContext());

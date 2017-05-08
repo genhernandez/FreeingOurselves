@@ -61,7 +61,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "freeing_ourselves";
     private static final int DB_VERSION = 1;
 
-
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
@@ -279,14 +278,13 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         db.insert(WORKOUTS, null, workoutValues);
     }
 
-
-
     // Defaults to no notes, not completed.
     private void addHealthcareStep(SQLiteDatabase db, String step) {
         ContentValues healthcareStepValues = new ContentValues();
         healthcareStepValues.put(NAME, step);
         healthcareStepValues.put(FAVE, 0);
         db.insert(HEALTHCARE, null, healthcareStepValues);
+    }
 
     // Defaults to unsaved and with no notes.
     private void addHealthCareQuestion(SQLiteDatabase db, String question) {
@@ -294,7 +292,6 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         healthCareValues.put(NAME, question);
         healthCareValues.put(FAVE, 0);
         db.insert(HEALTHCARE, null, healthCareValues);
-
     }
 
     private void addResource(SQLiteDatabase db, String name, String description, String link) {

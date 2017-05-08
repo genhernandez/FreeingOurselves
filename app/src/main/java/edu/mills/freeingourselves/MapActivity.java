@@ -18,7 +18,6 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 
-
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
@@ -41,7 +40,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
      * If Google Play services is not installed on the device, the user receives a prompt to install
      * Play services inside the SupportMapFragment. The API invokes this method after the user has
      * installed Google Play services and returned to the app.
-     * @param googleMap the created GoogleMap. 
+     *
+     * @param googleMap the created GoogleMap.
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -78,9 +78,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             ActivityCompat.requestPermissions(this,
                     new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION},
                     1);
-                    if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
-                    == PackageManager.PERMISSION_GRANTED){
-                        googleMap.setMyLocationEnabled(true);
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED) {
+                googleMap.setMyLocationEnabled(true);
             }
         }
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(bayArea));

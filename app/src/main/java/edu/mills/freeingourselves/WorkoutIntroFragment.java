@@ -1,6 +1,5 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -15,7 +14,6 @@ import android.widget.Button;
  * workouts or a list of their favorite workouts.
  */
 public class WorkoutIntroFragment extends Fragment {
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,7 +33,6 @@ public class WorkoutIntroFragment extends Fragment {
                 ft.addToBackStack(null);
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 ft.commit();
-
             }
         });
 
@@ -49,13 +46,10 @@ public class WorkoutIntroFragment extends Fragment {
                 ft.addToBackStack(null);
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 ft.commit();
-
             }
         });
-
         return view;
     }
-
 }
 
 

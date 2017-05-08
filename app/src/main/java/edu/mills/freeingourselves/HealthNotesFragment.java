@@ -59,7 +59,7 @@ public class HealthNotesFragment extends Fragment {
                 EditText editText = new EditText(view.getContext());
                 editText.setId(questionId);
                 editText.setText(notes);
-                editText.addTextChangedListener(new MyTextWatcher(view));
+                editText.addTextChangedListener(new MyTextWatcher(view, questionId));
                 linearLayout.addView(editText);
             }
 
@@ -72,6 +72,7 @@ public class HealthNotesFragment extends Fragment {
         saveNotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d("button", "clicked");
                 // Log.d("HealthNotes", "save notes clicked");
 
                 // save text in edit texts to hashmap
@@ -97,9 +98,11 @@ public class HealthNotesFragment extends Fragment {
     private class MyTextWatcher implements TextWatcher {
         private View view;
         private boolean wasEdited = false;
+        private int id;
 
-        private MyTextWatcher(View view) {
+        private MyTextWatcher(View view, int id) {
             this.view = view;
+            this.id = id;
         }
 
         @Override
@@ -120,9 +123,10 @@ public class HealthNotesFragment extends Fragment {
 //                wasEdited = false;
 //                return;
 //            }
-            FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), view.getId(),
+
+            FreeingOurselvesDatabaseUtilities.updateNotes(view.getContext(), id,
                     s.toString());
-            Log.d("HealthNotes", s.toString());
+
 
             // To prevent infinite loop. But then it only updates every other letter.
             // wasEdited = true;

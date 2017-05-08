@@ -1,6 +1,7 @@
 package edu.mills.freeingourselves;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
 
     private final Activity context;
     private final List<HealthCareProviderFragment.Model> list;
+    ViewHolder viewHolder;
 
     HealthQuestionAdapter(Activity context, List<HealthCareProviderFragment.Model> list) {
         super(context, R.layout.row, list);
@@ -31,7 +33,7 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHolder viewHolder = null;
+        viewHolder = null;
         if (convertView == null) {
             LayoutInflater inflater = context.getLayoutInflater();
             convertView = inflater.inflate(R.layout.row, null);
@@ -58,9 +60,19 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
         viewHolder.checkbox.setTag(position); // This line is important.
         viewHolder.text.setText(list.get(position).getName());
         viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1));
-
         return convertView;
     }
+
+//    private class SetCheckboxes extends AsyncTask<Object, Void, Boolean> {
+//        protected Boolean doInBackground(Object... objects) {
+//            Activity context = (Activity) objects[0];
+//            int position = (int) objects[1];
+//            return FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position);
+//        }
+//        protected void onPostExecute(Boolean isChecked) {
+//            viewHolder.checkbox.setChecked(isChecked);
+//        }
+//    }
 
     private static class ViewHolder {
         TextView text;

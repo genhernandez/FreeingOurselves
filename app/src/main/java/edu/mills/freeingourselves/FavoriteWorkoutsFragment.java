@@ -23,10 +23,10 @@ import android.widget.Toast;
  */
 public class FavoriteWorkoutsFragment extends Fragment {
 
-    protected View view;
-    protected ListView listFavorites;
-    protected TextView noFaveWorkouts;
-    protected Cursor cursor;
+    private View view;
+    private ListView listFavorites;
+    private TextView noFaveWorkouts;
+    private Cursor cursor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

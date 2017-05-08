@@ -19,9 +19,9 @@ public class WorkoutActivity extends Activity {
      * The string used to get the workout ID from intents.
      */
     final static String FAVE_NUM = "favorite_num";
-    protected int workoutNum;
-    protected int workoutCount;
-    protected TextView countText;
+    private int workoutNum;
+    private int workoutCount;
+    private TextView countText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,19 +13,12 @@ import android.widget.Button;
  * Displays introductory information regarding testosterone.
  */
 public class TestosteroneFragment extends Fragment {
-    protected View view;
-    protected WebView tWebView;
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_testosterone, container, false);
-        tWebView = (WebView) view.findViewById(R.id.tWebView);
+        View view = inflater.inflate(R.layout.fragment_testosterone, container, false);
+        WebView tWebView = (WebView) view.findViewById(R.id.tWebView);
         tWebView.loadUrl("file:///android_asset/testosterone_intro_en.html");
 
         Button learnMoreButton = (Button) view.findViewById(R.id.learnMoreButton);

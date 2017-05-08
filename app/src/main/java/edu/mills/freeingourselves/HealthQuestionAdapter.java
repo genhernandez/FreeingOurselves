@@ -19,7 +19,7 @@ import java.util.List;
 
 class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
 
-    protected final Activity context;
+    private final Activity context;
     private final List<HealthCareProviderFragment.Model> list;
 
     HealthQuestionAdapter(Activity context, List<HealthCareProviderFragment.Model> list) {
@@ -57,13 +57,13 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
         }
         viewHolder.checkbox.setTag(position); // This line is important.
         viewHolder.text.setText(list.get(position).getName());
-        viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1)); //TODO: clean this up
+        viewHolder.checkbox.setChecked(FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position + 1));
 
         return convertView;
     }
 
     private static class ViewHolder {
-        protected TextView text;
+        TextView text;
         CheckBox checkbox;
     }
 }

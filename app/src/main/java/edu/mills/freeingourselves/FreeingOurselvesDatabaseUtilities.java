@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Provides a simple interface to the database. Activities should call the methods in this class
  * rather than accessing the database directly.
  */
-final public class FreeingOurselvesDatabaseUtilities {
+final class FreeingOurselvesDatabaseUtilities {
 
     private FreeingOurselvesDatabaseUtilities() {
     }

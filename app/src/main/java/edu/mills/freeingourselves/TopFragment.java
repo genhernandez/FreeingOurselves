@@ -24,10 +24,10 @@ import android.widget.Toast;
  */
 public class TopFragment extends Fragment {
 
-    protected View view;
-    protected ListView workoutsView;
-    protected TextView noFaveWorkouts;
-    protected Cursor cursor;
+    private View view;
+    private ListView workoutsView;
+    private TextView noFaveWorkouts;
+    private Cursor cursor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

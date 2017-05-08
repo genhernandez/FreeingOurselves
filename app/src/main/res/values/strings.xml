@@ -4,10 +4,8 @@
 
     <!-- Home Page -->
     <string name="intro">this is an introduction</string>
-    <string name="favorite_topics">Favorite Topics:</string>
     <string name="favorite_workouts">Favorite Workouts:</string>
     <string name="no_fave_workouts">You have no favorite workouts.</string>
-    <string name="no_fave_topics">You have no favorite topics.</string>
 
     <!-- Navigation -->
     <string name="action_settings">Settings</string>
@@ -24,7 +22,6 @@
     </string-array>
 
     <!-- Workout -->
-    <string name="workout_complete">Workout Completed</string>
     <string name="workout_count_button">Complete Workout!</string>
     <string name="startWorkout">Start Workout</string>
     <string name="favoriteWorkout">Favorite Workouts</string>

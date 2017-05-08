@@ -21,9 +21,8 @@ import java.util.ArrayList;
  */
 public class WorkoutFragment extends Fragment {
 
-    protected View view;
-    protected ListView listFavorites;
-    protected String[] workoutNames;
+    private View view;
+    private ListView listFavorites;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -59,7 +58,7 @@ public class WorkoutFragment extends Fragment {
                 Toast toast = Toast.makeText(view.getContext(), "Could not get workouts.", Toast.LENGTH_SHORT);
                 toast.show();
             } else {
-                workoutNames = new String[workoutList.size()];
+                String[] workoutNames = new String[workoutList.size()];
                 for (int i = 0; i < workoutList.size(); i++) {
                     workoutNames[i] = workoutList.get(i);
                 }

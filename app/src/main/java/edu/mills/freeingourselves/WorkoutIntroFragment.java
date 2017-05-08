@@ -16,15 +16,13 @@ import android.widget.Button;
  */
 public class WorkoutIntroFragment extends Fragment {
 
-    protected View view;
-    protected WebView wWebView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_workout_intro, container, false);
+        View view = inflater.inflate(R.layout.fragment_workout_intro, container, false);
 
-        wWebView = (WebView) view.findViewById(R.id.webView);
+        WebView wWebView = (WebView) view.findViewById(R.id.webView);
         wWebView.loadUrl("file:///android_asset/workout_en.html");
 
         Button startWorkoutButton = (Button) view.findViewById(R.id.startWorkoutButton);

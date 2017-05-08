@@ -23,8 +23,8 @@ import android.widget.Toast;
  * Displays a list of saved health care questions with a space for notes.
  */
 public class HealthNotesFragment extends Fragment {
-    View view;
-    LinearLayout linearLayout;
+    private View view;
+    private LinearLayout linearLayout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -15,8 +15,6 @@ import android.widget.Button;
  * Displays health overview of hormone treatment.
  */
 public class TestosteroneHealthOverviewFragment extends Fragment {
-    protected View view;
-    protected WebView healthTestosteroneView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,8 @@ public class TestosteroneHealthOverviewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view= inflater.inflate(R.layout.fragment_testosterone_health_overview, container, false);
-        healthTestosteroneView = (WebView)view.findViewById(R.id.tWebView);
+        View view = inflater.inflate(R.layout.fragment_testosterone_health_overview, container, false);
+        WebView healthTestosteroneView = (WebView) view.findViewById(R.id.tWebView);
         healthTestosteroneView.loadUrl("file:///android_asset/testosterone_detail_en.html");
         healthTestosteroneView.setVerticalScrollBarEnabled(true);
         healthTestosteroneView.setHorizontalScrollBarEnabled(true);

@@ -26,12 +26,6 @@ public class ResourceListFragment extends ListFragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-
-        super.onActivityCreated(savedInstanceState);
-    }
-
     // Called when fragment gets attached to the activity.
     @Override
     public void onAttach(Activity activity) {

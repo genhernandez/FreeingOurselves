@@ -25,8 +25,8 @@ import java.util.List;
  * Displays a list of questions to ask Health Care providers and a way to save questions.
  */
 public class HealthCareProviderFragment extends Fragment implements AdapterView.OnItemClickListener {
-    View view;
-    ListView listView;
+    private View view;
+    private ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

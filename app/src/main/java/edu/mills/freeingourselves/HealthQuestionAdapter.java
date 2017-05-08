@@ -63,16 +63,7 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
         return convertView;
     }
 
-//    private class SetCheckboxes extends AsyncTask<Object, Void, Boolean> {
-//        protected Boolean doInBackground(Object... objects) {
-//            Activity context = (Activity) objects[0];
-//            int position = (int) objects[1];
-//            return FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, position);
-//        }
-//        protected void onPostExecute(Boolean isChecked) {
-//            viewHolder.checkbox.setChecked(isChecked);
-//        }
-//    }
+
 
     private static class ViewHolder {
         TextView text;

@@ -13,9 +13,9 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
+ * An adapter for the HealthCareProviderFragment.
  *
- * Created by kdudziak on 4/28/17.
+ * http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
  */
 
 public class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {

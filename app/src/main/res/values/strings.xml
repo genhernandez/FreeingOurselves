@@ -46,7 +46,7 @@
 
     <string name="health_notes_intro">Take notes on your saved questions!</string>
 
-    <string name="health_notes_save">Save notes</string>
+    <string name="health_notes_save">Return to full question list</string>
 
     <!--Testosterone Fragment-->
     <string name="learn_more">Learn More About Testosterone</string>

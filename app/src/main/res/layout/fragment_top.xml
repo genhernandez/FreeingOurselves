@@ -14,17 +14,16 @@
         android:paddingRight="@dimen/padding"
         android:paddingTop="@dimen/padding">
 
-
     <WebView
         android:id="@+id/introWebView"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        />
+        android:layout_width="wrap_content"/>
 
     <TextView
         android:id="@+id/fave_workouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding"
         android:text="@string/favorite_workouts"/>
 
     <TextView
@@ -34,13 +33,9 @@
         android:text="@string/no_fave_workouts"
         android:visibility="invisible"/>
 
-
         <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/favorite_workouts_list">
-        </ListView>
-
-
+        android:id="@+id/favorite_workouts_list"/>
     </LinearLayout>
 </ScrollView>

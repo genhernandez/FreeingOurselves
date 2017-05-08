@@ -1,13 +1,11 @@
 package edu.mills.freeingourselves;
 
-
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-
 
 /**
  * Displays information regarding gender affirmation surgeries.
@@ -23,5 +21,4 @@ public class TestosteroneSurgeryInfoFragment extends Fragment {
         surgeWebView.setVerticalScrollBarEnabled(true);
         return view;
     }
-
 }

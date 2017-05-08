@@ -111,6 +111,13 @@ public class HealthNotesFragment extends Fragment {
                 String s = (String) objects[2];
                 return FreeingOurselvesDatabaseUtilities.updateNotes(context, id, s);
             }
+
+            protected void onPostExecute(Boolean success) {
+                if (!success) {
+                    Toast toast = Toast.makeText(view.getContext(), "Could not update notes.", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+            }
         }
     }
 }

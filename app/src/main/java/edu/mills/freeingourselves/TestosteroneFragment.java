@@ -29,6 +29,8 @@ public class TestosteroneFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_testosterone, container, false);
         tWebView = (WebView) view.findViewById(R.id.tWebView);
         tWebView.loadUrl("file:///android_asset/testosterone_intro_en.html");
+        tWebView.setVerticalScrollBarEnabled(true);
+        tWebView.setHorizontalScrollBarEnabled(true);
 
         Button learnMoreButton = (Button) view.findViewById(R.id.learnMoreButton);
         learnMoreButton.setOnClickListener(new View.OnClickListener() {

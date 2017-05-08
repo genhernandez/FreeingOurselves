@@ -10,6 +10,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
@@ -29,7 +30,11 @@ public class TopFragment extends Fragment {
     protected ListView workoutsView;
     protected TextView noFaveWorkouts;
 //    TextView noFaveTopics;
+
+    protected WebView introWebView;
+
     protected Cursor cursor;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,6 +46,10 @@ public class TopFragment extends Fragment {
         workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
 //        noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
         noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
+        introWebView = (WebView)view.findViewById(R.id.introWebView);
+        introWebView.loadUrl("file:///android_asset/introduction_en.html");
+        introWebView.setVerticalScrollBarEnabled(true);
+        introWebView.setHorizontalScrollBarEnabled(true);
 
 //        // Show favorite topics
 //        new GetFaveTopicsTask().execute(view.getContext());

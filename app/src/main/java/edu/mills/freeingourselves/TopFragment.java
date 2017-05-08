@@ -1,12 +1,12 @@
 package edu.mills.freeingourselves;
 
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,27 +25,22 @@ import android.widget.Toast;
  */
 public class TopFragment extends Fragment {
 
-    protected View view;
-//    ListView topicsView;
-    protected ListView workoutsView;
-    protected TextView noFaveWorkouts;
-//    TextView noFaveTopics;
 
-    protected WebView introWebView;
+    private View view;
+    private ListView workoutsView;
+    private TextView noFaveWorkouts;
+    private Cursor cursor;
 
-    protected Cursor cursor;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_top, container, false);
 
-//        topicsView = (ListView) view.findViewById(R.id.favorite_topics_list);
         workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
-//        noFaveTopics = (TextView) view.findViewById(R.id.no_fave_topics_text);
         noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
+
         introWebView = (WebView)view.findViewById(R.id.introWebView);
         introWebView.loadUrl("file:///android_asset/introduction_en.html");
         introWebView.setVerticalScrollBarEnabled(true);
@@ -83,72 +78,17 @@ public class TopFragment extends Fragment {
         new GetFaveWorkoutsTask().execute(view.getContext());
     }
 
-//    private void selectTopicItem(int position) {
-//        Fragment fragment;
-//        switch (position) {
-//            case 1:
-//                fragment = new TopFragment();
-//                break;
-//            case 2:
-//                fragment = new TestosteroneFragment();
-//                break;
-//            case 3:
-//                fragment = new HealthCareProviderFragment();
-//                break;
-//            case 4:
-//                fragment = new ResourceListFragment();
-//                break;
-//            case 5:
-//                fragment = new WorkoutIntroFragment();
-//                break;
-//            case 6:
-//                fragment = new ResourceListFragment();
-//                break;
-//            case 7:
-//                fragment = new AboutFragment();
-//                break;
-//            default:
-//                fragment = new TopFragment();
-//        }
-//        FragmentTransaction ft = getFragmentManager().beginTransaction();
-//        ft.replace(R.id.content_frame, fragment);
-//        ft.addToBackStack(null);
-//        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-//        ft.commit();
-//    }
-
-//    private class GetFaveTopicsTask extends AsyncTask<Context, Void, Cursor> {
-//
-//        protected Cursor doInBackground(Context... context) {
-//            return FreeingOurselvesDatabaseUtilities.getFaveTopics(context[0]);
-//        }
-//
-//        protected void onPostExecute(Cursor topicsCursor) {
-//            if (topicsCursor == null) {
-//                Toast toast = Toast.makeText(view.getContext(), "Could not get topics", Toast.LENGTH_SHORT);
-//                toast.show();
-//            } else {
-//                if (topicsCursor.moveToFirst()) {
-//                    CursorAdapter topicsAdapter = new SimpleCursorAdapter(view.getContext(),
-//                            android.R.layout.simple_list_item_1, topicsCursor, new String[]{"TITLE"},
-//                            new int[]{android.R.id.text1}, 0);
-//                    topicsView.setAdapter(topicsAdapter);
-//                } else { // If no favorite topics, display text saying so.
-//                    noFaveTopics.setVisibility(View.VISIBLE);
-//                }
-//            }
-//        }
-//    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        cursor.close();
+    }
 
     private class GetFaveWorkoutsTask extends AsyncTask<Context, Void, Boolean> {
 
         protected Boolean doInBackground(Context... context) {
             cursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
-            if (cursor == null) {
-                return false;
-            } else {
-                return true;
-            }
+            return cursor != null;
         }
 
         protected void onPostExecute(Boolean success) {
@@ -169,11 +109,5 @@ public class TopFragment extends Fragment {
                 toast.show();
             }
         }
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        cursor.close();
     }
 }

@@ -1,7 +1,7 @@
 package edu.mills.freeingourselves;
 
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +11,7 @@ import android.webkit.WebView;
  * Displays an about page with information.
  */
 public class AboutFragment extends Fragment {
+
 
     protected WebView aboutWebView;
     protected View view;

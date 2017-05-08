@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,18 +32,8 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
-
-    //private ShareActionProvider shareActionProvider;
     private String[] titles;
     private ListView drawerList;
-
-    private class DrawerItemClickListener implements ListView.OnItemClickListener {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            //Code to run when the item gets clicked.
-            selectItem(position);
-        }
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
         //Populate the ListView.
         titles = getResources().getStringArray(R.array.titles);
-        drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1, titles));
+        drawerList.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_activated_1, titles));
 
         drawerList.setOnItemClickListener(new DrawerItemClickListener());
         if (savedInstanceState == null) {
@@ -95,7 +84,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         drawerToggle.onConfigurationChanged(newConfig);
     }
 
-
     //Called whenever we call invalidateOptionsMenu().
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
@@ -132,10 +120,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
 
-        //Set the action bar title.
         setActionBarTitle(position);
-
-        //Close the drawer.
         drawerLayout.closeDrawer(drawerList);
     }
 
@@ -150,26 +135,13 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         getSupportActionBar().setTitle(title);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        //MenuItem menuItem = menu.findItem(R.id.action_share);
-        //shareActionProvider = (ShareActionProvider)menuItem.getActionProvider();
-        //setIntent("This is example text");
 
         return super.onCreateOptionsMenu(menu);
     }
-
-    //what is this for? Do we need this
-    //
-    //private void setIntent(String text){
-    //Intent intent = new Intent(Intent.ACTION_SEND);
-    //intent.setType("text/plain");
-    //intent.putExtra(Intent.EXTRA_TEXT, text);
-    //shareActionProvider.setShareIntent(intent);
-    //}
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -179,7 +151,6 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
         switch (item.getItemId()) {
             case R.id.action_settings:
-                //Code to run when the settings item is clicked.
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -206,6 +177,13 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
         }
     }
 
+    private class DrawerItemClickListener implements ListView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            selectItem(position);
+        }
+    }
+
     private class GetResourceLinkTask extends AsyncTask<ContentValues, String, String> {
 
         protected String doInBackground(ContentValues... myValues) {
@@ -215,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements ResourceListFragm
 
         protected void onPostExecute(String myUrl) {
             if (myUrl == null) {
-                Toast toast = Toast.makeText(MainActivity.this, "Could not get link", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(MainActivity.this, "Could not get link.", Toast.LENGTH_SHORT);
                 toast.show();
             } else {
                 Intent i = new Intent(Intent.ACTION_VIEW);

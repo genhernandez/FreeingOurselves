@@ -6,7 +6,6 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,11 +22,11 @@ import java.util.List;
 
 
 /**
- * Displays a list of questions for Health Care providers and a way to save questions.
+ * Displays a list of questions to ask Health Care providers and a way to save questions.
  */
 public class HealthCareProviderFragment extends Fragment implements AdapterView.OnItemClickListener {
-    View view;
-    ListView listView;
+    private View view;
+    private ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -63,14 +62,14 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
         CheckBox checkbox = (CheckBox) v.getTag(R.id.check);
     }
 
-    public class GetHealthCareQuestions extends AsyncTask<Context, Void, List<String>> {
+    private class GetHealthCareQuestions extends AsyncTask<Context, Void, List<String>> {
         protected List<String> doInBackground(Context... context) {
             return FreeingOurselvesDatabaseUtilities.getHealthCareQuestions(context[0]);
         }
 
         protected void onPostExecute(List<String> questionArray) {
             if (questionArray == null) {
-                Toast toast = Toast.makeText(view.getContext(), "Could not get healthcare questions", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(view.getContext(), "No saved questions.", Toast.LENGTH_SHORT);
                 toast.show();
             } else {
                 ArrayList<Model> modelArray = new ArrayList();
@@ -79,9 +78,6 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
                     Model modelQ = new Model(questionArray.get(i));
                     modelArray.add(i, modelQ);
                 }
-
-                Log.d("HealthCareProvider", questionArray.toString());
-
                 HealthQuestionAdapter adapter = new HealthQuestionAdapter(getActivity(), modelArray);
                 listView.setAdapter(adapter);
             }
@@ -89,8 +85,6 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
     }
 
     class Model {
-
-
         private String question;
         private boolean selected;
 
@@ -106,7 +100,7 @@ public class HealthCareProviderFragment extends Fragment implements AdapterView.
             return selected;
         }
 
-        public void setSelected(boolean selected) {
+        void setSelected(boolean selected) {
             this.selected = selected;
         }
     }

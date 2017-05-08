@@ -4,16 +4,23 @@
         android:id="@+id/healthcareFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:paddingBottom="@dimen/padding"
         android:paddingLeft="@dimen/padding"
         android:paddingRight="@dimen/padding"
         android:paddingTop="@dimen/padding"
-        android:orientation="vertical"
         tools:context="edu.mills.freeingourselves.HealthCareProviderFragment">
 
         <Button
+            android:id="@+id/saved_question_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/saved_question_button"
+            android:layout_gravity="center_horizontal"
             android:text="@string/health_notes_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/health_question_intro" />
     </LinearLayout>

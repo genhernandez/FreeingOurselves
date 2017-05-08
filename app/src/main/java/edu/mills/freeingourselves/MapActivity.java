@@ -1,6 +1,9 @@
 package edu.mills.freeingourselves;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -11,11 +14,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.data.kml.KmlLayer;
 
-import java.io.*;
 import org.xmlpull.v1.XmlPullParserException;
-import android.content.pm.PackageManager;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.app.ActivityCompat;
+
+import java.io.IOException;
 
 
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -51,7 +52,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 .title("Marker in Bay Area")
                 .snippet("Here is text about it"));
 
-        //add layers from kml files
+        // Add layers from kml files.
         try {
             KmlLayer erLayer = new KmlLayer(googleMap, R.raw.ers, getApplicationContext());
             erLayer.addLayerToMap();
@@ -69,7 +70,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
 
-        //Setting my location
+        // Setting my location.
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             googleMap.setMyLocationEnabled(true);
@@ -82,9 +83,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         googleMap.setMyLocationEnabled(true);
             }
         }
-
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(bayArea));
     }
-
-
 }

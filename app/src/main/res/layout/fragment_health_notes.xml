@@ -7,7 +7,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/healthNotesFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="@dimen/padding"
         android:paddingLeft="@dimen/padding"
@@ -16,15 +16,18 @@
         tools:context="edu.mills.freeingourselves.HealthNotesFragment">
 
         <Button
-            android:id="@+id/health_notes_save_button"
+            android:id="@+id/health_notes_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
             android:text="@string/health_notes_save" />
 
         <TextView
             android:id="@+id/health_notes_intro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="16dp"
             android:text="@string/health_notes_intro" />
 
     </LinearLayout>

@@ -1,12 +1,12 @@
 package edu.mills.freeingourselves;
 
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,20 +23,14 @@ import android.widget.Toast;
  */
 public class FavoriteWorkoutsFragment extends Fragment {
 
-    protected View view;
-    protected ListView listFavorites;
-    protected TextView noFaveWorkouts;
-    protected Cursor cursor;
-
-    public FavoriteWorkoutsFragment() {
-        // Required empty public constructor
-    }
-
+    private View view;
+    private ListView listFavorites;
+    private TextView noFaveWorkouts;
+    private Cursor cursor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_favorite_workouts, container, false);
 
         // Populate the list_favorites ListView from a cursor.
@@ -44,7 +38,6 @@ public class FavoriteWorkoutsFragment extends Fragment {
         noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
 
         new GetFavoriteWorkoutNamesTask().execute(view.getContext());
-
 
         // Navigate to WorkoutActivity if a drink is clicked.
         listFavorites.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -59,15 +52,23 @@ public class FavoriteWorkoutsFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        new GetFavoriteWorkoutNamesTask().execute(view.getContext());
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        cursor.close();
+    }
+
     private class GetFavoriteWorkoutNamesTask extends AsyncTask<Context, Void, Boolean> {
 
         protected Boolean doInBackground(Context... context) {
             cursor = FreeingOurselvesDatabaseUtilities.getFaveWorkouts(context[0]);
-            if (cursor == null) {
-                return false;
-            } else {
-                return true;
-            }
+            return cursor != null;
         }
 
         protected void onPostExecute(Boolean success) {
@@ -88,17 +89,5 @@ public class FavoriteWorkoutsFragment extends Fragment {
                 toast.show();
             }
         }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        new GetFavoriteWorkoutNamesTask().execute(view.getContext());
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        cursor.close();
     }
 }

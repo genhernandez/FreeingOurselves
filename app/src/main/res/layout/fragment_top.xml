@@ -28,17 +28,19 @@
         android:text="@string/favorite_workouts"/>
 
     <TextView
+        android:id="@+id/no_fave_workouts_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/no_fave_workouts"
-        android:id="@+id/no_fave_workouts_text"
         android:visibility="invisible"/>
+
 
         <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/favorite_workouts_list">
         </ListView>
+
 
     </LinearLayout>
 </ScrollView>

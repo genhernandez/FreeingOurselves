@@ -1,14 +1,13 @@
 package edu.mills.freeingourselves;
 
+import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
-
 
 /**
  * Displays introductory information regarding testosterone.
@@ -25,7 +24,6 @@ public class TestosteroneFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_testosterone, container, false);
         tWebView = (WebView) view.findViewById(R.id.tWebView);
         tWebView.loadUrl("file:///android_asset/testosterone_intro_en.html");

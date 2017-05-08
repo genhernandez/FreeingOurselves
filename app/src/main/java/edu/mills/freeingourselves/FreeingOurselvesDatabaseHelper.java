@@ -8,68 +8,58 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Handles creation and opening of the app's database.
  */
-public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
+class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "freeing_ourselves";
-    private static final int DB_VERSION = 1;
-
-    // Table names
     /**
      * Name of database table keeping track of workouts.
      */
     static final String WORKOUTS = "WORKOUTS";
-
     /**
      * Name of database table keeping track of healthcare questions.
      */
     static final String HEALTHCARE = "HEALTHCARE";
-//    static final String CHALLENGES = "CHALLENGES";
 
+    // Table names
     /**
      * Name of database table keeping track of resources.
      */
     static final String RESOURCES = "RESOURCES";
-
-    // Column names
     /**
      * Name of column containing IDs.
      */
     static final String ID = "_id";
-
     /**
      * Name of column containing names.
      */
     static final String NAME = "NAME";
 
+    // Column names
     /**
      * Name of column containing content.
      */
     static final String CONTENT = "CONTENT";
-
     /**
      * Name of column containing whether a row is marked as a favorite.
      */
     static final String FAVE = "FAVE";
-
     /**
      * Name of column containing the picture file ID for workouts.
      */
     static final String PICTURE = "PICTURE_FILE";
-
     /**
      * Name of column containing the count for workouts.
      */
     static final String COUNT = "COUNT";
-
     /**
      * Name of column containing the notes for heatlhcare questions.
      */
     static final String NOTES = "NOTES";
-
     /**
      * Name of column containing the url for resource links.
      */
     static final String LINK = "LINK";
+    private static final String DB_NAME = "freeing_ourselves";
+    private static final int DB_VERSION = 1;
 
     FreeingOurselvesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -188,93 +178,80 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
                     + NAME + " TEXT, "
                     + NOTES + " TEXT, "
                     + FAVE + " INTEGER);");
-            addHealthcareStep(db, "What services does your office/clinic offer to young people? " +
+            addHealthCareQuestion(db, "What services does your office/clinic offer to young people? " +
                     "What ongoing services do you offer to young people as they transition into adulthood?");
-            addHealthcareStep(db, "Are there specific documents required to get care from your office" +
+            addHealthCareQuestion(db, "Are there specific documents required to get care from your office" +
                     " (age range, citizenship status, insurance coverage, parental consent, etc.)?");
-            addHealthcareStep(db, "What is the registration/scheduling process and what are your " +
+            addHealthCareQuestion(db, "What is the registration/scheduling process and what are your " +
                     "hours of operation?");
-            addHealthcareStep(db, "Do you call home or mail home with appointment information and " +
+            addHealthCareQuestion(db, "Do you call home or mail home with appointment information and " +
                     "reminders? How do you help maintain client privacy?");
-            addHealthcareStep(db, "What is the cost of _____ service? Can I get free or discounted services? How?");
-            addHealthcareStep(db, "What services do you offer with/without parental consent?");
-            addHealthcareStep(db, "Do you help clients with the cost of medications? How can I get " +
+            addHealthCareQuestion(db, "What is the cost of _____ service? Can I get free or discounted services? How?");
+            addHealthCareQuestion(db, "What services do you offer with/without parental consent?");
+            addHealthCareQuestion(db, "Do you help clients with the cost of medications? How can I get " +
                     "prescription assistance?(The legal answer to this question varies from state- to-state," +
                     " and a smart strategy is to know your rights ahead of time because we often " +
                     "have to advocate for ourselves.)");
-            addHealthcareStep(db, "What are the confidentiality practices in the office? How do " +
+            addHealthCareQuestion(db, "What are the confidentiality practices in the office? How do " +
                     "you maintain confidentiality around issues of sexual orientation, gender identity," +
                     " and HIV status? (Again, this may differ from state to state—know the laws in" +
                     " your community, especially where HIV is required to be reported to public" +
                     " health organizations.)");
-            addHealthcareStep(db, "Are the doctors/office staff trained on how to work sensitively " +
+            addHealthCareQuestion(db, "Are the doctors/office staff trained on how to work sensitively " +
                     "with LGBTQ clients? Does your office/clinic serve LGBTQ people?");
-            addHealthcareStep(db, "Does your office provide specific services (hormones, breast/chest" +
+            addHealthCareQuestion(db, "Does your office provide specific services (hormones, breast/chest" +
                     " health, gynecological exams) for transgender-identified individuals?");
-            addHealthcareStep(db, "What experience does your staff have working with shelter/foster " +
+            addHealthCareQuestion(db, "What experience does your staff have working with shelter/foster " +
                     "care providers and establishing confidentiality guidelines around guardianship relationships?");
-            addHealthcareStep(db, "The best relationship I have had with a medical provider was" +
+            addHealthCareQuestion(db, "The best relationship I have had with a medical provider was" +
                     " _______ because of _______. How can we best work together?");
-            addHealthcareStep(db, "The worst relationship I have had with a medical provider was" +
+            addHealthCareQuestion(db, "The worst relationship I have had with a medical provider was" +
                     " _______ because of _______. How can we best work to make sure that we are both comfortable?");
-            addHealthcareStep(db, "I identify as _______ and want to make the best possible decisions " +
+            addHealthCareQuestion(db, "I identify as _______ and want to make the best possible decisions " +
                     "that make sense for my life. What are some things you think I should consider, " +
                     "especially when it comes to: substance use, sexual decision making, healthy " +
                     "relationships, mental health, nutrition and fitness, and disease prevention?");
-            addHealthcareStep(db, "Would you be open to learning more about individuals who identify " +
+            addHealthCareQuestion(db, "Would you be open to learning more about individuals who identify " +
                     "as _______? Can I bring you more information so that we can discuss it together?");
-            addHealthcareStep(db, "Do you offer the same services (exams, testing, family planning, " +
+            addHealthCareQuestion(db, "Do you offer the same services (exams, testing, family planning, " +
                     "etc.) to all clients regardless of how they identify? Why/why not?");
-            addHealthcareStep(db, "Do you offer sensitive GYN services for transgender-identified " +
+            addHealthCareQuestion(db, "Do you offer sensitive GYN services for transgender-identified " +
                     "clients (e.g., breast/chest exams and Pap smears for FTMs)?");
-            addHealthcareStep(db, "Are you familiar with hormone therapies for transgender people?");
-            addHealthcareStep(db, "I am interested in taking/I already take _______. What health risks" +
+            addHealthCareQuestion(db, "Are you familiar with hormone therapies for transgender people?");
+            addHealthCareQuestion(db, "I am interested in taking/I already take _______. What health risks" +
                     " might this present? What additional measures or precautions should I take to " +
                     "support my success on this routine? Where else might I go to learn more?");
-            addHealthcareStep(db, "What are the benefits of using hormones provided in a clinical " +
+            addHealthCareQuestion(db, "What are the benefits of using hormones provided in a clinical " +
                     "setting versus those bought online or on the street?");
-            addHealthcareStep(db, "I live in the shelter/foster care system. What information about " +
+            addHealthCareQuestion(db, "I live in the shelter/foster care system. What information about " +
                     "my medical care will be shared with shelter administrators or potential " +
                     "foster/adoptive parents?");
-            addHealthcareStep(db, "I have an STI (_______) – is it mandatory that my partner(s) are notified?" +
+            addHealthCareQuestion(db, "I have an STI (_______) – is it mandatory that my partner(s) are notified?" +
                     " Under what circumstances? Who does the notification? How is my privacy maintained?");
-            addHealthcareStep(db, "What services do you offer for individuals living with HIV?");
-            addHealthcareStep(db, "What is the best way to contact you with questions, ideas, or " +
+            addHealthCareQuestion(db, "What services do you offer for individuals living with HIV?");
+            addHealthCareQuestion(db, "What is the best way to contact you with questions, ideas, or " +
                     "concerns? What turnaround time for responses can I expect?");
-            addHealthcareStep(db, "Do you have professional relationships with other providers who might " +
+            addHealthCareQuestion(db, "Do you have professional relationships with other providers who might " +
                     "be sensitive to LGBTQ health issues? Can you provide me with their contact information?");
-            addHealthcareStep(db, "Are you aware of whether the offices you referred me to have similar" +
+            addHealthCareQuestion(db, "Are you aware of whether the offices you referred me to have similar" +
                     " confidentiality/billing/registration policies as your practice?");
-            addHealthcareStep(db, "I am interested in obtaining services related to sexual " +
+            addHealthCareQuestion(db, "I am interested in obtaining services related to sexual " +
                     "reassignment surgery and transitioning – can you connect me with the best " +
                     "places to gain more information?");
-            addHealthcareStep(db, "What other community ers are you aware of that I might want " +
+            addHealthCareQuestion(db, "What other community ers are you aware of that I might want " +
                     "to look into (community organizations, support groups, youth empowerment, etc.)");
-            addHealthcareStep(db, "Legally, what services am I entitled to without parental consent? " +
+            addHealthCareQuestion(db, "Legally, what services am I entitled to without parental consent? " +
                     "What services require parental consent?");
-            addHealthcareStep(db, "What are my options if I am on my parent’s insurance and don’t " +
+            addHealthCareQuestion(db, "What are my options if I am on my parent’s insurance and don’t " +
                     "want them to know about the services I receive here?");
-            addHealthcareStep(db, "I am uninsured and would like to get insurance - can I talk to " +
+            addHealthCareQuestion(db, "I am uninsured and would like to get insurance - can I talk to " +
                     "someone about benefits? How do I schedule that appointment?");
-            addHealthcareStep(db, "I am HIV positive. Are there specific insurance benefits that apply" +
+            addHealthCareQuestion(db, "I am HIV positive. Are there specific insurance benefits that apply" +
                     " to me? Who can I talk to about benefits? How do I schedule that appointment?");
-            addHealthcareStep(db, "I am not a U.S. citizen. What options are available to me in terms" +
+            addHealthCareQuestion(db, "I am not a U.S. citizen. What options are available to me in terms" +
                     " of services? Where can I go for more help establishing citizenship or receiving care?");
-            addHealthcareStep(db, "I identify as _______ and am interested in legally changing my name/sex " +
+            addHealthCareQuestion(db, "I identify as _______ and am interested in legally changing my name/sex " +
                     "marker/etc. Can you refer me to a good resource for accomplishing this goal?");
-
-
-
-//            // Create challenges table.
-//            db.execSQL("CREATE TABLE CHALLENGES ("
-//                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-//                    + "THREAT TEXT, "
-//                    + "SIGNS TEXT, "
-//                    + "ASK_WHEN TEXT, "
-//                    + "STRATEGIES TEXT);");
-//            addChallenge(db, "Sample threat", "Sample warning sign", "Sample when to ask", "Sample strategy");
-//            //: add the rest of the challenges
-
         }
         if (oldVersion < 2) {
             // Create Resources table.
@@ -301,22 +278,13 @@ public class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         db.insert(WORKOUTS, null, workoutValues);
     }
 
-    // Defaults to no notes, not completed.
-    private void addHealthcareStep(SQLiteDatabase db, String step) {
-        ContentValues healthcareStepValues = new ContentValues();
-        healthcareStepValues.put(NAME, step);
-        healthcareStepValues.put(FAVE, 0);
-        db.insert(HEALTHCARE, null, healthcareStepValues);
+    // Defaults to unsaved and with no notes.
+    private void addHealthCareQuestion(SQLiteDatabase db, String question) {
+        ContentValues healthCareValues = new ContentValues();
+        healthCareValues.put(NAME, question);
+        healthCareValues.put(FAVE, 0);
+        db.insert(HEALTHCARE, null, healthCareValues);
     }
-
-//    private void addChallenge(SQLiteDatabase db, String threat, String signs, String whenToAsk, String strategies) {
-//        ContentValues challengeValues = new ContentValues();
-//        challengeValues.put("THREAT", threat);
-//        challengeValues.put("SIGNS", signs);
-//        challengeValues.put("ASK_WHEN", whenToAsk);
-//        challengeValues.put("STRATEGIES", strategies);
-//        db.insert(CHALLENGES, null, challengeValues);
-//    }
 
     private void addResource(SQLiteDatabase db, String name, String description, String link) {
         ContentValues resourceValues = new ContentValues();

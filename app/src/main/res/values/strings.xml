@@ -28,8 +28,8 @@
     <string name="workout_count_button">Complete Workout!</string>
     <string name="startWorkout">Start Workout</string>
     <string name="favoriteWorkout">Favorite Workouts</string>
-    <!--Top Fragment -->
-    <string name="title_top">Top Fragment</string>
+
+    <!-- About -->
     <string name="about">Launched in 2010, the Brown Boi Project works to build leadership,
         economic self sufficiency, and health of young masculine of center womyn, trans men,
         and queer/straight men of color - pipelining them into the social justice movement.
@@ -40,21 +40,19 @@
         and introduces new alliances and tools for challenging racism, sexism, homophobia,
         and transphobia across our communities.</string>
 
-
-    <!--Health Notes Fragment -->
+    <!--HealthCare -->
+    <string name="health_question_intro">Select the questions below that would be most helpful
+        to you as you search for your ideal healthcare provider. On the next screen, you will have
+        the chance to add notes.</string>
     <string name="health_notes_button">Click here to go to saved questions</string>
-
-    <string name="health_notes_intro">Take notes on your saved questions!</string>
-
-    <string name="health_notes_save">Return to full question list</string>
+    <string name="health_notes_save">Go back to all questions</string>
+    <string name="health_notes_intro">Below each of your saved questions, jot down a few notes to
+        remind you of other things you may want to bring up when you talk to a potential healthcare
+        provider.</string>
 
     <!--Testosterone Fragment-->
     <string name="learn_more">Learn More About Testosterone</string>
     <string name="holistic_care">Learn About Holistic Strategies for Self Care</string>
     <string name="surgery_info">Learn About Gender Affirmation Surgery</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
 </resources>

@@ -30,7 +30,6 @@ public class WorkoutActivity extends Activity {
 
         //Get the workout from the intent
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
-
         countText = (TextView) findViewById(R.id.workoutCount);
 
         displayWorkout();
@@ -41,6 +40,11 @@ public class WorkoutActivity extends Activity {
         new GetSpecificWorkoutTask().execute(specificWorkoutParams);
     }
 
+    /**
+     * TODO
+     *
+     * @param view
+     */
     public void onFavoriteClicked(View view) {
         workoutNum = (Integer) getIntent().getExtras().get(FAVE_NUM);
         CheckBox favorite = (CheckBox) findViewById(R.id.favorite);
@@ -48,6 +52,11 @@ public class WorkoutActivity extends Activity {
         new UpdateWorkoutFaveTask().execute(workoutFavoriteParams);
     }
 
+    /**
+     * TODO
+     *
+     * @param view
+     */
     public void onWorkoutCountClick(View view) {
         Object[] workoutCountParams = {workoutNum};
         new UpdateWorkoutCountTask().execute(workoutCountParams);
@@ -74,7 +83,6 @@ public class WorkoutActivity extends Activity {
                     // Get the workout details from the cursor.
                     String name = workoutCursor.getString(0);
                     String description = workoutCursor.getString(1);
-                    //String photoId = cursor.getString(2); TODO: change this to int probably
                     workoutCount = workoutCursor.getInt(3);
                     boolean isFavorite = (workoutCursor.getInt(4) == 1);
 
@@ -83,11 +91,6 @@ public class WorkoutActivity extends Activity {
                     nameText.setText(name);
 
                     setTimesCompleted();
-
-                    // Populate the workout image. TODO: deal with pictures
-//                ImageView photo = (ImageView) findViewById(R.id.photo);
-//                photo.setImageResource(photoId);
-//                photo.setContentDescription(nameText);
 
                     // Populate the workout description.
                     TextView descriptionText = (TextView) findViewById(R.id.workoutDescription);
@@ -111,7 +114,7 @@ public class WorkoutActivity extends Activity {
 
         protected void onPostExecute(Boolean success) {
             if (!success) {
-                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not update workout favorite", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not update workout favorite.", Toast.LENGTH_SHORT);
                 toast.show();
             }
         }
@@ -125,7 +128,7 @@ public class WorkoutActivity extends Activity {
 
         protected void onPostExecute(Boolean success) {
             if (!success) {
-                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not update workout count", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(WorkoutActivity.this, "Could not update workout count.", Toast.LENGTH_SHORT);
                 toast.show();
             }
         }

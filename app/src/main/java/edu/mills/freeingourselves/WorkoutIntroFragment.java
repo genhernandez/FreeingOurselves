@@ -17,7 +17,6 @@ import android.widget.Button;
 public class WorkoutIntroFragment extends Fragment {
 
     protected View view;
-
     protected WebView wWebView;
 
     @Override

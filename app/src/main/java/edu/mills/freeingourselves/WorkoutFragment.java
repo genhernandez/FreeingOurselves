@@ -1,11 +1,11 @@
 package edu.mills.freeingourselves;
 
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +28,6 @@ public class WorkoutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_workout, container, false);
 
         listFavorites = (ListView) view.findViewById(R.id.workout_list);
@@ -36,7 +35,7 @@ public class WorkoutFragment extends Fragment {
         new GetWorkoutNamesTask().execute(view.getContext());
 
 
-        // Navigate to WorkoutActivity if a drink is clicked.
+        // Navigate to WorkoutActivity if a workout is clicked.
         listFavorites.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
@@ -57,7 +56,7 @@ public class WorkoutFragment extends Fragment {
 
         protected void onPostExecute(ArrayList<String> workoutList) {
             if (workoutList == null) {
-                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(view.getContext(), "Could not get workouts.", Toast.LENGTH_SHORT);
                 toast.show();
             } else {
                 workoutNames = new String[workoutList.size()];
@@ -65,7 +64,7 @@ public class WorkoutFragment extends Fragment {
                     workoutNames[i] = workoutList.get(i);
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(view.getContext(),
                         android.R.layout.simple_list_item_1, workoutNames);
                 listFavorites.setAdapter(adapter);
             }

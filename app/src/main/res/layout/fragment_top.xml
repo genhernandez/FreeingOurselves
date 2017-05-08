@@ -1,41 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.mills.freeingourselves.TopFragment"
     android:orientation="vertical"
-    android:id="@+id/fragment_layout"
     android:paddingBottom="@dimen/padding"
     android:paddingLeft="@dimen/padding"
     android:paddingRight="@dimen/padding"
-    android:paddingTop="@dimen/padding">
+    android:paddingTop="@dimen/padding"
+    tools:context="edu.mills.freeingourselves.TopFragment">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/intro"
-        android:text="@string/intro"
-        android:paddingBottom="@dimen/double_padding"/>
-
-    <!--Favorite topics
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/favorite_topics"/>
+        android:paddingBottom="@dimen/double_padding"
+        android:text="@string/intro" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/no_fave_topics"
-        android:id="@+id/no_fave_topics_text"
-        android:visibility="invisible"/>
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/favorite_topics_list"
-        android:paddingBottom="30dp">
-    </ListView> -->
 
     <!--Favorite workouts-->
     <TextView
@@ -44,16 +25,16 @@
         android:text="@string/favorite_workouts"/>
 
     <TextView
+        android:id="@+id/no_fave_workouts_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/no_fave_workouts"
-        android:id="@+id/no_fave_workouts_text"
         android:visibility="invisible"/>
 
     <ListView
+        android:id="@+id/favorite_workouts_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/favorite_workouts_list">
+        android:layout_height="wrap_content">
     </ListView>
 
 </LinearLayout>

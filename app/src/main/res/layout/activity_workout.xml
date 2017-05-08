@@ -11,37 +11,32 @@
     android:paddingTop="@dimen/padding"
     tools:context="edu.mills.freeingourselves.WorkoutActivity">
 
-    <ImageView
-        android:id="@+id/workout_photo"
-        android:layout_width="@dimen/workout_image"
-        android:layout_height="@dimen/workout_image"/>
 
     <TextView
+        android:id="@+id/workoutTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/workoutTitle"/>
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     <TextView
+        android:id="@+id/workoutCount"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/workoutCount"/>
+        android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/workoutDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text=""
-        android:id="@+id/workoutDescription"/>
+        android:text="" />
     <Button
+        android:id="@+id/workoutCountButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="@string/workout_count_button"
-        android:id="@+id/workoutCountButton"
-        android:onClick="onWorkoutCountClick"/>
-
+        android:onClick="onWorkoutCountClick"
+        android:text="@string/workout_count_button" />
     <CheckBox android:id="@+id/favorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/favorite"
-        android:onClick="onFavoriteClicked"/>
+        android:onClick="onFavoriteClicked"
+        android:text="@string/favorite" />
 </LinearLayout>

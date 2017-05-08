@@ -100,7 +100,7 @@ public class HealthNotesFragment extends Fragment {
         @Override
         public void afterTextChanged(Editable s) {
 
-            Object [] params = new Object[] {view.getContext(), id, s.toString()};
+            Object[] params = new Object[]{view.getContext(), id, s.toString()};
             new UpdatingNotes().execute(params);
         }
 

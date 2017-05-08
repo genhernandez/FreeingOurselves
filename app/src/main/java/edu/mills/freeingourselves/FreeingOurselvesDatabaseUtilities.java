@@ -340,6 +340,34 @@ final public class FreeingOurselvesDatabaseUtilities {
     }
 
     /**
+     * Checks whether a healthcare question is marked as saved. If a database error occurs, a "health
+     * table error" message is logged; the caller will need to handle this case.
+     *
+     * @param context the context
+     * @param id the healthcare question ID
+     * @return true if saved, false if not
+     */
+    static boolean healthcareIsSaved(Context context, int id) {
+        try {
+            SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
+            SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
+            Cursor cursor = db.query(FreeingOurselvesDatabaseHelper.HEALTHCARE,
+                    new String[]{FreeingOurselvesDatabaseHelper.FAVE},
+                    FreeingOurselvesDatabaseHelper.ID + " = ?",
+                    new String[]{Integer.toString(id)}, null, null, null);
+            cursor.moveToFirst();
+            if (cursor.getInt(0) == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLiteException e) {
+            Log.d("SpecificHealthcare", "health table error");
+            return false;
+        }
+    }
+
+    /**
      * Updates the note column for a specific healthcare question. If a database error occurs,
      * false is returned; the caller will need to handle this case.
      *

@@ -31,8 +31,6 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
             " process and what are your hours of operation?";
     private static final String TEST_NOTES = "test notes";
 
-
-
 //    @Test
 //    public void updateTopicsFavorite() throws Exception {
 //        boolean success = FreeingOurselvesDatabaseUtilities.updateTopicsFavorite(context, 1, true);
@@ -182,26 +180,26 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
     }
 
     @Test
-    public void getSpecificHealthcareQuestion() throws Exception {
+    public void updateNotes() throws Exception {
+        boolean success = FreeingOurselvesDatabaseUtilities.updateNotes(context, 3, TEST_NOTES);
+        assertEquals(true, success);
         Cursor questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 3);
         if (questionCursor != null) {
             questionCursor.moveToFirst();
-            assertEquals(REGISTRATION_QUESTION, questionCursor.getString(0));
-            assertEquals(null, questionCursor.getString(1));
-            assertEquals(0, questionCursor.getInt(1));
+            assertEquals(TEST_NOTES, questionCursor.getString(1));
         } else {
             fail();
         }
     }
 
     @Test
-    public void updateNotes() throws Exception {
-        boolean success = FreeingOurselvesDatabaseUtilities.updateNotes(context, 1, TEST_NOTES);
-        assertEquals(true, success);
-        Cursor questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 1);
+    public void getSpecificHealthcareQuestion() throws Exception {
+        Cursor questionCursor = FreeingOurselvesDatabaseUtilities.getSpecificHealthcareQuestion(context, 3);
         if (questionCursor != null) {
             questionCursor.moveToFirst();
+            assertEquals(REGISTRATION_QUESTION, questionCursor.getString(0));
             assertEquals(TEST_NOTES, questionCursor.getString(1));
+            assertEquals(0, questionCursor.getInt(1));
         } else {
             fail();
         }
@@ -243,4 +241,13 @@ public class FreeingOurselvesDatabaseUtilitiesTest {
         }
     }
 
+    @Test
+    public void healthcareIsSaved() throws Exception {
+        FreeingOurselvesDatabaseUtilities.updateSaved(context, 3, true);
+        boolean isSaved = FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, 3);
+        assertEquals(true, isSaved);
+        FreeingOurselvesDatabaseUtilities.updateSaved(context, 3, false);
+        isSaved = FreeingOurselvesDatabaseUtilities.healthcareIsSaved(context, 3);
+        assertEquals(false, isSaved);
+    }
 }

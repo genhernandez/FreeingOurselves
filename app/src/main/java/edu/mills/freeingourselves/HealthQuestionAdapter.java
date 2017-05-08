@@ -1,7 +1,6 @@
 package edu.mills.freeingourselves;
 
 import android.app.Activity;
-import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,15 +13,13 @@ import java.util.List;
 
 /**
  * An adapter for the HealthCareProviderFragment.
- *
+ * <p>
  * Modified from http://lalit3686.blogspot.in/2012/06/today-i-am-going-to-show-how-to-deal.html
  */
-
 class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Model> {
 
     private final Activity context;
     private final List<HealthCareProviderFragment.Model> list;
-    ViewHolder viewHolder;
 
     HealthQuestionAdapter(Activity context, List<HealthCareProviderFragment.Model> list) {
         super(context, R.layout.row, list);
@@ -32,8 +29,8 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder viewHolder;
 
-        viewHolder = null;
         if (convertView == null) {
             LayoutInflater inflater = context.getLayoutInflater();
             convertView = inflater.inflate(R.layout.row, null);

@@ -33,7 +33,6 @@ public class TestosteroneFragment extends Fragment {
                 ft.addToBackStack(null);
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 ft.commit();
-
             }
         });
         return view;

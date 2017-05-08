@@ -15,10 +15,13 @@ import java.util.ArrayList;
 /**
  * Displays resources.
  */
-
 public class ResourceListFragment extends ListFragment {
 
+    /**
+     * The list of resources.
+     */
     public static ArrayList<String> resourceList = new ArrayList<>();
+
     private ResourceListListener listener;
 
     @Override

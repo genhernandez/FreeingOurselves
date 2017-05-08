@@ -30,6 +30,7 @@ public class TopFragment extends Fragment {
     private ListView workoutsView;
     private TextView noFaveWorkouts;
     private Cursor cursor;
+    private WebView introWebView;
 
 
 

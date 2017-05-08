@@ -287,6 +287,7 @@ class FreeingOurselvesDatabaseHelper extends SQLiteOpenHelper {
         healthcareStepValues.put(NAME, step);
         healthcareStepValues.put(FAVE, 0);
         db.insert(HEALTHCARE, null, healthcareStepValues);
+    }
 
     // Defaults to unsaved and with no notes.
     private void addHealthCareQuestion(SQLiteDatabase db, String question) {

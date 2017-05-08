@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
@@ -24,10 +25,13 @@ import android.widget.Toast;
  */
 public class TopFragment extends Fragment {
 
+
     private View view;
     private ListView workoutsView;
     private TextView noFaveWorkouts;
     private Cursor cursor;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,6 +40,24 @@ public class TopFragment extends Fragment {
 
         workoutsView = (ListView) view.findViewById(R.id.favorite_workouts_list);
         noFaveWorkouts = (TextView) view.findViewById(R.id.no_fave_workouts_text);
+
+        introWebView = (WebView)view.findViewById(R.id.introWebView);
+        introWebView.loadUrl("file:///android_asset/introduction_en.html");
+        introWebView.setVerticalScrollBarEnabled(true);
+        introWebView.setHorizontalScrollBarEnabled(true);
+
+//        // Show favorite topics
+//        new GetFaveTopicsTask().execute(view.getContext());
+//
+//        //Navigate to favorite topic when clicked
+//        topicsView.setOnItemClickListener(new ListView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
+//                selectTopicItem(position);
+//            }
+//        });
+
+        // Show favorite workouts
         new GetFaveWorkoutsTask().execute(view.getContext());
 
         workoutsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

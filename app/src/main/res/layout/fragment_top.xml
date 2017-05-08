@@ -10,16 +10,15 @@
     android:paddingTop="@dimen/padding"
     tools:context="edu.mills.freeingourselves.TopFragment">
 
-    <TextView
-        android:id="@+id/intro"
-        android:layout_width="match_parent"
+
+
+    <WebView
+        android:id="@+id/introWebView"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/double_padding"
-        android:text="@string/intro" />
+        android:layout_width="wrap_content"/>
 
-
-    <!--Favorite workouts-->
     <TextView
+        android:id="@+id/fave_workouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/favorite_workouts"/>
@@ -36,5 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
+
+
+
 
 </LinearLayout>

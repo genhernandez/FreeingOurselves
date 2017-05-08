@@ -12,6 +12,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+ * Displays resources.
+ */
+
 public class ResourceListFragment extends ListFragment {
 
     public static ArrayList<String> resourceList = new ArrayList<>();

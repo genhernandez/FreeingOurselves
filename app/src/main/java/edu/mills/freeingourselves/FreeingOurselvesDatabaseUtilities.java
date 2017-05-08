@@ -33,7 +33,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param context the context
      * @return list of resources or null if there is an error
      */
-    static ArrayList<String> getResources(Context context) {
+    public static ArrayList<String> getResources(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -62,7 +62,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param id      the resource id
      * @return resource link or null if there is an error
      */
-    static String getResourceLink(Context context, int id) {
+    public static String getResourceLink(Context context, int id) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -94,7 +94,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param context the context
      * @return list of workout names or null if there is an error
      */
-    static ArrayList<String> getWorkoutNames(Context context) {
+    public static ArrayList<String> getWorkoutNames(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -150,7 +150,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param id      the workout id
      * @return all information for a specific workout or null if there is an error
      */
-    static Cursor getSpecificWorkout(Context context, int id) {
+    public static Cursor getSpecificWorkout(Context context, int id) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -177,7 +177,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param isFavorite whether the workout is favorited
      * @return true if successful, false otherwise
      */
-    static boolean updateWorkoutFavorite(Context context, int id, boolean isFavorite) {
+    public static boolean updateWorkoutFavorite(Context context, int id, boolean isFavorite) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -206,7 +206,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param id      the workout ID
      * @return true if successful, false otherwise
      */
-    static boolean updateWorkoutCount(Context context, int id) {
+    public static boolean updateWorkoutCount(Context context, int id) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -245,7 +245,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param context the context
      * @return all information for all favorite workouts or null if there is an error
      */
-    static Cursor getFaveWorkouts(Context context) {
+    public static Cursor getFaveWorkouts(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -291,7 +291,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param context the context
      * @return list of healthcare questions or null if there is an error
      */
-    static ArrayList<String> getHealthCareQuestions(Context context) {
+    public static ArrayList<String> getHealthCareQuestions(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -324,7 +324,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param id      the question id
      * @return all information for a specific healthcare question or null if there is an error
      */
-    static Cursor getSpecificHealthcareQuestion(Context context, int id) {
+    public static Cursor getSpecificHealthcareQuestion(Context context, int id) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -348,7 +348,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param notes   the notes to add
      * @return true if successful, false otherwise
      */
-    static boolean updateNotes(Context context, int id, String notes) {
+    public static boolean updateNotes(Context context, int id, String notes) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getWritableDatabase();
@@ -371,7 +371,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param context the context
      * @return number of rows
      */
-    static long getNumRows(Context context) {
+    public static long getNumRows(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -393,7 +393,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param isSaved whether the workout is favorited
      * @return true if successful, false otherwise
      */
-    static boolean updateSaved(Context context, int id, boolean isSaved) {
+    public static boolean updateSaved(Context context, int id, boolean isSaved) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();
@@ -426,7 +426,7 @@ final public class FreeingOurselvesDatabaseUtilities {
      * @param context the context
      * @return all information for all favorite healthcare questions or null if there is an error
      */
-    static Cursor getSavedHealthcare(Context context) {
+    public static Cursor getSavedHealthcare(Context context) {
         try {
             SQLiteOpenHelper freeingOurselvesDatabaseHelper = new FreeingOurselvesDatabaseHelper(context);
             SQLiteDatabase db = freeingOurselvesDatabaseHelper.getReadableDatabase();

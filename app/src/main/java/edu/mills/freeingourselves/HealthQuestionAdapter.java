@@ -1,6 +1,7 @@
 package edu.mills.freeingourselves;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -45,9 +47,9 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
                     list.get(position).setSelected(buttonView.isChecked()); // Set the value of checkbox to maintain its state.
 
                     //save in database
-                    Object[] params = new Object[] {context, position+1, isChecked};
+                    Object[] params = new Object[]{context, position + 1, isChecked};
                     new UpdateSaved().execute(params);
-            }
+                }
             });
             convertView.setTag(viewHolder);
             convertView.setTag(R.id.label, viewHolder.text);
@@ -67,6 +69,13 @@ class HealthQuestionAdapter extends ArrayAdapter<HealthCareProviderFragment.Mode
             int position = (int) objects[1];
             boolean isChecked = (boolean) objects[2];
             return FreeingOurselvesDatabaseUtilities.updateSaved(activity, position, isChecked);
+        }
+
+        protected void onPostExecute(Boolean success) {
+            if (!success) {
+                Toast toast = Toast.makeText(context, "Could not save questions.", Toast.LENGTH_SHORT);
+                toast.show();
+            }
         }
     }
 
